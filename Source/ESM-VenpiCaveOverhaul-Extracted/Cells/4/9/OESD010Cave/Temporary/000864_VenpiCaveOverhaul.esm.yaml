@@ -1,0 +1,12 @@
+MutagenObjectType: PlacedNpc
+FormKey: 000864:VenpiCaveOverhaul.esm
+Base: 1E757D:Starfield.esm
+LevelModifier: VeryHard
+PersistentLocation: 205FBC:Starfield.esm
+Layer: 2B3CB9:Starfield.esm
+EnableParent:
+  Reference: 098D71:Starfield.esm
+  Flags:
+  - SetEnableStateToOppositeOfParent
+  Unknown: 0x000000
+Position: -17.792307, 38.204525, -18.78964
