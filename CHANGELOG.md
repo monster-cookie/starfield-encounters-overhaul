@@ -1,5 +1,9 @@
 # Venpi's Cave Overhaul
 
+## Version 1.0.2 (BETA)
+* Renamed the world space name's for the caves to include their editor ID for bug reporting.
+* Known issue: The probable reason for the empty caves is BGS didn't want to sort out the atmosphere issues. The RE engine handles it because of it's spawn conditions, AKA it only selects "safe" worlds. This is the cause of the dead standing creatures, the cave spawned on a world with no atmosphere. 
+
 ## Version 1.0.1 (BETA)
 * Added new terrormorph elder controller fun cave (1 controller, 3 humans, 2 robots, and 3 predators) for a fun multi-way battle until the elder takes over everyone. 
 * Added 3 more creature caves

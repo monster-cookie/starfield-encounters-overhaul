@@ -1,0 +1,45 @@
+FormKey: 009050:Starfield.esm
+EditorID: OEOB002CaveWorld
+Components:
+- MutagenObjectType: WorldSpaceOverlayComponent
+  SNAM: 0x00000000
+  PNAM: 0x00000000
+  SurfaceBlock: 0086F6:Starfield.esm
+- MutagenObjectType: PlanetContentManagerContentPropertiesComponent
+  ZNAM: 0
+  YNAM: 0
+  XNAM: 0
+  WNAM: 0
+  VNAM: 1
+  UNAM: 0
+  NAM1: 0
+  Global: Null
+  NAM3: 3
+  NAM4: 0x00FF0000
+  NAM5: 0
+  NAM6: 0
+  NAM7: 0
+  NAM8: 1
+  NAM9: 0
+  Conditions: []
+Name:
+  TargetLanguage: English
+  Value: Cave (OEOB002)
+Location: 2339A9:Starfield.esm
+Water: 000018:Starfield.esm
+LodWater: 000018:Starfield.esm
+LodWaterHeight: 0
+LandDefaults:
+  DefaultLandHeight: -2048
+MapData: {}
+WorldMapOffsetScale: 1
+DistantLodMultiplier: 1
+Flags:
+- SmallWorld
+FNAM: 0x00
+ObjectBoundsMin: -0.12207031, -0.12207031
+ObjectBoundsMax: 0.14648438, 0.14648438
+GNAM: 1
+XCLWs: []
+WHGTs: []
+HNAM: 0x05
