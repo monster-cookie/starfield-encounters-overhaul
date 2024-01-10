@@ -553,7 +553,7 @@ LocationCellEnablePoint:
   SetEnableStateToOppositeOfParent: True
 Name:
   TargetLanguage: English
-  Value: Cave
+  Value: Cave (OEAF010)
 Keywords:
 - 1A5468:Starfield.esm
 - 27B45C:Starfield.esm

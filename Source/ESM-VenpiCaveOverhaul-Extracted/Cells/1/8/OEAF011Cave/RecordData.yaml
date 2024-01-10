@@ -2,7 +2,7 @@ FormKey: 234089:Starfield.esm
 EditorID: OEAF011Cave
 Name:
   TargetLanguage: English
-  Value: Cave
+  Value: Cave (OEAF011)
 Flags:
 - IsInteriorCell
 - CantTravelFromHere

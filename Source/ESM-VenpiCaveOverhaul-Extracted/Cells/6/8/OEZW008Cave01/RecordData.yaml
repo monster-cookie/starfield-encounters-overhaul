@@ -2,7 +2,7 @@ FormKey: 234476:Starfield.esm
 EditorID: OEZW008Cave01
 Name:
   TargetLanguage: English
-  Value: Tiered Cave
+  Value: Tiered Cave (OEZW008)
 Flags:
 - IsInteriorCell
 - CantTravelFromHere

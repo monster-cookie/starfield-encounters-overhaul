@@ -1,5 +1,17 @@
 # Venpi's Cave Overhaul
 
+## Version 1.0.5 (BETA)
+* Implemented a "safe" random spawner will only spawn ally factions
+* The new spawner is used in "Cave (OEBB034)" and "Cave (OEAF005)"
+* Added a cave with a multi-way battle or a Terraform Royal Queen and subjects see "Tiered Cave (OEZW008)"
+
+## Version 1.0.4 (BETA)
+* Cached content is fun, so really really everything is named this time... 
+* Also found a new cave, if you find Cave (OEBB034) please let me know where and what it is. 
+
+## Version 1.0.3 (BETA)
+* So for some silly reason locations control the cave entrance names not the cell/worldspace
+
 ## Version 1.0.2 (BETA)
 * Renamed the world space name's for the caves to include their editor ID for bug reporting.
 * Known issue: The probable reason for the empty caves is BGS didn't want to sort out the atmosphere issues. The RE engine handles it because of it's spawn conditions, AKA it only selects "safe" worlds. This is the cause of the dead standing creatures, the cave spawned on a world with no atmosphere. 
