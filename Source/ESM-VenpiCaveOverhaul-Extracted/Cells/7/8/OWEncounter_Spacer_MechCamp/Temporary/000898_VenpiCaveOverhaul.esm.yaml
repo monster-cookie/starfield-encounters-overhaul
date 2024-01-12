@@ -1,0 +1,10 @@
+MutagenObjectType: PlacedObject
+FormKey: 000898:VenpiCaveOverhaul.esm
+Base: 26D603:Starfield.esm
+Patrol:
+  IdleTime: 3
+  Topics:
+  - MutagenObjectType: TopicReference
+LinkedReferences:
+- Reference: 000894:VenpiCaveOverhaul.esm
+Position: 6.75, -7, 0

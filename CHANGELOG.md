@@ -1,8 +1,13 @@
 # Venpi's Cave Overhaul
 
+## Version 1.0.6 (BETA)
+* Implemented a "safe" random creature spawner. Currently only has about a quarter of the predator factions and as a failsafe a 50% chance for a terromorph. It uses the is safe to spawn logic for creatures.
+* The new predator spawner is used in "Windswept Cave (OEZW007)" and "Cave (OEAF002)"
+* Added a new open world encounter a spacer mech camp. It can happen on any human occupied system's planets/moons. 
+
 ## Version 1.0.5 (BETA)
-* Implemented a "safe" random spawner will only spawn ally factions
-* The new spawner is used in "Cave (OEBB034)" and "Cave (OEAF005)"
+* Implemented a "safe" random human spawner will only spawn ally factions
+* The new human spawner is used in "Cave (OEBB034)" and "Cave (OEAF005)"
 * Added a cave with a multi-way battle or a Terraform Royal Queen and subjects see "Tiered Cave (OEZW008)"
 
 ## Version 1.0.4 (BETA)
