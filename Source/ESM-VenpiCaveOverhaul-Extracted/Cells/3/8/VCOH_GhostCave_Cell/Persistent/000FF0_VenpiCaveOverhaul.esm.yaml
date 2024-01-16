@@ -1,0 +1,15 @@
+MutagenObjectType: PlacedObject
+FormKey: 000FF0:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 1024
+StarfieldMajorRecordFlags:
+- 0x400
+Base: 24F9CE:Starfield.esm
+TeleportDestination:
+  Door: 000DCC:VenpiCaveOverhaul.esm
+  Position: 46.3562, 52.871994, 13.115051
+  Rotation: -0, 0, 1.9131856
+NavigationDoorLink:
+  NavMesh: 000DD8:VenpiCaveOverhaul.esm
+  TeleportMarkerTriangle: 2
+Position: 7.527638, 54.837017, -1.7806462
+Rotation: 0, -0, 1.3089969

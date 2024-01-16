@@ -1,0 +1,9 @@
+MutagenObjectType: PlacedObject
+FormKey: 000EB2:VenpiCaveOverhaul.esm
+Base: 2CC9EF:Starfield.esm
+Primitive:
+  Bounds: 47, 74, 33
+  Color: '#0015DBD6'
+  Unknown: 0.3
+  Type: Box
+Position: -33, 75, 0

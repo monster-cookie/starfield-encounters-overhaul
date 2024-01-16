@@ -1,6 +1,6 @@
 MutagenObjectType: PlacedNpc
 FormKey: 000884:VenpiCaveOverhaul.esm
-Base: 00087A:VenpiCaveOverhaul.esm
+Base: 1DF4F7:Starfield.esm
 LevelModifier: VeryHard
 PersistentLocation: 2340FA:Starfield.esm
 Layer: 2B3CB9:Starfield.esm

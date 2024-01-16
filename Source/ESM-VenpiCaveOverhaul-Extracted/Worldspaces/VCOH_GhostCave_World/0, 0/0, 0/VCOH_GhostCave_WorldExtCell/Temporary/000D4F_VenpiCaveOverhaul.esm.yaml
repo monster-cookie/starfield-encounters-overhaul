@@ -1,0 +1,16 @@
+MutagenObjectType: PlacedObject
+FormKey: 000D4F:VenpiCaveOverhaul.esm
+Base: 000021:Starfield.esm
+Primitive:
+  Bounds: 27.484379, 8.106071, 14.201199
+  Color: '#00FFFF00'
+  Unknown: 0.3
+  Type: Box
+SourcePackIn: 0962BE:Starfield.esm
+Collision:
+  CollisionLayer: 49
+EnableParent:
+  Reference: 000DD0:VenpiCaveOverhaul.esm
+  Unknown: 0x000000
+Position: 24.394497, 58.291275, 14.724457
+Rotation: 0, -0, 3.3871858

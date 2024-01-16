@@ -1,0 +1,71 @@
+FormKey: 000875:VenpiCaveOverhaul.esm
+EditorID: LCharHostileHuman_Support
+ODTY: 0
+Flags:
+- 0x8
+- 0x10
+- 0x20
+- 0x40
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: AreHostileActorsNearConditionData
+Entries:
+- Level: 1
+  Reference: 054329:Starfield.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 22509
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      FirstParameter: 023305:Starfield.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 26FB38:Starfield.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 22509
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      FirstParameter: 12179A:Starfield.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 26FDB2:Starfield.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 22509
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      FirstParameter: 283582:Starfield.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 26FF63:Starfield.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 22509
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      FirstParameter: 283581:Starfield.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 375ABD:Starfield.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 22509
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      FirstParameter: 023305:Starfield.esm
+    ComparisonValue: 1
+Model:
+  FLLD: 0x01000000

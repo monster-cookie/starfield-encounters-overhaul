@@ -1,0 +1,12 @@
+MutagenObjectType: PlacedNpc
+FormKey: 000E36:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 512
+StarfieldMajorRecordFlags:
+- 0x200
+Base: 160C98:Starfield.esm
+LevelModifier: Easy
+PersistentLocation: 000FF7:VenpiCaveOverhaul.esm
+Position: -42.730846, 99.27643, -8.763773
+Rotation: -0, 0, 3.0089998
+MajorFlags:
+- StartsDead

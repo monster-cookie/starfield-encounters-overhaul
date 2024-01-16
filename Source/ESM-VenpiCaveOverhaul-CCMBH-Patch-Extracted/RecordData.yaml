@@ -1,0 +1,16 @@
+SpriggitSource:
+  PackageName: Spriggit.Yaml.Starfield
+  Version: 0.16.0
+ModKey: VenpiCaveOverhaul-CCMBH-Patch.esm
+GameRelease: Starfield
+ModHeader:
+  Flags:
+  - Master
+  Stats:
+    NumRecords: 3
+  Author: ''
+  MasterReferences:
+  - Master: Starfield.esm
+  - Master: BlueprintShips-Starfield.esm
+  - Master: CoraCoeMultiversalBookHunter.esm
+  - Master: VenpiCaveOverhaul.esm
