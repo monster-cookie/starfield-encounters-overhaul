@@ -4,6 +4,7 @@
 * Removed the random creature spawner no matter how I try it, it breaks the CCT buildup of the creature so you get the skin but no stats or abilities. 
 * Better compatibility with Scale The World (https://www.nexusmods.com/starfield/mods/7425)
 * Added special ghost cave encounter
+* Starborn will now only spawn if normal quest locks are cleared or in a NG+ universe
 
 ## Version 1.0.6 (BETA)
 * Implemented a "safe" random creature spawner. Currently only has about a quarter of the predator factions and as a fail-safe a 50% chance for a terromorph. It uses the is safe to spawn logic for creatures.
