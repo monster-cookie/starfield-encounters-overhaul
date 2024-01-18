@@ -45,6 +45,12 @@ Entries:
       MutagenObjectType: LocationHasKeywordConditionData
       FirstParameter: 294969:Starfield.esm
     ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 001000:VenpiCaveOverhaul.esm
+    ComparisonValue: 1
 - Level: 1
   Reference: 25C5FF:Starfield.esm
   Count: 1

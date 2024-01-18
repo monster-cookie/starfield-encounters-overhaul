@@ -4,7 +4,7 @@ Components:
 - MutagenObjectType: WorldSpaceOverlayComponent
   SNAM: 0xFFFFFFFF
   PNAM: 0xFFFFFFFF
-  SurfaceBlock: 017821:Starfield.esm
+  SurfaceBlock: 000FF8:VenpiCaveOverhaul.esm
 - MutagenObjectType: PlanetContentManagerContentPropertiesComponent
   ZNAM: 0
   YNAM: 0
