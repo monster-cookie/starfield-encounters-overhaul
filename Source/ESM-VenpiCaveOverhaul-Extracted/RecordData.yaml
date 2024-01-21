@@ -13,5 +13,4 @@ ModHeader:
   MasterReferences:
   - Master: Starfield.esm
   - Master: BlueprintShips-Starfield.esm
-  - Master: ScaleTheWorldTheSequel.esm
   - Master: VenpiCore.esm

@@ -1,5 +1,8 @@
 # Venpi's Cave Overhaul
 
+## Version 1.0.8
+* Accidental link to Scale the World The Sequel happened. This has been removed. 
+
 ## Version 1.0.7
 * Removed the random creature spawner no matter how I try it, it breaks the CCT buildup of the creature so you get the skin but no stats or abilities. 
 * Better compatibility with Scale The World (https://www.nexusmods.com/starfield/mods/7425)
