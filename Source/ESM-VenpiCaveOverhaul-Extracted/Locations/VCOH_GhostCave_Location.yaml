@@ -289,6 +289,14 @@ LocationCellStaticReferences:
   Location: 000FF3:VenpiCaveOverhaul.esm
   Grid: 32767, 32767
   Unknown: -1
+- LocationRefType: 003956:Starfield.esm
+  Marker: 000ED2:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Unknown: -1
+- LocationRefType: 05AF1F:Starfield.esm
+  Marker: 00100A:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Unknown: -1
 LocationCellEnablePoint:
 - Actor: 000DCD:VenpiCaveOverhaul.esm
   Ref: 000DD0:VenpiCaveOverhaul.esm

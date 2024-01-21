@@ -22,7 +22,7 @@ Level:
 CalcMinLevel: 1
 CalcMaxLevel: 999
 DispositionBase: 35
-UseTemplateActors: 32751
+UseTemplateActors: 32495
 DeathItem: 27024B:Starfield.esm
 Voice: 010B2C:Starfield.esm
 DefaultTemplate: 00086C:VenpiCaveOverhaul.esm
@@ -43,7 +43,7 @@ TemplateActors:
   KeywordsTemplate: 00086C:VenpiCaveOverhaul.esm
   Unknown1: 00086C:VenpiCaveOverhaul.esm
   Unknown2: 00086C:VenpiCaveOverhaul.esm
-Race: 1BB965:Starfield.esm
+Race: 00347D:Starfield.esm
 CombatOverridePackageList: 0102ED:Starfield.esm
 Aggression: VeryAggressive
 Confidence: Foolhardy

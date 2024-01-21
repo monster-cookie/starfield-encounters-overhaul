@@ -36,7 +36,7 @@ TemplateActors:
   KeywordsTemplate: 000873:VenpiCaveOverhaul.esm
   Unknown1: 000873:VenpiCaveOverhaul.esm
   Unknown2: 000873:VenpiCaveOverhaul.esm
-Race: 1BB965:Starfield.esm
+Race: 00347D:Starfield.esm
 CombatOverridePackageList: 0102ED:Starfield.esm
 Aggression: Aggressive
 Confidence: Brave

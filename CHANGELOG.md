@@ -1,13 +1,16 @@
 # Venpi's Cave Overhaul
 
-## Version 1.0.7 (BETA)
+## Version 1.0.7
 * Removed the random creature spawner no matter how I try it, it breaks the CCT buildup of the creature so you get the skin but no stats or abilities. 
 * Better compatibility with Scale The World (https://www.nexusmods.com/starfield/mods/7425)
 * Added special ghost cave encounter
 * Starborn will now only spawn if normal quest locks are cleared or in a NG+ universe
+* Found yet another "cave" PCM node generator making 5 total. Someone needs to tell BGS duplication in programming is very bad. No wonder som of the PCM cell requests have 10 copies. 
+* Also added the cache sites to the Natural Block list too as they spawn so many relative and are always the same
+* Everything is stable now but more encounters will be added over time between myself and JaeDL so removing the beta tags
 
 ## Version 1.0.6 (BETA)
-* Implemented a "safe" random creature spawner. Currently only has about a quarter of the predator factions and as a fail-safe a 50% chance for a terromorph. It uses the is safe to spawn logic for creatures.
+* Implemented a "safe" random creature spawner. Currently only has about a quarter of the predator factions and as a fail-safe a 50% chance for a terrormorph. It uses the is safe to spawn logic for creatures.
 * The new predator spawner is used in "Windswept Cave (OEZW007)" and "Cave (OEAF002)"
 * Added a new open world encounter a spacer mech camp. It can happen on any human occupied system's planets/moons. 
 

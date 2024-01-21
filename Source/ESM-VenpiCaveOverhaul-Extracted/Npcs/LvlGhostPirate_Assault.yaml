@@ -7,6 +7,11 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: LegendaryAliasQuest
       Object: 0308F5:Starfield.esm
+  - Name: MakeGhostScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Venpi_DebugEnabled
+      Object: 000800:VenpiCore.esm
 ObjectBounds:
   First: -0.31000048, -0.31000048, -4.7683716E-07
   Second: 0.31000048, 0.31000048, 1.8000004
@@ -15,7 +20,6 @@ Flags:
 - Female
 - Respawn
 - AutoCalcStats
-- IsGhost
 XpValueOffset: 150
 Level:
   MutagenObjectType: PcLevelMult
@@ -24,6 +28,8 @@ CalcMinLevel: 1
 CalcMaxLevel: 99
 DispositionBase: 35
 UseTemplateActors: Traits
+Factions:
+- Faction: 001006:VenpiCaveOverhaul.esm
 DeathItem: 27BB74:Starfield.esm
 Voice: 2BCA3D:Starfield.esm
 LegendaryChance: 0C55B8:Starfield.esm
@@ -134,12 +140,6 @@ Keywords:
 - 12FF24:Starfield.esm
 - 03818E:Starfield.esm
 - 000860:ScaleTheWorldTheSequel.esm
-AttachParentSlots:
-- 20AA18:Starfield.esm
-ObjectTemplates:
-- Default: True
-  Includes:
-  - Mod: 200AA1:Starfield.esm
 Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English

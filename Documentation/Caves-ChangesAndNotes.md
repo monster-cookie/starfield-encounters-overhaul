@@ -37,6 +37,7 @@ Creature spawn test cave which ultimately failed now just spawns some creatures 
   - Fermi - Fermi VII-a - Hills
   - Eridani - Eridani II - Hills
   - Eridani - Eridani III - Frozen Dunes
+  - Bohr - Bohr III - Sandy Desert
 - Description:
     - long tunnel with little cavern at the end
 - Spawns
@@ -57,6 +58,9 @@ Crimson Fleet Outpost Cave, will generate a small crimson fleet force and themed
   - Eridani - Eridani II - Rocky Desert
   - Eridani - Eridani II - Outpost
   - Eridani - Eridani III - Frozen Dunes
+  - Kang - Kang VIII-c - Plateau
+  - Bohr - Bohr II - Coastal Deciduous Forest
+  - Zeta Ophiuchi - Zeta Ophiuchi I - Savanna
 - Description: 
   - Small cave with pillar in middle
   - Can only handle 1 group
@@ -79,6 +83,8 @@ Royal terrormorphs abuse cave, spawns a group of terrormorphs and heatleaches to
   - Archimedes - Archimedes V-a - Savanna
   - Verne - Verne II - Mountains
   - Eridani - Eridani IV - Coniferous Forest
+  - Kang - Kang VIII-c - Hills
+  - Bohr - Bohr II - Deciduous Forest
 - Description:
   - Main room with 2 offshoot rooms
 - Spawns
@@ -100,6 +106,7 @@ Random Human Outpost Cave, will generate a medium sized human force and themed b
   - Verne - Verne II - Mountains
   - Celebrai - Celebrai II - Mountains
   - Eridani - Eridani III - Sandy Desert
+  - Kang - Kang VIII-c - Hills
 - Description:
   - Weird circular cavern
   - FYI it spawned creatures like the RE Overlay/Lair trigger worked for once
@@ -121,6 +128,7 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
   - Celebrai - Celebrai II - Mountains
   - Eridani - Eridani II - Rocky Desert
   - Eridani - Eridani II - Hills
+  - Bohr - Bohr III - Sandy Desert
 - Description:
   - Neat multilevel cave that can handle 2-3 groups of mobs
 - Spawns
@@ -137,6 +145,7 @@ __NOT HANDLED YET__
 - Type: Zone In Cave
 - Found In:
   - Kang - Kang III - Rocky Desert
+  - Kang - Kang VIII-c - Frozen Hills
   - Celebrai - Celebrai II - Hills
   - Eridani - Eridani II - Frozen Hills
 - Description:
@@ -158,6 +167,9 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
   - Celebrai - Celebrai II - Outpost
   - Eridani - Eridani IV - Coniferous Forest
   - Eridani - Eridani IV-b - Outpost
+  - Bohr - Bohr II - Mountains
+  - Katydid - Katydid I-a - Mountains
+  - Zeta Ophiuchi - Zeta Ophiuchi I - Savanna
 - Description:
   - Small root filled cave system
   - Can handle 1-2 groups
@@ -179,6 +191,7 @@ Another caves to abuse JaeDL's heatleach terrormorph spawners in all his mods
   - Verne - Verne II - Mountains
   - Celebrai - Celebrai II - Frozen Plains
   - Eridani - Eridani IV - Coniferous Forest
+  - Bohr - Bohr II - Outpost
 - Description:
   - This is the base for the Cora Dungeon
   - Big side room and huge main cavern perfect for the heatleaches
@@ -220,6 +233,8 @@ The First Outpost Cave, will generate a small The First force and themed chest.
   - Eridani - Eridani II - Rocky Desert
   - Eridani - Eridani II - Outpost
   - Eridani - Eridani IV-b - Outpost
+  - Kang - Kang VIII-c - Frozen Hills
+  - Bohr - Bohr II - Outpost
 - Description:
   - Long cavern 
   - Has rock pile but that is mostly it
@@ -277,6 +292,8 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
   - Fermi - Fermi VII-a - Hills
   - Celebrai - Celebrai II - Outpost
   - Eridani - Eridani II - Outpost
+  - Bohr - Bohr II - Outpost
+  - Bohr - Bohr II - Mountains
 - Description: 
   - Large crystal bridged cavern with 2 floors and  nooks to find stuff in
   - Can handle 1-2 groups on lower floor and 1 group up top
@@ -297,6 +314,7 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
   - Archimedes - Archimedes II - Volcanic
   - Fermi - Fermi VII-a - Frozen Hills
   - Celebrai - Celebrai II - Hills
+  - Katydid - Katydid I-a - Mountains
 - Description: 
   - Small to medium tunnel cave with fungal vibe
   - 2 groups max
@@ -318,6 +336,8 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
   - Fermi - Fermi III - Outpost
   - Eridani - Eridani II - Hills
   - Eridani - Eridani III - Frozen Dunes
+  - Zeta Ophiuchi - Zeta Ophiuchi I - Swamp
+  - Zeta Ophiuchi - Zeta Ophiuchi I - Savanna
 - Description:
   - Really just a long tunnel and large room with mars red dirt
   - Probably 1 group maybe 2 groups
@@ -335,6 +355,7 @@ Syndicate Outpost Cave, will generate a small syndicate force and themed chest.
   - Fermi - Fermi III - Outpost
   - Celebrai - Celebrai II - Hills
   - Eridani - Eridani III - Outpost
+  - Kang - Kang VIII-c - Plateau
 - Description: 
   - Large round tunnel easy to get lost in
   - Can handle 3 groups
@@ -356,6 +377,9 @@ Syndicate Outpost Cave, will generate a small syndicate force and themed chest.
   - Celebrai - Celebrai II - Mountains
   - Eridani - Eridani III - Outpost
   - Eridani - Eridani IV - Coniferous Forest
+  - Bohr - Bohr II - Frozen Crevasses
+  - Bohr - Bohr III - Sandy Desert
+  - Zeta Ophiuchi - Zeta Ophiuchi I - Deciduous Forest
 - Description: 
   - Large multi-level/multi-room system with human camping stuff all over
   - Can handle 6-8 groups
@@ -370,6 +394,8 @@ Initial terrormorph test cave
 - Type: Zone In Cave
 - Found In:
   - Archimedes - Archimedes III - Deciduous Forest
+  - Bohr - Bohr II - Outpost
+  - Zeta Ophiuchi - Zeta Ophiuchi I - Deciduous Forest
 - Description: TBD
 - Spawns
   - Terrormorph Alpha
@@ -408,6 +434,7 @@ Initial terrormorph test cave
   - Ixyll - Ixyll II - Hills
   - Eridani - Eridani II - Outpost
   - Eridani - Eridani IV - Coniferous Forest
+  - Narion - Hyperia - Outpost
 - Description: 
   - Long cavern with a bunch of stalactites and stalagmites all over. 
   - Can safely handle 4-6 groups spread out
@@ -426,6 +453,9 @@ Initial terrormorph test cave
   - Archimedes - Archimedes I - Hills
   - Eridani - Eridani III - Outpost
   - Eridani - Eridani IV-b - Outpost
+  - Kang - Kang VIII-c - Frozen Hills
+  - Bohr - Bohr II - Frozen Crevasses
+  - Zeta Ophiuchi - Zeta Ophiuchi I - Swamp
 - Description: 
   - Large crystal lined cave with 2 side rooms and a barge main room
   - Can support 3-4 groups of mobs
@@ -445,6 +475,10 @@ Initial terrormorph test cave
   - Fermi - Fermi III - Outpost
   - Ixyll - Ixyll II - Outpost
   - Eridani - Eridani II - Outpost
+  - Kang - Kang VIII-c - Plateau
+  - Bohr - Bohr III - Plateau
+  - Katydid - Katydid I-a - Mountains
+  - Zeta Ophiuchi - Zeta Ophiuchi I - Swamp
 - Description: 
   - Very small cave 
   - Has a side cubby and a lootable rock pile
@@ -463,6 +497,8 @@ Initial terrormorph test cave
   - Fermi - Fermi III - Outpost
   - Celebrai - Celebrai II - Hills
   - Eridani - Eridani II - Frozen Hills
+  - Zeta Ophiuchi - Zeta Ophiuchi I - Swamp
+  - Zeta Ophiuchi - Zeta Ophiuchi I - Savanna
 - Description: 
   - Single tiered room with giant green crystals
   - Really can only handle 1 maybe 2 groups if one group is in the hallway and the other on the floor 
@@ -485,6 +521,7 @@ Initial terrormorph test cave
   - Ixyll - Ixyll II - Hills
   - Eridani - Eridani II - Rocky Desert
   - Eridani - Eridani II - Hills
+  - Kang - Kang VIII-c - Frozen Hills
 - Description:
   - Long tunnel cave
   - Final semi hidden room has a rock pile
@@ -570,6 +607,8 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
   - Celebrai - Celebrai II - Hills
   - Eridani - Eridani II - Rocky Desert
   - Eridani - Eridani II - Outpost
+  - Kang - Kang VIII-c - Hills
+  - Bohr - Bohr II - Coastal Deciduous Forest
 - Description:
   - Large figure 8 track with a lot of gas vents.
   - Can handle 4-6 groups
@@ -586,6 +625,10 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
   - Archimedes - Archimedes I - Hills
   - Fermi - Fermi III - Deciduous Forest
   - Celebrai - Celebrai II - Hills
+  - Kang - Kang VIII-c - Frozen Hills
+  - Kang - Kang VIII-c - Plateau
+  - Bohr - Bohr II - Mountains
+  - Bohr - Bohr III - Sandy Desert
 - Description:
   - Huge multilevel cave
   - Has multiple harvest nodes and a rock pile
@@ -606,6 +649,9 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
   - Ixyll - Ixyll II - Hills
   - Eridani - Eridani II - Rocky Desert
   - Eridani - Eridani III - Outpost
+  - Kang - Kang VIII-c - Hills
+  - Bohr - Bohr II - Coastal Deciduous Forest
+  - Zeta Ophiuchi - Zeta Ophiuchi I - Deciduous Forest
 - Description: 
   - Long winding circular cavern with lots of gas jet
   - Can handle 5-7 groups
@@ -621,6 +667,8 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
   - Archimedes - Archimedes V-a - Outpost
   - Eridani - Eridani II - Frozen Hills
   - Eridani - Eridani III - Sandy Desert
+  - Ixyll - Ixyll II - Hills
+  - Zeta Ophiuchi - Zeta Ophiuchi I - Deciduous Forest
 - Description: 
   - Huge cavern with pillars
   - Has multiple harvest nodes and a rock pile
@@ -630,7 +678,6 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
   - PCM_Feynman_Feynman-III_PredatorA
   - PCM_Feynman_Feynman-III_PredatorB
   - PCM_Feynman_Feynman-I_PreyA
-  - Ixyll - Ixyll II - Hills
 
 ## Tiered Cave (OEZW008)
 Large multi-faction battle with multiple possible outcomes before you get to the battlefield. 
@@ -644,6 +691,7 @@ Large multi-faction battle with multiple possible outcomes before you get to the
   - Archimedes - Archimedes III - Swamp
   - Archimedes - Archimedes I - Rocky Desert
   - Fermi - Fermi VII-a - Frozen Hills
+  - Bohr - Bohr II - Mountains
 - Description: 
   - Huge multi-level cavern with multiple pathways
   - Easily supports 4-6 groups
@@ -657,13 +705,14 @@ Large multi-faction battle with multiple possible outcomes before you get to the
   - Marduk_MardukIV_Predator03
 
 ## Spooky Cave
-Added in cave with ghost pirates with custom idle and taunt dialog. 
+Added in cave with ghost pirates with custom idle dialog. Ghosts also have a 25% chance to respawn. 
 
 - Spawn Conditions:
   - Block Type: OverlayHillsRoundedSmall05
 - Keywords: None
 - Type: Zone In Cave
-- Found In: Not Found Yet
+- Found In:
+  - Narion - Hyperia - Outpost
 - Description:
   - One large dimly lit cavern with a lot of fog and gas jets. 
 - Spawns:
@@ -672,4 +721,5 @@ Added in cave with ghost pirates with custom idle and taunt dialog.
   - Ghost Pirate Sniper
   - Ghost Pirate Assault 
   - Coming Soon: Ghost Parrot
+  - Boss military chest
 

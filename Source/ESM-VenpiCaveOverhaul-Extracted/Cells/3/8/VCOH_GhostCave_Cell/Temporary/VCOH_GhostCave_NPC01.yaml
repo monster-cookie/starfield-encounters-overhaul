@@ -1,7 +1,7 @@
 MutagenObjectType: PlacedNpc
 FormKey: 000ECC:VenpiCaveOverhaul.esm
 EditorID: VCOH_GhostCave_NPC01
-Base: 00086D:VenpiCaveOverhaul.esm
+Base: 000FFC:VenpiCaveOverhaul.esm
 LevelModifier: Hard
 PersistentLocation: 000FF7:VenpiCaveOverhaul.esm
 Layer: 2B3CB9:Starfield.esm
