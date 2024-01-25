@@ -646,11 +646,11 @@ Large multi-faction battle with multiple possible outcomes before you get to the
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
-  - Archimedes - Archimedes III - Deciduous Forest
-  - Archimedes - Archimedes III - Swamp
-  - Archimedes - Archimedes I - Rocky Desert
-  - Fermi - Fermi VII-a - Frozen Hills
-  - Bohr - Bohr II - Mountains
+  - Forest
+  - Swamp
+  - Desert
+  - Frozen Hills
+  - Mountains
 - Description: 
   - Huge multi-level cavern with multiple pathways
   - Easily supports 4-6 groups
@@ -671,7 +671,7 @@ Added in cave with ghost pirates with custom idle dialog. Ghosts also have a 25%
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
-  - Narion - Hyperia - Outpost
+  - Outpost
 - Description:
   - One large dimly lit cavern with a lot of fog and gas jets. 
 - Spawns:
