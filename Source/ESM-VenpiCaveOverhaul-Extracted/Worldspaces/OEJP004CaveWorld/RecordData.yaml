@@ -24,7 +24,7 @@ Components:
   Conditions: []
 Name:
   TargetLanguage: English
-  Value: Cave (OEJP004)
+  Value: Cave
 Location: 232BD1:Starfield.esm
 Water: 000018:Starfield.esm
 LodWater: 000018:Starfield.esm

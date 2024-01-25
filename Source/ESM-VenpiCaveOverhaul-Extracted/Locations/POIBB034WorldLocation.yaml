@@ -4,7 +4,11 @@ EditorID: POIBB034WorldLocation
 StarfieldMajorRecordFlags:
 - 0x100000
 LocationCellPersistentReferences:
-- Actor: 2E48B2:Starfield.esm
+- Actor: 2E48B5:Starfield.esm
+  Location: 09EBD6:Starfield.esm
+  Grid: -1, 0
+  Unknown: -1
+- Actor: 09DC43:Starfield.esm
   Location: 09EBD6:Starfield.esm
   Grid: -1, 0
   Unknown: -1
@@ -20,22 +24,25 @@ LocationCellPersistentReferences:
   Location: 09EBD6:Starfield.esm
   Grid: -1, 0
   Unknown: -1
-- Actor: 2E48B5:Starfield.esm
+- Actor: 2E48B2:Starfield.esm
   Location: 09EBD6:Starfield.esm
   Grid: -1, 0
   Unknown: -1
-- Actor: 09DC43:Starfield.esm
+- Actor: 000865:VenpiCaveOverhaul.esm
   Location: 09EBD6:Starfield.esm
-  Grid: -1, 0
+  Grid: 0, -1
+  Unknown: -1
+- Actor: 000866:VenpiCaveOverhaul.esm
+  Location: 09EBD6:Starfield.esm
+  Grid: 0, -1
+  Unknown: -1
+- Actor: 00086A:VenpiCaveOverhaul.esm
+  Location: 09EBD6:Starfield.esm
+  Grid: 0, -1
   Unknown: -1
 LocationCellStaticReferences:
 - LocationRefType: 207486:Starfield.esm
-  Marker: 2E48B2:Starfield.esm
-  Location: 09EBD6:Starfield.esm
-  Grid: -1, 0
-  Unknown: -1
-- LocationRefType: 207486:Starfield.esm
-  Marker: 2E48AE:Starfield.esm
+  Marker: 2E48B5:Starfield.esm
   Location: 09EBD6:Starfield.esm
   Grid: -1, 0
   Unknown: -1
@@ -206,32 +213,42 @@ LocationCellStaticReferences:
   Grid: -1, 0
   Unknown: -1
 - LocationRefType: 207486:Starfield.esm
+  Marker: 2E48AE:Starfield.esm
+  Location: 09EBD6:Starfield.esm
+  Grid: -1, 0
+  Unknown: -1
+- LocationRefType: 207486:Starfield.esm
   Marker: 12366B:Starfield.esm
   Location: 09EBD6:Starfield.esm
   Grid: -1, 0
   Unknown: -1
 - LocationRefType: 207486:Starfield.esm
-  Marker: 2E48B5:Starfield.esm
+  Marker: 2E48B2:Starfield.esm
   Location: 09EBD6:Starfield.esm
   Grid: -1, 0
   Unknown: -1
+- LocationRefType: 003956:Starfield.esm
+  Marker: 000865:VenpiCaveOverhaul.esm
+  Location: 09EBD6:Starfield.esm
+  Grid: 0, -1
+  Unknown: -1
 LocationCellMarkerReference:
-- 2E48B2:Starfield.esm
+- 2E48B5:Starfield.esm
 - 2E48AE:Starfield.esm
 - 12366B:Starfield.esm
-- 2E48B5:Starfield.esm
 - 2E48B2:Starfield.esm
-- 2E48AE:Starfield.esm
+- 2E48B5:Starfield.esm
 - 2E48B2:Starfield.esm
 - 2E48B5:Starfield.esm
 - 2E48AD:Starfield.esm
 - 2E48AE:Starfield.esm
 - 12366B:Starfield.esm
+- 2E48AE:Starfield.esm
 - 12366B:Starfield.esm
-- 2E48B5:Starfield.esm
+- 2E48B2:Starfield.esm
 Name:
   TargetLanguage: English
-  Value: Cave (OEBB034)
+  Value: Cave
 Keywords:
 - 0C6928:Starfield.esm
 - 1A5468:Starfield.esm

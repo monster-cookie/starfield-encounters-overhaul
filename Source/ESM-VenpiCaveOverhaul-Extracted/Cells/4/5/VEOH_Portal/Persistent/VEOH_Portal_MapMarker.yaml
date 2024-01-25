@@ -1,0 +1,18 @@
+MutagenObjectType: PlacedObject
+FormKey: 00101D:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 1024
+EditorID: VEOH_Portal_MapMarker
+StarfieldMajorRecordFlags:
+- 0x400
+Base: 254245:Starfield.esm
+Radius: 30
+MapMarker:
+  Flags:
+  - Visible
+  Name:
+    TargetLanguage: English
+    Value: Portal
+  Type: 10
+  VNAM: 0
+  VISI: 0
+Position: 4.75, 7, 0.8

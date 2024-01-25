@@ -2,7 +2,7 @@ FormKey: 239710:Starfield.esm
 EditorID: OEZW001Cave
 Name:
   TargetLanguage: English
-  Value: Mysterious Cave (OEZW001)
+  Value: Mysterious Cave
 Flags:
 - IsInteriorCell
 - CantTravelFromHere

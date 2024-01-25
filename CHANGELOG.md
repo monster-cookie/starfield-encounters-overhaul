@@ -1,5 +1,13 @@
 # Venpi's Cave Overhaul
 
+## Version 1.0.9
+* Added portal mini game to the open world encounters in natural and man made PCM rules.
+* Fixed error preventing spacers mech camp from spawning
+* Removed the form IDs from cave names. Renamed large caves to caverns also restored BGS's special caves names where they existed. 
+* Terrormorph and heatleach caves have a special names
+* NEED HELP: Please let me know where you encounter the portals or the mech encampments. 
+* NOTE: PCM rule changes require a new universe to show up (NG+ or New Game)
+
 ## Version 1.0.8
 * Accidental link to Scale the World The Sequel happened. This has been removed. 
 

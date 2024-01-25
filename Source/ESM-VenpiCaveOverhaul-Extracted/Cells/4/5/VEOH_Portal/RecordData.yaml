@@ -1,5 +1,5 @@
 FormKey: 000C52:VenpiCaveOverhaul.esm
-EditorID: OWPortal
+EditorID: VEOH_Portal
 Name:
   TargetLanguage: English
   Value: Portal
@@ -24,6 +24,6 @@ Lighting:
   FogHighFarScale: 1
   FarHeightRange: 10000
   Unknown2: -1414812925
+LightingTemplate: 0300E2:Starfield.esm
 WaterHeight: 3.4028235E+38
 XILS: 1
-ImageSpace: 06AD68:Starfield.esm

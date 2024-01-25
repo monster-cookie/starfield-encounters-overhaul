@@ -2,7 +2,7 @@ FormKey: 2372F3:Starfield.esm
 EditorID: OEZW004Cave
 Name:
   TargetLanguage: English
-  Value: Quiet Cave (OEZW004)
+  Value: Quiet Cave
 Flags:
 - IsInteriorCell
 - CantTravelFromHere

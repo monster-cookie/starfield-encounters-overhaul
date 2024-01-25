@@ -1,0 +1,13 @@
+MutagenObjectType: PlacedObject
+FormKey: 001014:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 1024
+EditorID: VEOH_Portal_Portal_Wormhole_Activator
+StarfieldMajorRecordFlags:
+- 0x400
+Base: 00101E:VenpiCaveOverhaul.esm
+Primitive:
+  Bounds: 10, 10, 10
+  Color: '#00CC4C33'
+  Unknown: 10
+  Type: Box
+Position: 4.75, 7, 1.8

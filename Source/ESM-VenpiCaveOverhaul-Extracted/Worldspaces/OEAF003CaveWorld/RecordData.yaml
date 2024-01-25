@@ -32,7 +32,7 @@ Components:
     ComparisonValue: 1
 Name:
   TargetLanguage: English
-  Value: Cave (OEAF003)
+  Value: Cave
 Location: 236B05:Starfield.esm
 Water: 000018:Starfield.esm
 LodWater: 000018:Starfield.esm

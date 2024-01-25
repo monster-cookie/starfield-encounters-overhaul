@@ -24,7 +24,7 @@ Components:
   Conditions: []
 Name:
   TargetLanguage: English
-  Value: Windswept Cave (OEZW007)
+  Value: Windswept Cave
 Location: 2340FA:Starfield.esm
 LodWater: 000018:Starfield.esm
 LodWaterHeight: 0

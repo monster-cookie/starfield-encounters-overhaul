@@ -4,15 +4,7 @@ EditorID: OEAF011CaveLocation
 StarfieldMajorRecordFlags:
 - 0x100000
 LocationCellPersistentReferences:
-- Actor: 1F3314:Starfield.esm
-  Location: 234089:Starfield.esm
-  Grid: 32767, 32767
-  Unknown: -1
-- Actor: 33839B:Starfield.esm
-  Location: 234089:Starfield.esm
-  Grid: 32767, 32767
-  Unknown: -1
-- Actor: 33837C:Starfield.esm
+- Actor: 33837E:Starfield.esm
   Location: 234089:Starfield.esm
   Grid: 32767, 32767
   Unknown: -1
@@ -20,39 +12,7 @@ LocationCellPersistentReferences:
   Location: 234089:Starfield.esm
   Grid: 32767, 32767
   Unknown: -1
-- Actor: 338381:Starfield.esm
-  Location: 234089:Starfield.esm
-  Grid: 32767, 32767
-  Unknown: -1
-- Actor: 33837E:Starfield.esm
-  Location: 234089:Starfield.esm
-  Grid: 32767, 32767
-  Unknown: -1
 - Actor: 33839C:Starfield.esm
-  Location: 234089:Starfield.esm
-  Grid: 32767, 32767
-  Unknown: -1
-- Actor: 338384:Starfield.esm
-  Location: 234089:Starfield.esm
-  Grid: 32767, 32767
-  Unknown: -1
-- Actor: 338385:Starfield.esm
-  Location: 234089:Starfield.esm
-  Grid: 32767, 32767
-  Unknown: -1
-- Actor: 33837B:Starfield.esm
-  Location: 234089:Starfield.esm
-  Grid: 32767, 32767
-  Unknown: -1
-- Actor: 33837D:Starfield.esm
-  Location: 234089:Starfield.esm
-  Grid: 32767, 32767
-  Unknown: -1
-- Actor: 338380:Starfield.esm
-  Location: 234089:Starfield.esm
-  Grid: 32767, 32767
-  Unknown: -1
-- Actor: 1F3313:Starfield.esm
   Location: 234089:Starfield.esm
   Grid: 32767, 32767
   Unknown: -1
@@ -60,7 +20,76 @@ LocationCellPersistentReferences:
   Location: 234089:Starfield.esm
   Grid: 32767, 32767
   Unknown: -1
+- Actor: 33837C:Starfield.esm
+  Location: 234089:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 33839B:Starfield.esm
+  Location: 234089:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 33837B:Starfield.esm
+  Location: 234089:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 1F3313:Starfield.esm
+  Location: 234089:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 338380:Starfield.esm
+  Location: 234089:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 338384:Starfield.esm
+  Location: 234089:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 338381:Starfield.esm
+  Location: 234089:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 1F3314:Starfield.esm
+  Location: 234089:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 338385:Starfield.esm
+  Location: 234089:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 33837D:Starfield.esm
+  Location: 234089:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 00084C:VenpiCaveOverhaul.esm
+  Location: 234089:Starfield.esm
+  Unknown: -1
+- Actor: 00084D:VenpiCaveOverhaul.esm
+  Location: 234089:Starfield.esm
+  Unknown: -1
+- Actor: 00084E:VenpiCaveOverhaul.esm
+  Location: 234089:Starfield.esm
+  Unknown: -1
 LocationCellStaticReferences:
+- LocationRefType: 122413:Starfield.esm
+  Marker: 33837E:Starfield.esm
+  Location: 234089:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 207486:Starfield.esm
+  Marker: 33839A:Starfield.esm
+  Location: 234089:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 207486:Starfield.esm
+  Marker: 33839C:Starfield.esm
+  Location: 234089:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 338383:Starfield.esm
+  Location: 234089:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
 - LocationRefType: 207486:Starfield.esm
   Marker: 33839B:Starfield.esm
   Location: 234089:Starfield.esm
@@ -146,8 +175,13 @@ LocationCellStaticReferences:
   Marker: 1D2EA6:Starfield.esm
   Location: 0178F3:Starfield.esm
   Unknown: -1
-- LocationRefType: 207486:Starfield.esm
-  Marker: 33839A:Starfield.esm
+- LocationRefType: 122413:Starfield.esm
+  Marker: 338380:Starfield.esm
+  Location: 234089:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 338384:Starfield.esm
   Location: 234089:Starfield.esm
   Grid: 32767, 32767
   Unknown: -1
@@ -157,7 +191,7 @@ LocationCellStaticReferences:
   Grid: 32767, 32767
   Unknown: -1
 - LocationRefType: 122413:Starfield.esm
-  Marker: 33837E:Starfield.esm
+  Marker: 338385:Starfield.esm
   Location: 234089:Starfield.esm
   Grid: 32767, 32767
   Unknown: -1
@@ -406,66 +440,38 @@ LocationCellStaticReferences:
   Location: 234089:Starfield.esm
   Grid: 32767, 32767
   Unknown: -1
-- LocationRefType: 207486:Starfield.esm
-  Marker: 33839C:Starfield.esm
-  Location: 234089:Starfield.esm
-  Grid: 32767, 32767
-  Unknown: -1
-- LocationRefType: 122413:Starfield.esm
-  Marker: 338384:Starfield.esm
-  Location: 234089:Starfield.esm
-  Grid: 32767, 32767
-  Unknown: -1
-- LocationRefType: 122413:Starfield.esm
-  Marker: 338385:Starfield.esm
-  Location: 234089:Starfield.esm
-  Grid: 32767, 32767
-  Unknown: -1
 - LocationRefType: 122413:Starfield.esm
   Marker: 33837D:Starfield.esm
   Location: 234089:Starfield.esm
   Grid: 32767, 32767
   Unknown: -1
-- LocationRefType: 122413:Starfield.esm
-  Marker: 338380:Starfield.esm
+- LocationRefType: 003956:Starfield.esm
+  Marker: 00084C:VenpiCaveOverhaul.esm
   Location: 234089:Starfield.esm
-  Grid: 32767, 32767
-  Unknown: -1
-- LocationRefType: 122413:Starfield.esm
-  Marker: 338383:Starfield.esm
-  Location: 234089:Starfield.esm
-  Grid: 32767, 32767
   Unknown: -1
 LocationCellMarkerReference:
-- 33839B:Starfield.esm
 - 33839A:Starfield.esm
 - 33839C:Starfield.esm
 - 33839B:Starfield.esm
 - 33839A:Starfield.esm
+- 33839C:Starfield.esm
+- 33839B:Starfield.esm
 - 33839B:Starfield.esm
 - 33839C:Starfield.esm
 - 33839A:Starfield.esm
-- 33839C:Starfield.esm
 LocationCellEnablePoint:
 - Actor: 1D2EA6:Starfield.esm
   Ref: 1F3311:Starfield.esm
   SetEnableStateToOppositeOfParent: True
 Name:
   TargetLanguage: English
-  Value: Cave (OEAF011)
+  Value: Cavern
 Keywords:
-- 1A5468:Starfield.esm
-- 27B45C:Starfield.esm
-- 2731AF:Starfield.esm
-- 023305:Starfield.esm
-- 0581DF:Starfield.esm
-- 283581:Starfield.esm
-- 283585:Starfield.esm
-- 283586:Starfield.esm
-- 294969:Starfield.esm
-- 283580:Starfield.esm
-- 142D4D:Starfield.esm
 - 12179A:Starfield.esm
+- 1A5468:Starfield.esm
+- 2731AF:Starfield.esm
+- 27B45C:Starfield.esm
+- 283586:Starfield.esm
 UnknownDATA2: 16
 WorldLocationRadius: 0
 ActorFadeMult: 1

@@ -2,12 +2,13 @@ FormKey: 233C02:Starfield.esm
 EditorID: OEOB005
 Name:
   TargetLanguage: English
-  Value: Cave (OEOB005)
+  Value: Cavern
 Flags:
 - IsInteriorCell
 - CantTravelFromHere
 - 0x10000
 - 0x20000
+- 0x80000
 Lighting:
   AmbientColor: '#00282417'
   DirectionalColor: '#003F4749'
@@ -27,7 +28,7 @@ WaterHeight: 3.4028235E+38
 XILS: 1
 Location: 233451:Starfield.esm
 AcousticSpace: 2705AE:Starfield.esm
-ImageSpace: 0016C4:Starfield.esm
+ImageSpace: 0E8285:Starfield.esm
 Music: 2733A5:Starfield.esm
 EnvironmentMap: Data\Textures\cubemaps\blackcube.dds
 Traversals:

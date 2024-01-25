@@ -1,9 +1,9 @@
 MutagenObjectType: PlacedObject
 FormKey: 000C53:VenpiCaveOverhaul.esm
 MajorRecordFlagsRaw: 16
-EditorID: Platform
+EditorID: VEOH_Portal_Portal_Platform
 StarfieldMajorRecordFlags:
 - 0x10
 Base: 26F9CA:Starfield.esm
 Layer: 1997F6:Starfield.esm
-Position: 0, 0, 2.15
+Position: 5.75, 7.25, 0.8

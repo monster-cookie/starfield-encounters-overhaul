@@ -24,7 +24,7 @@ Components:
   Conditions: []
 Name:
   TargetLanguage: English
-  Value: Cave (OEOB004)
+  Value: Cavern
 Location: 23345B:Starfield.esm
 LodWater: 000018:Starfield.esm
 LodWaterHeight: 0

@@ -1,8 +1,8 @@
-FormKey: 000C55:VenpiCaveOverhaul.esm
-EditorID: OWEncounterPortal
+FormKey: 000889:VenpiCaveOverhaul.esm
+EditorID: VEOH_Encouter_Spacer_MechCamp_Pkin
 ObjectBounds:
-  First: -64, -64, -0.5
-  Second: 64, 64, 25
+  First: -20, -20, -0.25
+  Second: 20, 20, 5
 ODTY: 0
 ObjectPlacementDefaults:
   Unknown1: 1E-45
@@ -33,7 +33,7 @@ Components:
   NAM8: 1
   NAM9: 0
   Conditions: []
-Cell: 000C52:VenpiCaveOverhaul.esm
+Cell: 00088B:VenpiCaveOverhaul.esm
 Version: 0
 FNAM: 0x00000000
 MaterialSwaps: []

@@ -1,0 +1,8 @@
+MutagenObjectType: PlacedObject
+FormKey: 001011:VenpiCaveOverhaul.esm
+EditorID: VEOH_Portal_Dirt01
+Base: 2EB0DC:Starfield.esm
+LayeredMaterialSwaps:
+- 330262:Starfield.esm
+Position: 2.5, 6.5, 0.6
+Rotation: 0, 0, 1.570796

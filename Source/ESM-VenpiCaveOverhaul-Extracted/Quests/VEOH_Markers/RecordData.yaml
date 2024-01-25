@@ -1,0 +1,39 @@
+FormKey: 001018:VenpiCaveOverhaul.esm
+EditorID: VEOH_Markers
+Name:
+  TargetLanguage: English
+  Value: VEOH_Markers
+Data:
+  Flags:
+  - AllowRepeatedStages
+  Unused: 0x000000
+UnusedConditions: []
+Aliases:
+- MutagenObjectType: QuestReferenceAlias
+  Name: PlayerRef
+  Flags:
+  - Optional
+  - AllowReuseInQuest
+  - AllowDead
+  - AllowDisabled
+  ALFG: 0
+  UniqueActor: 000007:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestCollectionAlias
+  Collection:
+  - ID: 1
+    ALAM: 0
+    ReferenceAlias:
+      ID: 1
+      Name: Markers
+      Flags:
+      - Optional
+      ALFG: 0
+      Conditions:
+      - MutagenObjectType: ConditionFloat
+        Unknown1: 0x000000
+        Data:
+          MutagenObjectType: GetIsIDConditionData
+          FirstParameter: 000010:Starfield.esm
+        ComparisonValue: 1
+      VoiceTypes: Null

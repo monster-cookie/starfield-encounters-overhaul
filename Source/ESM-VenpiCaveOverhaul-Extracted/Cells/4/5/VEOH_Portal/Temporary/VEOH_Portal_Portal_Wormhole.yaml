@@ -1,0 +1,6 @@
+MutagenObjectType: PlacedObject
+FormKey: 001017:VenpiCaveOverhaul.esm
+EditorID: VEOH_Portal_Portal_Wormhole
+Base: 193C9C:Starfield.esm
+Scale: 1.6
+Position: 4.75, 7, 2.55

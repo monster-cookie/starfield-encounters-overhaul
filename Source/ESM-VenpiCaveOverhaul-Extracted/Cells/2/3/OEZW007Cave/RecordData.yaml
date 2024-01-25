@@ -2,7 +2,7 @@ FormKey: 2345D0:Starfield.esm
 EditorID: OEZW007Cave
 Name:
   TargetLanguage: English
-  Value: Windswept Cave (OEZW007)
+  Value: Windswept Cave
 Flags:
 - IsInteriorCell
 - CantTravelFromHere
