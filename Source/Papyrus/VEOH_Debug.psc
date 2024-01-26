@@ -53,7 +53,10 @@ Function FastTravelToCellKnownLocations() Global
   message += "\n\n"
   message += "0 = Portal Mini-game Pack-in Cell\n"
   message += "1 = Spacer Mech Camp Pack-in Cell\n"
-  message += "2 = Spooky Cave Cell\n"
+  message += "2 = Spooky Cave Interior Cell\n"
+  message += "3 = Spooky Cave World Space\n"
+  message += "4 = Stock Covered Crater\n"
+  message += "5 = Active Portal (Crater)\n"
   message += "\n\n"
   message += "NOTE: For cell's with NPCs, they will not spawn unless linked to a PCM world space I have not found a way around this. You will have to use a temp object in the meantime for placement.\n"
 

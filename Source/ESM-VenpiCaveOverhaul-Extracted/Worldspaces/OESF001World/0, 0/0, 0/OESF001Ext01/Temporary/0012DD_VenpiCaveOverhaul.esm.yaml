@@ -1,0 +1,8 @@
+MutagenObjectType: PlacedObject
+FormKey: 0012DD:VenpiCaveOverhaul.esm
+Base: 029ACB:Starfield.esm
+SourcePackIn: 1A0819:Starfield.esm
+Layer: 133227:Starfield.esm
+Scale: 0.75
+Position: 46.47178, 60.106346, 6.4921494
+Rotation: 0, -0, 2.8940256
