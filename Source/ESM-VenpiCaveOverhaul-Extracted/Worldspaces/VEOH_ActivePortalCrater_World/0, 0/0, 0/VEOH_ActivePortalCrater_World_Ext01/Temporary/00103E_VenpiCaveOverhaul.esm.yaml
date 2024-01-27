@@ -1,0 +1,10 @@
+MutagenObjectType: PlacedObject
+FormKey: 00103E:VenpiCaveOverhaul.esm
+Base: 226AF9:Starfield.esm
+Primitive:
+  Bounds: 159.66943, 159.66943, 159.66943
+  Color: '#00800000'
+  Unknown: 0.3
+  Type: Sphere
+Layer: 2B3CB6:Starfield.esm
+Position: 52.723415, 49.472, 1.1472654

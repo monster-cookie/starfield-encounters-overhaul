@@ -23,6 +23,9 @@ del /s /q "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA
 rmdir /s /q "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main"
 mkdir "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main"
 mkdir "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\Scripts\"
+mkdir "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\terrain\"
+mkdir "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\lodsettings\"
+mkdir "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\meshes\terrain\VCOH_GhostCave_World\objects\"
 
 @REM Compile and deploy Scripts to Dist-BA2-Main folder
 @echo "Compiling all script in Source/Papyrus to Dist-BA2-Main folder"
@@ -33,6 +36,34 @@ mkdir "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Ma
   @echo "Error:  Compile all scripts has failed to compile <======================================="
   exit /b 1
 )
+
+@REM Deploy LOD to Dist-BA2-Main folder
+@echo "Deploy LOD to Dist-BA2-Main folder"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\LOD\VCOH_GhostCave_World.lod" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\lodsettings"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\LOD\VEOH_ActivePortalCrater_World.lod" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\lodsettings"
+
+@REM Deploy Meshes to Dist-BA2-Main folder
+@echo "Deploy Meshes to Dist-BA2-Main folder"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Meshes\VCOH_GhostCave_World.1.0.0.nif" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\meshes\terrain\VCOH_GhostCave_World\objects"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Meshes\VCOH_GhostCave_World.2.0.0.nif" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\meshes\terrain\VCOH_GhostCave_World\objects"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Meshes\VCOH_GhostCave_World.4.-2.0.nif" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\meshes\terrain\VCOH_GhostCave_World\objects"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Meshes\VCOH_GhostCave_World.8.-2.-4.nif" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\meshes\terrain\VCOH_GhostCave_World\objects"
+
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Meshes\VEOH_ActivePortalCrater_World.1.-1.-1.nif" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\meshes\terrain\VCOH_GhostCave_World\objects"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Meshes\VEOH_ActivePortalCrater_World.1.-1.0.nif" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\meshes\terrain\VCOH_GhostCave_World\objects"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Meshes\VEOH_ActivePortalCrater_World.1.0.-1.nif" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\meshes\terrain\VCOH_GhostCave_World\objects"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Meshes\VEOH_ActivePortalCrater_World.1.0.0.nif" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\meshes\terrain\VCOH_GhostCave_World\objects"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Meshes\VEOH_ActivePortalCrater_World.2.-2.-2.nif" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\meshes\terrain\VCOH_GhostCave_World\objects"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Meshes\VEOH_ActivePortalCrater_World.2.-2.0.nif" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\meshes\terrain\VCOH_GhostCave_World\objects"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Meshes\VEOH_ActivePortalCrater_World.2.0.-2.nif" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\meshes\terrain\VCOH_GhostCave_World\objects"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Meshes\VEOH_ActivePortalCrater_World.2.0.0.nif" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\meshes\terrain\VCOH_GhostCave_World\objects"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Meshes\VEOH_ActivePortalCrater_World.4.-2.-2.nif" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\meshes\terrain\VCOH_GhostCave_World\objects"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Meshes\VEOH_ActivePortalCrater_World.8.-2.-2.nif" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\meshes\terrain\VCOH_GhostCave_World\objects"
+
+@REM Deploy Terrain to Dist-BA2-Main folder
+@echo "Deploy Terrain to Dist-BA2-Main folder"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Terrain\VCOH_GhostCave_World.btd" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\terrain"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Terrain\VEOH_ActivePortalCrater_World.btd" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\terrain"
 
 @REM ESM is purely binary so need to pull from starfield dir where xedit has to have it 
 @echo "Copying the ESM from MO2 into the Dist folder"

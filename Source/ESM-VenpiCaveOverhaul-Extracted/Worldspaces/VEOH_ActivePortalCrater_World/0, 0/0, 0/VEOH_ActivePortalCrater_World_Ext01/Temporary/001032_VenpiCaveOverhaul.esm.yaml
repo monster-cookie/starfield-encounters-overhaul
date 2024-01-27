@@ -1,0 +1,90 @@
+MutagenObjectType: PlacedNpc
+FormKey: 001032:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 2560
+StarfieldMajorRecordFlags:
+- 0x200
+- InitiallyDisabled
+Base: 20748D:Starfield.esm
+RagdollData:
+- BoneId: 2
+  Unused: 0xD20C5F
+  Rotation: -0.5915797, -0.63377154, -0.33996728
+- Unused: 0x000000
+  Position: -0.00030326843, 0.0022716522, -0.0008087158
+  Rotation: 2.9418511, 1.1472921, 0.40013865
+- BoneId: 14
+  Unused: 0x6F7253
+  Position: 0.11408615, 0.0020047426, -0.11540747
+  Rotation: -2.5086896, 0.43348956, -0.19028088
+- BoneId: 15
+  Unused: 0x0000B4
+  Position: 0.45758438, 0.0002861023, -0.00025177002
+  Rotation: 0.0034974455, -0.0020254268, 1.5875766
+- BoneId: 16
+  Unused: 0x000000
+  Position: 0.37615204, 0.00022125244, 0.00090789795
+  Rotation: -0.058893934, -0.08647032, -1.0225266
+- BoneId: 8
+  Unused: 0x000000
+  Position: 0.114593506, 0.002920866, 0.11601496
+  Rotation: 1.1575218, 0.13017479, 0.2754628
+- BoneId: 9
+  Unused: 0xFF7F3F
+  Position: 0.4577484, -0.000104904175, 0.0005865097
+  Rotation: 0.009447184, -0.006794219, -0.84173894
+- BoneId: 10
+  Unused: 0x16CEBC
+  Position: 0.3765335, -3.8146973E-06, -0.00021743774
+  Rotation: 0.061298788, -0.09932971, 0.5304427
+- BoneId: 2
+  Unused: 0x000000
+  Position: 0.00037193298, -0.002204895, 0.000118255615
+  Rotation: 0.6070106, 1.3405085, 0.24905187
+- BoneId: 3
+  Unused: 0x000000
+  Position: 0.05860901, -0.0012283325, -0.00075531006
+  Rotation: 0.10715526, 0.09343875, -0.37352857
+- BoneId: 4
+  Unused: 0x00803F
+  Position: 0.05742359, -2.2888184E-05, -0.0005226135
+  Rotation: 0.124882154, 0.07216083, -0.23770986
+- Unused: 0x000000
+  Position: 0.25533032, -0.0010070801, -0.00021076202
+  Rotation: -0.13461883, 0.23963198, -0.7655046
+- BoneId: 1
+  Unused: 0x00803F
+  Position: 0.07601929, 0, 1.7166138E-05
+  Rotation: -0.25146994, 0.66551477, -0.44875112
+- BoneId: 5
+  Unused: 0x000000
+  Position: 0.19389153, 0.00078964233, -0.00015449524
+  Rotation: 1.3982649, -0.7879549, -1.4434566
+- BoneId: 6
+  Unused: 0x000000
+  Position: 0.27105904, 2.0980835E-05, 0.000289917
+  Rotation: 0.0031491409, -0.0069900723, 0.2454608
+- BoneId: 7
+  Unused: 0x7F4834
+  Position: 0.23968601, -4.005432E-05, -3.8146973E-05
+  Rotation: 0.2568758, -0.8402729, 0.3742082
+- Unused: 0x0080B4
+  Position: 0.19752598, -0.11772156, -0.00078868866
+  Rotation: 1.565772, -1.4875121, 0.0029978817
+- BoneId: 11
+  Unused: 0x008F3F
+  Position: 0.1936264, 0.000102996826, 0.00015830994
+  Rotation: 1.594823, -1.2773305, -0.99750423
+- BoneId: 12
+  Unused: 0x00803F
+  Position: 0.27164078, -0.00077819824, 0.0002708435
+  Rotation: 0.0046706535, -0.0023402965, -1.5488813
+- BoneId: 13
+  Unused: 0x00803F
+  Position: 0.23905754, 0.00036239624, -0.00012588501
+  Rotation: -0.4162239, -0.8054324, -0.19666313
+Layer: 2B3CB6:Starfield.esm
+Position: 32.592068, 33.413887, 2.077571
+Rotation: -0.2617994, -0, 0.9876223
+MajorFlags:
+- StartsDead
+- InitiallyDisabled
