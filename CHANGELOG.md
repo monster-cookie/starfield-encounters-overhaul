@@ -1,7 +1,9 @@
 # Venpi's Cave Overhaul
 
 ## Version 1.0.10
-* Refactor Mech Camp and Portal Mini Game to normal world space cells. PCM doesn't want to spawn custom lair/pack-in cells. 
+* Refactor Mech Camp and Portal Mini Game to normal world space cells. PCM doesn't want to spawn custom lair/pack-in cells.
+* Thank you SKK50 for all the help with the portal functionality and really all your mods :)
+* Note: I'm still working on the Spacer Mech Camp world space version
 
 ## Version 1.0.9
 * Added portal mini game to the open world encounters in natural and man made PCM rules.

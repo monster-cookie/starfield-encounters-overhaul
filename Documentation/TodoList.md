@@ -12,4 +12,7 @@
 - [ ] OEAF014 needs 2 more groups of starborn its just too large for 1.
 - [ ] Need a House Va'ruun themed cave
 - [ ] OEJP008 has human stuff all over it, it should be a captive rescue or something like with 3 groups of human enemies
-- [ ] OESD001 should be a powerful single boss cave 
+- [ ] OESD001 should be a powerful single boss cave
+- [X] Convert portal PKIN to a world space as PKINs seem to be mod index 00 locked
+- [ ] Convert spacer mech camp PKIN to a world space as PKINs seem to be mod index 00 locked
+- [ ] Spawn conditions for trait zones need to reduce once all traits are unlocked for a planet.

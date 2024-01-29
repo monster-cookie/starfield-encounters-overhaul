@@ -5,41 +5,19 @@ VirtualMachineAdapter:
   - Name: VEOH_PortalHandlerScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
+      Name: PortalsFound
+      Object: 001019:VenpiCaveOverhaul.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MapMarkersFound
+      Object: 00082D:VenpiCore.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
       Name: Venpi_DebugEnabled
       Object: 000800:VenpiCore.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: KnownPortals
-      Object: 001019:VenpiCaveOverhaul.esm
-      Alias: 1
-    - MutagenObjectType: ScriptObjectProperty
-      Name: KnownRandomPOI
-      Object: 001018:VenpiCaveOverhaul.esm
-      Alias: 1
-ObjectBounds:
-  First: -9, -4.5, -4
-  Second: 9, 4.5, 4
 ODTY: 0
 Model:
   FLLD: 0x01000000
 MarkerColor: '#00CC4C33'
 Flags: []
 ActivationAngle: 360
-Conditions:
-- MutagenObjectType: ConditionFloat
-  Flags:
-  - OR
-  Unknown1: 0x000000
-  Unknown2: 17625
-  Data:
-    MutagenObjectType: HasKeywordConditionData
-    FirstParameter: 099306:Starfield.esm
-  ComparisonValue: 1
-- MutagenObjectType: ConditionFloat
-  Flags:
-  - OR
-  Unknown1: 0x000000
-  Unknown2: 17625
-  Data:
-    MutagenObjectType: HasKeywordConditionData
-    FirstParameter: 20C5C4:Starfield.esm
-  ComparisonValue: 1

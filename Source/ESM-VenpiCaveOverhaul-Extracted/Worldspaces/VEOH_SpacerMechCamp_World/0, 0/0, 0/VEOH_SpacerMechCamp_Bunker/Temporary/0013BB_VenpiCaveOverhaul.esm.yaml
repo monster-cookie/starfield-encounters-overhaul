@@ -1,0 +1,13 @@
+MutagenObjectType: PlacedObject
+FormKey: 0013BB:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 2048
+StarfieldMajorRecordFlags:
+- InitiallyDisabled
+Base: 19F266:Starfield.esm
+LocationRefTypes:
+- 226AEB:Starfield.esm
+Lock:
+  Key: 37C3B4:Starfield.esm
+  Unused: -2101703389
+Position: 36.874355, 34.35215, 12.983364
+Rotation: 0, -0, 1.6700001

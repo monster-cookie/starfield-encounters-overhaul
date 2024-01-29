@@ -11,9 +11,8 @@ String Property Venpi_ModName="VenworksEncountersOverhaul" Auto Const Mandatory
 ;;;
 ;;; Properties
 ;;;
-; Keyword Property VEOH_ActivePortal Auto Const Mandatory
-RefCollectionAlias Property KnownPortals Auto Const Mandatory
-RefCollectionAlias Property KnownRandomPOI Auto Const Mandatory
+RefCollectionAlias Property MapMarkersFound Auto Const Mandatory
+RefCollectionAlias Property PortalsFound Auto Const Mandatory
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -24,37 +23,36 @@ RefCollectionAlias Property KnownRandomPOI Auto Const Mandatory
 ;;;
 ;;; Events
 ;;;
-Event OnInit()
-  VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_PortalHandlerScript", "OnInit", "OnInit triggered. Known Portals =" + KnownPortals.GetCount() + ". Known Random POI=" + KnownRandomPOI.GetCount() + ".", 0, Venpi_DebugEnabled.GetValueInt())
-EndEvent
-
-Event OnLoad()
-  VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_PortalHandlerScript", "OnLoad", "OnLoad triggered. Known Portals =" + KnownPortals.GetCount() + ". Known Random POI=" + KnownRandomPOI.GetCount() + ".", 0, Venpi_DebugEnabled.GetValueInt())
-EndEvent
-
-Event OnActivate(ObjectReference akActionRef)
-  VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_PortalHandlerScript", "OnActivate", "OnActivate triggered. Known Portals =" + KnownPortals.GetCount() + ". Known Random POI=" + KnownRandomPOI.GetCount() + ".", 0, Venpi_DebugEnabled.GetValueInt())
-  ; ObjectReference[] portalNetwork = self.GetRefsLinkedToMe(VEOH_ActivePortal, None)
-  ; Int randomPortalIndex = CommonArrayFunctions.GetRandomIndex(portalNetwork.Length);
-  ; ObjectReference randomPortal = portalNetwork[randomPortalIndex]
-  ; Actor player = Game.GetPlayer()
-  ; player.MoveTo(randomPortal, 0.0, 0.0, 0.0, True, False)
-EndEvent
-
 Event OnTriggerEnter(ObjectReference akActionRef)
-  VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_PortalHandlerScript", "OnTriggerEnter", "OnTriggerEnter triggered. Known Portals =" + KnownPortals.GetCount() + ". Known Random POI=" + KnownRandomPOI.GetCount() + ".", 0, Venpi_DebugEnabled.GetValueInt())
+  VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_PortalHandlerScript", "OnTriggerEnter", "OnTriggerEnter triggered. Known portals = " + PortalsFound.GetCount() + ". Known map makers = " + MapMarkersFound.GetCount() + ".", 0, Venpi_DebugEnabled.GetValueInt())
+  Actor player = Game.GetPlayer() 
+
+  ;; Freeze the player
+  InputEnableLayer playerInputManager = InputEnableLayer.Create()
+  playerInputManager.DisablePlayerControls(abMovement=True, abFighting=True, abCamSwitch=True, abLooking=True, abSneaking=True, abMenu=True, abActivate=True, abJournalTabs=True, abVATS=True, abFavorites=True, abRunning=True) 
+
+  ;; TODO: Handle random change portal brakes and sends to you random location or unity.
+
+  ;; No point is trying portal match unless we have a few found 
+  If (PortalsFound.GetCount() >= 5)
+    ObjectReference portalRef = VPI_TravelUtilities.GetSomeWhatSafeMarker(PortalsFound)
+    VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_PortalHandlerScript", "OnTriggerEnter", "A random portal was found " + portalRef + "(" + portalRef.GetBaseObject() +").", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_TravelUtilities.SomeWhatSafeFastTravel(portalRef)
+    Return
+  EndIf
+
+  ;; If no portal was found fall back on using a random map marker
+  If (MapMarkersFound.GetCount() >= 1)
+    ObjectReference markerRef = VPI_TravelUtilities.GetSomeWhatSafeMarker(MapMarkersFound)
+    VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_PortalHandlerScript", "OnTriggerEnter", "A random POI was found " + markerRef + "(" + markerRef.GetBaseObject() +").", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_TravelUtilities.SomeWhatSafeFastTravel(markerRef)
+    Return
+  EndIf
+
+  VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_PortalHandlerScript", "OnTriggerEnter", "No random portal or map marker was found. No idea what to do.", 0, Venpi_DebugEnabled.GetValueInt())
+  ;; TODO: Cause random explosion or something
+
+  ;; Unfreeze the player
+  playerInputManager.Reset()
+  playerInputManager.Delete()
 EndEvent
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; States
-;;;
-State Done
-EndState
-
-Auto State Waiting
-  Event OnTriggerEnter(ObjectReference akActionRef)
-    VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_PortalHandlerScript", "WaitingState.OnTriggerEnter", "WaitingState.OnTriggerEnter triggered. Known Portals =" + KnownPortals.GetCount() + ". Known Random POI=" + KnownRandomPOI.GetCount() + ".", 0, Venpi_DebugEnabled.GetValueInt())
-    Self.GoToState("Done")
-  EndEvent
-EndState

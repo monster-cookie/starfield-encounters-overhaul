@@ -4,7 +4,7 @@ ScriptName MakeGhostScript Extends Actor
 ;;; Global Variables
 ;;;
 GlobalVariable Property Venpi_DebugEnabled Auto Const Mandatory
-String Property Venpi_ModName="VenpiEncountersOverhaul" Auto Const Mandatory
+String Property Venpi_ModName="VenworksEncountersOverhaul" Auto Const Mandatory
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
