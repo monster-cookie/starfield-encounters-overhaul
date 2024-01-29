@@ -16,3 +16,5 @@
 - [X] Convert portal PKIN to a world space as PKINs seem to be mod index 00 locked
 - [ ] Convert spacer mech camp PKIN to a world space as PKINs seem to be mod index 00 locked
 - [ ] Spawn conditions for trait zones need to reduce once all traits are unlocked for a planet.
+- [ ] Add lone mountain portal site
+- [ ] Add Ryujin defended oasis portal site 
