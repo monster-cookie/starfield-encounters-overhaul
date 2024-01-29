@@ -18,3 +18,5 @@
 - [ ] Spawn conditions for trait zones need to reduce once all traits are unlocked for a planet.
 - [ ] Add lone mountain portal site
 - [ ] Add Ryujin defended oasis portal site 
+- [ ] Alarms being set off need to summon reinforcements/ships
+- [ ] Stone spire drops you miles up in the air when you fast travel to it

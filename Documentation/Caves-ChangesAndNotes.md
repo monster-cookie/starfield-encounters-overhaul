@@ -6,7 +6,7 @@ The caves listed by game editor ID. The reason the fixes are in a different orde
 Ecliptic Outpost Cave, will generate a small ecliptic force and themed chest.
 
 - Spawn Conditions:
-  - Block Type: OverlayFieldsHillsSmall05
+  - Block Type: OverlayFieldsHillsSmall05 [SFBK:002A4A95]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -27,7 +27,7 @@ Ecliptic Outpost Cave, will generate a small ecliptic force and themed chest.
 Creature spawn test cave which ultimately failed now just spawns some creatures from Gamma Vulpes.
 
 - Spawn Conditions:
-  - Block Type: OverlayMountainsTerracedSmall05
+  - Block Type: OverlayMountainsTerracedSmall05 [SFBK:002C545C]
 - Keywords:
   - PlanetWaterAbundance00None = 0
 - Type: Zone In Cave
@@ -46,7 +46,7 @@ Creature spawn test cave which ultimately failed now just spawns some creatures 
 Crimson Fleet Outpost Cave, will generate a small crimson fleet force and themed chest.
 
 - Spawn Conditions:
-  - Block Type: OverlayCratersSharpSmall01
+  - Block Type: OverlayCratersSharpSmall01 [SFBK:002D00EE]
 - Keywords
   - PlanetWaterAbundance00None = 0
 - Type: Zone In Cave
@@ -70,7 +70,7 @@ Crimson Fleet Outpost Cave, will generate a small crimson fleet force and themed
 Royal terrormorphs abuse cave, spawns a group of terrormorphs and heatleaches to get abused by JaeDL's rules. 
 
 - Spawn Conditions:
-  - Block Type: OverlayMountainsTerracedSmall05
+  - Block Type: OverlayMountainsTerracedSmall05 [SFBK:002C545C]
 - Keywords
   - PlanetWaterAbundance00None = 0
 - Type: Zone In Cave
@@ -93,7 +93,7 @@ Royal terrormorphs abuse cave, spawns a group of terrormorphs and heatleaches to
 Random Human Outpost Cave, will generate a medium sized human force and themed boss chest.
 
 - Spawn Conditions:
-  - Block Type: OverlayHillsMesasRockySmall04
+  - Block Type: OverlayHillsMesasRockySmall04 [SFBK:0024968F]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -112,7 +112,7 @@ Random Human Outpost Cave, will generate a medium sized human force and themed b
 Random creature cave from before I fixed the missing keyword that fixed all the caves mostly.
 
 - Spawn Conditions:
-  - Block Type: OverlayHillsSharpSmall04
+  - Block Type: OverlayHillsSharpSmall04 [SFBK:002493C1]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -132,7 +132,7 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
 Not modified at all except the name to match size
 
 - Spawn Conditions:
-  - Block Type: OverlayHillsRoundedSmall05
+  - Block Type: OverlayHillsRoundedSmall05 [SFBK:00276A8F]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -149,7 +149,7 @@ Not modified at all except the name to match size
 Random creature cave from before I fixed the missing keyword that fixed all the caves mostly.
 
 - Spawn Conditions:
-  - Block Type: OverlayHillsSharpSmall04
+  - Block Type: OverlayHillsSharpSmall04 [SFBK:002493C1]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -171,7 +171,7 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
 Another caves to abuse JaeDL's heatleach terrormorph spawners in all his mods
 
 - Spawn Conditions:
-  - Block Type: OverlayMountainsAngledSmall04
+  - Block Type: OverlayMountainsAngledSmall04 [SFBK:00276AA6]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -192,7 +192,7 @@ Another caves to abuse JaeDL's heatleach terrormorph spawners in all his mods
 Large Group Outpost Cave, will generate a large spacer force and themed boss chest.
 
 - Spawn Conditions:
-  - Block Type: OverlayFieldsFracturedSmall01
+  - Block Type: OverlayFieldsFracturedSmall01 [SFBK:002A3759]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -211,7 +211,7 @@ Large Group Outpost Cave, will generate a large spacer force and themed boss che
 The First Outpost Cave, will generate a small The First force and themed chest.
 
 - Spawn Conditions:
-  - Block Type: OverlayCratersSharpSmall04
+  - Block Type: OverlayCratersSharpSmall04 [SFBK:002D00F1]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -233,7 +233,7 @@ The First Outpost Cave, will generate a small The First force and themed chest.
 Starborn Outpost Cave, will generate a small starborn force and themed chest.
 
 - Spawn Conditions:
-  - Block Type: OverlayFieldsHillsSmall01
+  - Block Type: OverlayFieldsHillsSmall01 [SFBK:002A4AA0]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -252,7 +252,7 @@ Starborn Outpost Cave, will generate a small starborn force and themed chest.
 Random Human Outpost Cave, will generate a small human force and themed chest.
 
 - Spawns Conditions 
-  - Block Type = OverlayHillsRockyMedium03
+  - Block Type = OverlayHillsRockyMedium03 [SFBK:0029854B]
 - Keywords: None
 - Type: Fully Open World - No Zone
 - Found In:
@@ -268,7 +268,7 @@ Random Human Outpost Cave, will generate a small human force and themed chest.
 Random creature cave from before I fixed the missing keyword that fixed all the caves mostly.
 
 - Spawn Conditions:
-  - Block Type: OverlayFieldsHillsSmall05
+  - Block Type: OverlayFieldsHillsSmall05 [SFBK:002A4A95]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -287,7 +287,7 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
 Not modified at all
 
 - Spawn Conditions:
-  - Block Type: OverlayCratersSharpSmall01
+  - Block Type: OverlayCratersSharpSmall01 [SFBK:002D00EE]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -305,7 +305,7 @@ Not modified at all
 Not modified at all
 
 - Spawn Conditions:
-  - Block Type: OverlayFieldsHillsSmall01
+  - Block Type: OverlayFieldsHillsSmall01 [SFBK:002A4AA0]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -327,7 +327,7 @@ Not modified at all
 Syndicate Outpost Cave, will generate a small syndicate force and themed chest.
 
 - Spawn Conditions:
-  - Block Type: OverlayMountainsTerracedSmall05
+  - Block Type: OverlayMountainsTerracedSmall05 [SFBK:002C545C]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -348,7 +348,7 @@ Syndicate Outpost Cave, will generate a small syndicate force and themed chest.
 Not modified at all
 
 - Spawn Conditions:
-  - Block Type: OverlayHillsSharpSmall04
+  - Block Type: OverlayHillsSharpSmall04 [SFBK:002493C1]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -367,7 +367,7 @@ Not modified at all
 Initial terrormorph test cave
 
 - Spawn Conditions:
-  - Block Type: OverlayHillsMesasRockySmall04
+  - Block Type: OverlayHillsMesasRockySmall04 [SFBK:0024968F]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -382,7 +382,7 @@ Initial terrormorph test cave
 Not modified at all
 
 - Spawn Conditions:
-  - Block Type: OverlayFieldsHillsSmall01
+  - Block Type: OverlayFieldsHillsSmall01 [SFBK:002A4AA0]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -400,7 +400,7 @@ Not modified at all
 Not modified at all
 
 - Spawn Conditions:
-  - Block Type: OverlayFieldsHillsSmall05
+  - Block Type: OverlayFieldsHillsSmall05 [SFBK:002A4A95]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -418,7 +418,7 @@ Not modified at all
 Not modified at all
 
 - Spawn Conditions:
-  - Block Type: OverlayHillsSharpSmall04
+  - Block Type: OverlayHillsSharpSmall04 [SFBK:002493C1]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -438,7 +438,7 @@ Not modified at all
 Not modified at all
 
 - Spawn Conditions:
-  - Block Type: OverlayFieldsRockySmall05
+  - Block Type: OverlayFieldsRockySmall05 [SFBK:0029C5F2]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -456,7 +456,7 @@ Not modified at all
 Not modified at all
 
 - Spawn Conditions:
-  - Block Type: OverlayMountainsTerracedSmall05
+  - Block Type: OverlayMountainsTerracedSmall05 [SFBK:002C545C]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -476,7 +476,7 @@ Not modified at all
 Not modified at all
 
 - Spawn Conditions:
-  - Block Type: OverlayHillsRockySmall01
+  - Block Type: OverlayHillsRockySmall01 [SFBK:0029854E]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -495,7 +495,7 @@ Not modified at all
 Random creature cave from before I fixed the missing keyword that fixed all the caves mostly.
 
 - Spawn Conditions:
-  - Block Type: OverlayMountainsAngledMedium05
+  - Block Type: OverlayMountainsAngledMedium05 [SFBK:00276AA2]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -514,7 +514,7 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
 Random creature cave from before I fixed the missing keyword that fixed all the caves mostly.
 
 - Spawn Conditions:
-  - Block Type: OverlayHillsSharpSmall05
+  - Block Type: OverlayHillsSharpSmall05 [SFBK:002493C0]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -530,7 +530,7 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
 Not modified at all
 
 - Spawn Conditions:
-  - Block Type: OverlayFieldsHillsSmall01
+  - Block Type: OverlayFieldsHillsSmall01 [SFBK:002A4AA0]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -546,7 +546,7 @@ Not modified at all
 Not modified at all
 
 - Spawn Conditions:
-  - Block Type: OverlayHillsMesasRockySmall04
+  - Block Type: OverlayHillsMesasRockySmall04 [SFBK:0024968F]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -562,7 +562,7 @@ Not modified at all
 Not modified at all
 
 - Spawn Conditions:
-  - Block Type: OverlayFieldsHillsSmall05
+  - Block Type: OverlayFieldsHillsSmall05 [SFBK:002A4A95]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -581,7 +581,7 @@ Not modified at all
 Not modified at all
 
 - Spawn Conditions:
-  - Block Type: OverlayHillsRoundedSmall05
+  - Block Type: OverlayHillsRoundedSmall05 [SFBK:00276A8F]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -600,7 +600,7 @@ Not modified at all
 Not modified at all
 
 - Spawn Conditions:
-  - Block Type: OverlayMountainsTerracedSmall05
+  - Block Type: OverlayMountainsTerracedSmall05 [SFBK:002C545C]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -619,7 +619,7 @@ Not modified at all
 Large predator battle test cave
 
 - Spawn Conditions:
-  - Block Type: OverlayHillsSharpSmall04
+  - Block Type: OverlayHillsSharpSmall04 [SFBK:002493C1]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -642,7 +642,7 @@ Large predator battle test cave
 Large multi-faction battle with multiple possible outcomes before you get to the battlefield. 
 
 - Spawn Conditions:
-  - Block Types: OverlayHillsRoundedSmall05
+  - Block Types: OverlayHillsRoundedSmall05 [SFBK:00276A8F]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
@@ -667,7 +667,7 @@ Large multi-faction battle with multiple possible outcomes before you get to the
 Added in cave with ghost pirates with custom idle dialog. Ghosts also have a 25% chance to respawn. 
 
 - Spawn Conditions:
-  - Block Type: OverlayHillsRoundedSmall05
+  - Block Type: OverlayHillsRoundedSmall05 [SFBK:00276A8F]
 - Keywords: None
 - Type: Zone In Cave
 - Found In:
