@@ -1,4 +1,4 @@
-# Venpi's Cave Overhaul
+# Venworks Cave and Encounters Overhaul
 This updates the open world caves and encounters so that they generate enemies for you to fight. Also adds new open world lair like human camps and caves. These new cave enemies get disabled if the cave is reserved by a random encounter quest so that it can proceed normally.
 
 ## Documentation

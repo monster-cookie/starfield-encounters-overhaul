@@ -98,6 +98,11 @@ LocationCellPersistentReferences:
   Grid: 0, -1
   Unknown: -1
 LocationCellStaticReferences:
+- LocationRefType: 122413:Starfield.esm
+  Marker: 33835C:Starfield.esm
+  Location: 234087:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
 - LocationRefType: 05F47C:Starfield.esm
   Marker: 33829B:Starfield.esm
   Location: 226068:Starfield.esm
@@ -177,11 +182,6 @@ LocationCellStaticReferences:
 - LocationRefType: 02271F:Starfield.esm
   Marker: 226057:Starfield.esm
   Location: 226068:Starfield.esm
-  Unknown: -1
-- LocationRefType: 122413:Starfield.esm
-  Marker: 33835C:Starfield.esm
-  Location: 234087:Starfield.esm
-  Grid: 32767, 32767
   Unknown: -1
 - LocationRefType: 2CC9ED:Starfield.esm
   Marker: 234069:Starfield.esm

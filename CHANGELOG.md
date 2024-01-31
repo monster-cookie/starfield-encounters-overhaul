@@ -1,4 +1,7 @@
-# Venpi's Cave Overhaul
+# Venworks Cave and Encounters Overhaul
+
+## Version 1.0.11
+* Compatibility with Starfield 1.9.51
 
 ## Version 1.0.10
 * Refactor Mech Camp and Portal Mini Game to normal world space cells. PCM doesn't want to spawn custom lair/pack-in cells.
