@@ -2,6 +2,9 @@
 
 # Bug fixes
 - [X] Compatibility with Starfield 1.9.51
+- [X] Portal trigger radius grew somehow needs to be toned back down to the size of the portal
+- [X] NPC (Creatures and Ecliptic) can trigger the portal causing the player to be ported. Need to find out why my not the companion condition isn't working any longer.
+- [X] The nasa zone for unearth is in the list of valid targets and needs excluded. 
 
 # Enhancements and New Features
 - [ ] Random spawn system using scripting or leveled NPC list and place object

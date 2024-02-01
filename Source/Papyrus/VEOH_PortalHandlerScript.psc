@@ -27,6 +27,11 @@ Event OnTriggerEnter(ObjectReference akActionRef)
   VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_PortalHandlerScript", "OnTriggerEnter", "OnTriggerEnter triggered. Known portals = " + PortalsFound.GetCount() + ". Known map makers = " + MapMarkersFound.GetCount() + ".", 0, Venpi_DebugEnabled.GetValueInt())
   Actor player = Game.GetPlayer() 
 
+  If (akActionRef != player as ObjectReference)
+    VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_PortalHandlerScript", "OnTriggerEnter", "OnTriggerEnter triggered by something other then the player so aborting.", 0, Venpi_DebugEnabled.GetValueInt())
+    Return
+  EndIf
+
   ;; Freeze the player
   InputEnableLayer playerInputManager = InputEnableLayer.Create()
   playerInputManager.DisablePlayerControls(abMovement=True, abFighting=True, abCamSwitch=True, abLooking=True, abSneaking=True, abMenu=True, abActivate=True, abJournalTabs=True, abVATS=True, abFavorites=True, abRunning=True) 

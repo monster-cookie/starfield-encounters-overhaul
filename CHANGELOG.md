@@ -1,5 +1,9 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 1.0.12
+* Removed MQ301 from available short circuit portal targets. This requires version 1.0.16 or newer of Venworks Core Utilities
+* Only the player can trigger the portal now should be much safer the excluding things. 
+
 ## Version 1.0.11
 * Compatibility with Starfield 1.9.51
 
