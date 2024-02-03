@@ -1,0 +1,10 @@
+FormKey: 001671:VenpiCaveOverhaul.esm
+EditorID: SQ_Group_OccupationFaction_Military_TheFirst
+FormVersion: 556
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues:
+  EndHour: 24
+  BuysStolenItems: True
+  BuysNonStolenItems: True

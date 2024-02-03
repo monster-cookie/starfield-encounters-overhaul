@@ -1,0 +1,37 @@
+FormKey: 001672:VenpiCaveOverhaul.esm
+EditorID: SQ_Group_Occupation_Military_TheFirst
+FormVersion: 556
+VirtualMachineAdapter:
+  Scripts:
+  - Name: sq_groupoccupationscript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DefaultOccupationVendorFaction
+      Object: 36E4E2:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DefaultRobot
+      Object: 26FB61:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DefaultVendorList
+      Object: 36E4ED:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LeaderName
+      Object: 057908:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OccupationFaction
+      Object: 001671:VenpiCaveOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: OccupationID
+      Object: 001678:VenpiCaveOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VendorName
+      Object: 36E4DD:Starfield.esm
+ODTY: 0
+Name:
+  TargetLanguage: English
+  Value: The First
+Model:
+  FLLD: 0x01000000
+MarkerColor: '#00CC4C33'
+Flags: []
+ActivationAngle: 360

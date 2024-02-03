@@ -7,6 +7,30 @@ LocationCellPersistentReferences:
 - Actor: 00164F:VenpiCaveOverhaul.esm
   Location: 0012F0:VenpiCaveOverhaul.esm
   Unknown: -1
+- Actor: 00164D:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 00164E:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 00164C:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 00164A:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 00164B:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 001651:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 001652:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 001653:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
 LocationCellStaticReferences:
 - LocationRefType: 02271F:Starfield.esm
   Marker: 0012EC:VenpiCaveOverhaul.esm
@@ -18,6 +42,10 @@ LocationCellStaticReferences:
   Unknown: -1
 - LocationRefType: 003956:Starfield.esm
   Marker: 00164F:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- LocationRefType: 05AF1F:Starfield.esm
+  Marker: 001650:VenpiCaveOverhaul.esm
   Location: 0012F0:VenpiCaveOverhaul.esm
   Unknown: -1
 Name:

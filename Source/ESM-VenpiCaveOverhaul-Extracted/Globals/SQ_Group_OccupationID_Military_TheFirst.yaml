@@ -1,0 +1,9 @@
+FormKey: 001678:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 64
+EditorID: SQ_Group_OccupationID_Military_TheFirst
+FormVersion: 556
+StarfieldMajorRecordFlags:
+- 0x40
+Data: 31
+MajorFlags:
+- Constant

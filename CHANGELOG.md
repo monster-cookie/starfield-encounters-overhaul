@@ -1,5 +1,12 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 1.0.13
+* Finally trying to abuse the RE system as my human lair setup failed horribly. 
+* Added a new Marauder RE quest where you will come upon 2 groups one protecting a chest and another guarding a a group of dead UC Vanguard Soldiers. 
+* Added a 1st cav vs UC Random Encounter to go with some coming new POIs for JaeDL writing whims
+* Added some missing persistance links so NPCs stay the correct thing on save instead of becoming level 1 of some race usually human
+* Fixed some bugs with the NPC placements and PCM rules on for the Spacer Mech Encampment
+
 ## Version 1.0.12
 * Removed MQ301 from available short circuit portal targets. This requires version 1.0.16 or newer of Venworks Core Utilities
 * Only the player can trigger the portal now should be much safer the excluding things. 

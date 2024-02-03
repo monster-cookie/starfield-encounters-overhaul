@@ -1,0 +1,11 @@
+MutagenObjectType: PlacedNpc
+FormKey: 001682:VenpiCaveOverhaul.esm
+EditorID: VEOH_SpacerMechCamp_Bunker_NPC06
+Base: 1691E3:Starfield.esm
+PersistentLocation: 001641:VenpiCaveOverhaul.esm
+LinkedReferences:
+- KeywordOrReference: 0F0E7E:Starfield.esm
+  Reference: 001646:VenpiCaveOverhaul.esm
+- KeywordOrReference: 141918:Starfield.esm
+  Reference: 001647:VenpiCaveOverhaul.esm
+Position: 35.650105, 34.180733, 13.421979

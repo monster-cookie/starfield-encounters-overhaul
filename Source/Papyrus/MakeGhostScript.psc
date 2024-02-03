@@ -1,4 +1,5 @@
 ScriptName MakeGhostScript Extends Actor
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Global Variables
