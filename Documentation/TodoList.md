@@ -1,14 +1,11 @@
 # Venworks Cave and Encounters Overhaul: To Do List
 
 # Bug fixes
-- [X] Compatibility with Starfield 1.9.51
-- [X] Portal trigger radius grew somehow needs to be toned back down to the size of the portal
-- [X] NPC (Creatures and Ecliptic) can trigger the portal causing the player to be ported. Need to find out why my not the companion condition isn't working any longer.
-- [X] The nasa zone for unearth is in the list of valid targets and needs excluded. 
+- [ ] CF Quest Echoes of the past at the UC prison spawners are broken causing the quest to fail
+- [ ] Abandoned Industrial Compound a bunch of spawners are in the walls or mid air now
+- [X] Setup randomized enabler on the wind farms spawners and setup a guard attack trigger
 
 # Enhancements and New Features
-- [ ] Random spawn system using scripting or leveled NPC list and place object
-- [ ] MAJOR: Set state parent alternate to be the herd markers as these caves are now sometimes spawning creatures on their own. (I fixed the bug - Missing keyword)
 - [ ] Faction caves need a chest with themed loot
 - [ ] Fix occupied cave which is just occupied with corpses
 - [ ] Figure out hillside cave/caverns it is not spawning either

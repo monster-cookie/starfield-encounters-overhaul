@@ -1,5 +1,14 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 1.0.14
+* The Storage and Solar Panel Human Clutter sites with beds/chairs now will randomly spawn a hostile human (Again only converts about half usually the larger ones)
+* Fair warning 1 spawns a terrormorph for JaeDL
+* Depending on the reception I may add more of these now that I figured out the secret sauce. 
+* Reset some PCM variables that overhaul mods change to closer to Vanilla. This should drastically cut the number of trait nodes being spawned so the other new ones can spawn. 
+* Please load Cave and Encounter overhaul late in load order mods so its override's win. 
+* Increased out how far the human clutter stuff spawns so its not clustered so tightly. 
+* You will need new planet/system for most of this version's changes but not a new game/universe.
+
 ## Version 1.0.13
 * Finally trying to abuse the RE system as my human lair setup failed horribly. 
 * Added a new Marauder RE quest where you will come upon 2 groups one protecting a chest and another guarding a a group of dead UC Vanguard Soldiers. 

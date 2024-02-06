@@ -1,0 +1,24 @@
+FormKey: 0016A5:VenpiCaveOverhaul.esm
+EditorID: VEOH_NPCSpawn_Trigger
+VirtualMachineAdapter:
+  Scripts:
+  - Name: VPI_Spawn_OnTrigger_NPCs
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Venpi_DebugEnabled
+      Object: 000800:VenpiCore.esm
+    - MutagenObjectType: ScriptStringProperty
+      Name: Venpi_ModName
+      Data: VenworksEncountersOverhaul
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActorToSpawn
+      Object: 000878:VenpiCaveOverhaul.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: ChanceToSpawn
+      Data: 100
+ODTY: 0
+Model:
+  FLLD: 0x01000000
+MarkerColor: '#00CC4C33'
+Flags: []
+ActivationAngle: 360
