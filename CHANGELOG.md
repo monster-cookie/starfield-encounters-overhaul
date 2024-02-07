@@ -1,5 +1,8 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 1.0.16
+* Added additional option to 7zip to take unknown file types. The strings/localization files should now be present.
+
 ## Version 1.0.15
 * Localization Support
 * Added random spacer camp which should appear anywhere a lair can. (Uses OE Uncommon Chance).
