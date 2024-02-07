@@ -17,8 +17,8 @@
 - [ ] Need a House Va'ruun themed cave
 - [ ] OEJP008 has human stuff all over it, it should be a captive rescue or something like with 3 groups of human enemies
 - [ ] OESD001 should be a powerful single boss cave
-- [ ] Convert spacer mech camp PKIN to a world space as PKINs seem to be mod index 00 locked
-- [ ] Spawn conditions for trait zones need to reduce once all traits are unlocked for a planet.
+- [X] Convert spacer mech camp PKIN to a world space as PKINs seem to be mod index 00 locked
+- [X] Spawn conditions for trait zones need to reduce once all traits are unlocked for a planet.
 - [ ] Add lone mountain portal site
 - [ ] Add Ryujin defended oasis portal site 
 - [ ] Alarms being set off need to summon reinforcements/ships
