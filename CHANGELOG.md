@@ -1,5 +1,8 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 1.0.17
+* Misspelling of Hollow as reported by LJTIGER69
+
 ## Version 1.0.16
 * Added additional option to 7zip to take unknown file types. The strings/localization files should now be present.
 
