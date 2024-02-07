@@ -1,0 +1,12 @@
+MutagenObjectType: PlacedNpc
+FormKey: 0016D2:VenpiCaveOverhaul.esm
+EditorID: VEOH_OE_SpacerCamp01_Active_Cell_Sniper01
+Base: 0D2146:Starfield.esm
+LinkedReferences:
+- Reference: 0016CE:VenpiCaveOverhaul.esm
+- KeywordOrReference: 0F0E7E:Starfield.esm
+  Reference: 0016D6:VenpiCaveOverhaul.esm
+- KeywordOrReference: 141918:Starfield.esm
+  Reference: 0016D7:VenpiCaveOverhaul.esm
+Position: 5.159472, -11.346772, 2.25834
+Rotation: 0, 0, 4.712389

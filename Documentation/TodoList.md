@@ -6,6 +6,7 @@
 - [X] Setup randomized enabler on the wind farms spawners and setup a guard attack trigger
 
 # Enhancements and New Features
+- [X] Localization support for Valerio
 - [ ] Faction caves need a chest with themed loot
 - [ ] Fix occupied cave which is just occupied with corpses
 - [ ] Figure out hillside cave/caverns it is not spawning either

@@ -10,6 +10,7 @@ cd "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Tools"
 del /s /q "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist\*.*"
 rmdir /s /q "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist"
 mkdir "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist"
+mkdir "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist\Strings"
 
 @REM Clear Dist-CCMBH-Patch DIR
 @echo "Clearing and scafolding the Dist-CCMBH-Patch dir"
@@ -75,8 +76,17 @@ copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Te
 copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Terrain\VEOH_ActivePortalCrater_World.btd" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\terrain"
 copy /y "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Terrain\VEOH_SpacerMechCamp_World.btd" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\terrain"
 
+@REM Extract English Strings from xedit, so need to pull from starfield dir where xedit has to have it
+@echo "Extract English Strings from xEdit and adding to Source and Dist folders"
+copy /y "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-Experimental\Strings\VenpiCaveOverhaul_En.DLSTRINGS" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Localization"
+copy /y "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-Experimental\Strings\VenpiCaveOverhaul_En.ILSTRINGS" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Localization"
+copy /y "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-Experimental\Strings\VenpiCaveOverhaul_En.STRINGS" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\Localization"
+copy /y "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-Experimental\Strings\VenpiCaveOverhaul_En.DLSTRINGS" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist\Strings"
+copy /y "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-Experimental\Strings\VenpiCaveOverhaul_En.ILSTRINGS" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist\Strings"
+copy /y "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-Experimental\Strings\VenpiCaveOverhaul_En.STRINGS" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist\Strings"
+
 @REM ESM is purely binary so need to pull from starfield dir where xedit has to have it 
-@echo "Copying the ESM from MO2 into the Dist folder"
+@echo "Copying the ESM from xEdit and adding to Source and Dist folders"
 copy /y "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-Experimental\VenpiCaveOverhaul.esm" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\ESM"
 copy /y "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-Experimental\VenpiCaveOverhaul.esm" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist"
 copy /y "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-CCMBH-Patch-Experimental\VenpiCaveOverhaul-CCMBH-Patch.esm" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\ESM"

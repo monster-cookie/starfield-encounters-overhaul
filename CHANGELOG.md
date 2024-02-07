@@ -1,5 +1,10 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 1.0.15
+* Localization Support
+* Added random spacer camp which should appear anywhere a lair can. (Uses OE Uncommon Chance).
+* Cell Load Request rules do not require a new game or NG+ Universe to go active. So enjoy the new camp right now. 
+
 ## Version 1.0.14
 * The Storage and Solar Panel Human Clutter sites with beds/chairs now will randomly spawn a hostile human (Again only converts about half usually the larger ones)
 * Fair warning 1 spawns a terrormorph for JaeDL

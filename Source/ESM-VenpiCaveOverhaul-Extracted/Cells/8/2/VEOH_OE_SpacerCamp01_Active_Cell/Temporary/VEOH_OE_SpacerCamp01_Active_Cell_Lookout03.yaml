@@ -1,0 +1,11 @@
+MutagenObjectType: PlacedObject
+FormKey: 0016CC:VenpiCaveOverhaul.esm
+EditorID: VEOH_OE_SpacerCamp01_Active_Cell_Lookout03
+Base: 02EFD0:Starfield.esm
+Patrol:
+  IdleTime: 3
+  Topics:
+  - MutagenObjectType: TopicReference
+LinkedReferences:
+- Reference: 0016D0:VenpiCaveOverhaul.esm
+Position: 8.198756, 9.741126, 0.292017

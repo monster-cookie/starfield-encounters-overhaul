@@ -1,8 +1,0 @@
-MutagenObjectType: PlacedNpc
-FormKey: 000ED0:VenpiCaveOverhaul.esm
-EditorID: VCOH_GhostCave_NPC02
-Base: 000FFB:VenpiCaveOverhaul.esm
-LevelModifier: VeryHard
-PersistentLocation: 000FF7:VenpiCaveOverhaul.esm
-Layer: 2B3CB9:Starfield.esm
-Position: -36.2, 79.1, -8.797812
