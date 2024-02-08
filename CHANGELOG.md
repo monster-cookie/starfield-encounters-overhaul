@@ -1,8 +1,12 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 1.0.19
+* Using the gas vents distance restrictions settings to see if that can keep the camp spawn separated some. But also needs curves which we can't define yet. 
+* All Factions Patch now requires GRiNDTerra Industries - Corporate Terraformation 2.0, POI Faction Diversity and POI Faction Diversity - New Factions
+
 ## Version 1.0.18
-* For compatibility and at the request of the GrindTerra author reverting back to Starfield Hostile Human List but adding my cheat to prevent competing factions from pawning together. 
-* Added compatibility patches for Grindterra Factions and Expanded the patch for Cora Coe Multiversal Book Hunter to add its faction. I can't get POI Faction Diversity and its Factions mod to play nice so can't make patches for them.
+* For compatibility and at the request of the GRiNDTerra author reverting back to Starfield Hostile Human List but adding my cheat to prevent competing factions from pawning together. 
+* Added compatibility patches for GRiNDTerra Factions and Expanded the patch for Cora Coe Multiversal Book Hunter to add its faction. I can't get POI Faction Diversity and its Factions mod to play nice so can't make patches for them.
 * Added new debug command to dump the spawn chance settings for open world encounters. 
 * So if you change global variables and another mod overrides them to new settings the new are ignored until next NG+ ot manually set via console. So added to new commands below the first confirms your settings do or do not match my vanilla'ish settings and the second resets them to the overhaul settings.
 * View current settings in Console run: CGF "VEOH_Debug.SpawnSettings"

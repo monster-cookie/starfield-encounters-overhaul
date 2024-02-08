@@ -14,3 +14,5 @@ ModHeader:
   - Master: BlueprintShips-Starfield.esm
   - Master: GrindTerraIndustriesFaction.esm
   - Master: CoraCoeMultiversalBookHunter.esm
+  - Master: NewHostileFactions.esm
+  - Master: PoINPCDiversity.esm

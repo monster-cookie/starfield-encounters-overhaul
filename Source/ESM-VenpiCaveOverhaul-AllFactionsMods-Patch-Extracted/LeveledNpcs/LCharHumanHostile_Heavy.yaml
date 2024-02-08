@@ -90,6 +90,148 @@ Entries:
       FirstParameter: 283580:Starfield.esm
     ComparisonValue: 1
 - Level: 1
+  Reference: 000814:PoINPCDiversity.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 000819:PoINPCDiversity.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 0008A6:PoINPCDiversity.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 00086C:PoINPCDiversity.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 0008A3:PoINPCDiversity.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      FirstParameter: 000876:PoINPCDiversity.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 000877:PoINPCDiversity.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 0008A3:PoINPCDiversity.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 000893:PoINPCDiversity.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 000818:PoINPCDiversity.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 0008A5:PoINPCDiversity.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 00082A:NewHostileFactions.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 0008AA:NewHostileFactions.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 000873:NewHostileFactions.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 0008A8:NewHostileFactions.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 000885:NewHostileFactions.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 0008A9:NewHostileFactions.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 000899:NewHostileFactions.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 0008AB:NewHostileFactions.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 0008D5:NewHostileFactions.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 0008A7:NewHostileFactions.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 0008F9:NewHostileFactions.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 00089E:PoINPCDiversity.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 0008F9:NewHostileFactions.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 0008A6:NewHostileFactions.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 00091C:NewHostileFactions.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 0008FD:NewHostileFactions.esm
+    ComparisonValue: 1
+- Level: 1
   Reference: 00085D:GrindTerraIndustriesFaction.esm
   Count: 1
   Conditions:
