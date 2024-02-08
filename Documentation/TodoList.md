@@ -24,3 +24,5 @@
 - [ ] Alarms being set off need to summon reinforcements/ships
 - [ ] Stone spire drops you miles up in the air when you fast travel to it
 - [ ] JaeDL's 1st cav vs UC mech encounters
+- [ ] Move back to Starfield's human hostile setup but att the AreHostilesNear check to them 
+- [ ] Hostile human factions need to be ally to prey and critters debating on predators

@@ -1,0 +1,106 @@
+FormKey: 259DC7:Starfield.esm
+EditorID: LCharHumanHostile_Charger
+FormVersion: 556
+ODTY: 0
+Flags:
+- 0x8
+- 0x10
+- 0x20
+- 0x40
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: AreHostileActorsNearConditionData
+Entries:
+- Level: 1
+  Reference: 05432C:Starfield.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 22509
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      FirstParameter: 023305:Starfield.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 12D055:Starfield.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 22509
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      FirstParameter: 294969:Starfield.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 26FB3D:Starfield.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 22509
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      FirstParameter: 12179A:Starfield.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 26FDB3:Starfield.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 22509
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      FirstParameter: 283582:Starfield.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 26FDB7:Starfield.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 22509
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      FirstParameter: 283580:Starfield.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 26FF66:Starfield.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 22509
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      FirstParameter: 283581:Starfield.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 27BB8E:Starfield.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: LocationHasKeywordConditionData
+      FirstParameter: 283585:Starfield.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 000875:GrindTerraIndustriesFaction.esm
+  Count: 1
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 000800:GrindTerraIndustriesFaction.esm
+    ComparisonValue: 1
+- Level: 1
+  Reference: 001DD7:CoraCoeMultiversalBookHunter.esm
+  Count: 1
+Model:
+  FLLD: 0x01000000

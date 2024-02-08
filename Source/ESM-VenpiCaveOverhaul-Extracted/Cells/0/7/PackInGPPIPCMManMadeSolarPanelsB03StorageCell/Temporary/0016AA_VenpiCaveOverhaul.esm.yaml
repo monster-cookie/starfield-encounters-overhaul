@@ -1,6 +1,6 @@
 MutagenObjectType: PlacedNpc
 FormKey: 0016AA:VenpiCaveOverhaul.esm
-Base: 000878:VenpiCaveOverhaul.esm
+Base: 0016E5:VenpiCaveOverhaul.esm
 LevelModifier: Hard
 LinkedReferences:
 - KeywordOrReference: 0F0E7E:Starfield.esm

@@ -1,0 +1,16 @@
+SpriggitSource:
+  PackageName: Spriggit.Yaml.Starfield
+  Version: 0.16.0
+ModKey: VenpiCaveOverhaul-AllFactionsMods-Patch.esm
+GameRelease: Starfield
+ModHeader:
+  Flags:
+  - Master
+  Stats:
+    NumRecords: 9
+  Author: ''
+  MasterReferences:
+  - Master: Starfield.esm
+  - Master: BlueprintShips-Starfield.esm
+  - Master: GrindTerraIndustriesFaction.esm
+  - Master: CoraCoeMultiversalBookHunter.esm

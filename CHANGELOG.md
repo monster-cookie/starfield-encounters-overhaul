@@ -1,5 +1,13 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 1.0.18
+* For compatibility and at the request of the GrindTerra author reverting back to Starfield Hostile Human List but adding my cheat to prevent competing factions from pawning together. 
+* Added compatibility patches for Grindterra Factions and Expanded the patch for Cora Coe Multiversal Book Hunter to add its faction. I can't get POI Faction Diversity and its Factions mod to play nice so can't make patches for them.
+* Added new debug command to dump the spawn chance settings for open world encounters. 
+* So if you change global variables and another mod overrides them to new settings the new are ignored until next NG+ ot manually set via console. So added to new commands below the first confirms your settings do or do not match my vanilla'ish settings and the second resets them to the overhaul settings.
+* View current settings in Console run: CGF "VEOH_Debug.SpawnSettings"
+* To reset the settings to the overhaul settings: CGF "VEOH_Debug.ResetSpawnSettings"
+
 ## Version 1.0.17
 * Misspelling of Hollow as reported by LJTIGER69
 
