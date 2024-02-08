@@ -1,7 +1,8 @@
 # Venworks Cave and Encounters Overhaul
 
 ## Version 1.0.19
-* Using the gas vents distance restrictions settings to see if that can keep the camp spawn separated some. But also needs curves which we can't define yet. 
+* Using the gas vents distance restrictions settings to see if that can keep the camp spawn separated some. Camps now are spread a fair distance apart but the spacers wonder more. 
+* Restored the starborn are known check lost in the revert to starfield's hostile humans stuff. Sorry @nexstephen :)  
 * All Factions Patch now requires GRiNDTerra Industries - Corporate Terraformation 2.0, POI Faction Diversity and POI Faction Diversity - New Factions
 
 ## Version 1.0.18
