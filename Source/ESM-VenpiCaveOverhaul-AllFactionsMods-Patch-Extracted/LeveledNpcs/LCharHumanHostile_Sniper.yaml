@@ -205,20 +205,6 @@ Entries:
     Data:
       MutagenObjectType: AreHostileActorsNearConditionData
 - Level: 1
-  Reference: 00085B:NewHostileFactions.esm
-  Count: 1
-  Conditions:
-  - MutagenObjectType: ConditionFloat
-    Unknown1: 0x000000
-    Data:
-      MutagenObjectType: IsTrueForConditionFormConditionData
-      FirstParameter: 0008A6:NewHostileFactions.esm
-    ComparisonValue: 1
-  - MutagenObjectType: ConditionFloat
-    Unknown1: 0x000000
-    Data:
-      MutagenObjectType: AreHostileActorsNearConditionData
-- Level: 1
   Reference: 000875:NewHostileFactions.esm
   Count: 1
   Conditions:
@@ -289,14 +275,14 @@ Entries:
     Data:
       MutagenObjectType: AreHostileActorsNearConditionData
 - Level: 1
-  Reference: 000876:GrindTerraIndustriesFaction.esm
+  Reference: 000876:GrindTerraIndustriesFactionDiversityVersion.esm
   Count: 1
   Conditions:
   - MutagenObjectType: ConditionFloat
     Unknown1: 0x000000
     Data:
       MutagenObjectType: IsTrueForConditionFormConditionData
-      FirstParameter: 000800:GrindTerraIndustriesFaction.esm
+      FirstParameter: 000800:GrindTerraIndustriesFactionDiversityVersion.esm
     ComparisonValue: 1
   - MutagenObjectType: ConditionFloat
     Unknown1: 0x000000

@@ -289,14 +289,14 @@ Entries:
     Data:
       MutagenObjectType: AreHostileActorsNearConditionData
 - Level: 1
-  Reference: 000873:GrindTerraIndustriesFaction.esm
+  Reference: 000873:GrindTerraIndustriesFactionDiversityVersion.esm
   Count: 1
   Conditions:
   - MutagenObjectType: ConditionFloat
     Unknown1: 0x000000
     Data:
       MutagenObjectType: IsTrueForConditionFormConditionData
-      FirstParameter: 000800:GrindTerraIndustriesFaction.esm
+      FirstParameter: 000800:GrindTerraIndustriesFactionDiversityVersion.esm
     ComparisonValue: 1
   - MutagenObjectType: ConditionFloat
     Unknown1: 0x000000

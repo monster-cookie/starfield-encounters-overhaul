@@ -1,9 +1,7 @@
-FormKey: 000801:GrindTerraIndustriesFaction.esm
-EditorID: GrindTerraFaction
+FormKey: 000837:PoINPCDiversity.esm
+EditorID: UCMarineGarrisonFaction
 Relations:
 - Target: 03E0C8:Starfield.esm
-  Reaction: Friend
-- Target: 052ADC:Starfield.esm
   Reaction: Friend
 - Target: 06D14C:Starfield.esm
 - Target: 0D1850:Starfield.esm
@@ -12,12 +10,10 @@ Relations:
 - Target: 256F55:Starfield.esm
 - Target: 2733AF:Starfield.esm
   Reaction: Friend
+- Target: 29B969:Starfield.esm
+  Reaction: Friend
 - Target: 2C0B3C:Starfield.esm
-- Target: 2C9BF9:Starfield.esm
-  Reaction: Enemy
-- Target: 000801:GrindTerraIndustriesFaction.esm
-  Reaction: Ally
-- Target: 00087B:GrindTerraIndustriesFaction.esm
+- Target: 000837:PoINPCDiversity.esm
   Reaction: Ally
 Flags:
 - CanBeOwner

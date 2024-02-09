@@ -1,0 +1,22 @@
+FormKey: 000861:PoINPCDiversity.esm
+EditorID: RyujinSecurityFaction
+Relations:
+- Target: 03E0C8:Starfield.esm
+  Reaction: Friend
+- Target: 06D14C:Starfield.esm
+- Target: 200B02:Starfield.esm
+- Target: 256F55:Starfield.esm
+- Target: 2C0B3C:Starfield.esm
+- Target: 2C9BF9:Starfield.esm
+  Reaction: Friend
+- Target: 000861:PoINPCDiversity.esm
+  Reaction: Ally
+Flags:
+- CanBeOwner
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues:
+  EndHour: 24
+  BuysStolenItems: True
+  BuysNonStolenItems: True

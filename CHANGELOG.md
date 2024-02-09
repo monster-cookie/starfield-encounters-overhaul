@@ -1,5 +1,8 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 1.0.22
+* Change all factions patch to use GrindTerraIndustriesFactionDiversityVersion.esm as the master instead. Thanks Javapower77 for reporting.
+
 ## Version 1.0.21
 * Reordered PCM general list to make creatures more common and traits less. Also put the new human camps in the middle.
 * Switched spacers to a new global set to 20% chance from 40% 

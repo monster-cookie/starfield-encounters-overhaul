@@ -7,13 +7,13 @@ ModHeader:
   Flags:
   - Master
   Stats:
-    NumRecords: 19
+    NumRecords: 21
   Author: ''
   MasterReferences:
   - Master: Starfield.esm
   - Master: BlueprintShips-Starfield.esm
-  - Master: GrindTerraIndustriesFaction.esm
-  - Master: CoraCoeMultiversalBookHunter.esm
-  - Master: NewHostileFactions.esm
-  - Master: PoINPCDiversity.esm
   - Master: VenpiCore.esm
+  - Master: PoINPCDiversity.esm
+  - Master: NewHostileFactions.esm
+  - Master: GrindTerraIndustriesFactionDiversityVersion.esm
+  - Master: CoraCoeMultiversalBookHunter.esm

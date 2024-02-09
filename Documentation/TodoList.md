@@ -2,6 +2,7 @@
 
 # Bug fixes
 - [X] Setup randomized enabler on the wind farms spawners and setup a guard attack trigger
+- [X] if you use POI Faction Diversity, you should use GrindTerraIndustriesFactionDiversityVersion.esm instead of GrindTerraIndustriesFaction.esm
 - [ ] CF Quest Echoes of the past at the UC prison spawners are broken causing the quest to fail
 - [ ] Abandoned Industrial Compound a bunch of spawners are in the walls or mid air now
 - [ ] Spacer Camp is spawning in the middle of player outposts. 
