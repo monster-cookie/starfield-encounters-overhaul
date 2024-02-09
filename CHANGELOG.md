@@ -1,5 +1,11 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 1.0.21
+* Reordered PCM general list to make creatures more common and traits less. Also put the new human camps in the middle.
+* Switched spacers to a new global set to 20% chance from 40% 
+* Added a check for minimum distance from LocTypOutpost but I'm not sure that actually means player outpost
+* Added new debug command to set custom spawn rate for spacer camps: CGF "VEOH_Debug.SetSpacerCampSpawnRate" <chance:integer>
+
 ## Version 1.0.20
 * Hostile Human Factions are now neutral to critters and prey. 
 * Moved the are hostile actors near check on hostile humans leveled list to the entry level. This should help spawning more at least logically but in testing didn't seem to matter any. 

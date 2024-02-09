@@ -17,6 +17,7 @@ Function Show() Global
   message += "        Spawn Chance Status Screen:\n\tCGF \"VEOH_Debug.SpawnSettings\"\n"
   message += "  To toggle debug mode and logging:\n\tCGF \"VEOH_Debug.ToggleDebugMode\"\n"
   message += "Reset spawn chances to my settings:\n\tCGF \"VEOH_Debug.ResetSpawnSettings\"\n"
+  message += "      Set spacer camp spawn chance:\n\tCGF \"VEOH_Debug.SetSpacerCampSpawnRate\" <chance:integer>\n"
 
   Debug.MessageBox(message)
 EndFunction
