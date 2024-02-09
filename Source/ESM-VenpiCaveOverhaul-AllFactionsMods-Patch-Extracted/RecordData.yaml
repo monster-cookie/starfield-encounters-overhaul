@@ -7,7 +7,7 @@ ModHeader:
   Flags:
   - Master
   Stats:
-    NumRecords: 9
+    NumRecords: 19
   Author: ''
   MasterReferences:
   - Master: Starfield.esm

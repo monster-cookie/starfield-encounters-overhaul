@@ -1,5 +1,11 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 1.0.20
+* Hostile Human Factions are now neutral to critters and prey. 
+* Moved the are hostile actors near check on hostile humans leveled list to the entry level. This should help spawning more at least logically but in testing didn't seem to matter any. 
+* Updated all patches for these changes too. 
+* This should be the remainder of the patching needed from 1.0.14 & 1.0.15. So I can go back to adding new fun encounters (not necessarily hostile though).
+
 ## Version 1.0.19
 * Using the gas vents distance restrictions settings to see if that can keep the camp spawn separated some. Camps now are spread a fair distance apart but the spacers wonder more. 
 * Restored the starborn are known check lost in the revert to starfield's hostile humans stuff. Sorry @nexstephen :)  

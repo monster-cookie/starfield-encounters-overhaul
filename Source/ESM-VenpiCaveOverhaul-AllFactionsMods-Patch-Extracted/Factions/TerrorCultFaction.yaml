@@ -1,0 +1,22 @@
+FormKey: 000935:NewHostileFactions.esm
+EditorID: TerrorCultFaction
+Relations:
+- Target: 06D14C:Starfield.esm
+- Target: 19D58F:Starfield.esm
+  Reaction: Ally
+- Target: 200B02:Starfield.esm
+- Target: 256F55:Starfield.esm
+- Target: 2B2291:Starfield.esm
+  Reaction: Ally
+- Target: 2C0B3C:Starfield.esm
+- Target: 000935:NewHostileFactions.esm
+  Reaction: Ally
+Flags:
+- CanBeOwner
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues:
+  EndHour: 24
+  BuysStolenItems: True
+  BuysNonStolenItems: True

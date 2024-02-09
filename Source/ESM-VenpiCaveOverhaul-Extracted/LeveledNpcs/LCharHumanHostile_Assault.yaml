@@ -7,11 +7,6 @@ Flags:
 - 0x10
 - 0x20
 - 0x40
-Conditions:
-- MutagenObjectType: ConditionFloat
-  Unknown1: 0x000000
-  Data:
-    MutagenObjectType: AreHostileActorsNearConditionData
 Entries:
 - Level: 1
   Reference: 054327:Starfield.esm
@@ -24,6 +19,10 @@ Entries:
       MutagenObjectType: LocationHasKeywordConditionData
       FirstParameter: 023305:Starfield.esm
     ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: AreHostileActorsNearConditionData
 - Level: 1
   Reference: 12D120:Starfield.esm
   Count: 1
@@ -41,6 +40,10 @@ Entries:
       MutagenObjectType: IsTrueForConditionFormConditionData
       FirstParameter: 000829:VenpiCore.esm
     ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: AreHostileActorsNearConditionData
 - Level: 1
   Reference: 26FB3E:Starfield.esm
   Count: 1
@@ -52,6 +55,10 @@ Entries:
       MutagenObjectType: LocationHasKeywordConditionData
       FirstParameter: 12179A:Starfield.esm
     ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: AreHostileActorsNearConditionData
 - Level: 1
   Reference: 26FDB4:Starfield.esm
   Count: 1
@@ -63,6 +70,10 @@ Entries:
       MutagenObjectType: LocationHasKeywordConditionData
       FirstParameter: 283582:Starfield.esm
     ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: AreHostileActorsNearConditionData
 - Level: 1
   Reference: 26FF67:Starfield.esm
   Count: 1
@@ -74,6 +85,10 @@ Entries:
       MutagenObjectType: LocationHasKeywordConditionData
       FirstParameter: 283581:Starfield.esm
     ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: AreHostileActorsNearConditionData
 - Level: 1
   Reference: 278716:Starfield.esm
   Count: 1
@@ -85,6 +100,10 @@ Entries:
       MutagenObjectType: LocationHasKeywordConditionData
       FirstParameter: 283580:Starfield.esm
     ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: AreHostileActorsNearConditionData
 - Level: 1
   Reference: 27BB8F:Starfield.esm
   Count: 1
@@ -95,5 +114,9 @@ Entries:
       MutagenObjectType: LocationHasKeywordConditionData
       FirstParameter: 283585:Starfield.esm
     ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: AreHostileActorsNearConditionData
 Model:
   FLLD: 0x01000000
