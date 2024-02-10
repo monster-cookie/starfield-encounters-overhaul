@@ -1,0 +1,5 @@
+MutagenObjectType: PlacedObject
+FormKey: 0016FD:VenpiCaveOverhaul.esm
+EditorID: VEOH_Friendlies01_Active_FakeFire
+Base: 146A50:Starfield.esm
+Position: 1, 1.5, 0.1

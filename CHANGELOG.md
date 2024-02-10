@@ -1,5 +1,16 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 1.0.25
+* Added the first friendlies camp, a boy and a robot camping. This may or may not give a collect meat locally quest (random chance). 
+* Added debug command to set custom spawn rate for friendly camps: CGF "VEOH_Debug.SetFriendliesCampSpawnRate" <chance:integer>
+
+## Version 1.0.24
+* Significantly reduced Spacer camp spawns.
+* Should have the war zone tamed should only be able to get 1 camp per 900m square. Its not longer random change I'll work on adding that back after but I also think that may have been the trigger based on the lame way the PCM rule tree works and evaluates. Because the rule that triggered didn't get satisfied it went trying until it found something to shove there. None of the other rules use GetRandomPercent so not sure its save in this context. 
+
+## Version 1.0.23
+* Reuploading all factions patch, nexus is serving out an old file for some reason
+
 ## Version 1.0.22
 * Change all factions patch to use GrindTerraIndustriesFactionDiversityVersion.esm as the master instead. Thanks Javapower77 for reporting.
 

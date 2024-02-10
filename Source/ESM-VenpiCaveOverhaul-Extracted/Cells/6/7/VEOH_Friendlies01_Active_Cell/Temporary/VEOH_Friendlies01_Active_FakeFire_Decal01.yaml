@@ -1,0 +1,6 @@
+MutagenObjectType: PlacedObject
+FormKey: 0016FA:VenpiCaveOverhaul.esm
+EditorID: VEOH_Friendlies01_Active_FakeFire_Decal01
+Base: 1D9D9A:Starfield.esm
+ConstrainedDecal: 1.844574, 1.253052, 0.306792
+Position: 1, 1.5, 0.6

@@ -28,14 +28,16 @@ Function SpawnSettings() Global
   GlobalVariable PCM_BlockCreation_TraitKnownChance = Game.GetFormFromFile(0x002CCF3A, "Starfield.esm") as GlobalVariable
   GlobalVariable PCM_CellLoad_ManMadeChance = Game.GetFormFromFile(0x00228F4A, "Starfield.esm") as GlobalVariable
   GlobalVariable VEOH_SpacerCamps_Chance = Game.GetFormFromFile(0x000016E8, "VenpiCaveOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_FriendliesCamps_Chance = Game.GetFormFromFile(0x000016F0, "VenpiCaveOverhaul.esm") as GlobalVariable
 
   String message = "Current PCM Spawn Settings:\n\n"
-  message += "  Unique Encounters Chance (Should be 40%) = " + OE_ChanceUniqueGlobal.GetValueInt() + "%\n"
-  message += "    Rare Encounters Chance (Should be 40%) = " + OE_ChanceRareGlobal.GetValueInt() + "%\n"
-  message += "Uncommon Encounters Chance (Should be 65%) = " + OE_ChanceUncommonGlobal.GetValueInt() + "%\n"
-  message += "        Known Trait Chance (Should be 35%) = " + PCM_BlockCreation_TraitKnownChance.GetValueInt() + "%\n"
-  message += "   Man Made Clutter Chance (Should be 50%) = " + PCM_CellLoad_ManMadeChance.GetValueInt() + "%\n"
-  message += "   Spacer Open World Camps (Should be 20%) = " + VEOH_SpacerCamps_Chance.GetValueInt() + "%\n"
+  message += "   Unique Encounters Chance (Should be 40%) = " + OE_ChanceUniqueGlobal.GetValueInt() + "%\n"
+  message += "     Rare Encounters Chance (Should be 40%) = " + OE_ChanceRareGlobal.GetValueInt() + "%\n"
+  message += " Uncommon Encounters Chance (Should be 65%) = " + OE_ChanceUncommonGlobal.GetValueInt() + "%\n"
+  message += "         Known Trait Chance (Should be 35%) = " + PCM_BlockCreation_TraitKnownChance.GetValueInt() + "%\n"
+  message += "    Man Made Clutter Chance (Should be 50%) = " + PCM_CellLoad_ManMadeChance.GetValueInt() + "%\n"
+  message += "    Spacer Open World Camps (Should be 20%) = " + VEOH_SpacerCamps_Chance.GetValueInt() + "%\n"
+  message += "Friendlies Open World Camps (Should be 30%) = " + VEOH_FriendliesCamps_Chance.GetValueInt() + "%\n"
 
   Debug.MessageBox(message)
   Debug.Trace(message, 2)
@@ -64,6 +66,7 @@ Function ResetSpawnSettings() Global
   GlobalVariable PCM_BlockCreation_TraitKnownChance = Game.GetFormFromFile(0x002CCF3A, "Starfield.esm") as GlobalVariable
   GlobalVariable PCM_CellLoad_ManMadeChance = Game.GetFormFromFile(0x00228F4A, "Starfield.esm") as GlobalVariable
   GlobalVariable VEOH_SpacerCamps_Chance = Game.GetFormFromFile(0x000016E8, "VenpiCaveOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_FriendliesCamps_Chance = Game.GetFormFromFile(0x000016F0, "VenpiCaveOverhaul.esm") as GlobalVariable
 
   OE_ChanceUniqueGlobal.SetValueInt(40)
   OE_ChanceRareGlobal.SetValueInt(40)
@@ -71,16 +74,18 @@ Function ResetSpawnSettings() Global
   PCM_BlockCreation_TraitKnownChance.SetValueInt(35)
   PCM_CellLoad_ManMadeChance.SetValueInt(50)
   VEOH_SpacerCamps_Chance.SetValueInt(20)
+  VEOH_FriendliesCamps_Chance.SetValueInt(30)
 
   Utility.Wait(0.25)
 
   String message = "Current PCM Spawn Settings:\n\n"
-  message += "  Unique Encounters Chance (Should be 40%) = " + OE_ChanceUniqueGlobal.GetValueInt() + "%\n"
-  message += "    Rare Encounters Chance (Should be 40%) = " + OE_ChanceRareGlobal.GetValueInt() + "%\n"
-  message += "Uncommon Encounters Chance (Should be 65%) = " + OE_ChanceUncommonGlobal.GetValueInt() + "%\n"
-  message += "        Known Trait Chance (Should be 35%) = " + PCM_BlockCreation_TraitKnownChance.GetValueInt() + "%\n"
-  message += "   Man Made Clutter Chance (Should be 50%) = " + PCM_CellLoad_ManMadeChance.GetValueInt() + "%\n"
-  message += "   Spacer Open World Camps (Should be 20%) = " + VEOH_SpacerCamps_Chance.GetValueInt() + "%\n"
+  message += "   Unique Encounters Chance (Should be 40%) = " + OE_ChanceUniqueGlobal.GetValueInt() + "%\n"
+  message += "     Rare Encounters Chance (Should be 40%) = " + OE_ChanceRareGlobal.GetValueInt() + "%\n"
+  message += " Uncommon Encounters Chance (Should be 65%) = " + OE_ChanceUncommonGlobal.GetValueInt() + "%\n"
+  message += "         Known Trait Chance (Should be 35%) = " + PCM_BlockCreation_TraitKnownChance.GetValueInt() + "%\n"
+  message += "    Man Made Clutter Chance (Should be 50%) = " + PCM_CellLoad_ManMadeChance.GetValueInt() + "%\n"
+  message += "    Spacer Open World Camps (Should be 20%) = " + VEOH_SpacerCamps_Chance.GetValueInt() + "%\n"
+  message += "Friendlies Open World Camps (Should be 30%) = " + VEOH_FriendliesCamps_Chance.GetValueInt() + "%\n"
 
   Debug.MessageBox(message)
   Debug.Trace(message, 2)
@@ -94,5 +99,16 @@ Function SetSpacerCampSpawnRate(Int spawnChance) Global
     Return
   Else
     VEOH_SpacerCamps_Chance.SetValueInt(spawnChance)
+  EndIf
+EndFunction
+
+;; Call using: CGF "VEOH_Debug.SetFriendliesCampSpawnRate" <chance:integer>
+Function SetFriendliesCampSpawnRate(Int spawnChance) Global
+  GlobalVariable VEOH_FriendliesCamps_Chance = Game.GetFormFromFile(0x000016F0, "VenpiCaveOverhaul.esm") as GlobalVariable
+  If (VEOH_FriendliesCamps_Chance == None)
+    Debug.MessageBox("Failed to find VEOH_FriendliesCamps_Chance global variable in VenpiCaveOverhaul.esm. Please contact Venpi for help.")
+    Return
+  Else
+    VEOH_FriendliesCamps_Chance.SetValueInt(spawnChance)
   EndIf
 EndFunction

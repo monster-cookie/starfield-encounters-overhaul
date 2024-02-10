@@ -1,0 +1,5 @@
+MutagenObjectType: PlacedObject
+FormKey: 001700:VenpiCaveOverhaul.esm
+EditorID: VEOH_Friendlies01_Active_IdlePraying
+Base: 010362:Starfield.esm
+Position: 3.5, -0.5, 0.1
