@@ -2,7 +2,11 @@
 
 ## Version 1.0.25
 * Added the first friendlies camp, a boy and a robot camping. This may or may not give a collect meat locally quest (random chance). 
-* Added debug command to set custom spawn rate for friendly camps: CGF "VEOH_Debug.SetFriendliesCampSpawnRate" <chance:integer>
+* Removed the GetRandomPercent in PCM rules it breaks things bad causing the war zones. When a rule branch is traversed a a leaf must return or bad things happen I think it just grabs a random leaf. This is why the branch rules and leafs generally have near identical conditions to prevent a leaf not being available. 
+* Added a second spacer camp with 2 NPCs and a loot chest (Aid/Food)
+* Fixed a invalid PCM rule path after last nights fiasco
+* Added new distance variables and debug commands to configure/display them
+* Human branch rule chain now uses conditions forms but only the ones with _SafeToOverride can be safely changed. If this system stays stable I'll expand it to the BGS rules sets so we can start fixing them. 
 
 ## Version 1.0.24
 * Significantly reduced Spacer camp spawns.

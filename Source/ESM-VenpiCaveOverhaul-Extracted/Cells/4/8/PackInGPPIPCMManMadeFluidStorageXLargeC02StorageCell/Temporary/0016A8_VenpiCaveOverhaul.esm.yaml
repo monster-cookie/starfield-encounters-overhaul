@@ -1,8 +1,0 @@
-MutagenObjectType: PlacedNpc
-FormKey: 0016A8:VenpiCaveOverhaul.esm
-Base: 0016E5:VenpiCaveOverhaul.esm
-LevelModifier: VeryHard
-LinkedReferences:
-- KeywordOrReference: 0F0E7E:Starfield.esm
-  Reference: 0016A7:VenpiCaveOverhaul.esm
-Position: -6.15, 1.59, 1.42

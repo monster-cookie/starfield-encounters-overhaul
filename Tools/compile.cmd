@@ -24,12 +24,6 @@ del /s /q "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-Gr
 rmdir /s /q "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-Grindterra-Patch"
 mkdir "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-Grindterra-Patch"
 
-@REM Clear Dist-AllFactions-Patch DIR
-@echo "Clearing and scafolding the Dist-AllFactions-Patch dir"
-del /s /q "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-AllFactions-Patch\*.*"
-rmdir /s /q "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-AllFactions-Patch"
-mkdir "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-AllFactions-Patch"
-
 @REM Clear Dist-BA2-Main DIR
 @echo "Clearing and scafolding the Dist-BA2-Main dir"
 del /s /q "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-BA2-Main\*.*"
@@ -108,15 +102,11 @@ copy /y "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-CCMBH-Patch-Experimental
 copy /y "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-GrindTerraFactions-Patch-Experimental\VenpiCaveOverhaul-GrindTerraFactions-Patch.esm" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\ESM"
 copy /y "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-GrindTerraFactions-Patch-Experimental\VenpiCaveOverhaul-GrindTerraFactions-Patch.esm" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-Grindterra-Patch"
 
-copy /y "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-AllFactionsMods-Patch-Experimental\VenpiCaveOverhaul-AllFactionsMods-Patch.esm" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\ESM"
-copy /y "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-AllFactionsMods-Patch-Experimental\VenpiCaveOverhaul-AllFactionsMods-Patch.esm" "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Dist-AllFactions-Patch"
-
 @REM Use Spriggit to extract record from ESM
 @echo "Running Spriggit to extract record from ESM"
 "D:\Program Files\Spriggit\Spriggit.CLI.exe" serialize --InputPath "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-Experimental\VenpiCaveOverhaul.esm" --OutputPath "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\ESM-VenpiCaveOverhaul-Extracted" --GameRelease Starfield --PackageName Spriggit.Yaml
 "D:\Program Files\Spriggit\Spriggit.CLI.exe" serialize --InputPath "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-CCMBH-Patch-Experimental\VenpiCaveOverhaul-CCMBH-Patch.esm" --OutputPath "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\ESM-VenpiCaveOverhaul-CCMBH-Patch-Extracted" --GameRelease Starfield --PackageName Spriggit.Yaml
 "D:\Program Files\Spriggit\Spriggit.CLI.exe" serialize --InputPath "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-GrindTerraFactions-Patch-Experimental\VenpiCaveOverhaul-GrindTerraFactions-Patch.esm" --OutputPath "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\ESM-VenpiCaveOverhaul-GrindTerraFactions-Patch-Extracted" --GameRelease Starfield --PackageName Spriggit.Yaml
-"D:\Program Files\Spriggit\Spriggit.CLI.exe" serialize --InputPath "D:\MO2Staging\Starfield\mods\VenpiCaveOverhaul-AllFactionsMods-Patch-Experimental\VenpiCaveOverhaul-AllFactionsMods-Patch.esm" --OutputPath "C:\Repositories\Public\Starfield Mods\starfield-cave-overhaul\Source\ESM-VenpiCaveOverhaul-AllFactionsMods-Patch-Extracted" --GameRelease Starfield --PackageName Spriggit.Yaml
 
 @REM Create and copy the BA2 Main Archive to Dist folder
 @echo "Creating the BA2 Main Archive"
