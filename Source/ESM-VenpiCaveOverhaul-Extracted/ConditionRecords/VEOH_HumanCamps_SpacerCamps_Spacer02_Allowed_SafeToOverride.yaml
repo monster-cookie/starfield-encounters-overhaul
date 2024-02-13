@@ -1,9 +1,9 @@
 FormKey: 00171A:VenpiCaveOverhaul.esm
 EditorID: VEOH_HumanCamps_SpacerCamps_Spacer02_Allowed_SafeToOverride
 Conditions:
-- MutagenObjectType: ConditionFloat
-  CompareOperator: LessThan
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
   Unknown1: 0x000000
   Data:
     MutagenObjectType: GetRandomPercentConditionData
-  ComparisonValue: 25
+  ComparisonValue: 00171D:VenpiCaveOverhaul.esm
