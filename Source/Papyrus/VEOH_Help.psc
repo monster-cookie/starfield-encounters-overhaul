@@ -27,6 +27,7 @@ Function Show() Global
   message += "                     Friendly Camps spawn chance status screen:\n\tCGF \"VEOH_Debug.FriendlyCampSpawnSettings\"\n"
   message += "             Reset Friendly Camps spawn chances to my settings:\n\tCGF \"VEOH_Debug.ResetFriendlyCampSpawnSettings\"\n"
   message += "Set new spawn setting for Friendly Camp 01 - Babysitting Robot:\n\tCGF \"VEOH_Debug.SetSpawnChanceFriendly01Camp\" <chance:integer>\n"
+  message += "Set new spawn setting for Friendly Camp 02 - Treasure Map:\n\tCGF \"VEOH_Debug.SetSpawnChanceFriendly02Camp\" <chance:integer>\n"
   message += "\n\n"
   message += "       Human Camps distance restrictions status screen:\n\tCGF \"VEOH_Debug.HumanCampDistanceRestrictions\"\n"
   message += "Reset Human Camps distance restrictions to my settings:\n\tCGF \"VEOH_Debug.ResetHumanCampDistanceRestrictions\"\n"

@@ -117,7 +117,7 @@ Entries:
     Data:
       MutagenObjectType: AreHostileActorsNearConditionData
 - Level: 1
-  Reference: 001DD6:CoraCoeMultiversalBookHunter.esm
+  Reference: 001DDF:CoraCoeMultiversalBookHunter.esm
   Count: 1
   Conditions:
   - MutagenObjectType: ConditionFloat
@@ -126,6 +126,12 @@ Entries:
     Data:
       MutagenObjectType: LocationHasKeywordConditionData
       FirstParameter: 000AA5:CoraCoeMultiversalBookHunter.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 000829:VenpiCore.esm
     ComparisonValue: 1
   - MutagenObjectType: ConditionFloat
     Unknown1: 0x000000

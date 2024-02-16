@@ -81,6 +81,67 @@ Function ResetSystemSpawnSettings() Global
   Debug.Trace(message, 2)
 EndFunction
 
+
+;; ****************************************************************************************
+;; *** Human Camps - Distance Limits
+;; ***
+
+;; Call using: CGF "VEOH_Debug.HumanCampDistanceRestrictions" 
+Function HumanCampDistanceRestrictions() Global
+  GlobalVariable VEOH_HumanCamps_DistanceRestriction_Far = Game.GetFormFromFile(0x000016E8, "VenpiCaveOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_HumanCamps_DistanceRestriction_Near = Game.GetFormFromFile(0x000016F0, "VenpiCaveOverhaul.esm") as GlobalVariable
+
+  String message = "Current PCM Distance Restrictions:\n\n"
+  message += "Human Camps Min Distance Near (Should be 300) = " + VEOH_HumanCamps_DistanceRestriction_Near.GetValueInt() + "\n"
+  message += " Human Camps Min Distance Far (Should be 900) = " + VEOH_HumanCamps_DistanceRestriction_Far.GetValueInt() + "\n"
+
+  Debug.MessageBox(message)
+  Debug.Trace(message, 2)
+EndFunction
+
+;; Call using: CGF "VEOH_Debug.ResetHumanCampDistanceRestrictions" 
+Function ResetHumanCampDistanceRestrictions() Global
+  GlobalVariable VEOH_HumanCamps_DistanceRestriction_Far = Game.GetFormFromFile(0x000016E8, "VenpiCaveOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_HumanCamps_DistanceRestriction_Near = Game.GetFormFromFile(0x000016F0, "VenpiCaveOverhaul.esm") as GlobalVariable
+
+  VEOH_HumanCamps_DistanceRestriction_Near.SetValue(300)
+  VEOH_HumanCamps_DistanceRestriction_Far.SetValue(900)
+
+  Utility.Wait(0.30)
+
+  String message = "Current PCM Distance Restrictions:\n\n"
+  message += "Human Camps Min Distance Near (Should be 300) = " + VEOH_HumanCamps_DistanceRestriction_Near.GetValueInt() + "\n"
+  message += " Human Camps Min Distance Far (Should be 900) = " + VEOH_HumanCamps_DistanceRestriction_Far.GetValueInt() + "\n"
+
+  Debug.MessageBox(message)
+  Debug.Trace(message, 2)
+EndFunction
+
+;; Call using: CGF "VEOH_Debug.SetHumanCampsDistanceFar" <distance:float>
+Function SetHumanCampsDistanceFar(Float distance) Global
+  GlobalVariable VEOH_HumanCamps_DistanceRestriction_Far = Game.GetFormFromFile(0x000016E8, "VenpiCaveOverhaul.esm") as GlobalVariable
+  If (VEOH_HumanCamps_DistanceRestriction_Far == None)
+    Debug.MessageBox("Failed to find VEOH_HumanCamps_DistanceRestriction_Far global variable in VenpiCaveOverhaul.esm. Please contact Venpi for help.")
+  Else
+    VEOH_HumanCamps_DistanceRestriction_Far.SetValue(distance)
+  EndIf
+EndFunction
+
+;; Call using: CGF "VEOH_Debug.SetHumanCampsDistanceNear" <distance:float>
+Function SetHumanCampsDistanceNear(Float distance) Global
+  GlobalVariable VEOH_HumanCamps_DistanceRestriction_Near = Game.GetFormFromFile(0x000016F0, "VenpiCaveOverhaul.esm") as GlobalVariable
+  If (VEOH_HumanCamps_DistanceRestriction_Near == None)
+    Debug.MessageBox("Failed to find VEOH_HumanCamps_DistanceRestriction_Near global variable in VenpiCaveOverhaul.esm. Please contact Venpi for help.")
+  Else
+    VEOH_HumanCamps_DistanceRestriction_Near.SetValue(distance)
+  EndIf
+EndFunction
+
+
+;; ****************************************************************************************
+;; *** Human Camps - Spacer Spawn Settings
+;; ***
+
 ;; Call using: CGF "VEOH_Debug.SpacerCampSpawnSettings" 
 Function SpacerCampSpawnSettings() Global
   GlobalVariable VEOH_SpacerCamps_Spacer01_Chance = Game.GetFormFromFile(0x0000171C, "VenpiCaveOverhaul.esm") as GlobalVariable
@@ -141,63 +202,19 @@ Function SetSpawnChanceSpacer02Camp(Int chance) Global
   EndIf
 EndFunction
 
-;; Call using: CGF "VEOH_Debug.HumanCampDistanceRestrictions" 
-Function HumanCampDistanceRestrictions() Global
-  GlobalVariable VEOH_HumanCamps_DistanceRestriction_Far = Game.GetFormFromFile(0x000016E8, "VenpiCaveOverhaul.esm") as GlobalVariable
-  GlobalVariable VEOH_HumanCamps_DistanceRestriction_Near = Game.GetFormFromFile(0x000016F0, "VenpiCaveOverhaul.esm") as GlobalVariable
 
-  String message = "Current PCM Distance Restrictions:\n\n"
-  message += "Human Camps Min Distance Near (Should be 300) = " + VEOH_HumanCamps_DistanceRestriction_Near.GetValueInt() + "\n"
-  message += " Human Camps Min Distance Far (Should be 900) = " + VEOH_HumanCamps_DistanceRestriction_Far.GetValueInt() + "\n"
-
-  Debug.MessageBox(message)
-  Debug.Trace(message, 2)
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.ResetHumanCampDistanceRestrictions" 
-Function ResetHumanCampDistanceRestrictions() Global
-  GlobalVariable VEOH_HumanCamps_DistanceRestriction_Far = Game.GetFormFromFile(0x000016E8, "VenpiCaveOverhaul.esm") as GlobalVariable
-  GlobalVariable VEOH_HumanCamps_DistanceRestriction_Near = Game.GetFormFromFile(0x000016F0, "VenpiCaveOverhaul.esm") as GlobalVariable
-
-  VEOH_HumanCamps_DistanceRestriction_Near.SetValue(300)
-  VEOH_HumanCamps_DistanceRestriction_Far.SetValue(900)
-
-  Utility.Wait(0.25)
-
-  String message = "Current PCM Distance Restrictions:\n\n"
-  message += "Human Camps Min Distance Near (Should be 300) = " + VEOH_HumanCamps_DistanceRestriction_Near.GetValueInt() + "\n"
-  message += " Human Camps Min Distance Far (Should be 900) = " + VEOH_HumanCamps_DistanceRestriction_Far.GetValueInt() + "\n"
-
-  Debug.MessageBox(message)
-  Debug.Trace(message, 2)
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.SetHumanCampsDistanceFar" <distance:float>
-Function SetHumanCampsDistanceFar(Float distance) Global
-  GlobalVariable VEOH_HumanCamps_DistanceRestriction_Far = Game.GetFormFromFile(0x000016E8, "VenpiCaveOverhaul.esm") as GlobalVariable
-  If (VEOH_HumanCamps_DistanceRestriction_Far == None)
-    Debug.MessageBox("Failed to find VEOH_HumanCamps_DistanceRestriction_Far global variable in VenpiCaveOverhaul.esm. Please contact Venpi for help.")
-  Else
-    VEOH_HumanCamps_DistanceRestriction_Far.SetValue(distance)
-  EndIf
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.SetHumanCampsDistanceNear" <distance:float>
-Function SetHumanCampsDistanceNear(Float distance) Global
-  GlobalVariable VEOH_HumanCamps_DistanceRestriction_Near = Game.GetFormFromFile(0x000016F0, "VenpiCaveOverhaul.esm") as GlobalVariable
-  If (VEOH_HumanCamps_DistanceRestriction_Near == None)
-    Debug.MessageBox("Failed to find VEOH_HumanCamps_DistanceRestriction_Near global variable in VenpiCaveOverhaul.esm. Please contact Venpi for help.")
-  Else
-    VEOH_HumanCamps_DistanceRestriction_Near.SetValue(distance)
-  EndIf
-EndFunction
+;; ****************************************************************************************
+;; *** Human Camps - Friendly Spawn Settings
+;; ***
 
 ;; Call using: CGF "VEOH_Debug.FriendlyCampSpawnSettings" 
 Function FriendlyCampSpawnSettings() Global
   GlobalVariable VEOH_FriendliesCamps_Friendlies01_Chance = Game.GetFormFromFile(0x0000171E, "VenpiCaveOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_FriendliesCamps_Friendlies02_Chance = Game.GetFormFromFile(0x0000172B, "VenpiCaveOverhaul.esm") as GlobalVariable
 
   String message = "Current Spacer Camp Spawn Settings:\n\n"
   message += "Chance for Friendly Camp 01 - Babysitting Robot (Should be 30%) = " + VEOH_FriendliesCamps_Friendlies01_Chance.GetValueInt() + "%\n"
+  message += "Chance for Friendly Camp 02 - Treasure Map (Should be 15%) = " + VEOH_FriendliesCamps_Friendlies02_Chance.GetValueInt() + "%\n"
 
   Debug.MessageBox(message)
   Debug.Trace(message, 2)
@@ -212,10 +229,18 @@ Function ResetFriendlyCampSpawnSettings() Global
     VEOH_FriendliesCamps_Friendlies01_Chance.SetValueInt(30)
   EndIf
 
+  GlobalVariable VEOH_FriendliesCamps_Friendlies02_Chance = Game.GetFormFromFile(0x0000172B, "VenpiCaveOverhaul.esm") as GlobalVariable
+  If (VEOH_FriendliesCamps_Friendlies02_Chance == None)
+    Debug.MessageBox("Failed to find VEOH_FriendliesCamps_Friendlies02_Chance global variable in VenpiCaveOverhaul.esm. Please contact Venpi for help.")
+  Else
+    VEOH_FriendliesCamps_Friendlies02_Chance.SetValueInt(15)
+  EndIf
+
   Utility.Wait(0.30)
 
   String message = "Current Spacer Camp Spawn Settings:\n\n"
   message += "Chance for Friendly Camp 01 - Babysitting Robot (Should be 30%) = " + VEOH_FriendliesCamps_Friendlies01_Chance.GetValueInt() + "%\n"
+  message += "Chance for Friendly Camp 02 - Treasure Map (Should be 15%) = " + VEOH_FriendliesCamps_Friendlies02_Chance.GetValueInt() + "%\n"
 
   Debug.MessageBox(message)
   Debug.Trace(message, 2)
@@ -228,5 +253,59 @@ Function SetSpawnChanceFriendly01Camp(Int chance) Global
     Debug.MessageBox("Failed to find VEOH_FriendliesCamps_Friendlies01_Chance global variable in VenpiCaveOverhaul.esm. Please contact Venpi for help.")
   Else
     VEOH_FriendliesCamps_Friendlies01_Chance.SetValueInt(chance)
+  EndIf
+EndFunction
+
+;; Call using: CGF "VEOH_Debug.SetSpawnChanceFriendly02Camp" <chance:integer>
+Function SetSpawnChanceFriendly02Camp(Int chance) Global
+  GlobalVariable VEOH_FriendliesCamps_Friendlies02_Chance = Game.GetFormFromFile(0x0000172B, "VenpiCaveOverhaul.esm") as GlobalVariable
+  If (VEOH_FriendliesCamps_Friendlies02_Chance == None)
+    Debug.MessageBox("Failed to find VEOH_FriendliesCamps_Friendlies02_Chance global variable in VenpiCaveOverhaul.esm. Please contact Venpi for help.")
+  Else
+    VEOH_FriendliesCamps_Friendlies02_Chance.SetValueInt(chance)
+  EndIf
+EndFunction
+
+
+;; ****************************************************************************************
+;; *** Human Camps - The First Spawn Settings
+;; ***
+
+;; Call using: CGF "VEOH_Debug.TheFirstCampSpawnSettings" 
+Function TheFirstCampSpawnSettings() Global
+  GlobalVariable VEOH_HumanCamps_TheFirst01_Chance = Game.GetFormFromFile(0x0000173E, "VenpiCaveOverhaul.esm") as GlobalVariable
+
+  String message = "Current Spacer Camp Spawn Settings:\n\n"
+  message += "Chance for The First Camp 01 - Salvage Operation (Should be 20%) = " + VEOH_HumanCamps_TheFirst01_Chance.GetValueInt() + "%\n"
+
+  Debug.MessageBox(message)
+  Debug.Trace(message, 2)
+EndFunction
+
+;; Call using: CGF "VEOH_Debug.ResetTheFirstCampSpawnSettings" 
+Function ResetTheFirstCampSpawnSettings() Global
+  GlobalVariable VEOH_HumanCamps_TheFirst01_Chance = Game.GetFormFromFile(0x0000173E, "VenpiCaveOverhaul.esm") as GlobalVariable
+  If (VEOH_HumanCamps_TheFirst01_Chance == None)
+    Debug.MessageBox("Failed to find VEOH_HumanCamps_TheFirst01_Chance global variable in VenpiCaveOverhaul.esm. Please contact Venpi for help.")
+  Else
+    VEOH_HumanCamps_TheFirst01_Chance.SetValueInt(20)
+  EndIf
+
+  Utility.Wait(0.30)
+
+  String message = "Current Spacer Camp Spawn Settings:\n\n"
+  message += "Chance for The First Camp 01 - Salvage Operation (Should be 20%) = " + VEOH_HumanCamps_TheFirst01_Chance.GetValueInt() + "%\n"
+
+  Debug.MessageBox(message)
+  Debug.Trace(message, 2)
+EndFunction
+
+;; Call using: CGF "VEOH_Debug.SetSpawnChanceTheFirst01Camp" <chance:integer>
+Function SetSpawnChanceTheFirst01Camp(Int chance) Global
+  GlobalVariable VEOH_HumanCamps_TheFirst01_Chance = Game.GetFormFromFile(0x0000173E, "VenpiCaveOverhaul.esm") as GlobalVariable
+  If (VEOH_HumanCamps_TheFirst01_Chance == None)
+    Debug.MessageBox("Failed to find VEOH_HumanCamps_TheFirst01_Chance global variable in VenpiCaveOverhaul.esm. Please contact Venpi for help.")
+  Else
+    VEOH_HumanCamps_TheFirst01_Chance.SetValueInt(chance)
   EndIf
 EndFunction

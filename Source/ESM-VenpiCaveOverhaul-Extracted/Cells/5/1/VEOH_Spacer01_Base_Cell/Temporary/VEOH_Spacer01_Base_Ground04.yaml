@@ -1,0 +1,9 @@
+MutagenObjectType: PlacedObject
+FormKey: 0016BE:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 16
+EditorID: VEOH_Spacer01_Base_Ground04
+StarfieldMajorRecordFlags:
+- 0x10
+Base: 02EC6F:Starfield.esm
+Position: 5.6, 3, -1.45
+Rotation: 0, 0, 2.70526

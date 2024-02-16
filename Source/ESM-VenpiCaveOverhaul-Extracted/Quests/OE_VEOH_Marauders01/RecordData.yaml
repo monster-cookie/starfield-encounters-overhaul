@@ -1,0 +1,764 @@
+FormKey: 001660:VenpiCaveOverhaul.esm
+EditorID: OE_VEOH_Marauders01
+FormVersion: 556
+VirtualMachineAdapter:
+  Scripts:
+  - Name: defaultgroupspawnquestscript
+    Properties:
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: SpawnGroupA_AllowedOccupations
+      Objects:
+      - Name: ''
+        Object: 11FA00:Starfield.esm
+    - MutagenObjectType: ScriptStructProperty
+      Name: SpawnGroupA_Definition
+      Members:
+      - Name: ''
+        Properties:
+        - MutagenObjectType: ScriptStringProperty
+          Name: Name
+          Data: Corpse
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Role
+          Object: 143BEC:Starfield.esm
+    - MutagenObjectType: ScriptStructListProperty
+      Name: SpawnGroupA_SpawnData
+      Structs:
+      - Members:
+        - MutagenObjectType: ScriptIntProperty
+          Name: MaxToSpawn
+          Data: 3
+        - MutagenObjectType: ScriptIntProperty
+          Name: MinToSpawn
+          Data: 1
+        - MutagenObjectType: ScriptObjectProperty
+          Name: SpawnAlias
+          Object: 001660:VenpiCaveOverhaul.esm
+          Alias: 201
+        - MutagenObjectType: ScriptObjectProperty
+          Name: SpawnAt
+          Object: 001660:VenpiCaveOverhaul.esm
+          Alias: 9
+        - MutagenObjectType: ScriptObjectProperty
+          Name: SpawnType
+          Object: 10BCDE:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SQ_Groups
+      Object: 1A9565:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SQ_Group_RandomOccupationIndexOverride
+      Object: 2F37DC:Starfield.esm
+  - Name: defaultquestchangelocationscript
+    Properties:
+    - MutagenObjectType: ScriptStructListProperty
+      Name: ChangeLocationStages
+      Structs:
+      - Members:
+        - MutagenObjectType: ScriptBoolProperty
+          Name: SetStageOnEnterLocation
+        - MutagenObjectType: ScriptIntProperty
+          Name: StageToSet
+          Data: 950
+        - MutagenObjectType: ScriptObjectProperty
+          Name: targetLocationAlias
+          Object: 001660:VenpiCaveOverhaul.esm
+          Alias: 3
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SQ_PlayerShip
+      Object: 0174A2:Starfield.esm
+  - Name: oescript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LL_OE_Default_Reward
+      Object: 10FB22:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MapMarker
+      Object: 001660:VenpiCaveOverhaul.esm
+      Alias: 5
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Marker_Center
+      Object: 001660:VenpiCaveOverhaul.esm
+      Alias: 8
+    - MutagenObjectType: ScriptFloatProperty
+      Name: RangeCheckDistance
+      Data: 500
+    - MutagenObjectType: ScriptIntProperty
+      Name: RangeCheckStage
+      Data: 100
+    - MutagenObjectType: ScriptObjectProperty
+      Name: RE_Parent
+      Object: 05F193:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Trigger
+      Object: 001660:VenpiCaveOverhaul.esm
+      Alias: 2
+  Script:
+    Name: OE_VEOH_Marauders01_FragmentsScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_AttackerA1
+      Object: 001660:VenpiCaveOverhaul.esm
+      Alias: 282
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_AttackerA3
+      Object: 001660:VenpiCaveOverhaul.esm
+      Alias: 284
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_AttackerB1
+      Object: 001660:VenpiCaveOverhaul.esm
+      Alias: 272
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_AttackerB3
+      Object: 001660:VenpiCaveOverhaul.esm
+      Alias: 287
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Corpse
+      Object: 001660:VenpiCaveOverhaul.esm
+      Alias: 201
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Nest
+      Object: 001660:VenpiCaveOverhaul.esm
+      Alias: 30
+    - MutagenObjectType: ScriptObjectProperty
+      Name: BonusLoot
+      Object: 15DCFD:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Venpi_DebugEnabled
+      Object: 000800:VenpiCore.esm
+  Fragments:
+  - Stage: 100
+    Unknown2: 1
+    ScriptName: OE_VEOH_Marauders01_FragmentsScript
+    FragmentName: Fragment_Stage_0100_Item_00
+  - Stage: 150
+    Unknown2: 1
+    ScriptName: OE_VEOH_Marauders01_FragmentsScript
+    FragmentName: Fragment_Stage_0150_Item_00
+  - Stage: 200
+    Unknown2: 1
+    ScriptName: OE_VEOH_Marauders01_FragmentsScript
+    FragmentName: Fragment_Stage_0200_Item_00
+  - Stage: 300
+    Unknown2: 1
+    ScriptName: OE_VEOH_Marauders01_FragmentsScript
+    FragmentName: Fragment_Stage_0300_Item_00
+  - Stage: 400
+    Unknown2: 1
+    ScriptName: OE_VEOH_Marauders01_FragmentsScript
+    FragmentName: Fragment_Stage_0400_Item_00
+  - Stage: 500
+    Unknown2: 1
+    ScriptName: OE_VEOH_Marauders01_FragmentsScript
+    FragmentName: Fragment_Stage_0500_Item_00
+  - Stage: 999
+    Unknown2: 1
+    ScriptName: OE_VEOH_Marauders01_FragmentsScript
+    FragmentName: Fragment_Stage_0999_Item_00
+  - Stage: 250
+    Unknown2: 1
+    ScriptName: OE_VEOH_Marauders01_FragmentsScript
+    FragmentName: Fragment_Stage_0250_Item_00
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 001660:VenpiCaveOverhaul.esm
+      Alias: 30
+    Scripts:
+    - Name: DefaultAliasOnActivateA
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: ShowTraces
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 500
+    - Name: defaultaliasondistancelessthan
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: ShowTraces
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 150
+      - MutagenObjectType: ScriptObjectProperty
+        Name: TargetAlias
+        Object: 001660:VenpiCaveOverhaul.esm
+        Alias: 4
+      - MutagenObjectType: ScriptFloatProperty
+        Name: TargetDistance
+        Data: 100
+  - Property:
+      Name: ''
+      Object: 001660:VenpiCaveOverhaul.esm
+      Alias: 201
+    Scripts:
+    - Name: DefaultAliasOnActivateA
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 400
+    - Name: defaultaliasondistancelessthan
+      Properties:
+      - MutagenObjectType: ScriptBoolProperty
+        Name: ShowTraces
+        Data: True
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 150
+      - MutagenObjectType: ScriptObjectProperty
+        Name: TargetAlias
+        Object: 001660:VenpiCaveOverhaul.esm
+        Alias: 4
+      - MutagenObjectType: ScriptFloatProperty
+        Name: TargetDistance
+        Data: 100
+  - Property:
+      Name: ''
+      Object: 001660:VenpiCaveOverhaul.esm
+      Alias: 272
+    Scripts:
+    - Name: REAliasScript
+  - Property:
+      Name: ''
+      Object: 001660:VenpiCaveOverhaul.esm
+      Alias: 282
+    Scripts:
+    - Name: REAliasScript
+  - Property:
+      Name: ''
+      Object: 001660:VenpiCaveOverhaul.esm
+      Alias: 284
+    Scripts:
+    - Name: REAliasScript
+  - Property:
+      Name: ''
+      Object: 001660:VenpiCaveOverhaul.esm
+      Alias: 287
+    Scripts:
+    - Name: REAliasScript
+Data:
+  Flags:
+  - WarnOnAliasFillFailure
+  Priority: 30
+  Unused: 0x000000
+Event: SCPT
+Filter: '\Random Encounters\OverlayEncounters\Marauders'
+UnusedConditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: IsTrueForConditionFormConditionData
+    RunOnType: EventData
+    FirstParameter: 1C3FB6:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: IsTrueForConditionFormConditionData
+    RunOnType: EventData
+    FirstParameter: 061913:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: LocationHasKeywordConditionData
+    RunOnType: EventData
+    FirstParameter: 226AED:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: LocationHasKeywordConditionData
+    RunOnType: EventData
+    FirstParameter: 20AFEE:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: LocationHasKeywordConditionData
+    RunOnType: EventData
+    FirstParameter: 20AFED:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: LocationHasKeywordConditionData
+    RunOnType: EventData
+    FirstParameter: 226AF2:Starfield.esm
+  ComparisonValue: 1
+Stages:
+- Flags:
+  - RunOnStart
+  Unknown: 171
+  LogEntries:
+  - Flags: []
+    Note: OE Started.
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 100
+  Unknown: 171
+  LogEntries:
+  - Flags: []
+    Note: Player in Range.
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 150
+  Unknown: 171
+  LogEntries:
+  - Flags: []
+    Note: Player is near the Corpse.
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 200
+  Unknown: 171
+  LogEntries:
+  - Flags: []
+    Note: Spawn Attackers on SpawnMarkerA side.
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 250
+  Unknown: 171
+  LogEntries:
+  - Flags: []
+    Note: Player is near the Chest.
+    StageCompleteDatas:
+    - QSRD: '[]'
+    - QSRD: '[]'
+- Index: 300
+  Unknown: 171
+  LogEntries:
+  - Flags: []
+    Note: Spawn Attackers on SpawnMarkerB side.
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 400
+  Unknown: 171
+  LogEntries:
+  - Flags: []
+    Note: Player looted Corpse.
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 500
+  Unknown: 171
+  LogEntries:
+  - Flags: []
+    Note: Player looted Chest.
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 950
+  Unknown: 171
+  LogEntries:
+  - Flags: []
+    Note: Player left OE Location.
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 999
+  Flags:
+  - RunOnStop
+  Unknown: 171
+  LogEntries:
+  - Flags: []
+    Note: Shutdown.
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+Aliases:
+- MutagenObjectType: QuestReferenceAlias
+  ID: 2
+  Name: Trigger
+  Flags:
+  - ReservesLocationOrReference
+  ALFG: 0
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x52310000
+  ScriptComment: >-
+    HOW TO USE: 
+
+    Nothing needs to change here. Add default scripts if you want to do something fancy. 
+
+
+    CAN THIS BE DELETED? 
+
+    No. 
+
+
+    HELPFUL SCRIPTS: 
+
+    * DefaultAliasOnTriggerEnter - If you have one of these in the quest already, use DefaultAliasOnTriggerEnterA
+
+    * DefaultAliasOnTriggerLeave
+  VoiceTypes: Null
+- MutagenObjectType: QuestLocationAlias
+  ID: 3
+  Name: OE_Location
+  Flags:
+  - ReservesLocationOrReference
+  - AllowCleared
+  ALFG: 0
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: 0x4C310000
+- MutagenObjectType: QuestReferenceAlias
+  ID: 4
+  Name: Player
+  Flags: []
+  ALFG: 0
+  UniqueActor: 000007:Starfield.esm
+  ScriptComment: >-
+    HOW TO USE: 
+
+    Leave as-is. the OEScript should handle it. 
+
+
+    CAN THIS ALIAS BE DELETED? 
+
+    No. 
+
+
+    HELPFUL SCRIPTS: 
+
+    * DefaultAliasMapMarkerScript
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 5
+  Name: MapMarker
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  - AllowDisabled
+  ALFG: 0
+  Location:
+    AliasID: 3
+    RefType: 02271F:Starfield.esm
+  ScriptComment: >-
+    HOW TO USE: 
+
+    Leave as-is. the OEScript should handle it. 
+
+
+    CAN THIS ALIAS BE DELETED? 
+
+    No. 
+
+
+    HELPFUL SCRIPTS: 
+
+    * DefaultAliasMapMarkerScript
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 8
+  Name: Marker_Center
+  Flags: []
+  ALFG: 0
+  Location:
+    AliasID: 3
+    RefType: 05F198:Starfield.esm
+  ScriptComment: >-
+    DESCRIPTION: 
+
+    This marker is included in all Overlays. 
+
+
+    CAN THIS BE DELETED? 
+
+    No. It's often used in scripts as the default Alias if something else fails to fill.
+
+
+    HOW IS THIS USED? 
+
+    You can spawn creatures, objects, and almost anything here. 
+
+
+    HELPFUL SCRIPTS: 
+
+    DefaultAliasOnDistanceLessThan - If the player is within a range of this, set a stage.
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 9
+  Name: Marker_SceneA01
+  Flags: []
+  ALFG: 0
+  Location:
+    AliasID: 3
+    RefType: 05F199:Starfield.esm
+  ScriptComment: >-
+    DESCRIPTION: 
+
+    This marker is included in all Overlays. This is a Scene marker so it is in a tight cluster around the Center Marker. 
+
+
+    CAN THIS BE DELETED? 
+
+    No. 
+
+
+    HOW IS THIS USED? 
+
+    You can spawn creatures, objects, and almost anything here. 
+
+
+    HELPFUL SCRIPTS: 
+
+    DefaultAliasOnDistanceLessThan - If the player is within a range of this, set a stage.
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 201
+  Name: Corpse
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  - AllowDead
+  - AllowDisabled
+  - AllowReserved
+  ALFG: 0
+  Location:
+    AliasID: 3
+    RefType: 207486:Starfield.esm
+  Items:
+  - Item:
+      Item: 15DCFD:Starfield.esm
+      Count: 1
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 15
+  Name: SpawnMarkerA1
+  Flags: []
+  ALFG: 0
+  Location:
+    AliasID: 3
+    RefType: 05F478:Starfield.esm
+  ScriptComment: >-
+    DESCRIPTION: 
+
+    This marker is included in all Overlays. Travel Markers are far away fom the center marker. Usually group A is far apart from group B.
+
+
+    CAN THIS BE DELETED? 
+
+    Technically yes, if you aren't using it anywhere else. But it's not necessary to delete.
+
+
+    HOW IS THIS USED? 
+
+    You can spawn creatures, objects, and almost anything here. Often this is used to spawn creatures who will move towards the Center Marker when the player enters the center of the OE.
+
+
+    HELPFUL SCRIPTS: 
+
+    DefaultAliasOnDistanceLessThan - If the player is within a range of this, set a stage.
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 289
+  Name: SpawnMarkerA3
+  Flags: []
+  ALFG: 0
+  Location:
+    AliasID: 3
+    RefType: 05F47A:Starfield.esm
+  ScriptComment: >-
+    DESCRIPTION: 
+
+    This marker is included in all Overlays. Travel Markers are far away fom the center marker. Usually group A is far apart from group B.
+
+
+    CAN THIS BE DELETED? 
+
+    Technically yes, if you aren't using it anywhere else. But it's not necessary to delete.
+
+
+    HOW IS THIS USED? 
+
+    You can spawn creatures, objects, and almost anything here. Often this is used to spawn creatures who will move towards the Center Marker when the player enters the center of the OE.
+
+
+    HELPFUL SCRIPTS: 
+
+    DefaultAliasOnDistanceLessThan - If the player is within a range of this, set a stage.
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 282
+  Name: AttackerA1
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  - AllowDisabled
+  - AllowReserved
+  - InitiallyDisabled
+  - CreateRefTemp
+  ALFG: 0
+  CreateReferenceToObject:
+    Object: 1691E4:Starfield.esm
+    AliasID: 15
+    Level: VeryHard
+  Items:
+  - Item:
+      Item: 15DCFC:Starfield.esm
+      Count: 1
+  LinkedAliases:
+  - Keyword: 03085E:Starfield.esm
+    AliasID: 30
+  - Keyword: 207497:Starfield.esm
+    AliasID: 23
+  - Keyword: 207498:Starfield.esm
+    AliasID: 8
+  PackageData:
+  - 079699:Starfield.esm
+  - 26D0CD:Starfield.esm
+  - 20A92F:Starfield.esm
+  - 209F98:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 284
+  Name: AttackerA3
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  - AllowDisabled
+  - AllowReserved
+  - InitiallyDisabled
+  - CreateRefTemp
+  ALFG: 0
+  CreateReferenceToObject:
+    Object: 0D2146:Starfield.esm
+    AliasID: 289
+    Level: Hard
+  Items:
+  - Item:
+      Item: 15DCFD:Starfield.esm
+      Count: 1
+  LinkedAliases:
+  - Keyword: 03085E:Starfield.esm
+    AliasID: 30
+  - Keyword: 207497:Starfield.esm
+    AliasID: 23
+  - Keyword: 207498:Starfield.esm
+    AliasID: 8
+  PackageData:
+  - 079699:Starfield.esm
+  - 26D0CD:Starfield.esm
+  - 20A92F:Starfield.esm
+  - 209F98:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 290
+  Name: SpawnMarkerB1
+  Flags: []
+  ALFG: 0
+  Location:
+    AliasID: 3
+    RefType: 05F47B:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 292
+  Name: SpawnMarkerB3
+  Flags: []
+  ALFG: 0
+  Location:
+    AliasID: 3
+    RefType: 05F47D:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 272
+  Name: AttackerB1
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  - AllowDisabled
+  - AllowReserved
+  - InitiallyDisabled
+  - CreateRefTemp
+  ALFG: 0
+  CreateReferenceToObject:
+    Object: 1691E5:Starfield.esm
+    AliasID: 290
+    Level: Medium
+  Items:
+  - Item:
+      Item: 15DD31:Starfield.esm
+      Count: 1
+  LinkedAliases:
+  - Keyword: 03085E:Starfield.esm
+    AliasID: 30
+  - Keyword: 207497:Starfield.esm
+    AliasID: 23
+  - Keyword: 207498:Starfield.esm
+    AliasID: 8
+  PackageData:
+  - 079699:Starfield.esm
+  - 26D0CD:Starfield.esm
+  - 20A92F:Starfield.esm
+  - 209F98:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 287
+  Name: AttackerB3
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  - AllowDisabled
+  - AllowReserved
+  - InitiallyDisabled
+  - CreateRefTemp
+  ALFG: 0
+  CreateReferenceToObject:
+    Object: 1691E3:Starfield.esm
+    AliasID: 292
+    Level: Medium
+  Items:
+  - Item:
+      Item: 15DD31:Starfield.esm
+      Count: 1
+  LinkedAliases:
+  - Keyword: 03085E:Starfield.esm
+    AliasID: 30
+  - Keyword: 207497:Starfield.esm
+    AliasID: 23
+  - Keyword: 207498:Starfield.esm
+    AliasID: 8
+  PackageData:
+  - 079699:Starfield.esm
+  - 26D0CD:Starfield.esm
+  - 20A92F:Starfield.esm
+  - 209F98:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 30
+  Name: Chest
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  ALFG: 0
+  Location:
+    AliasID: 3
+    RefType: 226AF6:Starfield.esm
+  Items:
+  - Item:
+      Item: 15DCFC:Starfield.esm
+      Count: 1
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 23
+  Name: Marker_PatrolStart
+  Flags: []
+  ALFG: 0
+  Location:
+    AliasID: 3
+    RefType: 260E06:Starfield.esm
+  VoiceTypes: Null

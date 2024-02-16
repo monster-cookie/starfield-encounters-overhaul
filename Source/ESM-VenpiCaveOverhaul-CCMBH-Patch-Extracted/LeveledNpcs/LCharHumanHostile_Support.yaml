@@ -119,7 +119,7 @@ Entries:
     Data:
       MutagenObjectType: AreHostileActorsNearConditionData
 - Level: 1
-  Reference: 001DDB:CoraCoeMultiversalBookHunter.esm
+  Reference: 001DE4:CoraCoeMultiversalBookHunter.esm
   Count: 1
   Conditions:
   - MutagenObjectType: ConditionFloat

@@ -1,5 +1,16 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 1.0.27
+* Sorry I left the testing spawn rate in for the new treasure map encounter this has been reset to 15% to fix any active save you will need to run: CGF "VEOH_Debug.ResetFriendlyCampSpawnSettings"
+* Added new First Cav camp (Yes this time I reset the spawn rate to it's default 20%)
+* Added some more NPCs to man made clutter (4)
+
+## Version 1.0.26
+* New friendlies camp 2 dead pirates and a treasure map. 
+* All dynamic spawned lair type camps I made the NPCs persistent in the pack-in so hopefully they will be stored in the save and stop becoming level 1 humans. 
+* The human lair stuff have been converted over to use spacer or crimson fleet until I figure out a better solution for the hostile human leveled list sometime return a generic non-hostile "Human".
+* Restored the All Factions Patch but its back to Cora Coe, Multiversal Book Hunter and Grind Terra Factions. If you need POI Faction Diversity support I can provide a RTFP ini file to inject it. Personally long term I think RTFP is the the better way :) 
+
 ## Version 1.0.25
 * Added the first friendlies camp, a boy and a robot camping. This may or may not give a collect meat locally quest (random chance).
 * When a rule branch is traversed a a leaf must return or bad things happen I think it just grabs a random leaf. This is why the branch rules and leafs generally have near identical conditions to prevent a leaf not being available. 

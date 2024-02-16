@@ -1,0 +1,8 @@
+FormKey: 001714:VenpiCaveOverhaul.esm
+EditorID: VEOH_HumanCamps_Spacer_Allowed_SafeToOverride
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    FirstParameter: 2A4310:Starfield.esm

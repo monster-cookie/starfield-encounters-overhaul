@@ -1,0 +1,13 @@
+FormKey: 001728:VenpiCaveOverhaul.esm
+EditorID: VEOH_Loot_TreasureMaps
+ObjectBounds:
+  First: -0.088501, -0.065246, -2E-05
+  Second: 0.088501, 0.065246, 2E-05
+ODTY: 0
+MaxCount: 1
+Flags:
+- CalculateFromAllLevelsLessThanOrEqualPlayer
+Entries:
+- Level: 1
+  Reference: 104AD2:Starfield.esm
+  Count: 1
