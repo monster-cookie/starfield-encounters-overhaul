@@ -1,5 +1,10 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 1.0.28
+* Found some caves still not using the biome markers they are now
+* Spacers in human hostile lists are the fallback condition
+* Added AI German translation by CoPilot Pro
+
 ## Version 1.0.27
 * Sorry I left the testing spawn rate in for the new treasure map encounter this has been reset to 15% to fix any active save you will need to run: CGF "VEOH_Debug.ResetFriendlyCampSpawnSettings"
 * Added new First Cav camp (Yes this time I reset the spawn rate to it's default 20%)
