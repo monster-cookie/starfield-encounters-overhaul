@@ -22,17 +22,18 @@ The Ecliptic mercenary controls a region of space by the UC at the edge of the u
 - Beta Andraste
 - Carinae
 - Eta Cassiopeia
+- Jaffa (Home System)
 - Piazzi
 - Van Maanen's Star
-- Zosma
+- Zosma (No Human Presense Flagged)
 
 ## Freestar Collective
 
 The Freestar Collective is a bit more spread out then usual as its is a loose collective of factions that banded together for security. 
 
 - Cheyenne (Home System)
-- Leviathan
-- Nikola
+- Leviathan (No Human Presense Flagged)
+- Nikola (No Human Presense Flagged)
 - Sagan
 - Volii
 
@@ -48,7 +49,7 @@ Not much is known about the Starborn except they are very powerful and inhabit t
 
 - Archimedes
 - Bell
-- Enlil
+- Enlil (No Human Presense Flagged)
 - Hawking
 - Huygens
 - Kang
@@ -59,9 +60,9 @@ After the armistice The First Calvary failed to honor they moved to a fringe are
 
 - Algorab
 - Alpha Tirna
-- Beta Tirna
-- Katydid
-- Marduk
+- Beta Tirna (No Human Presense Flagged)
+- Katydid (No Human Presense Flagged)
+- Marduk (No Human Presense Flagged)
 - Masada
 - Zelazny
 
@@ -72,7 +73,7 @@ The original human colonies that spread out when the Earth's biosphere failed.
 - Alpha Centauri (Home System)
 - Barnard's Star
 - Procyon A
-- Procyon B
+- Procyon B (No Human Presense Flagged)
 - Sakharov
 - Sol
 - Toliman
