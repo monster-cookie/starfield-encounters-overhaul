@@ -6,12 +6,12 @@ For open world encounters to be able to use random NPCs via the hostile humans l
 
 Crimson Fleet controls the region around the prison star station they took control. 
 
-- Alpha Marae
+- Alpha Marae (No Human Presense Flagged)
 - Beta Marae
 - Celebrai
-- Kryx (Home System)
-- Schrodinger
-- Tidacha
+- Kryx (Home System - No Human Presense Flagged)
+- Schrodinger (No Human Presense Flagged)
+- Tidacha (No Human Presense Flagged)
 
 ## Ecliptic
 
