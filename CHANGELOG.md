@@ -1,6 +1,6 @@
 # Venworks Cave and Encounters Overhaul
 
-## Version 1.0.28
+## Version 2.0.0
 * Found some caves still not using the biome markers they are now
 * Spacers in human hostile lists are the fallback condition
 * Removed localization using xedit 4.1.5c it was causing too many problems for players. 
