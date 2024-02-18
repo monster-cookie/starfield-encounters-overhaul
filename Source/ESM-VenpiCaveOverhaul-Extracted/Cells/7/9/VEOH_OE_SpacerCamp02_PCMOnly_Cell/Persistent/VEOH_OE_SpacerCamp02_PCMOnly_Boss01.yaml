@@ -1,0 +1,17 @@
+MutagenObjectType: PlacedNpc
+FormKey: 00170A:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 1024
+EditorID: VEOH_OE_SpacerCamp02_PCMOnly_Boss01
+StarfieldMajorRecordFlags:
+- 0x400
+Base: 1691E4:Starfield.esm
+LevelModifier: VeryHard
+LinkedReferences:
+- Reference: 00170E:VenpiCaveOverhaul.esm
+- KeywordOrReference: 0F0E7E:Starfield.esm
+  Reference: 00170C:VenpiCaveOverhaul.esm
+- KeywordOrReference: 141918:Starfield.esm
+  Reference: 00170D:VenpiCaveOverhaul.esm
+Position: -0.5, 0.25, 0
+MajorFlags:
+- Persistent

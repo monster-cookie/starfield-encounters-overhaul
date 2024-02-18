@@ -1,0 +1,17 @@
+MutagenObjectType: PlacedObject
+FormKey: 00148C:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 256
+StarfieldMajorRecordFlags:
+- 0x100
+Base: 1468AE:Starfield.esm
+Radius: -6.6440945
+Lighting:
+  Fade1PlusMinus: 0.23001654
+  Unknown1: 2880154539
+  Unknown2: 2880154368
+LightColors:
+- UnknownColor: '#00212909'
+  Unknown: -6076575255718002688
+Layer: 1E9BFB:Starfield.esm
+Position: 37.766045, 41.624603, 15.936432
+Rotation: -1.5707964, 0.9167491, 3.010207

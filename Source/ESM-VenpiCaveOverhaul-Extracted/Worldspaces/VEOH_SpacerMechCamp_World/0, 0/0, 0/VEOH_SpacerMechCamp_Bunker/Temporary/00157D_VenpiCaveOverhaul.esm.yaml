@@ -1,0 +1,11 @@
+MutagenObjectType: PlacedObject
+FormKey: 00157D:VenpiCaveOverhaul.esm
+Base: 1F5654:Starfield.esm
+ProjectedDecal:
+  WidthScale: 1
+  HeightScale: 1
+  UnknownFloat: 0.7000003
+  UnknownInt: 2880154369
+ConstrainedDecal: 3.4300005, 4.01, 0.75
+Position: 32.278084, 45.199844, 16.99993
+Rotation: -3.1415927, -0, 1.5707964

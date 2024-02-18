@@ -1,0 +1,8 @@
+MutagenObjectType: PlacedObject
+FormKey: 000FF2:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 1024
+StarfieldMajorRecordFlags:
+- 0x400
+Base: 051E36:Starfield.esm
+Layer: 2355E0:Starfield.esm
+Position: -33.987442, 76.86545, -8.977082

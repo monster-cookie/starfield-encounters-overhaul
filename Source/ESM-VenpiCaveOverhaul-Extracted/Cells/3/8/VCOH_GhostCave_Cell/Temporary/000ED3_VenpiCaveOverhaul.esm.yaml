@@ -1,0 +1,11 @@
+MutagenObjectType: PlacedNpc
+FormKey: 000ED3:VenpiCaveOverhaul.esm
+Base: 122415:Starfield.esm
+LevelModifier: Easy
+SourcePackIn: 32C7B8:Starfield.esm
+PersistentLocation: 000FF7:VenpiCaveOverhaul.esm
+LinkedReferences:
+- KeywordOrReference: 2A8FD0:Starfield.esm
+  Reference: 000DD5:VenpiCaveOverhaul.esm
+Position: -22.800003, 58.700005, -8.215463
+Rotation: -0, 0, 1.3089969

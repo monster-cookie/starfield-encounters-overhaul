@@ -1,0 +1,31 @@
+FormKey: 001729:VenpiCaveOverhaul.esm
+EditorID: Loot_Map_Chest
+ObjectBounds:
+  First: -0.7739557, -0.3959961, 0.00022286415
+  Second: 0.77389586, 0.3959961, 0.63180494
+ODTY: 0
+Components:
+- MutagenObjectType: AnimationGraphComponent
+  ANAM: AnimTextData\Tables\Graphs\SimpleOpenClose01.agx
+  BNAM: setdressing\securebriefcase\characterassets\skeleton.rig
+  CNAM: setdressing\securebriefcase\animations
+Name:
+  TargetLanguage: English
+  Value: Treasure Chest
+Model:
+  File: SetDressing\SecureBriefcase\SecureBreifcase_Container_01.nif
+  FLLD: 0x01000000
+Items:
+- Item:
+    Item: 00000F:Starfield.esm
+    Count: 10000
+- Item:
+    Item: 104AD2:Starfield.esm
+    Count: 1
+Keywords:
+- 184462:Starfield.esm
+NativeTerminal: 38D14B:Starfield.esm
+OpenSound:
+  Start: 63884ec8-8c12-e619-0dcd-8c259d7c489b
+CloseSound:
+  Start: 53c44e20-dba9-2c85-b20b-83a7cf50f3a3

@@ -1,0 +1,39 @@
+FormKey: 001718:VenpiCaveOverhaul.esm
+EditorID: Loot_Storage_Aide_Common
+ObjectBounds:
+  First: -0.7739557, -0.3959961, 0.00022286415
+  Second: 0.77389586, 0.3959961, 0.63180494
+ODTY: 0
+Components:
+- MutagenObjectType: AnimationGraphComponent
+  ANAM: AnimTextData\Tables\Graphs\SimpleOpenClose01.agx
+  BNAM: genericbehaviors\animtemplates\container_rig01\characterassets\skeleton.rig
+  CNAM: genericbehaviors\animtemplates\container_rig01\animations
+Name:
+  TargetLanguage: English
+  Value: Support Storage Crate
+Model:
+  File: setdressing/crates/lootstorage\loot_storagemiscbox02.nif
+  FLLD: 0x01000000
+Items:
+- Item:
+    Item: 03197A:Starfield.esm
+    Count: 2
+- Item:
+    Item: 180EE0:Starfield.esm
+    Count: 1
+- Item:
+    Item: 279260:Starfield.esm
+    Count: 2
+- Item:
+    Item: 279263:Starfield.esm
+    Count: 2
+Flags:
+- Respawns
+Keywords:
+- 184462:Starfield.esm
+NativeTerminal: 38D14B:Starfield.esm
+OpenSound:
+  Start: 19b549d4-7336-fc07-7a7c-d36fef192d96
+CloseSound:
+  Start: 7ee3450a-75d8-ab6c-e1ee-7494e10a5d9f

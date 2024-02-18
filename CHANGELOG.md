@@ -3,7 +3,8 @@
 ## Version 1.0.28
 * Found some caves still not using the biome markers they are now
 * Spacers in human hostile lists are the fallback condition
-* Added AI German translation by CoPilot Pro
+* Removed localization using xedit 4.1.5c it was causing too many problems for players. 
+* Now requires Venworks Faction Overhaul. 
 
 ## Version 1.0.27
 * Sorry I left the testing spawn rate in for the new treasure map encounter this has been reset to 15% to fix any active save you will need to run: CGF "VEOH_Debug.ResetFriendlyCampSpawnSettings"

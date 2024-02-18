@@ -1,4 +1,4 @@
-# Venworks Cave and Encounters Overhaul: To Do List
+# Venworks Encounters Overhaul: To Do List
 
 # Bug fixes
 - [X] Setup randomized enabler on the wind farms spawners and setup a guard attack trigger

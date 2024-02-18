@@ -1,0 +1,328 @@
+FormKey: 000FF7:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 1048576
+EditorID: VCOH_GhostCave_Location
+StarfieldMajorRecordFlags:
+- 0x100000
+LocationCellPersistentReferences:
+- Actor: 000ECC:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ED4:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ED0:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ED2:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ECD:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ECA:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ECB:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000E36:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ED3:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ECF:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ED2:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 000ECC:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 000ED0:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 000ED4:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Unknown: -1
+LocationCellStaticReferences:
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ECD:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 02271F:Starfield.esm
+  Marker: 000DCD:VenpiCaveOverhaul.esm
+  Location: 000DD7:VenpiCaveOverhaul.esm
+  Unknown: -1
+- LocationRefType: 2CC9ED:Starfield.esm
+  Marker: 000EB2:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ECD:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ED2:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ECF:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000ED1:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ED4:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ED3:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ED0:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ECC:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000E04:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000E03:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000E05:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000E00:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000DFF:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000DFE:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DFD:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000E02:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000E0C:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000E0A:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000E01:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000E0B:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000E06:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000E09:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000E08:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000E07:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000DF2:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DF4:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DFA:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DFB:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000DFC:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DF6:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DF3:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DEF:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DF8:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DF1:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000DF9:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000DF7:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000DF5:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DF0:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000E0D:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 207486:Starfield.esm
+  Marker: 3382D2:Starfield.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ECC:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ED4:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ED3:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ED0:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ED2:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ECF:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 003956:Starfield.esm
+  Marker: 000ED2:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Unknown: -1
+- LocationRefType: 05AF1F:Starfield.esm
+  Marker: 00100A:VenpiCaveOverhaul.esm
+  Location: 000FF3:VenpiCaveOverhaul.esm
+  Unknown: -1
+LocationCellEnablePoint:
+- Actor: 000DCD:VenpiCaveOverhaul.esm
+  Ref: 000DD0:VenpiCaveOverhaul.esm
+  SetEnableStateToOppositeOfParent: True
+Name:
+  TargetLanguage: English
+  Value: Spooky Cave
+Keywords:
+- 1A5468:Starfield.esm
+- 2731AF:Starfield.esm
+- 27B45C:Starfield.esm
+UnknownDATA2: 16
+WorldLocationRadius: 0
+ActorFadeMult: 1
+TNAM: 0
+MajorFlags:
+- 0x100000

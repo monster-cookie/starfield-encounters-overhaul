@@ -424,4 +424,39 @@ LocationCellMarkerReference:
 - 098D44:Starfield.esm
 - 098D49:Starfield.esm
 - 098D48:Starfield.esm
-- 098D
+- 098D42:Starfield.esm
+- 098D44:Starfield.esm
+- 098D48:Starfield.esm
+- 098D49:Starfield.esm
+- 098D44:Starfield.esm
+- 098D42:Starfield.esm
+- 098D40:Starfield.esm
+- 098D49:Starfield.esm
+LocationCellEnablePoint:
+- Actor: 05B15E:Starfield.esm
+  Ref: 3F20F3:Starfield.esm
+  SetEnableStateToOppositeOfParent: True
+Name:
+  TargetLanguage: English
+  Value: Cave
+Keywords:
+- 142D4D:Starfield.esm
+- 1A5468:Starfield.esm
+- 26BA1B:Starfield.esm
+- 2705CE:Starfield.esm
+- 2731AF:Starfield.esm
+- 27B45C:Starfield.esm
+- 283586:Starfield.esm
+- 023305:Starfield.esm
+- 0581DF:Starfield.esm
+- 12179A:Starfield.esm
+- 283580:Starfield.esm
+- 283581:Starfield.esm
+- 283585:Starfield.esm
+- 294969:Starfield.esm
+UnknownDATA2: 16
+WorldLocationRadius: 0
+ActorFadeMult: 1
+TNAM: 0
+MajorFlags:
+- 0x100000

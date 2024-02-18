@@ -435,4 +435,55 @@ LocationCellStaticReferences:
   Location: 205FDF:Starfield.esm
   Grid: 0, -1
   Unknown: -1
-- LocationRefType: 207486
+- LocationRefType: 207486:Starfield.esm
+  Marker: 098D65:Starfield.esm
+  Location: 205FDE:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 207486:Starfield.esm
+  Marker: 098D6D:Starfield.esm
+  Location: 205FDF:Starfield.esm
+  Grid: 0, -1
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 32C7BC:Starfield.esm
+  Location: 205FDE:Starfield.esm
+  Grid: 32767, 32767
+  Unknown: -1
+LocationCellMarkerReference:
+- 098D67:Starfield.esm
+- 098D70:Starfield.esm
+- 098D65:Starfield.esm
+- 098D6D:Starfield.esm
+- 098D67:Starfield.esm
+- 098D67:Starfield.esm
+- 098D65:Starfield.esm
+- 098D70:Starfield.esm
+- 098D6D:Starfield.esm
+- 098D70:Starfield.esm
+- 098D65:Starfield.esm
+- 098D6D:Starfield.esm
+Name:
+  TargetLanguage: English
+  Value: Cave
+Keywords:
+- 142D4D:Starfield.esm
+- 1A5468:Starfield.esm
+- 26BA1B:Starfield.esm
+- 2705CE:Starfield.esm
+- 2731AF:Starfield.esm
+- 27B45C:Starfield.esm
+- 283586:Starfield.esm
+- 023305:Starfield.esm
+- 0581DF:Starfield.esm
+- 12179A:Starfield.esm
+- 283580:Starfield.esm
+- 283581:Starfield.esm
+- 283585:Starfield.esm
+- 294969:Starfield.esm
+UnknownDATA2: 16
+WorldLocationRadius: 0
+ActorFadeMult: 1
+TNAM: 0
+MajorFlags:
+- 0x100000

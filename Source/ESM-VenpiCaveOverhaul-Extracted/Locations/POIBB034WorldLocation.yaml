@@ -223,4 +223,48 @@ LocationCellStaticReferences:
   Grid: -1, 0
   Unknown: -1
 - LocationRefType: 207486:Starfield.esm
-  Marker: 2E48
+  Marker: 2E48B2:Starfield.esm
+  Location: 09EBD6:Starfield.esm
+  Grid: -1, 0
+  Unknown: -1
+- LocationRefType: 003956:Starfield.esm
+  Marker: 000865:VenpiCaveOverhaul.esm
+  Location: 09EBD6:Starfield.esm
+  Grid: 0, -1
+  Unknown: -1
+LocationCellMarkerReference:
+- 2E48B5:Starfield.esm
+- 2E48AE:Starfield.esm
+- 12366B:Starfield.esm
+- 2E48B2:Starfield.esm
+- 2E48B5:Starfield.esm
+- 2E48B2:Starfield.esm
+- 2E48B5:Starfield.esm
+- 2E48AD:Starfield.esm
+- 2E48AE:Starfield.esm
+- 12366B:Starfield.esm
+- 2E48AE:Starfield.esm
+- 12366B:Starfield.esm
+- 2E48B2:Starfield.esm
+Name:
+  TargetLanguage: English
+  Value: Cave
+Keywords:
+- 0C6928:Starfield.esm
+- 1A5468:Starfield.esm
+- 023305:Starfield.esm
+- 0581DF:Starfield.esm
+- 12179A:Starfield.esm
+- 142D4D:Starfield.esm
+- 283580:Starfield.esm
+- 283581:Starfield.esm
+- 283585:Starfield.esm
+- 283586:Starfield.esm
+- 294969:Starfield.esm
+- 2705CE:Starfield.esm
+UnknownDATA2: 16
+WorldLocationRadius: 0
+ActorFadeMult: 1
+TNAM: 10
+MajorFlags:
+- 0x100000

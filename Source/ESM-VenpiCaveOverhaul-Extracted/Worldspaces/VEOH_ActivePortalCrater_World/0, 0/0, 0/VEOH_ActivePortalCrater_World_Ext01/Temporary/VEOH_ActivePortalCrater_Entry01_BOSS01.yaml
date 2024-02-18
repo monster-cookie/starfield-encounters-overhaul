@@ -1,0 +1,14 @@
+MutagenObjectType: PlacedNpc
+FormKey: 00164C:VenpiCaveOverhaul.esm
+EditorID: VEOH_ActivePortalCrater_Entry01_BOSS01
+Base: 005F00:Starfield.esm
+PersistentLocation: 0012F1:VenpiCaveOverhaul.esm
+LinkedReferences:
+- Reference: 001658:VenpiCaveOverhaul.esm
+- KeywordOrReference: 0F0E7E:Starfield.esm
+  Reference: 001659:VenpiCaveOverhaul.esm
+- KeywordOrReference: 141918:Starfield.esm
+  Reference: 00165A:VenpiCaveOverhaul.esm
+Layer: 2B3CB9:Starfield.esm
+Position: 64.21751, 66.951485, 3.401628
+Rotation: 0, 0, 0.6981317
