@@ -1,18 +1,13 @@
 # Venworks Encounters Overhaul: To Do List
 
 # Bug fixes
-- [X] Setup randomized enabler on the wind farms spawners and setup a guard attack trigger
-- [X] if you use POI Faction Diversity, you should use GrindTerraIndustriesFactionDiversityVersion.esm instead of GrindTerraIndustriesFaction.esm
 - [ ] CF Quest Echoes of the past at the UC prison spawners are broken causing the quest to fail
 - [ ] Abandoned Industrial Compound a bunch of spawners are in the walls or mid air now
 - [ ] Spacer Camp is spawning in the middle of player outposts. 
+- [ ] Friendly01 robot will not give RQ collect meat quest 
+- [ ] Friendly01 need ground removed 
 
 # Enhancements and New Features
-- [X] Localization support for Valerio
-- [X] Convert spacer mech camp PKIN to a world space as PKINs seem to be mod index 00 locked
-- [X] Spawn conditions for trait zones need to reduce once all traits are unlocked for a planet.
-- [X] Move back to Starfield's human hostile setup but att the AreHostilesNear check to them 
-- [X] Hostile human factions need to be ally to prey and critters debating on predators
 - [ ] Faction caves need a chest with themed loot
 - [ ] Fix occupied cave which is just occupied with corpses
 - [ ] Figure out hillside cave/caverns it is not spawning either
