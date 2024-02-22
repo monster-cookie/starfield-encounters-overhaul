@@ -7,6 +7,8 @@ cd "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Tools"
 
 REM Clear Dist DIR
 del /q "C:\Users\degre\Downloads\VenpiCaveOverhaul.zip"
+del /q "C:\Users\degre\Downloads\VenpiCaveOverhaul-CCMBH-Patch.zip"
 
 REM Archive Dist Dir
 "D:\Program Files\PexTools\7za.exe" a -r -tzip "C:\Users\degre\Downloads\VenpiCaveOverhaul.zip" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist\*.*"
+"D:\Program Files\PexTools\7za.exe" a -r -tzip "C:\Users\degre\Downloads\VenpiCaveOverhaul-CCMBH-Patch.zip" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist-CCMBH-Patch\*.*"

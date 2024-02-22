@@ -1,5 +1,8 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 2.0.1
+* New load order exposed a conflict with Core Coe, Multiversal Book Hunter so a new patch is in optional files. 
+
 ## Version 2.0.0
 * Found some caves still not using the biome markers they are now
 * Spacers in human hostile lists are the fallback condition
