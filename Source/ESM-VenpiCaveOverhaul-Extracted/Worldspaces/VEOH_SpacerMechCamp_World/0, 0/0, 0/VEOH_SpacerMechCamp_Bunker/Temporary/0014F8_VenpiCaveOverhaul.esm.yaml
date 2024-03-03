@@ -1,8 +1,0 @@
-MutagenObjectType: PlacedObject
-FormKey: 0014F8:VenpiCaveOverhaul.esm
-MajorRecordFlagsRaw: 256
-StarfieldMajorRecordFlags:
-- 0x100
-Base: 13225A:Starfield.esm
-Radius: -7.999988
-Position: 38.99421, 53.07539, 16.182428

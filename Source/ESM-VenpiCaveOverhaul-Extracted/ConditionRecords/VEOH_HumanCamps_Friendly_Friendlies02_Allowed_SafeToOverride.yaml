@@ -1,9 +1,0 @@
-FormKey: 00172C:VenpiCaveOverhaul.esm
-EditorID: VEOH_HumanCamps_Friendly_Friendlies02_Allowed_SafeToOverride
-Conditions:
-- MutagenObjectType: ConditionGlobal
-  CompareOperator: LessThanOrEqualTo
-  Unknown1: 0x000000
-  Data:
-    MutagenObjectType: GetRandomPercentConditionData
-  ComparisonValue: 00172B:VenpiCaveOverhaul.esm

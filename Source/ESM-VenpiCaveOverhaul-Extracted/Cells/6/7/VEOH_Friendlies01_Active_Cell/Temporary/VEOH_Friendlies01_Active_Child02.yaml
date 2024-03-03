@@ -1,8 +1,0 @@
-MutagenObjectType: PlacedNpc
-FormKey: 001701:VenpiCaveOverhaul.esm
-EditorID: VEOH_Friendlies01_Active_Child02
-Base: 24CC51:Starfield.esm
-LevelModifier: Medium
-LinkedReferences:
-- Reference: 001700:VenpiCaveOverhaul.esm
-Position: 3.5, -0.5, 0.1

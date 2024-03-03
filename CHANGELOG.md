@@ -1,5 +1,8 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 2.0.3
+* Last Starfield update redid all the caves yet again. Restoring those change and merging in mine. 
+
 ## Version 2.0.2
 * New random and robot spawn setups see help for the new commands: ```CGF "VEOH_Help.Show"```
 * Added a new command to show if your current location/planet/system meets spawn conditions: ```CGF "VEOH_Debug.GetSpawnConditionsForCurrentLocation"```
