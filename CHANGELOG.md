@@ -1,5 +1,10 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 2.0.2
+* New random and robot spawn setups see help for the new commands: ```CGF "VEOH_Help.Show"```
+* Added a new command to show if your current location/planet/system meets spawn conditions: ```CGF "VEOH_Debug.GetSpawnConditionsForCurrentLocation"```
+* Fixed the robot babysitter camp so layout doesn't fail on odd terrains. Still haven't found a way to get it to properly trigger the kill creatures for meat quest. 
+
 ## Version 2.0.1
 * New load order exposed a conflict with Core Coe, Multiversal Book Hunter so a new patch is in optional files. 
 
