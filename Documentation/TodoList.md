@@ -2,12 +2,14 @@
 
 # Bug fixes
 - [ ] CF Quest Echoes of the past at the UC prison spawners are broken causing the quest to fail
-- [ ] Abandoned Industrial Compound a bunch of spawners are in the walls or mid air now
-- [ ] Spacer Camp is spawning in the middle of player outposts. 
+- [X] Abandoned Industrial Compound a bunch of spawners are in the walls or mid air now
+- [ ] Human/Robot Lairs are spawning in the middle of player outposts. 
 - [ ] Friendly01 robot will not give RQ collect meat quest 
-- [ ] Friendly01 need ground removed 
+- [X] Friendly01 need ground removed 
+- [X] Friendly01 robot will attack the kids occasionally. The encounter should be planets with atmos too. 
 
 # Enhancements and New Features
+- [ ] AFTER CK: Add blood spatter decals
 - [ ] Faction caves need a chest with themed loot
 - [ ] Fix occupied cave which is just occupied with corpses
 - [ ] Figure out hillside cave/caverns it is not spawning either

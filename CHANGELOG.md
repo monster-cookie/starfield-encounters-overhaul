@@ -1,7 +1,12 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 2.0.4
+* New The First encounter related to the first encounter.
+* New random hostile human encounters science research encampment. 
+* Setting chance to zero actually disables stuff I love logic errors 0 is <= to Chance. 
+
 ## Version 2.0.3
-* Last Starfield update redid all the caves yet again. Restoring those change and merging in mine. 
+* Last Starfield update redid all the caves yet again. Restoring those changes and merging in mine. 
 
 ## Version 2.0.2
 * New random and robot spawn setups see help for the new commands: ```CGF "VEOH_Help.Show"```

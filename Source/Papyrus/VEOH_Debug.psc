@@ -305,9 +305,11 @@ EndFunction
 ;; Call using: CGF "VEOH_Debug.HumanCampTheFirstSpawnSettings" 
 Function HumanCampTheFirstSpawnSettings() Global
   GlobalVariable VEOH_HumanCamps_TheFirst01_Chance = Game.GetFormFromFile(0x0000173E, "VenpiCaveOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_HumanCamps_TheFirst02_Chance = Game.GetFormFromFile(0x00001785, "VenpiCaveOverhaul.esm") as GlobalVariable
 
   String message = "Human Camps - The First Spawn Settings:\n\n"
   message += "Chance for The First Camp 01 - Salvage Operation (Should be 20%) = " + VEOH_HumanCamps_TheFirst01_Chance.GetValueInt() + "%\n"
+  message += "Chance for The First Camp 02 - Heavy Patrol (Should be 20%) = " + VEOH_HumanCamps_TheFirst02_Chance.GetValueInt() + "%\n"
 
   Debug.MessageBox(message)
   Debug.Trace(message, 2)
@@ -316,6 +318,7 @@ EndFunction
 ;; Call using: CGF "VEOH_Debug.ResetHumanCampTheFirstSpawnSettings" 
 Function ResetHumanCampTheFirstSpawnSettings() Global
   SetSpawnChanceHumanCampTheFirst01(20)
+  SetSpawnChanceHumanCampTheFirst02(20)
   Utility.Wait(0.10)
   HumanCampTheFirstSpawnSettings()
 EndFunction
@@ -324,6 +327,12 @@ EndFunction
 Function SetSpawnChanceHumanCampTheFirst01(Int chance) Global
   GlobalVariable VEOH_HumanCamps_TheFirst01_Chance = Game.GetFormFromFile(0x0000173E, "VenpiCaveOverhaul.esm") as GlobalVariable
   VEOH_HumanCamps_TheFirst01_Chance.SetValueInt(chance)
+EndFunction
+
+;; Call using: CGF "VEOH_Debug.SetSpawnChanceHumanCampTheFirst02" <chance:integer>
+Function SetSpawnChanceHumanCampTheFirst02(Int chance) Global
+  GlobalVariable VEOH_HumanCamps_TheFirst02_Chance = Game.GetFormFromFile(0x00001785, "VenpiCaveOverhaul.esm") as GlobalVariable
+  VEOH_HumanCamps_TheFirst02_Chance.SetValueInt(chance)
 EndFunction
 
 
@@ -335,9 +344,11 @@ EndFunction
 ;; Call using: CGF "VEOH_Debug.HumanCampRandomHostileSpawnSettings" 
 Function HumanCampRandomHostileSpawnSettings() Global
   GlobalVariable VEOH_HumanCamps_Random01_Chance = Game.GetFormFromFile(0x0000175B, "VenpiCaveOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_HumanCamps_Random02_Chance = Game.GetFormFromFile(0x000017A5, "VenpiCaveOverhaul.esm") as GlobalVariable
 
   String message = "Human Camps - Random Hostiles Spawn Settings:\n\n"
   message += "Chance for Random Camp 01 - Terrormorph Skirmish (Should be 20%) = " + VEOH_HumanCamps_Random01_Chance.GetValueInt() + "%\n"
+  message += "       Chance for Random Camp 02 - Research Camp (Should be 20%) = " + VEOH_HumanCamps_Random02_Chance.GetValueInt() + "%\n"
 
   Debug.MessageBox(message)
   Debug.Trace(message, 2)
@@ -346,6 +357,7 @@ EndFunction
 ;; Call using: CGF "VEOH_Debug.ResetHumanCampRandomHostileSpawnSettings" 
 Function ResetHumanCampRandomHostileSpawnSettings() Global
   SetSpawnChanceHumanCampRandom01Hostile(20)
+  SetSpawnChanceHumanCampRandom02Hostile(20)
   Utility.Wait(0.10)
   HumanCampRandomHostileSpawnSettings()
 EndFunction
@@ -354,6 +366,12 @@ EndFunction
 Function SetSpawnChanceHumanCampRandom01Hostile(Int chance) Global
   GlobalVariable VEOH_HumanCamps_Random01_Chance = Game.GetFormFromFile(0x0000175B, "VenpiCaveOverhaul.esm") as GlobalVariable
   VEOH_HumanCamps_Random01_Chance.SetValueInt(chance)
+EndFunction
+
+;; Call using: CGF "VEOH_Debug.SetSpawnChanceHumanCampRandom02Hostile" <chance:integer>
+Function SetSpawnChanceHumanCampRandom02Hostile(Int chance) Global
+  GlobalVariable VEOH_HumanCamps_Random02_Chance = Game.GetFormFromFile(0x000017A5, "VenpiCaveOverhaul.esm") as GlobalVariable
+  VEOH_HumanCamps_Random02_Chance.SetValueInt(chance)
 EndFunction
 
 
