@@ -403,3 +403,33 @@ Function SetSpawnChanceRobotCampRandom01Hostile(Int chance) Global
   GlobalVariable VEOH_RobotCamps_Random01_Chance = Game.GetFormFromFile(0x0000177A, "VenpiCaveOverhaul.esm") as GlobalVariable
   VEOH_RobotCamps_Random01_Chance.SetValueInt(chance)
 EndFunction
+
+
+
+;; ****************************************************************************************
+;; *** Special Encounters Spawn Settings
+;; ***
+
+;; Call using: CGF "VEOH_Debug.SpecialEncountersSpawnSettings" 
+Function SpecialEncountersSpawnSettings() Global
+  GlobalVariable VEOH_Special_Corpse01_Chance = Game.GetFormFromFile(0x000017B4, "VenpiCaveOverhaul.esm") as GlobalVariable
+
+  String message = "Special Encounter Spawn Settings:\n\n"
+  message += "Chance for Corpse Encounter 01 (Should be 20%) = " + VEOH_Special_Corpse01_Chance.GetValueInt() + "%\n"
+
+  Debug.MessageBox(message)
+  Debug.Trace(message, 2)
+EndFunction
+
+;; Call using: CGF "VEOH_Debug.ResetSpecialEncountersSpawnSettings" 
+Function ResetSpecialEncountersSpawnSettings() Global
+  SetSpawnChanceSpecialEncountersCorpse01(20)
+  Utility.Wait(0.10)
+  SpecialEncountersSpawnSettings()
+EndFunction
+
+;; Call using: CGF "VEOH_Debug.SetSpawnChanceSpecialEncountersCorpse01" <chance:integer>
+Function SetSpawnChanceSpecialEncountersCorpse01(Int chance) Global
+  GlobalVariable VEOH_Special_Corpse01_Chance = Game.GetFormFromFile(0x000017B4, "VenpiCaveOverhaul.esm") as GlobalVariable
+  VEOH_Special_Corpse01_Chance.SetValueInt(chance)
+EndFunction

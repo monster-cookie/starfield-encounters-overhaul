@@ -7,6 +7,7 @@
 - [ ] Friendly01 robot will not give RQ collect meat quest 
 - [X] Friendly01 need ground removed 
 - [X] Friendly01 robot will attack the kids occasionally. The encounter should be planets with atmos too. 
+- [X] The first mech salvage is spawning where it shouldn't be allowed like serpentis. `
 
 # Enhancements and New Features
 - [ ] AFTER CK: Add blood spatter decals

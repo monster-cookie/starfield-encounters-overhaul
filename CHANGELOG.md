@@ -1,5 +1,10 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 2.0.5
+* Added new special encounters setup for the non faction encounters I dream up
+* Removed Random Event Quest Marauders01 as BGS change the scripts in a painful way for a limited functionality encounter
+* THe first encounters will now only spawn in systems that allow the first
+
 ## Version 2.0.4
 * New The First encounter related to the first encounter.
 * New random hostile human encounters science research encampment. 

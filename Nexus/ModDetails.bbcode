@@ -4,7 +4,8 @@ This updates the open world caves so that they generate enemies for you to fight
 [quote]
 NOTE: This is an ever-evolving mod additional encounters will be added over time.
 
-FAIR WARNING: The Spooky Cave and the hollows are meant to be very challenging at any level and shouldn't be tried less then level 50.[/quote]
+FAIR WARNING: The Spooky Cave and the hollows are meant to be very challenging at any level and shouldn't be tried less then level 50.
+WARNING: This is not compatible with any other mods that modifies the PCM rules and RTFP is only an option for cell reset rules. [/quote]
 
 [size=4][b][u]Features[/u][/b][/size]
 [list]
@@ -90,15 +91,25 @@ Robot Camp (Random Hostiles) Commands and Settings
 [*]Set new spawn setting for Random Camp 01 - Patrol: [code]CGF "VEOH_Debug.SetSpawnChanceRobotCampRandom01Hostile" <chance:integer>[/code]
 [/list]
 
-[size=4][b][u]Compatibility[/u][/b][/size]
-This mod will be incompatible with any mod that modifies PCM, Faction, and Leveled Human Hostile leveled lists. The mods will need patch files in order to make them compatible with each other and using them together will break both sets of mods to varying degrees and is strongly recommended against. Please see the option files section for any available patches. 
+Special Encounters Commands and Settings
+[list]
+[*]Special Encounters spawn chance status screen: [code]CGF "VEOH_Debug.SpecialEncountersSpawnSettings"[/code]
+[*]Reset Special Encounters spawn chances to my settings: [code]CGF "VEOH_Debug.ResetSpecialEncountersSpawnSettings"[/code]
+[*]Set new spawn setting for Corpse 01: [code]CGF "VEOH_Debug.SetSpawnChanceSpecialEncountersCorpse01" <chance:integer>[/code]
+[/list]
 
-[size=4][b][u]Known Incompatible[/u][/b][/size]
-As I can't get them to load without a CTD, I can't make patches for them. Also using them without patches will break various part fo my mods and theirs and is highly discouraged. 
+[size=4][b][u]Compatibility[/u][/b][/size]
+This mod will be incompatible with any mod that modifies PCM rules, Factions, and Leveled Human Hostile leveled lists. The mods will need patch files in order to make them compatible with each other and using them together will break both sets of mods to varying degrees and is strongly recommended against. Please see the option files section for any available patches. 
+
+PCM rules are single modification setups, so this mod is going to be fully incompatible with any other that modify them too and RTFP is only an option for cell reset rules and not for block creation rules. I have to use both, the human/robot/corpse lairs are cell reset rules and the new POI are block creation rules.
+
+[size=4][b][u]Known Incompatibilities[/u][/b][/size]
+As I can't get them to load without a CTD, I can't make patches for them. Also using them without patches will break various parts of my mods and theirs and is highly discouraged.  
 
 [list]
 [*]POI Faction Diversity
 [*]POI Faction Diversity - New Factions
+[*]Skyshards
 [/list]
 
 [size=4][b][u]Installation [/u][/b][/size]

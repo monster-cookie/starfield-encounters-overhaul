@@ -57,7 +57,8 @@ Function SpawnActors()
 
   Int I=0
   While (I < ActorsToSpawn.Length)
-    Actor actorToSpawn=ActorsToSpawn[i]
+    Actor actorToSpawn = ActorsToSpawn[i]
+    VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_Packin_HumanCamp_Random02", "SpawnActors", "Attempting to activate actor " + actorToSpawn + ".", 0, Venpi_DebugEnabled.GetValueInt())
     actorToSpawn.Enable(False)
     I += 1
   EndWhile

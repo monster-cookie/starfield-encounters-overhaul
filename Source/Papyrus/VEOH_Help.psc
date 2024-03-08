@@ -48,6 +48,10 @@ Function Show() Global
   message += "                    Random Hostile Camps spawn chance status screen:\n\tCGF \"VEOH_Debug.RobotCampRandomHostileSpawnSettings\"\n"
   message += "            Reset Random Hostile Camps spawn chances to my settings:\n\tCGF \"VEOH_Debug.ResetRobotCampRandomHostileSpawnSettings\"\n"
   message += "Set new spawn setting for Random Hostile Camp 01 - Patrol:\n\tCGF \"VEOH_Debug.SetSpawnChanceRobotCampRandom01Hostile\" <chance:integer>\n"
+  message += "\n\n***** Special Encounters *****\n\n"
+  message += "        Special Encounters spawn chance status screen:\n\tCGF \"VEOH_Debug.SpecialEncountersSpawnSettings\"\n"
+  message += "Reset Special Encounters spawn chances to my settings:\n\tCGF \"VEOH_Debug.ResetSpecialEncountersSpawnSettings\"\n"
+  message += "                  Set new spawn setting for Corpse 01:\n\tCGF \"VEOH_Debug.SetSpawnChanceSpecialEncountersCorpse01\" <chance:integer>\n"
 
   Debug.MessageBox(message)
 EndFunction
