@@ -13,6 +13,8 @@ String Property Venpi_ModName="VenworksEncountersOverhaul" Auto Const
 ;;;
 Bool Property PlayerActivateOnly=True Auto Const Mandatory
 Bool Property DoOnce=True Auto Const Mandatory
+Keyword Property MyParent Auto Const Mandatory
+Keyword Property MyChild Auto Const Mandatory
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -52,14 +54,16 @@ EndEvent
 ;;; Functions
 ;;;
 Function SpawnActors() 
-  Actor[] actorsToSpawn = self.GetActorsLinkedToMe(None, None)
-  VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_Packin_HumanCamp_Random02", "SpawnActors", "Will begin spawning the " + ActorsToSpawn.Length + " defined actors.", 0, Venpi_DebugEnabled.GetValueInt())
+  Actor[] actorsToEnable = self.GetActorsLinkedToMe(MyParent, None)
+  VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_Packin_HumanCamp_Random02", "SpawnActors", "Will begin spawning the " + actorsToEnable.Length + " defined actors.", 0, Venpi_DebugEnabled.GetValueInt())
 
   Int I=0
-  While (I < ActorsToSpawn.Length)
-    Actor actorToSpawn = ActorsToSpawn[i]
-    VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_Packin_HumanCamp_Random02", "SpawnActors", "Attempting to activate actor " + actorToSpawn + ".", 0, Venpi_DebugEnabled.GetValueInt())
-    actorToSpawn.Enable(False)
+  While (I < actorsToEnable.Length)
+    Actor actorToEnable = actorsToEnable[i]
+    VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_Packin_HumanCamp_Random02", "SpawnActors", "Record " + I + ":Attempting to activate actor " + actorToEnable + ".", 0, Venpi_DebugEnabled.GetValueInt())
+    actorToEnable.EvaluatePackage(False)
+    actorToEnable.Enable(False)
+    Utility.Wait(0.001)
     I += 1
   EndWhile
 EndFunction

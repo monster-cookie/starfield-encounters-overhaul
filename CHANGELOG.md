@@ -1,11 +1,12 @@
 # Venworks Cave and Encounters Overhaul
 
 ## Version 2.0.5
-* Added new special encounters setup for the non faction encounters I dream up
-* Removed Random Event Quest Marauders01 as BGS change the scripts in a painful way for a limited functionality encounter
-* Tee first encounters will now only spawn in systems that allow the first
-* The 3 crimson fleet robots will only spawn in crimson fleet areas
-* Added to special encounters involving random corpses
+* Added new special encounters setup for the non-faction encounters I dream up.
+* Removed Random Event Quest Marauders01 as BGS change the scripts in a painful way for a limited functionality encounter.
+* The First encounters will now only spawn in systems that allow The First.
+* The 3 crimson fleet robots will only spawn in crimson fleet areas.
+* Added two special encounters involving random corpses.
+* Ok no more scripted encounters until someone writes a script cache purger or CK2. Too much of a pain making a new universe every script change. 
 
 ## Version 2.0.4
 * New The First encounter related to the first encounter.
