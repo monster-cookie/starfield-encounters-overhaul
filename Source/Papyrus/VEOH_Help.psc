@@ -52,6 +52,7 @@ Function Show() Global
   message += "        Special Encounters spawn chance status screen:\n\tCGF \"VEOH_Debug.SpecialEncountersSpawnSettings\"\n"
   message += "Reset Special Encounters spawn chances to my settings:\n\tCGF \"VEOH_Debug.ResetSpecialEncountersSpawnSettings\"\n"
   message += "                  Set new spawn setting for Corpse 01:\n\tCGF \"VEOH_Debug.SetSpawnChanceSpecialEncountersCorpse01\" <chance:integer>\n"
+  message += "                  Set new spawn setting for Corpse 02:\n\tCGF \"VEOH_Debug.SetSpawnChanceSpecialEncountersCorpse02\" <chance:integer>\n"
 
   Debug.MessageBox(message)
 EndFunction

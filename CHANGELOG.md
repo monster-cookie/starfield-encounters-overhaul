@@ -3,7 +3,9 @@
 ## Version 2.0.5
 * Added new special encounters setup for the non faction encounters I dream up
 * Removed Random Event Quest Marauders01 as BGS change the scripts in a painful way for a limited functionality encounter
-* THe first encounters will now only spawn in systems that allow the first
+* Tee first encounters will now only spawn in systems that allow the first
+* The 3 crimson fleet robots will only spawn in crimson fleet areas
+* Added to special encounters involving random corpses
 
 ## Version 2.0.4
 * New The First encounter related to the first encounter.

@@ -84,10 +84,9 @@ Function StartPhase1()
   spawnedXenogrubRef.Enable(False)
   Self.RegisterForRemoteEvent(spawnedXenogrubRef, "OnDeath")
   Self.DisableNoWait(False)
-  ;;Self.SetPosition(0, 0,-1000) ;; Disable stops the timer too. 
 
   ;; Start timer for when to convert Xenogrub to siren
-  Float waitPeriod = Utility.RandomFloat(5.0, 15.0)
+  Float waitPeriod = Utility.RandomFloat(8.0, 25.0)
   VPI_Debug.DebugMessage(Venpi_ModName, "VEOH_Packin_Special_Corpse01", "StartPhase1", "Phase 1: Setting phase 2 to trigger in " + waitPeriod + ".", 0, Venpi_DebugEnabled.GetValueInt())
   Self.StartTimer(waitPeriod, 2)
 EndFunction
