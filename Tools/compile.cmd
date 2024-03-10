@@ -10,6 +10,7 @@ cd "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Tools"
 del /s /q "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist\*.*"
 rmdir /s /q "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist"
 mkdir "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist"
+mkdir "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist\SFSE\Plugins\RealTimeFormPatcher"
 
 @REM Clear Dist-CCMBH-Patch DIR
 @echo "Clearing and scafolding the Dist dir"
@@ -74,6 +75,11 @@ copy /y "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Sou
 copy /y "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Source\Terrain\VCOH_GhostCave_World.btd" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist-BA2-Main\terrain"
 copy /y "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Source\Terrain\VEOH_ActivePortalCrater_World.btd" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist-BA2-Main\terrain"
 copy /y "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Source\Terrain\VEOH_SpacerMechCamp_World.btd" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist-BA2-Main\terrain"
+
+@REM Deploy RTFP to Dist folder
+@echo "Deploy RTFP to Dist folder"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Source\RTFP\VenworksCoreConfig.txt" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist\SFSE\Plugins\RealTimeFormPatcher"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Source\RTFP\VenworksEncountersOverhaulConfig.txt" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist\SFSE\Plugins\RealTimeFormPatcher"
 
 @REM ESM is purely binary so need to pull from starfield dir where xedit has to have it 
 @echo "Copying the ESM from xEdit and adding to Source and Dist folders"

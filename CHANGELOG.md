@@ -1,5 +1,9 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 2.0.6
+* Added a condition that should hopefully disable spawns in cells with outposts. It is checking for a player owned workshop as the beacons use the workshop events, I'm fairly sure this will catch outposts.
+* Also added RTFP configuration files please feel free to customize them to your liking.
+
 ## Version 2.0.5
 * Added new special encounters setup for the non-faction encounters I dream up.
 * Removed Random Event Quest Marauders01 as BGS change the scripts in a painful way for a limited functionality encounter.

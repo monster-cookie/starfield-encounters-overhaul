@@ -1,0 +1,5 @@
+minver=112
+
+[Global]
+# This enables(1)/Disables(0) debug logs messages in consuming mods
+Venpi_DebugEnabled|val(0)
