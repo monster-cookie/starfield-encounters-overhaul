@@ -1,0 +1,30 @@
+FormKey: 226A22:Starfield.esm
+EditorID: OE_UniqueNode
+FormVersion: 556
+Parent: 11066A:Starfield.esm
+PreviousSibling: 2308A4:Starfield.esm
+Conditions:
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThan
+  Unknown1: 0xC60000
+  Unknown2: 17625
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 110677:Starfield.esm
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xC60000
+  Unknown2: 17625
+  Data:
+    MutagenObjectType: BodyHasKeywordConditionData
+    RunOnType: EventData
+    Unknown3: 12626
+    FirstParameter: 017ADD:Starfield.esm
+Flags:
+- Random
+QuestFlags:
+- DoAllBeforeRepeating
+MaxConcurrentQuests: 0
+Quests:
+- Quest: 006E53:Starfield.esm
+- Quest: 0DAACF:Starfield.esm
+- Quest: 0E55DF:Starfield.esm

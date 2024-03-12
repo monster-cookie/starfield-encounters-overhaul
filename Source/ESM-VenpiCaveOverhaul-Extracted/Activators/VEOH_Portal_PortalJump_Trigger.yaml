@@ -1,0 +1,23 @@
+FormKey: 00101E:VenpiCaveOverhaul.esm
+EditorID: VEOH_Portal_PortalJump_Trigger
+VirtualMachineAdapter:
+  Scripts:
+  - Name: VEOH_PortalHandlerScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PortalsFound
+      Object: 001019:VenpiCaveOverhaul.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MapMarkersFound
+      Object: 00082D:VenpiCore.esm
+      Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Venpi_DebugEnabled
+      Object: 000800:VenpiCore.esm
+ODTY: 0
+Model:
+  FLLD: 0x01000000
+MarkerColor: '#00CC4C33'
+Flags: []
+ActivationAngle: 360

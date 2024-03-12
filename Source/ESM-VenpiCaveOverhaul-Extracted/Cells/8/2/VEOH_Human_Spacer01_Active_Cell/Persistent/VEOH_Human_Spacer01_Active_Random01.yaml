@@ -1,0 +1,18 @@
+MutagenObjectType: PlacedNpc
+FormKey: 0016D4:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 1024
+EditorID: VEOH_Human_Spacer01_Active_Random01
+StarfieldMajorRecordFlags:
+- 0x400
+Base: 1AD194:Starfield.esm
+LevelModifier: Medium
+LinkedReferences:
+- Reference: 0016D0:VenpiCaveOverhaul.esm
+- KeywordOrReference: 0F0E7E:Starfield.esm
+  Reference: 0016D6:VenpiCaveOverhaul.esm
+- KeywordOrReference: 141918:Starfield.esm
+  Reference: 0016D7:VenpiCaveOverhaul.esm
+Position: -4.235978, -9.431134, 2.258782
+Rotation: 0, 0, 3.1415925
+MajorFlags:
+- Persistent

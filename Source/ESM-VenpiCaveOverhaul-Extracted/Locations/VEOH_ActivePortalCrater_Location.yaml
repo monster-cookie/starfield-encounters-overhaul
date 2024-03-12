@@ -1,0 +1,63 @@
+FormKey: 0012F1:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 1048576
+EditorID: VEOH_ActivePortalCrater_Location
+StarfieldMajorRecordFlags:
+- 0x100000
+LocationCellPersistentReferences:
+- Actor: 00164F:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 00164D:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 00164E:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 00164C:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 00164A:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 00164B:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 001651:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 001652:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- Actor: 001653:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+LocationCellStaticReferences:
+- LocationRefType: 02271F:Starfield.esm
+  Marker: 0012EC:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- LocationRefType: 00101A:VenpiCaveOverhaul.esm
+  Marker: 0012F6:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- LocationRefType: 003956:Starfield.esm
+  Marker: 00164F:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+- LocationRefType: 05AF1F:Starfield.esm
+  Marker: 001650:VenpiCaveOverhaul.esm
+  Location: 0012F0:VenpiCaveOverhaul.esm
+  Unknown: -1
+Name:
+  TargetLanguage: English
+  Value: Active Portal (Crater)
+Keywords:
+- 0C6928:Starfield.esm
+- 1A5468:Starfield.esm
+- 283581:Starfield.esm
+UnknownDATA2: 16
+WorldLocationRadius: 0
+ActorFadeMult: 1
+TNAM: 0
+MajorFlags:
+- 0x100000

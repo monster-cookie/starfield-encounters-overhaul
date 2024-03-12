@@ -1,0 +1,6 @@
+MutagenObjectType: PlacedObject
+FormKey: 00176C:VenpiCaveOverhaul.esm
+EditorID: VEOH_Human_Random01_PCMOnly_Barrier01_BottomMiddle01
+Base: 015327:Starfield.esm
+Position: 6, 4, 0
+Rotation: 0, 0, 0.7853981

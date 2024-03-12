@@ -1,0 +1,94 @@
+FormKey: 000C4B:VenpiCaveOverhaul.esm
+NavmeshGeometry:
+  Versioning:
+  - Break0
+  NavmeshVersion: 17
+  Parent:
+    MutagenObjectType: WorldspaceNavmeshParent
+    Parent: 0012F0:VenpiCaveOverhaul.esm
+  Vertices:
+  - Point: 0.75, 67.25, 6.064871
+    Unknown: 1
+  - Point: 0.55, 64, 6.4648724
+    Unknown: 1
+  - Point: 1.35, 67.1, 6.164873
+    Unknown: 1
+  - Point: 0, 63.55, 6.414873
+    Unknown: 1
+  - Point: 0, 67.75, 5.86487
+    Unknown: 1
+  Triangles:
+  - Vertices: 0, 1, 2
+    EdgeLink_0_1: 1
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 16390
+  - Vertices: 0, 3, 1
+    EdgeLink_0_1: 2
+    EdgeLink_1_2: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49154
+  - Vertices: 0, 4, 3
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 32769
+  Cover:
+  - Vertex1: 4
+    Vertex2: 44839
+    Data: 141770430352671
+  - Vertex1: 44839
+    Data: 113180982521498
+  - Vertex2: 20164
+    Data: 45011261726492
+  - Vertex1: 20164
+    Vertex2: 45370
+    Data: 14237818957720
+  - Vertex1: 45370
+    Vertex2: 2
+    Data: 18068933838485
+  - Vertex1: 2
+    Vertex2: 1
+    Data: 35283156338303
+  - Vertex1: 1
+    Vertex2: 30582
+    Data: 9960037828479
+  - Vertex1: 30582
+    Vertex2: 52428
+    Data: 433811245055
+  - Vertex1: 52428
+    Vertex2: 3
+    Data: 1095234503309
+  CoverTriangleMappings:
+  - Cover: 5
+    Triangle: 6
+  - Cover: 2
+    Triangle: 2
+  - Cover: 1
+    Triangle: 5
+  - Cover: 8
+  GridSize: 1
+  GridMaxDistance: 1.35, 4.200001
+  GridMin: 0, 63.55, 5.86487
+  GridMax: 1.35, 67.75, 3.4028235E+38
+  GridArrays:
+  - GridCell:
+    - 3
+    - 0
+    - 0
+    - 1
+    - 2
+    - 12
+    - 8
+PreCutMapEntries: []

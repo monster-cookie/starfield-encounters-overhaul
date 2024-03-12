@@ -1,0 +1,12 @@
+MutagenObjectType: PlacedObject
+FormKey: 0016D0:VenpiCaveOverhaul.esm
+EditorID: VEOH_Human_Spacer01_Active_Clipboard01
+Base: 25EB0F:Starfield.esm
+Patrol:
+  IdleTime: 3
+  Topics:
+  - MutagenObjectType: TopicReference
+LinkedReferences:
+- Reference: 0016C9:VenpiCaveOverhaul.esm
+Position: -4.251501, -8.204476, 2.4
+Rotation: 0, 0, 0.7853978

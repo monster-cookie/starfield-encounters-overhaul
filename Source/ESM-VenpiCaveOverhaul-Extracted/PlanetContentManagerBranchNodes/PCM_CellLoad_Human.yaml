@@ -1,0 +1,16 @@
+FormKey: 0016DD:VenpiCaveOverhaul.esm
+EditorID: PCM_CellLoad_Human
+FormVersion: 556
+NAM1: 1
+Nodes:
+- 0016DF:VenpiCaveOverhaul.esm
+- 001707:VenpiCaveOverhaul.esm
+- 00173C:VenpiCaveOverhaul.esm
+- 001758:VenpiCaveOverhaul.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: IsTrueForConditionFormConditionData
+    FirstParameter: 001713:VenpiCaveOverhaul.esm
+  ComparisonValue: 1

@@ -1,0 +1,12 @@
+FormKey: 000DD6:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 1024
+StarfieldMajorRecordFlags:
+- 0x400
+Flags:
+- HasWater
+Grid:
+  Point: 2147483647, 2147483647
+WaterHeight: 3.4028235E+38
+XILS: 1
+MajorFlags:
+- Persistent

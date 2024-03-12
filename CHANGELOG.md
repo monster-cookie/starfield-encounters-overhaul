@@ -1,5 +1,8 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 2.0.7
+* Ghost Pirates will again scale all the way to level 999 instead of 99
+
 ## Version 2.0.6
 * Added a condition that should hopefully disable spawns in cells with outposts. It is checking for a player owned workshop as the beacons use the workshop events, I'm fairly sure this will catch outposts.
 * Also added RTFP configuration files please feel free to customize them to your liking.

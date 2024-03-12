@@ -1,0 +1,36 @@
+FormKey: 110666:Starfield.esm
+EditorID: OE_RareNode
+FormVersion: 556
+Parent: 11066A:Starfield.esm
+PreviousSibling: 226A22:Starfield.esm
+Conditions:
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThan
+  Unknown1: 0xC60000
+  Unknown2: 17625
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 110678:Starfield.esm
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0xC60000
+  Unknown2: 17625
+  Data:
+    MutagenObjectType: BodyHasKeywordConditionData
+    RunOnType: EventData
+    Unknown3: 12626
+    FirstParameter: 017ADD:Starfield.esm
+Flags:
+- Random
+QuestFlags:
+- DoAllBeforeRepeating
+MaxConcurrentQuests: 0
+Quests:
+- Quest: 1040B0:Starfield.esm
+- Quest: 062700:Starfield.esm
+- Quest: 0626FF:Starfield.esm
+- Quest: 0FEA94:Starfield.esm
+- Quest: 0FC908:Starfield.esm
+- Quest: 0F31DC:Starfield.esm
+- Quest: 082C9A:Starfield.esm
+- Quest: 07E715:Starfield.esm
+- Quest: 00166D:VenpiCaveOverhaul.esm

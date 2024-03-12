@@ -1,0 +1,34 @@
+FormKey: 00173D:VenpiCaveOverhaul.esm
+EditorID: VEOH_HumanCamps_TheFirst_Allowed_SafeToOverride
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: IsTrueForConditionFormConditionData
+    FirstParameter: 001713:VenpiCaveOverhaul.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    FirstParameter: 2A4310:Starfield.esm
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: LocationHasPlayerOwnedWorkshopConditionData
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: SystemHasKeywordConditionData
+    FirstParameter: 12179A:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: BodyHasKeywordConditionData
+    FirstParameter: 12179A:Starfield.esm
+  ComparisonValue: 1

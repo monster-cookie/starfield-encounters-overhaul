@@ -1,0 +1,10 @@
+MutagenObjectType: PlacedObject
+FormKey: 0012F6:VenpiCaveOverhaul.esm
+EditorID: VEOH_ActivePortalCrater_World_Ext01_Portal_WormholeActivator
+Base: 00101E:VenpiCaveOverhaul.esm
+Primitive:
+  Bounds: 8, 8, 8
+  Color: '#00CC4C33'
+  Unknown: 8
+  Type: Sphere
+Position: 46.71149, 45.759415, -0.8

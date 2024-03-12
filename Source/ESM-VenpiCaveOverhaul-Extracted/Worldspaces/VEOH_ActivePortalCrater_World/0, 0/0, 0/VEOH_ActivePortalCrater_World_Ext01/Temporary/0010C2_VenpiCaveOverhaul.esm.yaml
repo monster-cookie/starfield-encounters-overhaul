@@ -1,0 +1,10 @@
+MutagenObjectType: PlacedObject
+FormKey: 0010C2:VenpiCaveOverhaul.esm
+Base: 025857:Starfield.esm
+Primitive:
+  Bounds: 30.736435, 0.23, 0.23
+  Color: '#00FFFFFF'
+  Unknown: 1
+  Type: Line
+Position: 46.621525, 50.568333, 1.5
+Rotation: 0, -0, 2.335796

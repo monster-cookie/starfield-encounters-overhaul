@@ -1,0 +1,11 @@
+MutagenObjectType: PlacedObject
+FormKey: 000DD4:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 1024
+StarfieldMajorRecordFlags:
+- 0x400
+Base: 002CE2:Starfield.esm
+SourcePackIn: 0E37E1:Starfield.esm
+LinkedReferences:
+- Reference: 000DD2:VenpiCaveOverhaul.esm
+Position: 84.35065, 60.964153, 8.309174
+Rotation: 0, -0, 6.071593

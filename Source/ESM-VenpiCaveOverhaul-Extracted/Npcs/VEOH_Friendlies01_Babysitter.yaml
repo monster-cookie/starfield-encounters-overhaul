@@ -1,0 +1,79 @@
+FormKey: 001702:VenpiCaveOverhaul.esm
+EditorID: VEOH_Friendlies01_Babysitter
+FormVersion: 556
+ObjectBounds:
+  First: -0.591797, -0.3623047, 0
+  Second: 0.59179676, 1.0341797, 1.2373047
+ODTY: 0
+Components:
+- MutagenObjectType: SoundTagComponent
+  AnimationSound: 1A41AC:Starfield.esm
+Flags:
+- Respawn
+- AutoCalcStats
+- 0x100
+- DoesNotBleed
+XpValueOffset: 100
+Level:
+  MutagenObjectType: PcLevelMult
+  LevelMult: 1.25
+CalcMinLevel: 1
+CalcMaxLevel: 999
+DispositionBase: 35
+UseTemplateActors: 32718
+DeathItem: 1312B5:Starfield.esm
+Voice: 2BCA57:Starfield.esm
+DefaultTemplate: 1312B7:Starfield.esm
+Race: 005629:Starfield.esm
+Skin: 319B37:Starfield.esm
+CombatOverridePackageList: 0102ED:Starfield.esm
+Properties:
+- ActorValue: 0002C2:Starfield.esm
+- ActorValue: 0002C3:Starfield.esm
+- ActorValue: 0002C4:Starfield.esm
+- ActorValue: 0002C5:Starfield.esm
+- ActorValue: 0002C6:Starfield.esm
+- ActorValue: 0002C7:Starfield.esm
+- ActorValue: 0002C8:Starfield.esm
+- ActorValue: 0002D4:Starfield.esm
+  Value: 250
+- ActorValue: 0002D5:Starfield.esm
+- ActorValue: 0002DA:Starfield.esm
+  Value: 100
+- ActorValue: 0002E3:Starfield.esm
+  Value: 130
+NativeTerminal: 1AE420:Starfield.esm
+Confidence: Cautious
+EnergyLevel: 50
+Responsibility: NoCrime
+Assistance: HelpsFriendsAndAllies
+Packages:
+- 059E7C:Starfield.esm
+- 1B5ADA:Starfield.esm
+ObjectTemplates:
+- IsEditorOnly: True
+  Default: True
+  Includes:
+  - Mod: 2C18C2:Starfield.esm
+    DontUseAll: True
+  - Mod: 1E60A7:Starfield.esm
+    DontUseAll: True
+  - Mod: 1E60A6:Starfield.esm
+    DontUseAll: True
+Class: 010B2F:Starfield.esm
+GearedUpWeapons: 1
+Unused: 63
+CombatStyle: 0187B6:Starfield.esm
+NAM5: 0xFF00
+HeightMin: 1
+HeightMax: 1
+Weight: {}
+Sounds:
+- Sound:
+    Start: a19045db-087e-016a-72c2-7c7a0da0908e
+    Stop: 59c24233-40e6-2319-eb9f-7381f8ae7f86
+  CS3F: 0x01
+DefaultPackageList: 26F689:Starfield.esm
+Tints: []
+SkinToneIndex: 0
+Pronoun: Unspecified

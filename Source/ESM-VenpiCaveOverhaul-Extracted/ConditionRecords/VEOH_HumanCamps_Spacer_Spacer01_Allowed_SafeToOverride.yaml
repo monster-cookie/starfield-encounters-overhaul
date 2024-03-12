@@ -1,0 +1,21 @@
+FormKey: 001719:VenpiCaveOverhaul.esm
+EditorID: VEOH_HumanCamps_Spacer_Spacer01_Allowed_SafeToOverride
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: IsTrueForConditionFormConditionData
+    FirstParameter: 001714:VenpiCaveOverhaul.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    FirstParameter: 00171C:VenpiCaveOverhaul.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 00171C:VenpiCaveOverhaul.esm

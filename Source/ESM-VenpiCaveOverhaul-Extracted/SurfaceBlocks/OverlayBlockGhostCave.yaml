@@ -1,0 +1,30 @@
+FormKey: 000FF8:VenpiCaveOverhaul.esm
+EditorID: OverlayBlockGhostCave
+Components:
+- MutagenObjectType: BlockEditorMetaDataComponent
+  UnknownString1: Jan 1 00:00:00 0000
+  UnknownByte: 1
+  UnknownString2: Jan 1 00:00:00 0000
+  UnknownString3: OverlayHillsRoundedSmall05
+  UnknownInts:
+  - 2583183
+  UnknownInt1: 1
+  UnknownInt2: 1
+  UnknownInt3: -1
+  UnknownInt4: -1
+  UnknownEnding: 0x00000000000000000000000000000000
+ANAM: Data\terrain\VCOH_GhostCave_World.btd
+DNAM:
+  First: 3
+  Second: 3
+ENAM:
+  First: 3287941120
+  Second: 1148846080
+FNAM: 0x27573956D75658579759EA568E5601587356
+GNAM: 0
+WHGT: -3.4028235E+38
+NAM1: OverlayBlock
+NAM2: 0
+NAM3: {}
+NAM4: {}
+NAM5: 276A8F:Starfield.esm

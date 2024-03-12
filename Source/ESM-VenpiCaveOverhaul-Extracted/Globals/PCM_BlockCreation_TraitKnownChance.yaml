@@ -1,0 +1,9 @@
+FormKey: 2CCF3A:Starfield.esm
+MajorRecordFlagsRaw: 64
+EditorID: PCM_BlockCreation_TraitKnownChance
+FormVersion: 556
+StarfieldMajorRecordFlags:
+- 0x40
+Data: 35
+MajorFlags:
+- Constant

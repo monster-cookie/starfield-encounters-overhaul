@@ -1,0 +1,8 @@
+MutagenObjectType: PlacedObject
+FormKey: 001611:VenpiCaveOverhaul.esm
+Base: 2ACD6A:Starfield.esm
+LinkedReferences:
+- Reference: 001486:VenpiCaveOverhaul.esm
+IsLinkedRefTransient: True
+Scale: 0.82
+Position: 30.101744, 30.525496, 15.748295

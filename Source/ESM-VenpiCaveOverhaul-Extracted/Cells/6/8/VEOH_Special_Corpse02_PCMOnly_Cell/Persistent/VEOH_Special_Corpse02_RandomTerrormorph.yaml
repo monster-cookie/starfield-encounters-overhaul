@@ -1,0 +1,15 @@
+MutagenObjectType: PlacedNpc
+FormKey: 0017CD:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 3072
+EditorID: VEOH_Special_Corpse02_RandomTerrormorph
+StarfieldMajorRecordFlags:
+- 0x400
+- InitiallyDisabled
+Base: 27D002:Starfield.esm
+LinkedReferences:
+- KeywordOrReference: 0017B8:VenpiCaveOverhaul.esm
+  Reference: 0017C9:VenpiCaveOverhaul.esm
+Position: 2, -2, 0
+MajorFlags:
+- Persistent
+- InitiallyDisabled

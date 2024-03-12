@@ -1,0 +1,58 @@
+FormKey: 2D6DF1:Starfield.esm
+EditorID: PCM_BlockCreation_NearLocation_Outposts_Caves
+Components:
+- MutagenObjectType: PlanetContentManagerContentPropertiesComponent
+  ZNAM: 0
+  YNAM: 1
+  XNAM: 0
+  WNAM: 0
+  VNAM: 0
+  UNAM: 0
+  NAM1: 500
+  Global: Null
+  NAM3: 3
+  NAM4: 0x00511500
+  NAM5: 0
+  NAM6: 0
+  NAM7: 0
+  NAM8: 0
+  NAM9: 0
+  Conditions: []
+NAM1: 2
+Nodes:
+- 2D6DF2:Starfield.esm
+- 2D6DF3:Starfield.esm
+- 2D6DF4:Starfield.esm
+- 2D6DF5:Starfield.esm
+- 2D6DF6:Starfield.esm
+- 2D6DF7:Starfield.esm
+- 2D6DF8:Starfield.esm
+- 2D6DF9:Starfield.esm
+- 2D6DFA:Starfield.esm
+- 2D6DFB:Starfield.esm
+- 2D6DFC:Starfield.esm
+- 2D6E33:Starfield.esm
+- 2D6E39:Starfield.esm
+- 2D6E3A:Starfield.esm
+- 2D6E3B:Starfield.esm
+- 2D6E3C:Starfield.esm
+- 2209D7:Starfield.esm
+- 2D6E3E:Starfield.esm
+- 2D6E3F:Starfield.esm
+- 2D6E40:Starfield.esm
+- 2D6E41:Starfield.esm
+- 2D6EC9:Starfield.esm
+- 2D6ECA:Starfield.esm
+- 2D6ECB:Starfield.esm
+- 2D6ED4:Starfield.esm
+- 2D6ED5:Starfield.esm
+- 2D6ED6:Starfield.esm
+- 2D6ED7:Starfield.esm
+- 2D6ED8:Starfield.esm
+- 2D6ED9:Starfield.esm
+- 2D6EDA:Starfield.esm
+- 2D6EDB:Starfield.esm
+- 2D6F25:Starfield.esm
+- 001002:VenpiCaveOverhaul.esm
+- 001E80:CoraCoeMultiversalBookHunter.esm
+Conditions: []

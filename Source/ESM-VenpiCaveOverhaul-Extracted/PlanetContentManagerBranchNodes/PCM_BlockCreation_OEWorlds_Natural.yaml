@@ -1,0 +1,41 @@
+FormKey: 06191F:Starfield.esm
+EditorID: PCM_BlockCreation_OEWorlds_Natural
+FormVersion: 556
+Components:
+- MutagenObjectType: PlanetContentManagerContentPropertiesComponent
+  ZNAM: 0
+  YNAM: 1
+  XNAM: 0
+  WNAM: 0
+  VNAM: 1
+  UNAM: 0
+  NAM1: 1000
+  Global: 25ECD1:Starfield.esm
+  NAM3: 0
+  NAM4: 0xCF70EB00
+  NAM5: 0
+  NAM6: 0
+  NAM7: 0
+  NAM8: 0
+  NAM9: 2
+  Conditions: []
+NAM1: 2
+Nodes:
+- 0619BB:Starfield.esm
+- 281DFD:Starfield.esm
+- 281E00:Starfield.esm
+- 281E03:Starfield.esm
+- 281E06:Starfield.esm
+- 281E0A:Starfield.esm
+- 281E0D:Starfield.esm
+- 281E10:Starfield.esm
+- 281E13:Starfield.esm
+- 281E16:Starfield.esm
+- 281E19:Starfield.esm
+- 281E1C:Starfield.esm
+- 001005:VenpiCaveOverhaul.esm
+- 00101F:VenpiCaveOverhaul.esm
+- 001642:VenpiCaveOverhaul.esm
+Conditions: []
+Keywords:
+- 2491C3:Starfield.esm

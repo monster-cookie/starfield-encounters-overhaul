@@ -1,0 +1,43 @@
+FormKey: 110668:Starfield.esm
+EditorID: OE_CommonNode
+FormVersion: 556
+Parent: 11066A:Starfield.esm
+PreviousSibling: 110667:Starfield.esm
+Flags:
+- Random
+QuestFlags:
+- DoAllBeforeRepeating
+MaxConcurrentQuests: 0
+Quests:
+- Quest: 0D6440:Starfield.esm
+- Quest: 0FA8D3:Starfield.esm
+- Quest: 0FEA4A:Starfield.esm
+- Quest: 0FE271:Starfield.esm
+- Quest: 0FE270:Starfield.esm
+- Quest: 0FE26F:Starfield.esm
+- Quest: 3E56E3:Starfield.esm
+- Quest: 2308A3:Starfield.esm
+- Quest: 0F7DCC:Starfield.esm
+- Quest: 34CAAB:Starfield.esm
+- Quest: 34ECEC:Starfield.esm
+- Quest: 0E872F:Starfield.esm
+- Quest: 0968E2:Starfield.esm
+- Quest: 067F99:Starfield.esm
+- Quest: 028354:Starfield.esm
+- Quest: 067FA3:Starfield.esm
+- Quest: 067FAC:Starfield.esm
+- Quest: 067FD0:Starfield.esm
+- Quest: 067FBC:Starfield.esm
+- Quest: 067FAB:Starfield.esm
+- Quest: 01575A:Starfield.esm
+- Quest: 05AC20:Starfield.esm
+- Quest: 06A35B:Starfield.esm
+- Quest: 05AC1F:Starfield.esm
+- Quest: 04C408:Starfield.esm
+- Quest: 04BD9C:Starfield.esm
+- Quest: 046F6E:Starfield.esm
+- Quest: 0478A1:Starfield.esm
+- Quest: 37586C:Starfield.esm
+- Quest: 1EEE2F:Starfield.esm
+- Quest: 1EEE2D:Starfield.esm
+- Quest: 1EEE2C:Starfield.esm

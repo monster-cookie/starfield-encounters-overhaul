@@ -1,0 +1,6 @@
+MutagenObjectType: PlacedObject
+FormKey: 001710:VenpiCaveOverhaul.esm
+EditorID: VEOH_Human_Spacer02_PCMOnly_Random01_Idle
+Base: 02EFD0:Starfield.esm
+Position: 0.5, 0.25, 0
+Rotation: 0, 0, 3.1415925

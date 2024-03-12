@@ -1,0 +1,21 @@
+FormKey: 0017B5:VenpiCaveOverhaul.esm
+EditorID: VEOH_Special_Corpse01_Allowed_SafeToOverride
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: IsTrueForConditionFormConditionData
+    FirstParameter: 0017D6:VenpiCaveOverhaul.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    FirstParameter: 0017B4:VenpiCaveOverhaul.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 0017B4:VenpiCaveOverhaul.esm

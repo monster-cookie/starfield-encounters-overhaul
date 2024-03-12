@@ -1,0 +1,16 @@
+MutagenObjectType: PlacedNpc
+FormKey: 0017AA:VenpiCaveOverhaul.esm
+MajorRecordFlagsRaw: 3072
+EditorID: VEOH_Human_Random02_PCMOnly_AmbushPoint2_NPC
+StarfieldMajorRecordFlags:
+- 0x400
+- InitiallyDisabled
+Base: 2CA992:Starfield.esm
+LevelModifier: Hard
+LinkedReferences:
+- KeywordOrReference: 0017B8:VenpiCaveOverhaul.esm
+  Reference: 00178C:VenpiCaveOverhaul.esm
+Position: 7, -1, 0
+MajorFlags:
+- Persistent
+- InitiallyDisabled

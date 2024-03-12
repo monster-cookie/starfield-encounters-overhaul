@@ -1,0 +1,28 @@
+MutagenObjectType: PlacedObject
+FormKey: 001478:VenpiCaveOverhaul.esm
+Components:
+- MutagenObjectType: VolumesComponent
+  Items:
+  - Matrix1:
+      Unknown1: 1
+    Matrix2:
+      Unknown2: 1
+    Matrix3:
+      Unknown3: 1
+    Matrix4:
+      Unknown4: 1
+    Unknown1: 1.3653691
+    Unknown2: 0.92179215
+    Unknown3: 1.3330592
+    Ender:
+      MutagenObjectType: VolumesUnknownEnderTrio
+      Unknown1: 5
+      Unknown2: 5.0185795
+      Unknown3: 2
+Base: 000043:Starfield.esm
+VolumeData:
+  Data: 0x00000000000000000000000000000000000000000000803F0000803FCDCC4C3E00000000030000000000803F0000803F0000803F000000000000803F0000803F00000000000000000000803F00004843000AD7A33C
+VolumeReflectionProbeOffsetIntensity:
+  Data: 0x0000000000000000000000000000803F
+Layer: 121265:Starfield.esm
+Position: 31.035349, 30.605103, 15.239655

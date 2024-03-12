@@ -1,0 +1,7 @@
+MutagenObjectType: PlacedObject
+FormKey: 00100A:VenpiCaveOverhaul.esm
+EditorID: VCOH_GhostCave_BossChestMilitary
+Base: 2C5450:Starfield.esm
+PersistentLocation: 000FF7:VenpiCaveOverhaul.esm
+Layer: 1EF4CE:Starfield.esm
+Position: -36.41, 97.5, -8.53

@@ -1,0 +1,63 @@
+FormKey: 1C6E13:Starfield.esm
+EditorID: PCM_BlockCreation_ClusterNearLocation_Caves
+Components:
+- MutagenObjectType: PlanetContentManagerContentPropertiesComponent
+  ZNAM: 0
+  YNAM: 1
+  XNAM: 0
+  WNAM: 0
+  VNAM: 1
+  UNAM: 0
+  NAM1: 0
+  Global: 2CD250:Starfield.esm
+  NAM3: 0
+  NAM4: 0x00511500
+  NAM5: 0
+  NAM6: 0
+  NAM7: 0
+  NAM8: 0
+  NAM9: 0
+  Conditions: []
+NAM1: 2
+Nodes:
+- 1C6E0B:Starfield.esm
+- 1C6E0A:Starfield.esm
+- 1C6E09:Starfield.esm
+- 1C6E08:Starfield.esm
+- 1C6E05:Starfield.esm
+- 048A4B:Starfield.esm
+- 02271E:Starfield.esm
+- 0189EA:Starfield.esm
+- 0188E2:Starfield.esm
+- 018368:Starfield.esm
+- 017820:Starfield.esm
+- 017633:Starfield.esm
+- 0173AF:Starfield.esm
+- 008C47:Starfield.esm
+- 008B93:Starfield.esm
+- 008ADC:Starfield.esm
+- 2209D8:Starfield.esm
+- 0086F2:Starfield.esm
+- 00839B:Starfield.esm
+- 0081C5:Starfield.esm
+- 0080B5:Starfield.esm
+- 007EAF:Starfield.esm
+- 006B62:Starfield.esm
+- 006A33:Starfield.esm
+- 006A31:Starfield.esm
+- 006983:Starfield.esm
+- 0068C2:Starfield.esm
+- 0067BD:Starfield.esm
+- 006714:Starfield.esm
+- 00577A:Starfield.esm
+- 142D4E:Starfield.esm
+- 000FF6:VenpiCaveOverhaul.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Unknown1: 0xB60C00
+  Unknown2: 17624
+  Data:
+    MutagenObjectType: GetDistanceFromLocationWithKeywordConditionData
+    FirstParameter: 050472:Starfield.esm
+  ComparisonValue: 3000
