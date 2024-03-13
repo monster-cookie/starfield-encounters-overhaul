@@ -26,5 +26,21 @@ Components:
       MutagenObjectType: IsTrueForConditionFormConditionData
       FirstParameter: 0017ED:VenpiCaveOverhaul.esm
     ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: BodyHasKeywordConditionData
+      FirstParameter: 283585:Starfield.esm
+    ComparisonValue: 1
+  - MutagenObjectType: ConditionFloat
+    Flags:
+    - OR
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: SystemHasKeywordConditionData
+      FirstParameter: 283585:Starfield.esm
+    ComparisonValue: 1
 Content: 0017E8:VenpiCaveOverhaul.esm
 IOVR: True

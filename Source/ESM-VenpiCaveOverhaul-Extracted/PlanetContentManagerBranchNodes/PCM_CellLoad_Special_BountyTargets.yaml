@@ -21,6 +21,7 @@ Components:
   Conditions: []
 NAM1: 2
 Nodes:
+- 00180D:VenpiCaveOverhaul.esm
 - 0017DF:VenpiCaveOverhaul.esm
 - 0017E7:VenpiCaveOverhaul.esm
 - 0017F9:VenpiCaveOverhaul.esm
