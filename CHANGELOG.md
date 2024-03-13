@@ -1,7 +1,8 @@
 # Venworks Cave and Encounters Overhaul
 
-## Version 2.0.7
+## Version 2.0.7 [UNRELEASED]
 * Ghost Pirates will again scale all the way to level 999 instead of 99
+* Added new special bounty target unique NPCs that will spawn in the open work going to give them enough o a name list so they won't appear to repeat much hopefully. This requires Venworks Factions Overhaul 1.0.5 or newer or you will CTD. Currently only spacers target exist as that is the only faction definition that Factions has currently, the next version will have all factions and classes represented once factions overhaul does too. 
 
 ## Version 2.0.6
 * Added a condition that should hopefully disable spawns in cells with outposts. It is checking for a player owned workshop as the beacons use the workshop events, I'm fairly sure this will catch outposts.

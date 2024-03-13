@@ -21,7 +21,11 @@ Components:
   Conditions: []
 NAM1: 2
 Nodes:
-- 0016E0:VenpiCaveOverhaul.esm
+- 0017DF:VenpiCaveOverhaul.esm
+- 0017E7:VenpiCaveOverhaul.esm
+- 0017F9:VenpiCaveOverhaul.esm
+- 0017F3:VenpiCaveOverhaul.esm
+- 001800:VenpiCaveOverhaul.esm
 Conditions:
 - MutagenObjectType: ConditionFloat
   Unknown1: 0x000000

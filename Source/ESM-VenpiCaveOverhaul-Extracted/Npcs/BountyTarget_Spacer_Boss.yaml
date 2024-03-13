@@ -1,0 +1,40 @@
+FormKey: 001802:VenpiCaveOverhaul.esm
+EditorID: BountyTarget_Spacer_Boss
+FormVersion: 558
+ObjectBounds:
+  First: -0.591797, -0.3623047, 0
+  Second: 0.59179676, 1.0341797, 1.2373047
+ODTY: 0
+XpValueOffset: 5
+Level:
+  MutagenObjectType: NpcLevel
+  Level: 1
+DispositionBase: 35
+UseTemplateActors: 32767
+DefaultTemplate: 0008F6:VenworksFactionOverhaul.esm
+TemplateActors:
+  TraitTemplate: 27BB7C:Starfield.esm
+  StatsTemplate: 0008F6:VenworksFactionOverhaul.esm
+  FactionsTemplate: 0008F6:VenworksFactionOverhaul.esm
+  SpellListTemplate: 00088A:VenworksFactionOverhaul.esm
+  AiDataTemplate: 0008F6:VenworksFactionOverhaul.esm
+  AiPackagesTemplate: 0008F6:VenworksFactionOverhaul.esm
+  ModelOrAnimationTemplate: 27BB7C:Starfield.esm
+  BaseDataTemplate: 0008F6:VenworksFactionOverhaul.esm
+  InventoryTemplate: 0008F6:VenworksFactionOverhaul.esm
+  ScriptTemplate: 0008F6:VenworksFactionOverhaul.esm
+  DefPackListTemplate: 0008F6:VenworksFactionOverhaul.esm
+  AttackDataTemplate: 0008F6:VenworksFactionOverhaul.esm
+  KeywordsTemplate: 0008F6:VenworksFactionOverhaul.esm
+  Unknown1: 0008F6:VenworksFactionOverhaul.esm
+  Unknown2: 0008F6:VenworksFactionOverhaul.esm
+Race: 00347D:Starfield.esm
+Confidence: Brave
+EnergyLevel: 50
+Responsibility: NoCrime
+Assistance: HelpsAllies
+UnknownAIDT: 1
+NAM5: 0xFF00
+HeightMin: 1
+HeightMax: 1
+Pronoun: Unspecified
