@@ -4,19 +4,7 @@ EditorID: POIBB034WorldLocation
 StarfieldMajorRecordFlags:
 - 0x100000
 LocationCellPersistentReferences:
-- Actor: 2E48AE:Starfield.esm
-  Location: 09EBD6:Starfield.esm
-  Grid: -1, 0
-  Unknown: -1
-- Actor: 2E48B2:Starfield.esm
-  Location: 09EBD6:Starfield.esm
-  Grid: -1, 0
-  Unknown: -1
 - Actor: 2E48B5:Starfield.esm
-  Location: 09EBD6:Starfield.esm
-  Grid: -1, 0
-  Unknown: -1
-- Actor: 09DC43:Starfield.esm
   Location: 09EBD6:Starfield.esm
   Grid: -1, 0
   Unknown: -1
@@ -24,7 +12,19 @@ LocationCellPersistentReferences:
   Location: 09EBD6:Starfield.esm
   Grid: -1, 0
   Unknown: -1
+- Actor: 2E48B2:Starfield.esm
+  Location: 09EBD6:Starfield.esm
+  Grid: -1, 0
+  Unknown: -1
 - Actor: 12366B:Starfield.esm
+  Location: 09EBD6:Starfield.esm
+  Grid: -1, 0
+  Unknown: -1
+- Actor: 2E48AE:Starfield.esm
+  Location: 09EBD6:Starfield.esm
+  Grid: -1, 0
+  Unknown: -1
+- Actor: 09DC43:Starfield.esm
   Location: 09EBD6:Starfield.esm
   Grid: -1, 0
   Unknown: -1
@@ -41,6 +41,11 @@ LocationCellPersistentReferences:
   Grid: 0, -1
   Unknown: -1
 LocationCellStaticReferences:
+- LocationRefType: 207486:Starfield.esm
+  Marker: 2E48B5:Starfield.esm
+  Location: 09EBD6:Starfield.esm
+  Grid: -1, 0
+  Unknown: -1
 - LocationRefType: 05F479:Starfield.esm
   Marker: 2E4930:Starfield.esm
   Location: 09EBD6:Starfield.esm
@@ -208,22 +213,17 @@ LocationCellStaticReferences:
   Grid: -1, 0
   Unknown: -1
 - LocationRefType: 207486:Starfield.esm
-  Marker: 2E48AE:Starfield.esm
-  Location: 09EBD6:Starfield.esm
-  Grid: -1, 0
-  Unknown: -1
-- LocationRefType: 207486:Starfield.esm
   Marker: 2E48B2:Starfield.esm
   Location: 09EBD6:Starfield.esm
   Grid: -1, 0
   Unknown: -1
 - LocationRefType: 207486:Starfield.esm
-  Marker: 2E48B5:Starfield.esm
+  Marker: 12366B:Starfield.esm
   Location: 09EBD6:Starfield.esm
   Grid: -1, 0
   Unknown: -1
 - LocationRefType: 207486:Starfield.esm
-  Marker: 12366B:Starfield.esm
+  Marker: 2E48AE:Starfield.esm
   Location: 09EBD6:Starfield.esm
   Grid: -1, 0
   Unknown: -1
@@ -233,19 +233,19 @@ LocationCellStaticReferences:
   Grid: 0, -1
   Unknown: -1
 LocationCellMarkerReference:
-- 2E48AE:Starfield.esm
-- 2E48B2:Starfield.esm
 - 2E48B5:Starfield.esm
+- 2E48B2:Starfield.esm
 - 12366B:Starfield.esm
+- 2E48AE:Starfield.esm
+- 2E48B5:Starfield.esm
 - 2E48B2:Starfield.esm
 - 2E48B5:Starfield.esm
 - 2E48AD:Starfield.esm
 - 2E48AE:Starfield.esm
 - 12366B:Starfield.esm
-- 2E48AE:Starfield.esm
 - 2E48B2:Starfield.esm
-- 2E48B5:Starfield.esm
 - 12366B:Starfield.esm
+- 2E48AE:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Cave

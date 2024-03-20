@@ -1,5 +1,10 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 2.0.9
+* Compatibility for Starfield 1.10.31.0
+* Updated for the changes in Factions Overhaul 1.0.8
+* Removed the creature only caves as the keyword fixes will let the Overlay engine spawn them naturally anyway. 
+
 ## Version 2.0.8
 * Updated for the changes in Factions Overhaul 1.0.6
 
