@@ -1,8 +1,0 @@
-MutagenObjectType: PlacedNpc
-FormKey: 00086A:VenpiCaveOverhaul.esm
-Base: 2CA995:Starfield.esm
-LevelModifier: Medium
-PersistentLocation: 09B077:Starfield.esm
-Layer: 2B3CB9:Starfield.esm
-Position: -4.5750675, 19.751146, 15.604797
-Rotation: -0, 0, 5.510185

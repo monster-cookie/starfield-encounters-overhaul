@@ -1,0 +1,12 @@
+MutagenObjectType: PlacedNpc
+FormKey: 000ECA:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 512
+StarfieldMajorRecordFlags:
+- 0x200
+Base: 28FF04:Starfield.esm
+LevelModifier: Easy
+SourcePackIn: 32C7B8:Starfield.esm
+PersistentLocation: 000FF7:VenworksEncountersOverhaul.esm
+Position: -32.331738, 76.61491, -8.8
+MajorFlags:
+- StartsDead

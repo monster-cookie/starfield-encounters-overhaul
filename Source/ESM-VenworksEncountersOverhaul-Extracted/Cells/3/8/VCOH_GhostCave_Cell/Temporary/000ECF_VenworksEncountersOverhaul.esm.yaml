@@ -1,0 +1,10 @@
+MutagenObjectType: PlacedNpc
+FormKey: 000ECF:VenworksEncountersOverhaul.esm
+Base: 122414:Starfield.esm
+LevelModifier: Easy
+SourcePackIn: 32C7B8:Starfield.esm
+PersistentLocation: 000FF7:VenworksEncountersOverhaul.esm
+LinkedReferences:
+- KeywordOrReference: 2A8FD0:Starfield.esm
+  Reference: 000DD5:VenworksEncountersOverhaul.esm
+Position: -24.2, 90.5, -8.478698

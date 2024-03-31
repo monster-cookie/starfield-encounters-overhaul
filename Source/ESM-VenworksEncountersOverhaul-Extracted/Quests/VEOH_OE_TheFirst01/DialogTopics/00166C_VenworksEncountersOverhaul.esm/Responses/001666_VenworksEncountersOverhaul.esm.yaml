@@ -1,0 +1,16 @@
+FormKey: 001666:VenworksEncountersOverhaul.esm
+FormVersion: 556
+Flags:
+  Flags:
+  - Random
+DialogGroup: 001668:VenworksEncountersOverhaul.esm
+Responses:
+- Emotion: 0FA84A:Starfield.esm
+  Text:
+    TargetLanguage: English
+    Value: Time to make the UC pay!
+  ScriptNotes: ''
+  Edits: ''
+  AlternateLipText: ''
+StartScenePhase: ''
+SubtitlePriority: Low

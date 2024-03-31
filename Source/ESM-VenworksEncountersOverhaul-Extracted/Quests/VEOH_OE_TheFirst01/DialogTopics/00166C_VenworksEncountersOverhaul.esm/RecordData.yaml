@@ -1,0 +1,9 @@
+FormKey: 00166C:VenworksEncountersOverhaul.esm
+FormVersion: 556
+Quest: 00166D:VenworksEncountersOverhaul.esm
+Category: Combat
+Subtype: ThrowGrenade
+SubtypeName: TAUT
+TopicInfoList:
+- 001668:VenworksEncountersOverhaul.esm
+- 001664:VenworksEncountersOverhaul.esm

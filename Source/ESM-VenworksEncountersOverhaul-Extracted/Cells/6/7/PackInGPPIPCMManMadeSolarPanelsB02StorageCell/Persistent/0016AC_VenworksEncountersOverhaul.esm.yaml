@@ -1,0 +1,13 @@
+MutagenObjectType: PlacedNpc
+FormKey: 0016AC:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 1024
+StarfieldMajorRecordFlags:
+- 0x400
+Base: 2CA993:Starfield.esm
+LevelModifier: VeryHard
+LinkedReferences:
+- KeywordOrReference: 0F0E7E:Starfield.esm
+  Reference: 0016AB:VenworksEncountersOverhaul.esm
+Position: -7.36, -3.97, 2.19
+MajorFlags:
+- Persistent

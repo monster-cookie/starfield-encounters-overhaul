@@ -1,0 +1,9 @@
+FormKey: 001810:VenworksEncountersOverhaul.esm
+EditorID: VEOH_Bounty_Uncommon
+Color: '#00FFFFFF'
+Notes: Applied NPC is a Uncommon Bounty Target
+Type: None
+FNAM: 0x00000000
+Name:
+  TargetLanguage: English
+  Value: Uncommon Bounty Target

@@ -1,0 +1,8 @@
+MutagenObjectType: PlacedObject
+FormKey: 00163D:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 1024
+StarfieldMajorRecordFlags:
+- 0x400
+Base: 000034:Starfield.esm
+Position: 94.349884, 30.41632, 10.477922
+Rotation: -0, 0, 4.9031854

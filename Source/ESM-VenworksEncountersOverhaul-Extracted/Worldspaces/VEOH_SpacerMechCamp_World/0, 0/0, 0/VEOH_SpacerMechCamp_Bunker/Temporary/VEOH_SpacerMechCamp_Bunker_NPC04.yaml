@@ -1,0 +1,12 @@
+MutagenObjectType: PlacedNpc
+FormKey: 001680:VenworksEncountersOverhaul.esm
+EditorID: VEOH_SpacerMechCamp_Bunker_NPC04
+Base: 1691E2:Starfield.esm
+PersistentLocation: 001641:VenworksEncountersOverhaul.esm
+LinkedReferences:
+- Reference: 0014FD:VenworksEncountersOverhaul.esm
+- KeywordOrReference: 0F0E7E:Starfield.esm
+  Reference: 001646:VenworksEncountersOverhaul.esm
+- KeywordOrReference: 141918:Starfield.esm
+  Reference: 001647:VenworksEncountersOverhaul.esm
+Position: 34.184814, 61.744663, 11.836975

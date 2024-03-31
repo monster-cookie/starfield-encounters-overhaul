@@ -1,0 +1,31 @@
+FormKey: 001817:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 32768
+EditorID: VEOH_Bounty_Uncommon
+StarfieldMajorRecordFlags:
+- VisibleWhenDistant
+ODTY: 0
+MaxCount: 0
+Flags:
+- UseAll
+Entries:
+- Level: 1
+  Reference: 034C7D:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 05F184:Starfield.esm
+  Count: 1
+- Level: 1
+  Reference: 06E8E3:Starfield.esm
+  Count: 2
+  ChanceNone: 0.0392156862745098
+- Level: 1
+  Reference: 29B741:Starfield.esm
+  Count: 5
+  ChanceNone: 0.09803921568627451
+- Level: 1
+  Reference: 29B741:Starfield.esm
+  Count: 10
+  ChanceNone: 0.29411764705882354
+- Level: 1
+  Reference: 001814:VenworksEncountersOverhaul.esm
+  Count: 1

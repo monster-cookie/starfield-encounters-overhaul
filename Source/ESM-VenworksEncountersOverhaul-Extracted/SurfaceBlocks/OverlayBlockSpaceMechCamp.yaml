@@ -1,0 +1,30 @@
+FormKey: 001640:VenworksEncountersOverhaul.esm
+EditorID: OverlayBlockSpaceMechCamp
+Components:
+- MutagenObjectType: BlockEditorMetaDataComponent
+  UnknownString1: Thu Nov 18 12:16:44 2021
+  UnknownByte: 1
+  UnknownString2: Thu Nov 18 12:16:44 2021
+  UnknownString3: OverlayFieldsCrevassesSmall03
+  UnknownInts:
+  - 2766707
+  UnknownInt1: 1
+  UnknownInt2: 1
+  UnknownInt3: -1
+  UnknownInt4: -1
+  UnknownEnding: 0x00000000000000000000000000000000
+ANAM: Data\Terrain\OEDB510World.btd
+DNAM:
+  First: 3
+  Second: 3
+ENAM:
+  First: 3287941120
+  Second: 1148846080
+FNAM: 0x8956AE564F563956B05644573C56E556F956
+GNAM: 0
+WHGT: -3.4028235E+38
+NAM1: OverlayBlock
+NAM2: 0
+NAM3: {}
+NAM4: {}
+NAM5: 2A3773:Starfield.esm

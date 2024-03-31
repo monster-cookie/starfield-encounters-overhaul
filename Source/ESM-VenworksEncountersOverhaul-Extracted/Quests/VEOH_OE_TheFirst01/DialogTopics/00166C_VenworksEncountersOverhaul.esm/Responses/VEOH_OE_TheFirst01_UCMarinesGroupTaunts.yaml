@@ -1,0 +1,28 @@
+FormKey: 001664:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 64
+EditorID: VEOH_OE_TheFirst01_UCMarinesGroupTaunts
+FormVersion: 556
+StarfieldMajorRecordFlags:
+- 0x40
+Flags:
+  Flags:
+  - ChildInfosDontInheritResetData
+  - ForceAllChildrenRandom
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetIsAliasRefConditionData
+    FirstParameter: 100
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    RunOnType: Target
+    FirstParameter: 000007:Starfield.esm
+  ComparisonValue: 1
+StartScenePhase: ''
+SubtitlePriority: 0
+MajorFlags:
+- InfoGroup

@@ -1,0 +1,35 @@
+FormKey: 00175A:VenworksEncountersOverhaul.esm
+EditorID: VEOH_HumanCamps_Random_Random01_Allowed_SafeToOverride
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: IsTrueForConditionFormConditionData
+    FirstParameter: 001759:VenworksEncountersOverhaul.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    FirstParameter: 00175B:VenworksEncountersOverhaul.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 00175B:VenworksEncountersOverhaul.esm
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: SystemHasKeywordConditionData
+    FirstParameter: 1998F6:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: BodyHasKeywordConditionData
+    FirstParameter: 1998F6:Starfield.esm
+  ComparisonValue: 1

@@ -1,0 +1,7 @@
+MutagenObjectType: PlacedObject
+FormKey: 0014F5:VenworksEncountersOverhaul.esm
+Base: 2BC9D6:Starfield.esm
+LinkedReferences:
+- Reference: 0014F8:VenworksEncountersOverhaul.esm
+IsLinkedRefTransient: True
+Position: 39.62515, 53.014526, 16.255426

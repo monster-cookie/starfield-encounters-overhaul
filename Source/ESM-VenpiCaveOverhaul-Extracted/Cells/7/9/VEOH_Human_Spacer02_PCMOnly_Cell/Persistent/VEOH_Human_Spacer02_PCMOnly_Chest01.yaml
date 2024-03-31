@@ -1,7 +1,0 @@
-MutagenObjectType: PlacedObject
-FormKey: 00170B:VenpiCaveOverhaul.esm
-MajorRecordFlagsRaw: 1024
-EditorID: VEOH_Human_Spacer02_PCMOnly_Chest01
-StarfieldMajorRecordFlags:
-- 0x400
-Base: 001718:VenpiCaveOverhaul.esm

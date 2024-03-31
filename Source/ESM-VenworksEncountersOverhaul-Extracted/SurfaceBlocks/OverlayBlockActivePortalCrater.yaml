@@ -1,0 +1,30 @@
+FormKey: 0012F2:VenworksEncountersOverhaul.esm
+EditorID: OverlayBlockActivePortalCrater
+Components:
+- MutagenObjectType: BlockEditorMetaDataComponent
+  UnknownString1: Thu Nov 4 10:54:00 2021
+  UnknownByte: 1
+  UnknownString2: Thu Nov 4 10:54:00 2021
+  UnknownString3: OverlayFieldsFlatLarge03
+  UnknownInts:
+  - 3431125
+  UnknownInt1: 2
+  UnknownInt2: 3
+  UnknownInt3: -1
+  UnknownInt4: -1
+  UnknownEnding: 0x00000000000000000000000000000000
+ANAM: Data\terrain\VEOH_ActivePortalCrater_World.btd
+DNAM:
+  First: 3
+  Second: 3
+ENAM:
+  First: 3287941120
+  Second: 1148846080
+FNAM: 0x65563F576A57C256EF5659567B560556CB55
+GNAM: 0
+WHGT: -3.4028235E+38
+NAM1: OverlayBlock
+NAM2: 0
+NAM3: {}
+NAM4: {}
+NAM5: 28BDEC:Starfield.esm

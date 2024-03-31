@@ -1,0 +1,21 @@
+FormKey: 0017EC:VenworksEncountersOverhaul.esm
+EditorID: VEOH_Special_BountyTarget_Common_Allowed_SafeToOverride
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: IsTrueForConditionFormConditionData
+    FirstParameter: 0017D6:VenworksEncountersOverhaul.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: NotEqualTo
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    FirstParameter: 0017EB:VenworksEncountersOverhaul.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 0017EB:VenworksEncountersOverhaul.esm

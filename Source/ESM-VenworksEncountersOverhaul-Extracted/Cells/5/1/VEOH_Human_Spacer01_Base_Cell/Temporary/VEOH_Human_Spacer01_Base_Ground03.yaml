@@ -1,0 +1,9 @@
+MutagenObjectType: PlacedObject
+FormKey: 0016BD:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 16
+EditorID: VEOH_Human_Spacer01_Base_Ground03
+StarfieldMajorRecordFlags:
+- 0x10
+Base: 02EC6F:Starfield.esm
+Position: -1, -2, -1.45
+Rotation: 0, 0, 3.9269907

@@ -1,0 +1,13 @@
+MutagenObjectType: PlacedNpc
+FormKey: 00164D:VenworksEncountersOverhaul.esm
+EditorID: VEOH_ActivePortalCrater_BossNest_NPC01
+Base: 169D81:Starfield.esm
+PersistentLocation: 0012F1:VenworksEncountersOverhaul.esm
+LinkedReferences:
+- Reference: 001656:VenworksEncountersOverhaul.esm
+- KeywordOrReference: 0F0E7E:Starfield.esm
+  Reference: 001659:VenworksEncountersOverhaul.esm
+- KeywordOrReference: 141918:Starfield.esm
+  Reference: 00165A:VenworksEncountersOverhaul.esm
+Layer: 2B3CB9:Starfield.esm
+Position: 72.31287, 60.725925, 6.718806

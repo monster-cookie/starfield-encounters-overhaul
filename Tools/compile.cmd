@@ -12,12 +12,6 @@ rmdir /s /q "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul
 mkdir "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist"
 mkdir "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist\SFSE\Plugins\RealTimeFormPatcher"
 
-@REM Clear Dist-CCMBH-Patch DIR
-@echo "Clearing and scafolding the Dist dir"
-del /s /q "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist-CCMBH-Patch\*.*"
-rmdir /s /q "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist-CCMBH-Patch"
-mkdir "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist-CCMBH-Patch"
-
 @REM Clear Dist-BA2-Main DIR
 @echo "Clearing and scafolding the Dist-BA2-Main dir"
 del /s /q "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist-BA2-Main\*.*"
@@ -83,20 +77,16 @@ copy /y "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Sou
 
 @REM ESM is purely binary so need to pull from starfield dir where xedit has to have it 
 @echo "Copying the ESM from xEdit and adding to Source and Dist folders"
-copy /y "D:\MO2Staging\Starfield\mods\VenworksEncountersOverhaul-Experimental\VenpiCaveOverhaul.esm" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Source\ESM"
-copy /y "D:\MO2Staging\Starfield\mods\VenworksEncountersOverhaul-Experimental\VenpiCaveOverhaul.esm" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist"
-
-copy /y "D:\MO2Staging\Starfield\mods\VenworksEncountersOverhaul-CCMBH-Patch-Experimental\VenpiCaveOverhaul-CCMBH-Patch.esm" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Source\ESM"
-copy /y "D:\MO2Staging\Starfield\mods\VenworksEncountersOverhaul-CCMBH-Patch-Experimental\VenpiCaveOverhaul-CCMBH-Patch.esm" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist-CCMBH-Patch"
+copy /y "D:\MO2Staging\Starfield\mods\VenworksEncountersOverhaul-Experimental\VenworksEncountersOverhaul.esm" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Source\ESM"
+copy /y "D:\MO2Staging\Starfield\mods\VenworksEncountersOverhaul-Experimental\VenworksEncountersOverhaul.esm" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist"
 
 @REM Use Spriggit to extract record from ESM
 @REM @echo "Running Spriggit to extract record from ESM"
-"D:\Program Files\Spriggit\Spriggit.CLI.exe" serialize --InputPath "D:\MO2Staging\Starfield\mods\VenworksEncountersOverhaul-Experimental\VenpiCaveOverhaul.esm" --OutputPath "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Source\ESM-VenpiCaveOverhaul-Extracted" --GameRelease Starfield --PackageName Spriggit.Yaml
-"D:\Program Files\Spriggit\Spriggit.CLI.exe" serialize --InputPath "D:\MO2Staging\Starfield\mods\VenworksEncountersOverhaul-CCMBH-Patch-Experimental\VenpiCaveOverhaul-CCMBH-Patch.esm" --OutputPath "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Source\ESM-VenpiCaveOverhaul-CCMBH-Patch-Extracted" --GameRelease Starfield --PackageName Spriggit.Yaml
+"D:\Program Files\Spriggit\Spriggit.CLI.exe" serialize --InputPath "D:\MO2Staging\Starfield\mods\VenworksEncountersOverhaul-Experimental\VenworksEncountersOverhaul.esm" --OutputPath "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Source\ESM-VenworksEncountersOverhaul-Extracted" --GameRelease Starfield --PackageName Spriggit.Yaml
 
 @REM Create and copy the BA2 Main Archive to Dist folder
 @echo "Creating the BA2 Main Archive"
-"D:\Program Files\xEdit\BSArch64.exe" pack "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist-BA2-Main" "VenpiCaveOverhaul - Main.ba2" -sf1 -mt && (
+"D:\Program Files\xEdit\BSArch64.exe" pack "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist-BA2-Main" "VenworksEncountersOverhaul - Main.ba2" -sf1 -mt && (
   @echo "Main Archive successfully assembled"
   (call )
 ) || (
@@ -106,4 +96,4 @@ copy /y "D:\MO2Staging\Starfield\mods\VenworksEncountersOverhaul-CCMBH-Patch-Exp
 
 @REM Copying the BA2 Archives to the Dist folder
 @echo "Copying the BA2 Archives to the Dist folder"
-copy /y "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist-BA2-Main\VenpiCaveOverhaul - Main.ba2" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist"
+copy /y "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist-BA2-Main\VenworksEncountersOverhaul - Main.ba2" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist"

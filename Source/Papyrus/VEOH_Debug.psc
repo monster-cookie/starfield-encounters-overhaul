@@ -85,30 +85,20 @@ Function GetSpawnConditionsForCurrentLocation() Global
   message += "       System or Planet has Robot presence: " + PCM_Allows_Robots as Int + "\n"
   message += "System or Planet has Terrormorphs presence: " + PCM_Allows_Terrormorphs as Int + "\n"
   message += "\n\n"
-  message += "  Location supports Bounty Hunters: " + Location_Supports_BountyHunters as Int + "\n"
-  message += "       Location supports Creatures: " + Location_Supports_Creatures as Int + "\n"
-  message += "   Location supports Crimson Fleet: " + Location_Supports_CrimsonFleet as Int + "\n"
-  message += "        Location supports Ecliptic: " + Location_Supports_Ecliptic as Int + "\n"
-  message += "Location supports Freestar Militia: " + Location_Supports_FreestarMilitia as Int + "\n"
-  message += "Location supports Freestar Rangers: " + Location_Supports_FreestarRangers as Int + "\n"
-  message += "   Location supports House Va'ruun: " + Location_Supports_HouseVaruun as Int + "\n"
-  message += "          Location supports Robots: " + Location_Supports_Robots as Int + "\n"
-  message += "         Location supports Spacers: " + Location_Supports_Spacers as Int + "\n"
-  message += "        Location supports Starborn: " + Location_Supports_Starborn as Int + "\n"
-  message += "       Location supports Syndicate: " + Location_Supports_Syndicate as Int + "\n"
-  message += "    Location supports Terrormorphs: " + Location_Supports_Terrormorphs as Int + "\n"
-  message += "       Location supports The First: " + Location_Supports_TheFirst as Int + "\n"
-  message += "Location supports UC Marine SysDef: " + Location_Supports_UCMarineSysDef as Int + "\n"
-  message += "     Location supports UC Vanguard: " + Location_Supports_UCVanguard as Int + "\n"
+  message += "                 | |C| |E| | | | |S|S|S|T| |U|U|\n"
+  message += "                 | |R| |C|F|F| |R|P|T|Y|R| |C|C|\n"
+  message += "                 | |E| |L|S|S| |B|C|B|N|M|1| | |\n"
+  message += "                 |B|A|C|I| | |H|T|R|R|D|P|S|M|V|\n"
+  message += "                 |H|T|F|P|M|R|V|S|S|N|T|H|R|N|G|\n"
+  message += "-----------------|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|\n"
+  message += "Location Supports|" + Location_Supports_BountyHunters as Int + "|" + Location_Supports_Creatures as Int + "|" + Location_Supports_CrimsonFleet as Int + "|" + Location_Supports_Ecliptic as Int + "|" + Location_Supports_FreestarMilitia as Int + "|" + Location_Supports_FreestarRangers as Int + "|" + Location_Supports_HouseVaruun as Int + "|" + Location_Supports_Robots as Int + "|" + Location_Supports_Spacers as Int + "|" + Location_Supports_Starborn as Int + "|" + Location_Supports_Syndicate as Int + "|" + Location_Supports_Terrormorphs as Int + "|" + Location_Supports_TheFirst as Int + "|" + Location_Supports_UCMarineSysDef as Int + "|" + Location_Supports_UCVanguard as Int + "|\n"
   message += "\n\n"
-  message += "                              System is Contested: " + System_Ownership_Contested as Int + "\n"
-  message += "      System has Crimson Fleet presence/ownership: " + System_Ownership_CrimsonFleet as Int + "\n"
-  message += "           System has Ecliptic presence/ownership: " + System_Ownership_Ecliptic as Int + "\n"
-  message += "System has Freestar Collective presence/ownership: " + System_Ownership_FreestarCollective as Int + "\n"
-  message += "      System has House Va'ruun presence/ownership: " + System_Ownership_HouseVaruun as Int + "\n"
-  message += "           System has Starborn presence/ownership: " + System_Ownership_Starborn as Int + "\n"
-  message += "          System has The First presence/ownership: " + System_Ownership_TheFirst as Int + "\n"
-  message += "    System has United Colonies presence/ownership: " + System_Ownership_UnitedColonies as Int + "\n"
+
+  message += "              |C| | | |S|1| |\n"
+  message += "              |T|C|F|H|T|S|U|\n"
+  message += "              |D|F|S|V|B|T|C|\n"
+  message += "--------------|-|-|-|-|-|-|-|\n"
+  message += "System Control|" + System_Ownership_Contested as Int + "|" + System_Ownership_CrimsonFleet as Int + "|" + System_Ownership_Ecliptic as Int + "|" + System_Ownership_FreestarCollective as Int + "|" + System_Ownership_HouseVaruun as Int + "|" + System_Ownership_Starborn as Int + "|" + System_Ownership_TheFirst as Int + "|" + System_Ownership_UnitedColonies as Int  + "|\n"
 
   Debug.MessageBox(message)
   Debug.Trace(message, 2)
@@ -154,33 +144,6 @@ Function SystemSpawnSettings() Global
   Debug.Trace(message, 2)
 EndFunction
 
-;; Call using: CGF "VEOH_Debug.ResetSystemSpawnSettings" 
-Function ResetSystemSpawnSettings() Global
-  GlobalVariable OE_ChanceUniqueGlobal = Game.GetFormFromFile(0x00110677, "Starfield.esm") as GlobalVariable
-  GlobalVariable OE_ChanceRareGlobal = Game.GetFormFromFile(0x00110678, "Starfield.esm") as GlobalVariable
-  GlobalVariable OE_ChanceUncommonGlobal = Game.GetFormFromFile(0x00110676, "Starfield.esm") as GlobalVariable
-  GlobalVariable PCM_BlockCreation_TraitKnownChance = Game.GetFormFromFile(0x002CCF3A, "Starfield.esm") as GlobalVariable
-  GlobalVariable PCM_CellLoad_ManMadeChance = Game.GetFormFromFile(0x00228F4A, "Starfield.esm") as GlobalVariable
-
-  OE_ChanceUniqueGlobal.SetValueInt(40)
-  OE_ChanceRareGlobal.SetValueInt(40)
-  OE_ChanceUncommonGlobal.SetValueInt(65)
-  PCM_BlockCreation_TraitKnownChance.SetValueInt(35)
-  PCM_CellLoad_ManMadeChance.SetValueInt(50)
-
-  Utility.Wait(0.25)
-
-  String message = "Current PCM Spawn Settings:\n\n"
-  message += "   Unique Encounters Chance (Should be 40%) = " + OE_ChanceUniqueGlobal.GetValueInt() + "%\n"
-  message += "     Rare Encounters Chance (Should be 40%) = " + OE_ChanceRareGlobal.GetValueInt() + "%\n"
-  message += " Uncommon Encounters Chance (Should be 65%) = " + OE_ChanceUncommonGlobal.GetValueInt() + "%\n"
-  message += "         Known Trait Chance (Should be 35%) = " + PCM_BlockCreation_TraitKnownChance.GetValueInt() + "%\n"
-  message += "    Man Made Clutter Chance (Should be 50%) = " + PCM_CellLoad_ManMadeChance.GetValueInt() + "%\n"
-
-  Debug.MessageBox(message)
-  Debug.Trace(message, 2)
-EndFunction
-
 
 ;; ****************************************************************************************
 ;; *** Camps - Distance Limits
@@ -188,8 +151,8 @@ EndFunction
 
 ;; Call using: CGF "VEOH_Debug.CampsDistanceRestrictions" 
 Function CampsDistanceRestrictions() Global
-  GlobalVariable VEOH_Camps_DistanceRestriction_Far = Game.GetFormFromFile(0x000016E8, "VenpiCaveOverhaul.esm") as GlobalVariable
-  GlobalVariable VEOH_Camps_DistanceRestriction_Near = Game.GetFormFromFile(0x000016F0, "VenpiCaveOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_Camps_DistanceRestriction_Far = Game.GetFormFromFile(0x000016E8, "VenworksEncountersOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_Camps_DistanceRestriction_Near = Game.GetFormFromFile(0x000016F0, "VenworksEncountersOverhaul.esm") as GlobalVariable
 
   String message = "Current PCM Distance Restrictions:\n\n"
   message += "Camps Min Distance Near (Should be 300) = " + VEOH_Camps_DistanceRestriction_Near.GetValueInt() + "\n"
@@ -199,26 +162,6 @@ Function CampsDistanceRestrictions() Global
   Debug.Trace(message, 2)
 EndFunction
 
-;; Call using: CGF "VEOH_Debug.ResetCampsDistanceRestrictions" 
-Function ResetCampsDistanceRestrictions() Global
-  SetCampsDistanceNear(300)
-  SetCampsDistanceFar(900)
-  Utility.Wait(0.10)
-  CampsDistanceRestrictions()
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.SetCampsDistanceFar" <distance:float>
-Function SetCampsDistanceFar(Float distance) Global
-  GlobalVariable VEOH_Camps_DistanceRestriction_Far = Game.GetFormFromFile(0x000016E8, "VenpiCaveOverhaul.esm") as GlobalVariable
-  VEOH_Camps_DistanceRestriction_Far.SetValue(distance)
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.SetCampsDistanceNear" <distance:float>
-Function SetCampsDistanceNear(Float distance) Global
-  GlobalVariable VEOH_Camps_DistanceRestriction_Near = Game.GetFormFromFile(0x000016F0, "VenpiCaveOverhaul.esm") as GlobalVariable
-  VEOH_Camps_DistanceRestriction_Near.SetValue(distance)
-EndFunction
-
 
 ;; ****************************************************************************************
 ;; *** Human Camps - Spacer Spawn Settings
@@ -226,8 +169,8 @@ EndFunction
 
 ;; Call using: CGF "VEOH_Debug.HumanCampSpacerSpawnSettings" 
 Function HumanCampSpacerSpawnSettings() Global
-  GlobalVariable VEOH_SpacerCamps_Spacer01_Chance = Game.GetFormFromFile(0x0000171C, "VenpiCaveOverhaul.esm") as GlobalVariable
-  GlobalVariable VEOH_SpacerCamps_Spacer02_Chance = Game.GetFormFromFile(0x0000171D, "VenpiCaveOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_SpacerCamps_Spacer01_Chance = Game.GetFormFromFile(0x0000171C, "VenworksEncountersOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_SpacerCamps_Spacer02_Chance = Game.GetFormFromFile(0x0000171D, "VenworksEncountersOverhaul.esm") as GlobalVariable
 
   String message = "Human Camps - Spacer Spawn Settings:\n\n"
   message += "   Chance for Spacer Camp 01 - Solar Farm (Should be 15%) = " + VEOH_SpacerCamps_Spacer01_Chance.GetValueInt() + "%\n"
@@ -237,27 +180,6 @@ Function HumanCampSpacerSpawnSettings() Global
   Debug.Trace(message, 2)
 EndFunction
 
-;; Call using: CGF "VEOH_Debug.ResetHumanCampSpacerSpawnSettings" 
-Function ResetHumanCampSpacerSpawnSettings() Global
-  SetSpawnChanceHumanCampSpacer01(15)
-  SetSpawnChanceHumanCampSpacer02(25)
-  Utility.Wait(0.10)
-  HumanCampSpacerSpawnSettings()
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.SetSpawnChanceHumanCampSpacer01" <chance:integer>
-Function SetSpawnChanceHumanCampSpacer01(Int chance) Global
-  GlobalVariable VEOH_SpacerCamps_Spacer01_Chance = Game.GetFormFromFile(0x0000171C, "VenpiCaveOverhaul.esm") as GlobalVariable
-  VEOH_SpacerCamps_Spacer01_Chance.SetValueInt(chance)
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.SetSpawnChanceHumanCampSpacer02" <chance:integer>
-Function SetSpawnChanceHumanCampSpacer02(Int chance) Global
-  GlobalVariable VEOH_SpacerCamps_Spacer02_Chance = Game.GetFormFromFile(0x0000171D, "VenpiCaveOverhaul.esm") as GlobalVariable
-  VEOH_SpacerCamps_Spacer02_Chance.SetValueInt(chance)
-EndFunction
-
-
 
 ;; ****************************************************************************************
 ;; *** Human Camps - Random Friendly Spawn Settings
@@ -265,8 +187,8 @@ EndFunction
 
 ;; Call using: CGF "VEOH_Debug.HumanCampRandomFriendlySpawnSettings" 
 Function HumanCampRandomFriendlySpawnSettings() Global
-  GlobalVariable VEOH_FriendliesCamps_Friendlies01_Chance = Game.GetFormFromFile(0x0000171E, "VenpiCaveOverhaul.esm") as GlobalVariable
-  GlobalVariable VEOH_FriendliesCamps_Friendlies02_Chance = Game.GetFormFromFile(0x0000172B, "VenpiCaveOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_FriendliesCamps_Friendlies01_Chance = Game.GetFormFromFile(0x0000171E, "VenworksEncountersOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_FriendliesCamps_Friendlies02_Chance = Game.GetFormFromFile(0x0000172B, "VenworksEncountersOverhaul.esm") as GlobalVariable
 
   String message = "Human Camps - Random Friendly Spawn Settings:\n\n"
   message += "Chance for Friendly Camp 01 - Babysitting Robot (Should be 30%) = " + VEOH_FriendliesCamps_Friendlies01_Chance.GetValueInt() + "%\n"
@@ -276,27 +198,6 @@ Function HumanCampRandomFriendlySpawnSettings() Global
   Debug.Trace(message, 2)
 EndFunction
 
-;; Call using: CGF "VEOH_Debug.ResetHumanCampRandomFriendlySpawnSettings" 
-Function ResetHumanCampRandomFriendlySpawnSettings() Global
-  SetSpawnChanceHumanCampRandomFriendly01(30)
-  SetSpawnChanceHumanCampRandomFriendly02(15)
-  Utility.Wait(0.10)
-  HumanCampRandomFriendlySpawnSettings()
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.SetSpawnChanceHumanCampRandomFriendly01" <chance:integer>
-Function SetSpawnChanceHumanCampRandomFriendly01(Int chance) Global
-  GlobalVariable VEOH_FriendliesCamps_Friendlies01_Chance = Game.GetFormFromFile(0x0000171E, "VenpiCaveOverhaul.esm") as GlobalVariable
-  VEOH_FriendliesCamps_Friendlies01_Chance.SetValueInt(chance)
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.SetSpawnChanceHumanCampRandomFriendly02" <chance:integer>
-Function SetSpawnChanceHumanCampRandomFriendly02(Int chance) Global
-  GlobalVariable VEOH_FriendliesCamps_Friendlies02_Chance = Game.GetFormFromFile(0x0000172B, "VenpiCaveOverhaul.esm") as GlobalVariable
-  VEOH_FriendliesCamps_Friendlies02_Chance.SetValueInt(chance)
-EndFunction
-
-
 
 ;; ****************************************************************************************
 ;; *** Human Camps - The First Spawn Settings
@@ -304,8 +205,8 @@ EndFunction
 
 ;; Call using: CGF "VEOH_Debug.HumanCampTheFirstSpawnSettings" 
 Function HumanCampTheFirstSpawnSettings() Global
-  GlobalVariable VEOH_HumanCamps_TheFirst01_Chance = Game.GetFormFromFile(0x0000173E, "VenpiCaveOverhaul.esm") as GlobalVariable
-  GlobalVariable VEOH_HumanCamps_TheFirst02_Chance = Game.GetFormFromFile(0x00001785, "VenpiCaveOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_HumanCamps_TheFirst01_Chance = Game.GetFormFromFile(0x0000173E, "VenworksEncountersOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_HumanCamps_TheFirst02_Chance = Game.GetFormFromFile(0x00001785, "VenworksEncountersOverhaul.esm") as GlobalVariable
 
   String message = "Human Camps - The First Spawn Settings:\n\n"
   message += "Chance for The First Camp 01 - Salvage Operation (Should be 20%) = " + VEOH_HumanCamps_TheFirst01_Chance.GetValueInt() + "%\n"
@@ -315,27 +216,6 @@ Function HumanCampTheFirstSpawnSettings() Global
   Debug.Trace(message, 2)
 EndFunction
 
-;; Call using: CGF "VEOH_Debug.ResetHumanCampTheFirstSpawnSettings" 
-Function ResetHumanCampTheFirstSpawnSettings() Global
-  SetSpawnChanceHumanCampTheFirst01(20)
-  SetSpawnChanceHumanCampTheFirst02(20)
-  Utility.Wait(0.10)
-  HumanCampTheFirstSpawnSettings()
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.SetSpawnChanceHumanCampTheFirst01" <chance:integer>
-Function SetSpawnChanceHumanCampTheFirst01(Int chance) Global
-  GlobalVariable VEOH_HumanCamps_TheFirst01_Chance = Game.GetFormFromFile(0x0000173E, "VenpiCaveOverhaul.esm") as GlobalVariable
-  VEOH_HumanCamps_TheFirst01_Chance.SetValueInt(chance)
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.SetSpawnChanceHumanCampTheFirst02" <chance:integer>
-Function SetSpawnChanceHumanCampTheFirst02(Int chance) Global
-  GlobalVariable VEOH_HumanCamps_TheFirst02_Chance = Game.GetFormFromFile(0x00001785, "VenpiCaveOverhaul.esm") as GlobalVariable
-  VEOH_HumanCamps_TheFirst02_Chance.SetValueInt(chance)
-EndFunction
-
-
 
 ;; ****************************************************************************************
 ;; *** Human Camps - Random Hostiles Spawn Settings
@@ -343,8 +223,8 @@ EndFunction
 
 ;; Call using: CGF "VEOH_Debug.HumanCampRandomHostileSpawnSettings" 
 Function HumanCampRandomHostileSpawnSettings() Global
-  GlobalVariable VEOH_HumanCamps_Random01_Chance = Game.GetFormFromFile(0x0000175B, "VenpiCaveOverhaul.esm") as GlobalVariable
-  GlobalVariable VEOH_HumanCamps_Random02_Chance = Game.GetFormFromFile(0x000017A5, "VenpiCaveOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_HumanCamps_Random01_Chance = Game.GetFormFromFile(0x0000175B, "VenworksEncountersOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_HumanCamps_Random02_Chance = Game.GetFormFromFile(0x000017A5, "VenworksEncountersOverhaul.esm") as GlobalVariable
 
   String message = "Human Camps - Random Hostiles Spawn Settings:\n\n"
   message += "Chance for Random Camp 01 - Terrormorph Skirmish (Should be 20%) = " + VEOH_HumanCamps_Random01_Chance.GetValueInt() + "%\n"
@@ -354,27 +234,6 @@ Function HumanCampRandomHostileSpawnSettings() Global
   Debug.Trace(message, 2)
 EndFunction
 
-;; Call using: CGF "VEOH_Debug.ResetHumanCampRandomHostileSpawnSettings" 
-Function ResetHumanCampRandomHostileSpawnSettings() Global
-  SetSpawnChanceHumanCampRandom01Hostile(20)
-  SetSpawnChanceHumanCampRandom02Hostile(20)
-  Utility.Wait(0.10)
-  HumanCampRandomHostileSpawnSettings()
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.SetSpawnChanceHumanCampRandom01Hostile" <chance:integer>
-Function SetSpawnChanceHumanCampRandom01Hostile(Int chance) Global
-  GlobalVariable VEOH_HumanCamps_Random01_Chance = Game.GetFormFromFile(0x0000175B, "VenpiCaveOverhaul.esm") as GlobalVariable
-  VEOH_HumanCamps_Random01_Chance.SetValueInt(chance)
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.SetSpawnChanceHumanCampRandom02Hostile" <chance:integer>
-Function SetSpawnChanceHumanCampRandom02Hostile(Int chance) Global
-  GlobalVariable VEOH_HumanCamps_Random02_Chance = Game.GetFormFromFile(0x000017A5, "VenpiCaveOverhaul.esm") as GlobalVariable
-  VEOH_HumanCamps_Random02_Chance.SetValueInt(chance)
-EndFunction
-
-
 
 ;; ****************************************************************************************
 ;; *** Robot Camps - Random Hostiles Spawn Settings
@@ -382,7 +241,7 @@ EndFunction
 
 ;; Call using: CGF "VEOH_Debug.RobotCampRandomHostileSpawnSettings" 
 Function RobotCampRandomHostileSpawnSettings() Global
-  GlobalVariable VEOH_RobotCamps_Random01_Chance = Game.GetFormFromFile(0x0000177A, "VenpiCaveOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_RobotCamps_Random01_Chance = Game.GetFormFromFile(0x0000177A, "VenworksEncountersOverhaul.esm") as GlobalVariable
 
   String message = "Robot Camps - Random Hostiles Spawn Settings:\n\n"
   message += "Chance for Random Camp 01 - Fake Mech Patrol (Should be 15%) = " + VEOH_RobotCamps_Random01_Chance.GetValueInt() + "%\n"
@@ -391,20 +250,6 @@ Function RobotCampRandomHostileSpawnSettings() Global
   Debug.Trace(message, 2)
 EndFunction
 
-;; Call using: CGF "VEOH_Debug.ResetRobotCampRandomHostileSpawnSettings" 
-Function ResetRobotCampRandomHostileSpawnSettings() Global
-  SetSpawnChanceRobotCampRandom01Hostile(15)
-  Utility.Wait(0.10)
-  RobotCampRandomHostileSpawnSettings()
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.SetSpawnChanceRobotCampRandom01Hostile" <chance:integer>
-Function SetSpawnChanceRobotCampRandom01Hostile(Int chance) Global
-  GlobalVariable VEOH_RobotCamps_Random01_Chance = Game.GetFormFromFile(0x0000177A, "VenpiCaveOverhaul.esm") as GlobalVariable
-  VEOH_RobotCamps_Random01_Chance.SetValueInt(chance)
-EndFunction
-
-
 
 ;; ****************************************************************************************
 ;; *** Special Encounters Spawn Settings
@@ -412,8 +257,8 @@ EndFunction
 
 ;; Call using: CGF "VEOH_Debug.SpecialEncountersSpawnSettings" 
 Function SpecialEncountersSpawnSettings() Global
-  GlobalVariable VEOH_Special_Corpse01_Chance = Game.GetFormFromFile(0x000017B4, "VenpiCaveOverhaul.esm") as GlobalVariable
-  GlobalVariable VEOH_Special_Corpse02_Chance = Game.GetFormFromFile(0x000017CE, "VenpiCaveOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_Special_Corpse01_Chance = Game.GetFormFromFile(0x000017B4, "VenworksEncountersOverhaul.esm") as GlobalVariable
+  GlobalVariable VEOH_Special_Corpse02_Chance = Game.GetFormFromFile(0x000017CE, "VenworksEncountersOverhaul.esm") as GlobalVariable
 
   String message = "Special Encounter Spawn Settings:\n\n"
   message += "Chance for Corpse Encounter 01 (Should be 20%) = " + VEOH_Special_Corpse01_Chance.GetValueInt() + "%\n"
@@ -421,24 +266,4 @@ Function SpecialEncountersSpawnSettings() Global
 
   Debug.MessageBox(message)
   Debug.Trace(message, 2)
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.ResetSpecialEncountersSpawnSettings" 
-Function ResetSpecialEncountersSpawnSettings() Global
-  SetSpawnChanceSpecialEncountersCorpse01(20)
-  SetSpawnChanceSpecialEncountersCorpse02(20)
-  Utility.Wait(0.10)
-  SpecialEncountersSpawnSettings()
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.SetSpawnChanceSpecialEncountersCorpse01" <chance:integer>
-Function SetSpawnChanceSpecialEncountersCorpse01(Int chance) Global
-  GlobalVariable VEOH_Special_Corpse01_Chance = Game.GetFormFromFile(0x000017B4, "VenpiCaveOverhaul.esm") as GlobalVariable
-  VEOH_Special_Corpse01_Chance.SetValueInt(chance)
-EndFunction
-
-;; Call using: CGF "VEOH_Debug.SetSpawnChanceSpecialEncountersCorpse02" <chance:integer>
-Function SetSpawnChanceSpecialEncountersCorpse02(Int chance) Global
-  GlobalVariable VEOH_Special_Corpse02_Chance = Game.GetFormFromFile(0x000017CE, "VenpiCaveOverhaul.esm") as GlobalVariable
-  VEOH_Special_Corpse02_Chance.SetValueInt(chance)
 EndFunction

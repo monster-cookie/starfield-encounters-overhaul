@@ -1,0 +1,1724 @@
+FormKey: 000C4C:VenworksEncountersOverhaul.esm
+NavmeshGeometry:
+  Versioning:
+  - Break0
+  NavmeshVersion: 17
+  Parent:
+    MutagenObjectType: WorldspaceNavmeshParent
+    Parent: 0012F0:VenworksEncountersOverhaul.esm
+  Vertices:
+  - Point: 2.45, 63.600002, 14.11487
+    Unknown: 1
+  - Point: 1.5, 64.15, 13.914873
+    Unknown: 1
+  - Point: 2, 63.5, 13.964872
+    Unknown: 1
+  - Point: 2.2, 63.2, 14.014872
+    Unknown: 1
+  - Point: 3.3500001, 62.95, 14.014872
+    Unknown: 1
+  - Point: 2.3, 61.45, 13.014872
+    Unknown: 1
+  - Point: 1.75, 62.4, 13.164873
+    Unknown: 1
+  - Point: 3.75, 61.55, 13.464872
+    Unknown: 1
+  - Point: 4, 62.75, 14.064871
+    Unknown: 1
+  - Point: 3.9, 61.5, 13.664873
+    Unknown: 1
+  - Point: 5.35, 62.55, 14.36487
+    Unknown: 1
+  - Point: 6.9, 59.95, 14.11487
+    Unknown: 1
+  - Point: 7.1, 61.5, 14.164873
+    Unknown: 1
+  - Point: 7.55, 62.25, 13.714872
+    Unknown: 1
+  - Point: 6.2785716, 63.62857, 14.564871
+  - Point: 3.3500001, 63.100002, 14.314871
+    Unknown: 1
+  - Point: 2.75, 65.8, 14.964872
+    Unknown: 1
+  - Point: 1.7, 65.8, 14.214872
+    Unknown: 1
+  - Point: 4.3714285, 65.62143, 14.914873
+  - Point: 3.1000001, 66.950005, 14.964872
+    Unknown: 1
+  - Point: 7.5687504, 66.8875, 14.964872
+  - Point: 10.1, 65.65, 14.36487
+    Unknown: 1
+  - Point: 10.3, 67.450005, 14.61487
+    Unknown: 1
+  - Point: 8.664286, 67.921425, 15.014872
+  - Point: 4.7000003, 70.6, 15.264872
+    Unknown: 1
+  - Point: 3.8500001, 69.6, 14.964872
+    Unknown: 1
+  - Point: 3.75, 69.8, 14.914873
+    Unknown: 1
+  - Point: 3.75, 69.700005, 14.964872
+    Unknown: 1
+  - Point: 2.1000001, 69.5, 13.464872
+    Unknown: 1
+  - Point: 1.8000001, 66.700005, 13.664873
+    Unknown: 1
+  - Point: 9.55, 70.450005, 15.314871
+    Unknown: 1
+  - Point: 11.3, 68.5, 14.714872
+    Unknown: 1
+  - Point: 11.650001, 69.65, 14.314871
+    Unknown: 1
+  - Point: 10.400001, 70.9, 14.714872
+    Unknown: 1
+  - Point: 9.650001, 70.6, 15.214872
+    Unknown: 1
+  - Point: 9.5, 71, 15.014872
+    Unknown: 1
+  - Point: 8.7, 71.5, 15.36487
+    Unknown: 1
+  - Point: 5, 71.25, 14.964872
+    Unknown: 1
+  - Point: 10.95, 61.55, 12.664873
+    Unknown: 1
+  - Point: 11.85, 63.9, 12.514872
+    Unknown: 1
+  - Point: 10.35, 65.65, 14.11487
+    Unknown: 1
+  - Point: 11.85, 67.1, 12.914873
+    Unknown: 1
+  - Point: 8.900001, 61, 13.014872
+    Unknown: 1
+  - Point: 9.55, 60.4, 12.264872
+    Unknown: 1
+  - Point: 9.650001, 60.3, 12.11487
+    Unknown: 1
+  - Point: 10.05, 59.600002, 11.964872
+    Unknown: 1
+  - Point: 7.65, 60.25, 13.214872
+    Unknown: 1
+  - Point: 8.7, 60.5, 12.414873
+    Unknown: 1
+  - Point: 10.150001, 58.25, 12.814871
+    Unknown: 1
+  - Point: 8.525001, 58.775, 12.414873
+  - Point: 4.55, 55.850002, 12.414873
+    Unknown: 1
+  - Point: 6.9, 59.3, 12.564871
+    Unknown: 1
+  - Point: 3.95, 57.55, 12.714872
+    Unknown: 1
+  - Point: 10.083334, 55.416668, 12.914873
+  - Point: 12.85, 55.2, 12.814871
+    Unknown: 1
+  - Point: 8.6, 53.033333, 13.064871
+  - Point: 8.00379, 54.00301, 12.914873
+  - Point: 5.999395, 54.999004, 12.514872
+  - Point: 5.2000003, 51.3, 12.464872
+    Unknown: 1
+  - Point: 8.914286, 50.1, 12.964872
+  - Point: 11.7, 49.2, 13.064871
+    Unknown: 1
+  - Point: 14.2, 53.100002, 13.11487
+    Unknown: 1
+  - Point: 13.25, 50.300003, 13.11487
+  - Point: 14.8, 51.4, 12.714872
+    Unknown: 1
+  - Point: 12.95, 49.3, 13.11487
+    Unknown: 1
+  - Point: 11.95, 49.05, 12.964872
+    Unknown: 1
+  - Point: 12.7, 47.95, 11.914873
+    Unknown: 1
+  - Point: 12.75, 47.9, 11.86487
+    Unknown: 1
+  - Point: 12.55, 47.9, 11.814871
+    Unknown: 1
+  - Point: 10.2, 46.600002, 10.264872
+    Unknown: 1
+  - Point: 10.95, 48.65, 12.014872
+    Unknown: 1
+  - Point: 10.35, 48.45, 11.714872
+    Unknown: 1
+  - Point: 9.400001, 48.4, 11.664873
+    Unknown: 1
+  - Point: 8.7, 47.15, 10.36487
+    Unknown: 1
+  - Point: 15, 49.25, 12.36487
+    Unknown: 1
+  - Point: 9.150001, 48.600002, 12.914873
+    Unknown: 1
+  - Point: 7.2000003, 47.95, 12.36487
+    Unknown: 1
+  - Point: 12, 56.95, 12.814871
+    Unknown: 1
+  - Point: 7.55, 61, 13.764872
+    Unknown: 1
+  - Point: 7.6, 60.850002, 13.764872
+    Unknown: 1
+  - Point: 7.4, 61, 13.914873
+    Unknown: 1
+  - Point: 4.05, 60.15, 14.264872
+    Unknown: 1
+  - Point: 5.525, 59.125, 13.664873
+    Unknown: 1
+  - Point: 4.15, 58.3, 13.714872
+    Unknown: 1
+  - Point: 3.4, 58.8, 13.764872
+    Unknown: 1
+  - Point: 2.95, 59, 13.264872
+    Unknown: 1
+  - Point: 2.937255, 59.04804, 13.25997
+  - Point: 2.1708333, 63.239586, 14.010705
+  - Point: 1.9826924, 65.8, 14.416796
+  - Point: 3.0155845, 68.57014, 14.475263
+  - Point: 1.8263159, 66.94562, 13.647329
+  - Point: 11.548649, 69.75135, 14.347303
+  - Point: 10.366667, 67.520004, 14.621537
+  - Point: 10.411225, 65.70918, 14.06589
+  - Point: 11.585295, 63.208824, 12.55899
+  - Point: 11.479412, 62.932354, 12.576637
+  - Point: 12.021795, 56.90513, 12.814871
+  - Point: 10.393182, 46.698486, 10.386084
+  - Point: 4.035507, 57.600723, 12.710525
+  - Point: 3.6833334, 63.008335, 14.323204
+  - Point: 4.4339285, 62.685715, 14.161299
+  - Point: 7.55, 61.192307, 13.757179
+  - Point: 7.145, 61.575, 14.119873
+  Triangles:
+  - Vertices: 0, 1, 2
+    EdgeLink_0_1: 16
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 2
+  - Vertices: 2, 3, 0
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 2
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 1
+  - Vertices: 3, 4, 0
+    EdgeLink_0_1: 3
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 32770
+  - Vertices: 5, 4, 3
+    EdgeLink_0_1: 5
+    EdgeLink_1_2: 2
+    EdgeLink_2_0: 4
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 6, 5, 3
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 3
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 5
+  - Vertices: 4, 5, 7
+    EdgeLink_0_1: 3
+    EdgeLink_1_2: 98
+    EdgeLink_2_0: 6
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 4, 7, 8
+    EdgeLink_0_1: 5
+    EdgeLink_1_2: 7
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49156
+  - Vertices: 8, 7, 9
+    EdgeLink_0_1: 6
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 8
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 9, 10, 8
+    EdgeLink_0_1: 9
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 7
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49154
+  - Vertices: 10, 9, 11
+    EdgeLink_0_1: 8
+    EdgeLink_1_2: 94
+    EdgeLink_2_0: 10
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 11, 12, 10
+    EdgeLink_0_1: 93
+    EdgeLink_1_2: 11
+    EdgeLink_2_0: 9
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 13, 10, 12
+    EdgeLink_0_1: 12
+    EdgeLink_1_2: 10
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49156
+  - Vertices: 13, 14, 10
+    EdgeLink_0_1: 22
+    EdgeLink_1_2: 13
+    EdgeLink_2_0: 11
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 14, 15, 10
+    EdgeLink_0_1: 14
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 12
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49154
+  - Vertices: 14, 16, 15
+    EdgeLink_0_1: 18
+    EdgeLink_1_2: 15
+    EdgeLink_2_0: 13
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 15, 16, 0
+    EdgeLink_0_1: 14
+    EdgeLink_1_2: 16
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 16388
+  - Vertices: 16, 1, 0
+    EdgeLink_0_1: 17
+    EdgeLink_2_0: 15
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 1, 16, 17
+    EdgeLink_0_1: 16
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 16390
+  - Vertices: 14, 18, 16
+    EdgeLink_0_1: 21
+    EdgeLink_1_2: 19
+    EdgeLink_2_0: 14
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 18, 19, 16
+    EdgeLink_0_1: 20
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 18
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 16386
+  - Vertices: 20, 19, 18
+    EdgeLink_0_1: 28
+    EdgeLink_1_2: 19
+    EdgeLink_2_0: 21
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 20, 18, 14
+    EdgeLink_0_1: 20
+    EdgeLink_1_2: 18
+    EdgeLink_2_0: 22
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 20, 14, 13
+    EdgeLink_0_1: 21
+    EdgeLink_1_2: 12
+    EdgeLink_2_0: 23
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 20, 13, 21
+    EdgeLink_0_1: 22
+    EdgeLink_1_2: 42
+    EdgeLink_2_0: 24
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 32768
+  - Vertices: 22, 20, 21
+    EdgeLink_0_1: 25
+    EdgeLink_1_2: 23
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49156
+  - Vertices: 22, 23, 20
+    EdgeLink_0_1: 34
+    EdgeLink_1_2: 26
+    EdgeLink_2_0: 24
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 23, 24, 20
+    EdgeLink_0_1: 33
+    EdgeLink_1_2: 27
+    EdgeLink_2_0: 25
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 24, 25, 20
+    EdgeLink_0_1: 29
+    EdgeLink_1_2: 28
+    EdgeLink_2_0: 26
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 16384
+  - Vertices: 25, 19, 20
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 20
+    EdgeLink_2_0: 27
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49153
+  - Vertices: 24, 26, 25
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 30
+    EdgeLink_2_0: 27
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 1
+  - Vertices: 25, 26, 27
+    EdgeLink_0_1: 29
+    EdgeLink_1_2: 31
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 28, 27, 26
+    EdgeLink_0_1: 32
+    EdgeLink_1_2: 30
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 4
+  - Vertices: 29, 27, 28
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 31
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49157
+  - Vertices: 30, 24, 23
+    EdgeLink_0_1: 40
+    EdgeLink_1_2: 26
+    EdgeLink_2_0: 34
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 22, 30, 23
+    EdgeLink_0_1: 35
+    EdgeLink_1_2: 33
+    EdgeLink_2_0: 25
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 32768
+  - Vertices: 30, 22, 31
+    EdgeLink_0_1: 34
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 36
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49154
+  - Vertices: 32, 30, 31
+    EdgeLink_0_1: 37
+    EdgeLink_1_2: 35
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49156
+  - Vertices: 30, 32, 33
+    EdgeLink_0_1: 36
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 38
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49154
+  - Vertices: 30, 33, 34
+    EdgeLink_0_1: 37
+    EdgeLink_1_2: 39
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 16384
+  - Vertices: 33, 35, 34
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 38
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 1
+  - Vertices: 24, 30, 36
+    EdgeLink_0_1: 33
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 41
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49154
+  - Vertices: 24, 36, 37
+    EdgeLink_0_1: 40
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 16390
+  - Vertices: 21, 13, 38
+    EdgeLink_0_1: 23
+    EdgeLink_1_2: 46
+    EdgeLink_2_0: 43
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 21, 38, 39
+    EdgeLink_0_1: 42
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 44
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49154
+  - Vertices: 21, 39, 40
+    EdgeLink_0_1: 43
+    EdgeLink_1_2: 45
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 40, 39, 41
+    EdgeLink_0_1: 44
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49156
+  - Vertices: 38, 13, 42
+    EdgeLink_0_1: 42
+    EdgeLink_1_2: 89
+    EdgeLink_2_0: 47
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 38, 42, 43
+    EdgeLink_0_1: 46
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 48
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 38, 43, 44
+    EdgeLink_0_1: 47
+    EdgeLink_1_2: 49
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 43, 45, 44
+    EdgeLink_0_1: 50
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 48
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 46, 45, 43
+    EdgeLink_0_1: 52
+    EdgeLink_1_2: 49
+    EdgeLink_2_0: 51
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 47, 46, 43
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 50
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 32773
+  - Vertices: 46, 48, 45
+    EdgeLink_0_1: 53
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 50
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 46, 49, 48
+    EdgeLink_0_1: 56
+    EdgeLink_1_2: 54
+    EdgeLink_2_0: 52
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 50, 48, 49
+    EdgeLink_0_1: 58
+    EdgeLink_1_2: 53
+    EdgeLink_2_0: 55
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 32768
+  - Vertices: 51, 50, 49
+    EdgeLink_0_1: 57
+    EdgeLink_1_2: 54
+    EdgeLink_2_0: 56
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 46, 51, 49
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 55
+    EdgeLink_2_0: 53
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49153
+  - Vertices: 50, 51, 52
+    EdgeLink_0_1: 55
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49158
+  - Vertices: 48, 50, 53
+    EdgeLink_0_1: 54
+    EdgeLink_1_2: 87
+    EdgeLink_2_0: 59
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 32768
+  - Vertices: 54, 48, 53
+    EdgeLink_0_1: 88
+    EdgeLink_1_2: 58
+    EdgeLink_2_0: 60
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 55, 54, 53
+    EdgeLink_0_1: 67
+    EdgeLink_1_2: 59
+    EdgeLink_2_0: 61
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 56, 55, 53
+    EdgeLink_0_1: 64
+    EdgeLink_1_2: 60
+    EdgeLink_2_0: 62
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 32768
+  - Vertices: 53, 57, 56
+    EdgeLink_0_1: 87
+    EdgeLink_1_2: 63
+    EdgeLink_2_0: 61
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 32768
+  - Vertices: 57, 58, 56
+    EdgeLink_0_1: 86
+    EdgeLink_1_2: 64
+    EdgeLink_2_0: 62
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 58, 55, 56
+    EdgeLink_0_1: 65
+    EdgeLink_1_2: 61
+    EdgeLink_2_0: 63
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 32768
+  - Vertices: 58, 59, 55
+    EdgeLink_0_1: 84
+    EdgeLink_1_2: 66
+    EdgeLink_2_0: 64
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 32768
+  - Vertices: 59, 60, 55
+    EdgeLink_0_1: 83
+    EdgeLink_1_2: 67
+    EdgeLink_2_0: 65
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 32768
+  - Vertices: 60, 54, 55
+    EdgeLink_0_1: 68
+    EdgeLink_1_2: 60
+    EdgeLink_2_0: 66
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 32768
+  - Vertices: 61, 54, 60
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 67
+    EdgeLink_2_0: 69
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49153
+  - Vertices: 61, 60, 62
+    EdgeLink_0_1: 68
+    EdgeLink_1_2: 72
+    EdgeLink_2_0: 70
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 63, 61, 62
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 69
+    EdgeLink_2_0: 71
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49153
+  - Vertices: 64, 63, 62
+    EdgeLink_0_1: 82
+    EdgeLink_1_2: 70
+    EdgeLink_2_0: 72
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 60, 64, 62
+    EdgeLink_0_1: 73
+    EdgeLink_1_2: 71
+    EdgeLink_2_0: 69
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 64, 60, 65
+    EdgeLink_0_1: 72
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 74
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 32770
+  - Vertices: 64, 65, 66
+    EdgeLink_0_1: 73
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 75
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49154
+  - Vertices: 64, 66, 67
+    EdgeLink_0_1: 74
+    EdgeLink_1_2: 76
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 4
+  - Vertices: 68, 67, 66
+    EdgeLink_0_1: 77
+    EdgeLink_1_2: 75
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 69, 67, 68
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 76
+    EdgeLink_2_0: 78
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 1
+  - Vertices: 69, 68, 70
+    EdgeLink_0_1: 77
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 79
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49154
+  - Vertices: 70, 71, 69
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 80
+    EdgeLink_2_0: 78
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49153
+  - Vertices: 69, 71, 72
+    EdgeLink_0_1: 79
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 81
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49154
+  - Vertices: 69, 72, 73
+    EdgeLink_0_1: 80
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49158
+  - Vertices: 63, 64, 74
+    EdgeLink_0_1: 71
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49158
+  - Vertices: 60, 59, 75
+    EdgeLink_0_1: 66
+    EdgeLink_1_2: 84
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49156
+  - Vertices: 59, 58, 75
+    EdgeLink_0_1: 65
+    EdgeLink_1_2: 85
+    EdgeLink_2_0: 83
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 16384
+  - Vertices: 75, 58, 76
+    EdgeLink_0_1: 84
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49158
+  - Vertices: 50, 58, 57
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 63
+    EdgeLink_2_0: 87
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49153
+  - Vertices: 53, 50, 57
+    EdgeLink_0_1: 58
+    EdgeLink_1_2: 86
+    EdgeLink_2_0: 62
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 54, 77, 48
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 59
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49153
+  - Vertices: 42, 13, 78
+    EdgeLink_0_1: 46
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 90
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49154
+  - Vertices: 42, 78, 79
+    EdgeLink_0_1: 89
+    EdgeLink_1_2: 91
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 80, 79, 78
+    EdgeLink_0_1: 92
+    EdgeLink_1_2: 90
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 80, 11, 79
+    EdgeLink_0_1: 93
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: 91
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+  - Vertices: 12, 11, 80
+    EdgeLink_0_1: 10
+    EdgeLink_1_2: 92
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 9, 81, 11
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 95
+    EdgeLink_2_0: 9
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49153
+  - Vertices: 82, 11, 81
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 94
+    EdgeLink_2_0: 96
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 83, 82, 81
+    EdgeLink_0_1: -1
+    EdgeLink_1_2: 95
+    EdgeLink_2_0: 97
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49152
+  - Vertices: 83, 81, 84
+    EdgeLink_0_1: 96
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49158
+  - Vertices: 7, 5, 85
+    EdgeLink_0_1: 5
+    EdgeLink_1_2: -1
+    EdgeLink_2_0: -1
+    Height: 3.4028235E+38
+    Flags:
+    - Found
+    - 0x1000
+    CoverFlags: 49158
+  Cover:
+  - Vertex1: 83
+    Vertex2: 84
+    Data: 2147484673
+  - Vertex1: 84
+    Vertex2: 81
+    Data: 246290606851585
+  - Vertex1: 81
+    Vertex2: 9
+    Data: 167125767554561
+  - Vertex1: 7
+    Vertex2: 4854
+    Data: 228900297770767
+  - Vertex1: 4854
+    Vertex2: 31553
+    Data: 92358986057616
+  - Vertex1: 31553
+    Vertex2: 36408
+    Data: 66035131107215
+  - Vertex1: 36408
+    Vertex2: 41262
+    Data: 30850759018382
+  - Vertex1: 41262
+    Vertex2: 46117
+    Data: 30850759020429
+  - Vertex1: 46117
+    Vertex2: 50971
+    Data: 30850759020428
+  - Vertex1: 50971
+    Vertex2: 55826
+    Data: 64433442699
+  - Vertex1: 55826
+    Vertex2: 60680
+    Data: 64433442698
+  - Vertex1: 60680
+    Vertex2: 85
+    Data: 64433442441
+  - Vertex1: 86
+    Vertex2: 5
+    Data: 246290604623361
+  - Vertex1: 5
+    Vertex2: 6
+    Data: 57174604645889
+  - Vertex1: 6
+    Vertex2: 3
+    Data: 39582420698625
+  - Vertex1: 87
+    Vertex2: 1
+    Data: 70368744179201
+  - Vertex1: 1
+    Vertex2: 17
+    Data: 8796093023745
+  - Vertex1: 17
+    Vertex2: 88
+    Data: 246290606850561
+  - Vertex1: 16
+    Vertex2: 58981
+    Data: 241894707823873
+  - Vertex1: 58981
+    Vertex2: 25
+    Data: 171523818390145
+  - Vertex1: 89
+    Vertex2: 4095
+    Data: 159362625195273
+  - Vertex1: 4095
+    Vertex2: 9557
+    Data: 124038666669962
+  - Vertex1: 9557
+    Vertex2: 13653
+    Data: 128367993704331
+  - Vertex1: 13653
+    Vertex2: 17749
+    Data: 93183621615500
+  - Vertex1: 17749
+    Vertex2: 21845
+    Data: 97512948649869
+  - Vertex1: 21845
+    Vertex2: 25941
+    Data: 66657903579022
+  - Vertex1: 25941
+    Vertex2: 34132
+    Data: 31473533718416
+  - Vertex1: 34132
+    Vertex2: 38228
+    Data: 31404814245777
+  - Vertex1: 38228
+    Vertex2: 42324
+    Data: 549769193362
+  - Vertex1: 42324
+    Vertex2: 46420
+    Data: 549769197459
+  - Vertex1: 46420
+    Vertex2: 50516
+    Data: 549769185172
+  - Vertex1: 50516
+    Vertex2: 54612
+    Data: 412330231701
+  - Vertex1: 54612
+    Vertex2: 58708
+    Data: 343610754966
+  - Vertex1: 58708
+    Vertex2: 29
+    Data: 274891277975
+  - Vertex1: 90
+    Vertex2: 28
+    Data: 1537
+  - Vertex1: 28
+    Vertex2: 26
+    Data: 246290604623361
+  - Vertex1: 26
+    Vertex2: 24
+    Data: 250688653231617
+  - Vertex1: 24
+    Vertex2: 37
+    Data: 65970697799169
+  - Vertex1: 37
+    Vertex2: 36
+    Data: 39582418601473
+  - Vertex1: 36
+    Vertex2: 30
+    Data: 250688653231617
+  - Vertex1: 35
+    Vertex2: 33
+    Data: 101155069756929
+  - Vertex1: 33
+    Vertex2: 91
+    Data: 43980465112577
+  - Vertex1: 32
+    Vertex2: 31
+    Data: 109951162779137
+  - Vertex1: 31
+    Vertex2: 92
+    Data: 259484744156673
+  - Vertex1: 22
+    Vertex2: 21
+    Data: 277076932429313
+  - Vertex1: 93
+    Vertex2: 11154
+    Data: 171523828094734
+  - Vertex1: 11154
+    Vertex2: 22309
+    Data: 136614333259666
+  - Vertex1: 22309
+    Vertex2: 32070
+    Data: 102185877387157
+  - Vertex1: 32070
+    Vertex2: 39042
+    Data: 66383030126487
+  - Vertex1: 39042
+    Vertex2: 43225
+    Data: 31198658037656
+  - Vertex1: 43225
+    Vertex2: 51591
+    Data: 31129940789148
+  - Vertex1: 51591
+    Vertex2: 59957
+    Data: 274893506463
+  - Vertex1: 59957
+    Vertex2: 41
+    Data: 246496778650274
+  - Vertex1: 94
+    Vertex2: 95
+    Data: 277079077683201
+  - Vertex1: 96
+    Vertex2: 54
+    Data: 259486891639809
+  - Vertex1: 54
+    Vertex2: 61
+    Data: 277076930201089
+  - Vertex1: 61
+    Vertex2: 63
+    Data: 277076930201089
+  - Vertex1: 63
+    Vertex2: 74
+    Data: 30786325579265
+  - Vertex1: 74
+    Vertex2: 64
+    Data: 246290606851585
+  - Vertex1: 64
+    Vertex2: 67
+    Data: 65970700158465
+  - Vertex1: 67
+    Vertex2: 97
+    Data: 74766790690305
+  - Vertex1: 69
+    Vertex2: 73
+    Data: 4398046512641
+  - Vertex1: 73
+    Vertex2: 8401
+    Data: 246290620092197
+  - Vertex1: 8401
+    Vertex2: 16803
+    Data: 246290620223396
+  - Vertex1: 16803
+    Vertex2: 21845
+    Data: 180319922562978
+  - Vertex1: 21845
+    Vertex2: 30246
+    Data: 145139845437345
+  - Vertex1: 30246
+    Vertex2: 45370
+    Data: 114362107695007
+  - Vertex1: 45370
+    Vertex2: 57133
+    Data: 48404288384924
+  - Vertex1: 57133
+    Vertex2: 72
+    Data: 55005650761369
+  - Vertex1: 72
+    Vertex2: 71
+    Data: 250688651134489
+  - Vertex1: 71
+    Vertex2: 18724
+    Data: 136390983681816
+  - Vertex1: 18724
+    Vertex2: 32767
+    Data: 136395278649238
+  - Vertex1: 32767
+    Vertex2: 70
+    Data: 101215201625749
+  - Vertex1: 70
+    Vertex2: 20024
+    Data: 114761536898836
+  - Vertex1: 20024
+    Vertex2: 29126
+    Data: 88235819141013
+  - Vertex1: 29126
+    Vertex2: 40049
+    Data: 57312054691734
+  - Vertex1: 40049
+    Vertex2: 49151
+    Data: 26388290258839
+  - Vertex1: 49151
+    Vertex2: 68
+    Data: 30786341062296
+  - Vertex1: 66
+    Vertex2: 65
+    Data: 246290606851585
+  - Vertex1: 65
+    Vertex2: 60
+    Data: 259484744287745
+  - Vertex1: 60
+    Vertex2: 75
+    Data: 277076930201089
+  - Vertex1: 75
+    Vertex2: 76
+    Data: 30786325579265
+  - Vertex1: 76
+    Vertex2: 58
+    Data: 140737488356865
+  - Vertex1: 58
+    Vertex2: 50
+    Data: 263882792764929
+  - Vertex1: 50
+    Vertex2: 5313
+    Data: 277076932429569
+  - Vertex1: 5313
+    Vertex2: 52
+    Data: 30786325579393
+  - Vertex1: 98
+    Vertex2: 4890
+    Data: 246290616291093
+  - Vertex1: 4890
+    Vertex2: 12715
+    Data: 251032253108118
+  - Vertex1: 12715
+    Vertex2: 16628
+    Data: 260171943382935
+  - Vertex1: 16628
+    Vertex2: 21518
+    Data: 264913589374872
+  - Vertex1: 21518
+    Vertex2: 25431
+    Data: 268899319162777
+  - Vertex1: 25431
+    Vertex2: 30322
+    Data: 268693160736666
+  - Vertex1: 30322
+    Vertex2: 35212
+    Data: 273091207235483
+  - Vertex1: 35212
+    Vertex2: 39125
+    Data: 277420534269852
+  - Vertex1: 39125
+    Vertex2: 44016
+    Data: 277351814793117
+  - Vertex1: 44016
+    Vertex2: 54775
+    Data: 277214375839646
+  - Vertex1: 54775
+    Vertex2: 51
+    Data: 277149949200031
+  - Vertex1: 51
+    Vertex2: 11702
+    Data: 277141359167262
+  - Vertex1: 11702
+    Vertex2: 30426
+    Data: 206772612892572
+  - Vertex1: 30426
+    Vertex2: 51491
+    Data: 136403870730136
+  - Vertex1: 51491
+    Vertex2: 46
+    Data: 101167961294485
+  - Vertex1: 46
+    Vertex2: 9708
+    Data: 256117500956429
+  - Vertex1: 9708
+    Vertex2: 29126
+    Data: 260519840204684
+  - Vertex1: 29126
+    Vertex2: 46117
+    Data: 159364768221069
+  - Vertex1: 46117
+    Vertex2: 47
+    Data: 128574145562256
+  - Vertex1: 47
+    Vertex2: 54612
+    Data: 89331037914894
+  - Vertex1: 54612
+    Vertex2: 43
+    Data: 66172576744077
+  - Vertex1: 99
+    Vertex2: 15
+    Data: 277079077684225
+  - Vertex1: 15
+    Vertex2: 56172
+    Data: 206708186023681
+  - Vertex1: 56172
+    Data: 206708197033601
+  - Vertex2: 4
+    Data: 246986413985291
+  - Vertex1: 4
+    Vertex2: 14043
+    Data: 268431185573644
+  - Vertex1: 14043
+    Vertex2: 8
+    Data: 268426892691083
+  - Vertex1: 8
+    Vertex2: 100
+    Data: 277094138921483
+  - Vertex1: 101
+    Vertex2: 14894
+    Data: 251721610972425
+  - Vertex1: 14894
+    Vertex2: 29788
+    Data: 256117507772298
+  - Vertex1: 29788
+    Vertex2: 56598
+    Data: 260515556118411
+  - Vertex1: 56598
+    Vertex2: 13
+    Data: 264913604988556
+  - Vertex1: 13
+    Vertex2: 10922
+    Data: 277076934657793
+  - Vertex1: 10922
+    Vertex2: 102
+    Data: 277076932428417
+  CoverTriangleMappings:
+  - Cover: 329
+    Triangle: 58
+  - Cover: 308
+    Triangle: 60
+  - Cover: 297
+    Triangle: 78
+  - Cover: 376
+    Triangle: 2
+  - Cover: 182
+    Triangle: 45
+  - Cover: 280
+    Triangle: 56
+  - Cover: 98
+    Triangle: 44
+  - Cover: 342
+    Triangle: 81
+  - Cover: 229
+    Triangle: 86
+  - Cover: 116
+    Triangle: 36
+  - Cover: 46
+    Triangle: 118
+  - Cover: 69
+    Triangle: 17
+  - Cover: 390
+  - Cover: 62
+    Triangle: 108
+  - Cover: 53
+    Triangle: 107
+  - Cover: 18
+    Triangle: 14
+  - Cover: 149
+    Triangle: 41
+  - Cover: 4
+    Triangle: 15
+  - Cover: 173
+    Triangle: 53
+  - Cover: 166
+    Triangle: 37
+  - Cover: 33
+    Triangle: 113
+  - Cover: 112
+    Triangle: 18
+  - Cover: 357
+    Triangle: 114
+  - Cover: 389
+    Triangle: 1
+  - Cover: 16
+    Triangle: 13
+  - Cover: 161
+    Triangle: 39
+  - Cover: 70
+    Triangle: 16
+  - Cover: 393
+    Triangle: 12
+  - Cover: 394
+    Triangle: 3
+  - Cover: 230
+    Triangle: 84
+  - Cover: 1
+    Triangle: 15
+  - Cover: 141
+    Triangle: 43
+  - Cover: 341
+    Triangle: 82
+  - Cover: 272
+    Triangle: 55
+  - Cover: 26
+    Triangle: 111
+  - Cover: 344
+    Triangle: 83
+  - Cover: 156
+    Triangle: 40
+  - Cover: 224
+    Triangle: 97
+  - Cover: 126
+    Triangle: 35
+  - Cover: 330
+    Triangle: 57
+  - Cover: 146
+    Triangle: 42
+  - Cover: 130
+    Triangle: 34
+  - Cover: 9
+    Triangle: 110
+  - Cover: 321
+    Triangle: 69
+  - Cover: 293
+    Triangle: 79
+  - Cover: 352
+    Triangle: 54
+  - Cover: 206
+    Triangle: 105
+  - Cover: 316
+    Triangle: 70
+  - Cover: 165
+    Triangle: 38
+  - Cover: 325
+    Triangle: 62
+  - Cover: 334
+    Triangle: 80
+  - Cover: 302
+    Triangle: 59
+  - Cover: 128
+    Triangle: 20
+  - Cover: 313
+    Triangle: 73
+  - Cover: 326
+    Triangle: 61
+  - Cover: 204
+    Triangle: 101
+  - Cover: 77
+    Triangle: 18
+  GridSize: 3
+  GridMaxDistance: 4.5, 8.299999
+  GridMin: 1.5, 46.600002, 10.264872
+  GridMax: 15, 71.5, 3.4028235E+38
+  GridArrays:
+  - GridCell:
+    - 6
+    - 0
+    - 63
+    - 64
+    - 65
+    - 84
+    - 85
+    - 86
+    - 16
+    - 0
+    - 60
+    - 61
+    - 62
+    - 63
+    - 64
+    - 65
+    - 66
+    - 67
+    - 77
+    - 78
+    - 79
+    - 80
+    - 81
+    - 83
+    - 84
+    - 85
+    - 17
+    - 0
+    - 60
+    - 66
+    - 67
+    - 68
+    - 69
+    - 70
+    - 71
+    - 72
+    - 73
+    - 74
+    - 75
+    - 76
+    - 77
+    - 78
+    - 79
+    - 82
+    - 83
+    - 27
+    - 0
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 54
+    - 55
+    - 57
+    - 58
+    - 62
+    - 63
+    - 86
+    - 87
+    - 94
+    - 95
+    - 96
+    - 97
+    - 98
+    - 34
+    - 0
+    - 9
+    - 10
+    - 11
+    - 12
+    - 22
+    - 23
+    - 42
+    - 46
+    - 47
+    - 48
+    - 49
+    - 50
+    - 51
+    - 52
+    - 53
+    - 54
+    - 55
+    - 56
+    - 57
+    - 58
+    - 59
+    - 60
+    - 61
+    - 62
+    - 63
+    - 87
+    - 88
+    - 89
+    - 90
+    - 91
+    - 92
+    - 93
+    - 94
+    - 95
+    - 10
+    - 0
+    - 42
+    - 43
+    - 46
+    - 47
+    - 48
+    - 59
+    - 60
+    - 67
+    - 68
+    - 88
+    - 25
+    - 0
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 40
+    - 41
+    - 26
+    - 0
+    - 12
+    - 13
+    - 14
+    - 18
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 7
+    - 0
+    - 35
+    - 36
+    - 37
+    - 42
+    - 43
+    - 44
+    - 45
+    - 12
+    - 8
+PreCutMapEntries: []

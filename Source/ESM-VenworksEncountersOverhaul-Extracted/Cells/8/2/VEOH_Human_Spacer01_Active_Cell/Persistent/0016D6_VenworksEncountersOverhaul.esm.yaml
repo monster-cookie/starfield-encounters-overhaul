@@ -1,0 +1,12 @@
+MutagenObjectType: PlacedObject
+FormKey: 0016D6:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 1024
+StarfieldMajorRecordFlags:
+- 0x400
+Base: 3D0C23:Starfield.esm
+Primitive:
+  Bounds: 32, 32, 32
+  Color: '#00FF0000'
+  Unknown: 0.3
+  Type: Sphere
+Position: 5.805476, -4.546175, 2.257776

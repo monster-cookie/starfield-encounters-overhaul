@@ -1,0 +1,8 @@
+MutagenObjectType: PlacedObject
+FormKey: 0012A0:VenworksEncountersOverhaul.esm
+Base: 22F879:Starfield.esm
+SourcePackIn: 01E80B:Starfield.esm
+Layer: 133227:Starfield.esm
+Scale: 1.06
+Position: 63.789005, 38.515797, 7.373842
+Rotation: 0, -0, 3.8848076

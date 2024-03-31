@@ -1,0 +1,28 @@
+MutagenObjectType: PlacedObject
+FormKey: 001479:VenworksEncountersOverhaul.esm
+Components:
+- MutagenObjectType: VolumesComponent
+  Items:
+  - Matrix1:
+      Unknown1: 1
+    Matrix2:
+      Unknown2: 1
+    Matrix3:
+      Unknown3: 1
+    Matrix4:
+      Unknown4: 1
+    Unknown1: 1.0589988
+    Unknown2: 1.0856771
+    Unknown3: 1.3414159
+    Ender:
+      MutagenObjectType: VolumesUnknownEnderTrio
+      Unknown1: 8.078363
+      Unknown2: 12.078358
+      Unknown3: 2
+Base: 000043:Starfield.esm
+VolumeData:
+  Data: 0x00000000000000000000000000000000000000000000803F0000803FCDCC4C3E0000803F040000000000803F0000803F0000803F000000000000803F000000000000803F000000000000803F00004843010AD7A33C
+VolumeReflectionProbeOffsetIntensity:
+  Data: 0x0000000000000000000000000000803F
+Layer: 121249:Starfield.esm
+Position: 32.87326, 38.94422, 15.030246

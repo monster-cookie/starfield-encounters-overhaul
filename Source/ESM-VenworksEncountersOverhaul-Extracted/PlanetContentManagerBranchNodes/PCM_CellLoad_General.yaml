@@ -1,0 +1,12 @@
+FormKey: 06195C:Starfield.esm
+EditorID: PCM_CellLoad_General
+FormVersion: 556
+NAM1: 1
+Nodes:
+- 25019C:Starfield.esm
+- 2A4403:Starfield.esm
+- 151959:Starfield.esm
+- 22A2B4:Starfield.esm
+- 001756:VenworksEncountersOverhaul.esm
+- 0016DD:VenworksEncountersOverhaul.esm
+Conditions: []

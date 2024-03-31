@@ -1,0 +1,16 @@
+FormKey: 0016DD:VenworksEncountersOverhaul.esm
+EditorID: PCM_CellLoad_Human
+FormVersion: 556
+NAM1: 1
+Nodes:
+- 0016DF:VenworksEncountersOverhaul.esm
+- 001707:VenworksEncountersOverhaul.esm
+- 00173C:VenworksEncountersOverhaul.esm
+- 001758:VenworksEncountersOverhaul.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: IsTrueForConditionFormConditionData
+    FirstParameter: 001713:VenworksEncountersOverhaul.esm
+  ComparisonValue: 1

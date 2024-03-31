@@ -1,0 +1,12 @@
+MutagenObjectType: PlacedNpc
+FormKey: 00081F:VenworksEncountersOverhaul.esm
+Base: 2CA98F:Starfield.esm
+LevelModifier: VeryHard
+PersistentLocation: 2369CE:Starfield.esm
+Layer: 2B3CB9:Starfield.esm
+EnableParent:
+  Reference: 33822C:Starfield.esm
+  Flags:
+  - SetEnableStateToOppositeOfParent
+  Unknown: 0x000000
+Position: -97.1, 38, 17.433693

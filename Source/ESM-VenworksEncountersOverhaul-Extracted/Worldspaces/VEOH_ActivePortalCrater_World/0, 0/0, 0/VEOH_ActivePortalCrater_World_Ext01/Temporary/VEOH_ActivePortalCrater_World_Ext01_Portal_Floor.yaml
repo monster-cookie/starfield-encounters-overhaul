@@ -1,0 +1,9 @@
+MutagenObjectType: PlacedObject
+FormKey: 0012F4:VenworksEncountersOverhaul.esm
+EditorID: VEOH_ActivePortalCrater_World_Ext01_Portal_Floor
+Base: 2EB0DE:Starfield.esm
+LayeredMaterialSwaps:
+- 330262:Starfield.esm
+Layer: 133227:Starfield.esm
+Position: 47, 48.7, -0.85
+Rotation: 0.08726646, 0, 5.148721

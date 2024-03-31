@@ -1,0 +1,24 @@
+MutagenObjectType: PlacedObject
+FormKey: 00131E:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 256
+StarfieldMajorRecordFlags:
+- 0x100
+Components:
+- MutagenObjectType: ContactShadowComponent
+  Items:
+  - Unknown1: 0.009
+    Unknown2: 3
+    Unknown3: 10
+    Unknown4: 0.2
+    Unknown5: 0.06
+Base: 06D2B6:Starfield.esm
+Radius: -4.774403
+Lighting:
+  Fov90PlusMinus: -34.034912
+  Fade1PlusMinus: 0.24464932
+  ShadowDepthBias: 0.33499995
+  Unknown1: 2880154539
+  Unknown2: 2880154369
+Layer: 1E9BFB:Starfield.esm
+Position: 38.878735, 47.65008, 15.326023
+Rotation: -0.44719768, 0, 4.712389

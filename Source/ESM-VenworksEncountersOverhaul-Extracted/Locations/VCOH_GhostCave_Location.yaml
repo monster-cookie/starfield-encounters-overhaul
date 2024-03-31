@@ -1,0 +1,328 @@
+FormKey: 000FF7:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 1048576
+EditorID: VCOH_GhostCave_Location
+StarfieldMajorRecordFlags:
+- 0x100000
+LocationCellPersistentReferences:
+- Actor: 000ECC:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ED4:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ED0:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ED2:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ECD:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ECA:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ECB:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000E36:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ED3:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ECF:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- Actor: 000ED2:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Unknown: -1
+- Actor: 000ECC:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Unknown: -1
+- Actor: 000ED0:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Unknown: -1
+- Actor: 000ED4:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Unknown: -1
+LocationCellStaticReferences:
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ECD:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 02271F:Starfield.esm
+  Marker: 000DCD:VenworksEncountersOverhaul.esm
+  Location: 000DD7:VenworksEncountersOverhaul.esm
+  Unknown: -1
+- LocationRefType: 2CC9ED:Starfield.esm
+  Marker: 000EB2:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ECD:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ED2:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ECF:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000ED1:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ED4:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ED3:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ED0:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ECC:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000E04:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000E03:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000E05:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000E00:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000DFF:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000DFE:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DFD:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000E02:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000E0C:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000E0A:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000E01:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000E0B:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000E06:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000E09:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000E08:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000E07:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000DF2:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DF4:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DFA:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DFB:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000DFC:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DF6:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DF3:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DEF:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DF8:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DF1:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000DF9:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000DF7:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 0C70B3:Starfield.esm
+  Marker: 000DF5:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000DF0:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 017D5C:Starfield.esm
+  Marker: 000E0D:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 207486:Starfield.esm
+  Marker: 3382D2:Starfield.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ECC:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ED4:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ED3:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ED0:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ED2:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 122413:Starfield.esm
+  Marker: 000ECF:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Grid: 32767, 32767
+  Unknown: -1
+- LocationRefType: 003956:Starfield.esm
+  Marker: 000ED2:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Unknown: -1
+- LocationRefType: 05AF1F:Starfield.esm
+  Marker: 00100A:VenworksEncountersOverhaul.esm
+  Location: 000FF3:VenworksEncountersOverhaul.esm
+  Unknown: -1
+LocationCellEnablePoint:
+- Actor: 000DCD:VenworksEncountersOverhaul.esm
+  Ref: 000DD0:VenworksEncountersOverhaul.esm
+  SetEnableStateToOppositeOfParent: True
+Name:
+  TargetLanguage: English
+  Value: Spooky Cave
+Keywords:
+- 1A5468:Starfield.esm
+- 2731AF:Starfield.esm
+- 27B45C:Starfield.esm
+UnknownDATA2: 16
+WorldLocationRadius: 0
+ActorFadeMult: 1
+TNAM: 0
+MajorFlags:
+- 0x100000

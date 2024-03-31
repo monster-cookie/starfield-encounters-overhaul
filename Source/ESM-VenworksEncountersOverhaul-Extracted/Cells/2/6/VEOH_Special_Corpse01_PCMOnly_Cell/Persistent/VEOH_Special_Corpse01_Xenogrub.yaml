@@ -1,0 +1,17 @@
+MutagenObjectType: PlacedNpc
+FormKey: 0017B7:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 3072
+EditorID: VEOH_Special_Corpse01_Xenogrub
+StarfieldMajorRecordFlags:
+- 0x400
+- InitiallyDisabled
+Base: 1A338F:Starfield.esm
+LinkedReferences:
+- KeywordOrReference: 0017B8:VenworksEncountersOverhaul.esm
+  Reference: 0017B1:VenworksEncountersOverhaul.esm
+- KeywordOrReference: 0017B9:VenworksEncountersOverhaul.esm
+  Reference: 0017B6:VenworksEncountersOverhaul.esm
+Position: 2, -2, 0
+MajorFlags:
+- Persistent
+- InitiallyDisabled

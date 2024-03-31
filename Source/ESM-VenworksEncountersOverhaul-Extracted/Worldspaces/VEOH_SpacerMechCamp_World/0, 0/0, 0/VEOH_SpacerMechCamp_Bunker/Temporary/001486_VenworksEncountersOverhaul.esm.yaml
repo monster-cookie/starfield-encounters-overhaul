@@ -1,0 +1,17 @@
+MutagenObjectType: PlacedObject
+FormKey: 001486:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 256
+StarfieldMajorRecordFlags:
+- 0x100
+Base: 1468AE:Starfield.esm
+Radius: -6.3488436
+Lighting:
+  Fade1PlusMinus: 0.28154653
+  Unknown1: 2880154539
+  Unknown2: 2880154368
+LightColors:
+- UnknownColor: '#692A30'
+  Unknown: -6076575255718002688
+Layer: 1E9BFB:Starfield.esm
+Position: 30.1704, 30.533453, 15.582711
+Rotation: -1.548067E-08, -0.1321141, 6.154092

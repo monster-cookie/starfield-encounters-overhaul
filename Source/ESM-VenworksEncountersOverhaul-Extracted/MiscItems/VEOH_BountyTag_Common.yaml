@@ -1,0 +1,24 @@
+FormKey: 001813:VenworksEncountersOverhaul.esm
+EditorID: VEOH_BountyTag_Common
+FormVersion: 558
+ObjectBounds:
+  First: -0.04019165, -0.0014038086, -0.05996704
+  Second: 0.03225708, 0.004211426, 0.24841309
+ODTY: 0
+Transforms:
+  Inventory: 0CC66F:Starfield.esm
+Name:
+  TargetLanguage: English
+  Value: Bounty Tag for an Common Target
+Model:
+  File: SetDressing\Displaycase\SMCommitmentBox\Genedogtag01.nif
+  FLLD: 0x01000000
+PickupSound:
+  Start: 9bc3452a-4bd3-5df1-77db-7903fe53fb90
+DropdownSound:
+  Start: f462435e-2a89-62ab-6c2b-b6415818d286
+Keywords:
+- 00180F:VenworksEncountersOverhaul.esm
+Value: 2500
+Weight: 0.1
+FLAG: 0x01000000

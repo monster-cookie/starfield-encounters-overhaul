@@ -1,0 +1,16 @@
+FormKey: 001662:VenworksEncountersOverhaul.esm
+FormVersion: 556
+Flags:
+  Flags:
+  - Random
+DialogGroup: 001664:VenworksEncountersOverhaul.esm
+Responses:
+- Emotion: 0FA84A:Starfield.esm
+  Text:
+    TargetLanguage: English
+    Value: You scum are done today!
+  ScriptNotes: ''
+  Edits: ''
+  AlternateLipText: ''
+StartScenePhase: ''
+SubtitlePriority: Low

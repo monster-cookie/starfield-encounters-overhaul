@@ -1,0 +1,24 @@
+MutagenObjectType: PlacedObject
+FormKey: 000DCD:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 1024
+StarfieldMajorRecordFlags:
+- 0x400
+Base: 254245:Starfield.esm
+Radius: 30
+MapMarker:
+  Name:
+    TargetLanguage: English
+    Value: Cave
+  Type: 10
+  VNAM: 0
+  UNAM:
+    TargetLanguage: English
+    Value: ''
+  VISI: 0
+EnableParent:
+  Reference: 000DD0:VenworksEncountersOverhaul.esm
+  Flags:
+  - SetEnableStateToOppositeOfParent
+  Unknown: 0x000000
+Position: 35.93819, 55.588104, 19.12346
+Rotation: 0, -0, 5.4331856

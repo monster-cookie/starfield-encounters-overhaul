@@ -1,0 +1,11 @@
+MutagenObjectType: PlacedObject
+FormKey: 0015D9:VenworksEncountersOverhaul.esm
+Base: 099C6C:Starfield.esm
+ProjectedDecal:
+  WidthScale: 1
+  HeightScale: 1
+  UnknownFloat: 0.525
+  UnknownInt: 2880154369
+ConstrainedDecal: 1.5900023, 0.47000027, 0.5
+Position: 43.321026, 50.734997, 15.231684
+Rotation: -1.5707964, 1.0632973, 4.712389

@@ -1,0 +1,8 @@
+MutagenObjectType: PlacedNpc
+FormKey: 000ED2:VenworksEncountersOverhaul.esm
+EditorID: VCOH_GhostCave_Boss01
+Base: 000FFE:VenworksEncountersOverhaul.esm
+LevelModifier: VeryHard
+PersistentLocation: 000FF7:VenworksEncountersOverhaul.esm
+Layer: 2B3CB9:Starfield.esm
+Position: -39.242878, 69.717476, -8.923028

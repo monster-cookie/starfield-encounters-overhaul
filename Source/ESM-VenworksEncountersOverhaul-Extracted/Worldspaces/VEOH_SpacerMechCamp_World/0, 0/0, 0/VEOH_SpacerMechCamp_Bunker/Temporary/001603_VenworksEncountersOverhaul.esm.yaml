@@ -1,0 +1,8 @@
+MutagenObjectType: PlacedObject
+FormKey: 001603:VenworksEncountersOverhaul.esm
+Base: 1CCF47:Starfield.esm
+RagdollData:
+- Unused: 0xABABAB
+  Rotation: 5.8170762E-08, -1.3411045E-07, -6.145906E-08
+Position: 36.244797, 40.27174, 13.039543
+Rotation: -1.5163162, 1.0784081, 1.6326033

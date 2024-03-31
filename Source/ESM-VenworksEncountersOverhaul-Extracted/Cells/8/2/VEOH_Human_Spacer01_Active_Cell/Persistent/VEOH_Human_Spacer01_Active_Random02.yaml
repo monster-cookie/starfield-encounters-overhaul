@@ -1,0 +1,17 @@
+MutagenObjectType: PlacedNpc
+FormKey: 0016D5:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 1024
+EditorID: VEOH_Human_Spacer01_Active_Random02
+StarfieldMajorRecordFlags:
+- 0x400
+Base: 1AD194:Starfield.esm
+LevelModifier: Easy
+LinkedReferences:
+- Reference: 0016C9:VenworksEncountersOverhaul.esm
+- KeywordOrReference: 0F0E7E:Starfield.esm
+  Reference: 0016D6:VenworksEncountersOverhaul.esm
+- KeywordOrReference: 141918:Starfield.esm
+  Reference: 0016D7:VenworksEncountersOverhaul.esm
+Position: 7.296351, 3.288714, 0.22015099
+MajorFlags:
+- Persistent

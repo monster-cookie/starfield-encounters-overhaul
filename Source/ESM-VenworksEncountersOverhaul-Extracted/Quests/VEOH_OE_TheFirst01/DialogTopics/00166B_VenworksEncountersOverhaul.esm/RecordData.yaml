@@ -1,0 +1,8 @@
+FormKey: 00166B:VenworksEncountersOverhaul.esm
+FormVersion: 556
+Quest: 00166D:VenworksEncountersOverhaul.esm
+Category: Detection
+Subtype: PlayerShout
+SubtypeName: NOTC
+TopicInfoList:
+- 001669:VenworksEncountersOverhaul.esm

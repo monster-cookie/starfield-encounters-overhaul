@@ -1,0 +1,12 @@
+MutagenObjectType: PlacedObject
+FormKey: 000DD3:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 1024
+StarfieldMajorRecordFlags:
+- 0x400
+Base: 002CE2:Starfield.esm
+SourcePackIn: 0E37E1:Starfield.esm
+LinkedReferences:
+- Reference: 338265:Starfield.esm
+IsLinkedRefTransient: True
+Position: 80.50753, 96.34786, 6.974121
+Rotation: 0, -0, 0.35799998

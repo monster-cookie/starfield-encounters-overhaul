@@ -1,0 +1,9 @@
+FormKey: 00180F:VenworksEncountersOverhaul.esm
+EditorID: VEOH_Bounty_Common
+Color: '#00FFFFFF'
+Notes: Applied NPC is a Common Bounty Target
+Type: None
+FNAM: 0x00000000
+Name:
+  TargetLanguage: English
+  Value: Common Bounty Target

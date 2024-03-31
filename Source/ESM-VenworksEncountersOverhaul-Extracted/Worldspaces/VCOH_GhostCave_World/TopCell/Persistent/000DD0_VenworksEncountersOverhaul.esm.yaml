@@ -1,0 +1,18 @@
+MutagenObjectType: PlacedObject
+FormKey: 000DD0:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 3072
+StarfieldMajorRecordFlags:
+- 0x400
+- InitiallyDisabled
+VirtualMachineAdapter:
+  Scripts:
+  - Name: DefaultDisableSelfTrigger
+    Flags: InheritedAndRemoved
+Base: 2DC29F:Starfield.esm
+Primitive:
+  Bounds: 2, 2, 2
+  Color: '#00FF80FF'
+  Unknown: 0.3
+  Type: Box
+SourcePackIn: 0962BE:Starfield.esm
+Position: 51.80985, 62.78099, 23.74277

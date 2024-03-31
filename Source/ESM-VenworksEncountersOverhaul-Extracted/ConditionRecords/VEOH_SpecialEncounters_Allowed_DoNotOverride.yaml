@@ -1,0 +1,27 @@
+FormKey: 0017D6:VenworksEncountersOverhaul.esm
+EditorID: VEOH_SpecialEncounters_Allowed_DoNotOverride
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: IsTrueForConditionFormConditionData
+    FirstParameter: 1C3FB6:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: GreaterThanOrEqualTo
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetDistanceFromLocationWithKeywordConditionData
+    FirstParameter: 022611:Starfield.esm
+  ComparisonValue: 0016F0:VenworksEncountersOverhaul.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: GreaterThanOrEqualTo
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetDistanceFromLocationWithKeywordConditionData
+    FirstParameter: 0234F1:Starfield.esm
+  ComparisonValue: 0016F0:VenworksEncountersOverhaul.esm
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: LocationHasPlayerOwnedWorkshopConditionData

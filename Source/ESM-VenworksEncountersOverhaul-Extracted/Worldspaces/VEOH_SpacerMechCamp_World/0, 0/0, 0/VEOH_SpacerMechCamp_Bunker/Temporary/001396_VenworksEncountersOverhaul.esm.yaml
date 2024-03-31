@@ -1,0 +1,10 @@
+MutagenObjectType: PlacedObject
+FormKey: 001396:VenworksEncountersOverhaul.esm
+Base: 2B0712:Starfield.esm
+Layer: 2639D6:Starfield.esm
+LinkedReferences:
+- Reference: 001483:VenworksEncountersOverhaul.esm
+IsLinkedRefTransient: True
+Scale: 0.79999995
+Position: 34.86508, 39.19952, 16.250921
+Rotation: 0, -0, 3.158575

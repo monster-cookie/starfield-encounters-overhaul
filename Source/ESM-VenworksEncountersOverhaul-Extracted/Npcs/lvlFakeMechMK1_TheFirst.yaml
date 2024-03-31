@@ -1,0 +1,164 @@
+FormKey: 00177B:VenworksEncountersOverhaul.esm
+EditorID: lvlFakeMechMK1_TheFirst
+FormVersion: 556
+VirtualMachineAdapter:
+  Scripts:
+  - Name: ForceLegendaryActorScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LegendaryAliasQuest
+      Object: 0308F5:Starfield.esm
+ObjectBounds:
+  First: -0.591797, -0.3623047, 0
+  Second: 0.59179676, 1.0341797, 1.2373047
+ODTY: 0
+Components:
+- MutagenObjectType: SoundTagComponent
+  AnimationSound: 1A41AC:Starfield.esm
+Flags:
+- Respawn
+- AutoCalcStats
+- 0x100
+XpValueOffset: 100
+Level:
+  MutagenObjectType: PcLevelMult
+  LevelMult: 1.25
+CalcMinLevel: 1
+CalcMaxLevel: 999
+DispositionBase: 35
+Factions:
+- Faction: 26FB5B:Starfield.esm
+DeathItem: 26FB68:Starfield.esm
+Voice: 07C61A:Starfield.esm
+DefaultTemplate: 21938C:Starfield.esm
+LegendaryChance: 0C55B7:Starfield.esm
+TemplateActors:
+  TraitTemplate: 21938C:Starfield.esm
+  StatsTemplate: 21938C:Starfield.esm
+  FactionsTemplate: 21938C:Starfield.esm
+  SpellListTemplate: 21938C:Starfield.esm
+  AiPackagesTemplate: 21938C:Starfield.esm
+  ModelOrAnimationTemplate: 21938C:Starfield.esm
+  BaseDataTemplate: 21938C:Starfield.esm
+  InventoryTemplate: 21938C:Starfield.esm
+  ScriptTemplate: 21938C:Starfield.esm
+  DefPackListTemplate: 21938C:Starfield.esm
+  AttackDataTemplate: 21938C:Starfield.esm
+  KeywordsTemplate: 21938C:Starfield.esm
+  Unknown1: 21938C:Starfield.esm
+  Unknown2: 21938C:Starfield.esm
+Race: 005629:Starfield.esm
+ActorEffect:
+- 23AF06:Starfield.esm
+- 23AF07:Starfield.esm
+- 23AF0D:Starfield.esm
+Skin: 319B39:Starfield.esm
+CombatOverridePackageList: 0102ED:Starfield.esm
+Properties:
+- ActorValue: 0002C2:Starfield.esm
+  Value: 5
+- ActorValue: 0002C3:Starfield.esm
+  Value: 5
+- ActorValue: 0002C4:Starfield.esm
+  Value: 5
+- ActorValue: 0002C5:Starfield.esm
+  Value: 5
+- ActorValue: 0002C6:Starfield.esm
+- ActorValue: 0002C7:Starfield.esm
+  Value: 5
+- ActorValue: 0002C8:Starfield.esm
+  Value: 5
+- ActorValue: 0002D4:Starfield.esm
+  Value: 1800
+- ActorValue: 0002D5:Starfield.esm
+- ActorValue: 0002DA:Starfield.esm
+  Value: 100
+- ActorValue: 0002E3:Starfield.esm
+  Value: 590
+- ActorValue: 2102C3:Starfield.esm
+  Value: 14.12
+- ActorValue: 0002EB:Starfield.esm
+  Value: 590
+- ActorValue: 000385:Starfield.esm
+  Value: 100
+- ActorValue: 000392:Starfield.esm
+  Value: -50
+NativeTerminal: 1AE420:Starfield.esm
+Items:
+- Item:
+    Item: 09E15E:Starfield.esm
+    Count: 1
+Aggression: VeryAggressive
+Confidence: Brave
+EnergyLevel: 50
+Responsibility: NoCrime
+Assistance: HelpsFriendsAndAllies
+UnknownAIDT: 1
+RDSAs:
+- UnknownInt: 2
+  UnknownInt2: 6
+  UnknownInt3: 32864
+  UnknownFloat5: 2
+  UnknownLink7: 0F0E7E:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt: 1
+  UnknownInt2: 6
+  UnknownInt3: 32864
+  UnknownFloat5: 2
+  UnknownLink7: 0F0EF4:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt2: 6
+  UnknownInt3: 32864
+  UnknownFloat5: 2
+  UnknownLink7: 0F0EAF:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt2: 6
+  UnknownInt3: 32771
+  UnknownLink2: 215CBD:Starfield.esm
+  UnknownLink3: 215CBC:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+- UnknownInt: 1
+  UnknownInt2: 6
+  UnknownInt3: 32771
+  UnknownLink2: 215CBA:Starfield.esm
+  UnknownLink3: 215CBB:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+- UnknownInt: 2
+  UnknownInt2: 6
+  UnknownInt3: 32771
+  UnknownLink2: 215CB8:Starfield.esm
+  UnknownLink3: 215CB9:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+Keywords:
+- 12FF24:Starfield.esm
+Class: 010B2F:Starfield.esm
+Name:
+  TargetLanguage: English
+  Value: 1st Cav Assault Mech
+ShortName:
+  TargetLanguage: English
+  Value: Assault Mech
+LongName:
+  TargetLanguage: English
+  Value: 1st Cav Assault Mech
+CalculatedHealth: 1800
+CalculatedActionPoints: 100
+GearedUpWeapons: 1
+Unused: 43
+CombatStyle: 34CC6F:Starfield.esm
+NAM5: 0xFF00
+HeightMin: 3.25
+HeightMax: 3.25
+Weight: {}
+Sounds:
+- Sound:
+    Start: a19045db-087e-016a-72c2-7c7a0da0908e
+    Stop: 59c24233-40e6-2319-eb9f-7381f8ae7f86
+  CS3F: 0x01
+DefaultPackageList: 26F689:Starfield.esm
+Tints: []
+SkinToneIndex: 0
+Pronoun: Unspecified

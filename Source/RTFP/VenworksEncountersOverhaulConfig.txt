@@ -1,54 +1,88 @@
-minver=112
+minver=112|onlyifpluginloaded=VenworksEncountersOverhaul.esm()
 
 [Global]
+###################################################################
+# Starfield Shared Chance Settings
+#
 # OE_ChanceUncommonGlobal [Starfield.esm~00110676]> This controls the percentage change for a uncommon open world event to spawn. Game default is 50% my default is 65%.
+#     OE_ChanceRareGlobal [Starfield.esm~00110678]> This controls the percentage change for a rare open world event to spawn. Game default is 5% my default is 40%.
+#   OE_ChanceUniqueGlobal [Starfield.esm~00110677]> This controls the percentage change for a unique open world event to spawn. Game default is 33% my default is 40%.
+#
 OE_ChanceUncommonGlobal|val(65)
-# OE_ChanceRareGlobal [Starfield.esm~00110678]> This controls the percentage change for a rare open world event to spawn. Game default is 5% my default is 40%.
 OE_ChanceRareGlobal|val(40)
-# OE_ChanceUniqueGlobal [Starfield.esm~00110677]> This controls the percentage change for a unique open world event to spawn. Game default is 33% my default is 40%.
 OE_ChanceUniqueGlobal|val(40)
 
+###################################################################
+# Starfield Shared Spawn Distance Settings
+#
 # PCM_CellLoad_ManMadeClose_InnerDistance [Starfield.esm~002197CB]> This controls the inner range of how close to a landing zone/ruin man made clutter will start spawning if defined as a close object in the rules. Game default is 50m my default is 75m.
-PCM_CellLoad_ManMadeClose_InnerDistance|val(75)
 # PCM_CellLoad_ManMadeClose_OuterDistance [Starfield.esm~002197CF]> This controls the outer range  how close to a landing zone/ruin man made clutter will start spawning if defined as a close object in the rules. Game default is 150m my default is 175m.
-PCM_CellLoad_ManMadeClose_OuterDistance|val(175)
 # PCM_CellLoad_ManMadeClose_OuterDistance [Starfield.esm~002197CF]> This controls the outer range  how close to a landing zone/ruin man made clutter will start spawning if defined as a close object in the rules. Game default is 100m my default is 200m.
+#   PCM_CellLoad_ManMadeMid_OuterDistance [Starfield.esm~002197C8]> This controls the outer range  how close to a landing zone/ruin man made clutter will start spawning if defined as a close object in the rules. Game default is 250m my default is 350m.
+#              PCM_CellLoad_ManMadeChance [Starfield.esm~00228F4A]> This controls the chance for a game defined man made lair to be spawned. Game default is 50% my default is 40%.
+#       PCM_CellLoad_Traits_OuterDistance [Starfield.esm~002501A8]> This controls the max range out to add a planetary trait. Game default is 500m my default is 350m.
+#      PCM_BlockCreation_TraitKnownChance [Starfield.esm~002CCF3A]> This controls the chance for a game defined planetary trait to be spawned. Game default is 50% my default is 35%.
+#
+PCM_CellLoad_ManMadeClose_InnerDistance|val(75)
+PCM_CellLoad_ManMadeClose_OuterDistance|val(175)
 PCM_CellLoad_ManMadeClose_OuterDistance|val(200)
-# PCM_CellLoad_ManMadeMid_OuterDistance [Starfield.esm~002197C8]> This controls the outer range  how close to a landing zone/ruin man made clutter will start spawning if defined as a close object in the rules. Game default is 250m my default is 350m.
 PCM_CellLoad_ManMadeMid_OuterDistance|val(350)
-# PCM_CellLoad_ManMadeChance [Starfield.esm~00228F4A]> This controls the chance for a game defined man made lair to be spawned. Game default is 50% my default is 40%.
 PCM_CellLoad_ManMadeChance|val(40)
-# PCM_CellLoad_Traits_OuterDistance [Starfield.esm~002501A8]> This controls the max range out to add a planetary trait. Game default is 500m my default is 350m.
 PCM_CellLoad_Traits_OuterDistance|val(350)
-# PCM_BlockCreation_TraitKnownChance [Starfield.esm~002CCF3A]> This controls the chance for a game defined planetary trait to be spawned. Game default is 50% my default is 35%.
 PCM_BlockCreation_TraitKnownChance|val(35)
 
-# VEOH_Camps_DistanceRestriction_Near [VenpiCaveOverhaul.esm~000016F0]> This defines the max range to put my near defined lair camps. My default is 300m.
+###################################################################
+# Spawn Distance Settings
+#
+# VEOH_Camps_DistanceRestriction_Near [VenworksEncountersOverhaul.esm~000016F0]> This defines the max range to put my near defined lair camps. My default is 300m.
+#  VEOH_Camps_DistanceRestriction_Far [VenworksEncountersOverhaul.esm~000016E8]> This defines the max range to put my far defined lair camps. My default is 900m.
+#
 VEOH_Camps_DistanceRestriction_Near|val(300)
-# VEOH_Camps_DistanceRestriction_Far [VenpiCaveOverhaul.esm~000016E8]> This defines the max range to put my far defined lair camps. My default is 900m.
 VEOH_Camps_DistanceRestriction_Far|val(900)
 
-# VEOH_HumanCamps_Friendlies01_Chance [VenpiCaveOverhaul.esm~0000171E]> This is the change to spawn the human camp friendly 01. My default is 30%
+###################################################################
+# Spawn Cooldown Settings [NOT IMPLEMENTED ENGINE SIDE]
+#   VEOH_Cooldown_Encounters_Tiny [VenworksEncountersOverhaul.esm~0000180F]> This is the very short cooldown for things like friendlies, common bounties. Default is 1 in game hour.
+#  VEOH_Cooldown_Encounters_Small [VenworksEncountersOverhaul.esm~00001810]> This is the short cooldown for things like uncommon bounties, corpses, books. Default is 2 in game hours.
+# VEOH_Cooldown_Encounters_Medium [VenworksEncountersOverhaul.esm~00001811]> This is the normal cooldown for things like hostile human/robot encounters. Default is 4 in game hours.
+#  VEOH_Cooldown_Encounters_Large [VenworksEncountersOverhaul.esm~00001812]> This is the longer cooldown for things like rare bounties and mech encounters. Default is 8 in game hours.
+#   VEOH_Cooldown_Encounters_Huge [VenworksEncountersOverhaul.esm~00001813]> This is the huge cooldown for things like ultra rare bounties, bosses, and terrormorph encounters. Default is 8 in game hours.
+#
+
+###################################################################
+# Human Camp Spawn and Cool Down Settings
+#
+# VEOH_HumanCamps_Friendlies01_Chance [VenworksEncountersOverhaul.esm~0000171E]> This is the change to spawn the human camp friendly 01. My default is 30%
+# VEOH_HumanCamps_Friendlies02_Chance [VenworksEncountersOverhaul.esm~0000172B]> This is the change to spawn the human camp friendly 02. My default is 15%
+#     VEOH_HumanCamps_Random01_Chance [VenworksEncountersOverhaul.esm~0000175B]> This is the change to spawn the human camp random 01. My default is 20%
+#     VEOH_HumanCamps_Random02_Chance [VenworksEncountersOverhaul.esm~000017A5]> This is the change to spawn the human camp random 02. My default is 20%
+#     VEOH_HumanCamps_Random02_Chance [VenworksEncountersOverhaul.esm~000017A5]> This is the change to spawn the human camp random 02. My default is 20%
+#     VEOH_HumanCamps_Random02_Chance [VenworksEncountersOverhaul.esm~000017A5]> This is the change to spawn the human camp random 02. My default is 20%
+#   VEOH_HumanCamps_TheFirst01_Chance [VenworksEncountersOverhaul.esm~0000173E]> This is the change to spawn the human camp the first 01. My default is 20%
+#   VEOH_HumanCamps_TheFirst02_Chance [VenworksEncountersOverhaul.esm~00001785]> This is the change to spawn the human camp the first 02. My default is 20%
+#
 VEOH_HumanCamps_Friendlies01_Chance|val(30)
-# VEOH_HumanCamps_Friendlies02_Chance [VenpiCaveOverhaul.esm~0000172B]> This is the change to spawn the human camp friendly 02. My default is 15%
 VEOH_HumanCamps_Friendlies02_Chance|val(15)
-# VEOH_HumanCamps_Random01_Chance [VenpiCaveOverhaul.esm~0000175B]> This is the change to spawn the human camp random 01. My default is 20%
 VEOH_HumanCamps_Random01_Chance|val(20)
-# VEOH_HumanCamps_Random02_Chance [VenpiCaveOverhaul.esm~000017A5]> This is the change to spawn the human camp random 02. My default is 20%
 VEOH_HumanCamps_Random02_Chance|val(20)
-# VEOH_HumanCamps_Spacer01_Chance [VenpiCaveOverhaul.esm~0000171C]> This is the change to spawn the human camp spacer 01. My default is 15%
 VEOH_HumanCamps_Spacer01_Chance|val(15)
-# VEOH_HumanCamps_Spacer02_Chance [VenpiCaveOverhaul.esm~0000171D]> This is the change to spawn the human camp spacer 02. My default is 25%
 VEOH_HumanCamps_Spacer02_Chance|val(15)
-# VEOH_HumanCamps_TheFirst01_Chance [VenpiCaveOverhaul.esm~0000173E]> This is the change to spawn the human camp the first 01. My default is 20%
 VEOH_HumanCamps_TheFirst01_Chance|val(20)
-# VEOH_HumanCamps_TheFirst02_Chance [VenpiCaveOverhaul.esm~00001785]> This is the change to spawn the human camp the first 02. My default is 20%
 VEOH_HumanCamps_TheFirst02_Chance|val(20)
 
-# VEOH_RobotCamps_Random01_Chance [VenpiCaveOverhaul.esm~0000177A]> This is the change to spawn the robot camp random 01. My default is 15%
+###################################################################
+# Robot Camp Spawn and Cool Down Settings
+#
+# VEOH_RobotCamps_Random01_Chance [VenworksEncountersOverhaul.esm~0000177A]> This is the change to spawn the robot camp random 01. My default is 15%
+#
 VEOH_RobotCamps_Random01_Chance|val(15)
 
-# VEOH_Special_Corpse01_Chance [VenpiCaveOverhaul.esm~000017B4]> This is the change to spawn the special encounter corpse 01. My default is 20%
+
+###################################################################
+# Robot Camp Spawn and Cool Down Settings
+#
+# VEOH_Special_Corpse01_Chance [VenworksEncountersOverhaul.esm~000017B4]> This is the change to spawn the special encounter corpse 01. My default is 20%
+# VEOH_Special_Corpse02_Chance [VenworksEncountersOverhaul.esm~000017CE]> This is the change to spawn the special encounter corpse 02. My default is 10%
+#
 VEOH_Special_Corpse01_Chance|val(20)
-# VEOH_Special_Corpse02_Chance [VenpiCaveOverhaul.esm~000017CE]> This is the change to spawn the special encounter corpse 02. My default is 10%
 VEOH_Special_Corpse02_Chance|val(10)

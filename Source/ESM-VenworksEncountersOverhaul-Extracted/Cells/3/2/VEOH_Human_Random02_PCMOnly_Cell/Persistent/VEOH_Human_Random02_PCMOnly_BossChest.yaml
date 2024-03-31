@@ -1,0 +1,30 @@
+MutagenObjectType: PlacedObject
+FormKey: 00178C:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 1024
+EditorID: VEOH_Human_Random02_PCMOnly_BossChest
+StarfieldMajorRecordFlags:
+- 0x400
+VirtualMachineAdapter:
+  Scripts:
+  - Name: VEOH_Packin_HumanCamp_Random02
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Venpi_DebugEnabled
+      Object: 000800:VenpiCore.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MyParent
+      Object: 0017B8:VenworksEncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: MyChild
+      Object: 0017B9:VenworksEncountersOverhaul.esm
+Base: 17267E:Starfield.esm
+LinkedReferences:
+- KeywordOrReference: 0017B9:VenworksEncountersOverhaul.esm
+  Reference: 0017A9:VenworksEncountersOverhaul.esm
+- KeywordOrReference: 0017B9:VenworksEncountersOverhaul.esm
+  Reference: 0017AA:VenworksEncountersOverhaul.esm
+- KeywordOrReference: 0017B9:VenworksEncountersOverhaul.esm
+  Reference: 0017AB:VenworksEncountersOverhaul.esm
+- KeywordOrReference: 0017B9:VenworksEncountersOverhaul.esm
+  Reference: 0017AC:VenworksEncountersOverhaul.esm
+Position: 8, 8, 0.22

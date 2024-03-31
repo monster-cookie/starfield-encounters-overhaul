@@ -1,8 +1,0 @@
-MutagenObjectType: PlacedObject
-FormKey: 001614:VenpiCaveOverhaul.esm
-Base: 1CCF47:Starfield.esm
-RagdollData:
-- Unused: 0xABABAB
-  Rotation: -0.8195201, 0.47285503, -1.5145301
-Position: 34.912502, 30.129496, 13.6158085
-Rotation: -0.4722413, 0.43922505, 1.0617481

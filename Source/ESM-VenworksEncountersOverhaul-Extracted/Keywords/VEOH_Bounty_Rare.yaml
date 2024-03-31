@@ -1,0 +1,9 @@
+FormKey: 001811:VenworksEncountersOverhaul.esm
+EditorID: VEOH_Bounty_Rare
+Color: '#00FFFFFF'
+Notes: Applied NPC is a Rare Bounty Target
+Type: None
+FNAM: 0x00000000
+Name:
+  TargetLanguage: English
+  Value: Rare Bounty Target

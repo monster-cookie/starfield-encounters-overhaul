@@ -1,0 +1,10 @@
+MutagenObjectType: PlacedObject
+FormKey: 000EB1:VenworksEncountersOverhaul.esm
+Base: 29AAF1:Starfield.esm
+Primitive:
+  Bounds: 28.415741, 35.595276, 15.634502
+  Color: '#00004080'
+  Unknown: 0.3
+  Type: Box
+Position: -32.154278, 93.28216, -2.0000002
+Rotation: 0, 0, 1.3353975

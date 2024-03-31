@@ -1,0 +1,12 @@
+MutagenObjectType: PlacedObject
+FormKey: 0016C9:VenworksEncountersOverhaul.esm
+EditorID: VEOH_Human_Spacer01_Active_Lookout01
+Base: 02EFD0:Starfield.esm
+Patrol:
+  IdleTime: 3
+  Topics:
+  - MutagenObjectType: TopicReference
+LinkedReferences:
+- Reference: 0016CA:VenworksEncountersOverhaul.esm
+Position: 7.296351, 3.288714, 0.22015099
+Rotation: 0, 0, 1.5707963

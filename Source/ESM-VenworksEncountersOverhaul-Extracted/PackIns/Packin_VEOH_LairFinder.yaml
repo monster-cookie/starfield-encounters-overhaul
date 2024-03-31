@@ -1,0 +1,18 @@
+FormKey: 0017C2:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 2560
+EditorID: Packin_VEOH_LairFinder
+StarfieldMajorRecordFlags:
+- 0x200
+- InitiallyDisabled
+ObjectBounds:
+  First: -0.1, -0.1, 0
+  Second: 0.1, 0.1, 5
+ODTY: 0
+Cell: 0017BA:VenworksEncountersOverhaul.esm
+Version: 0
+FNAM: 0x0C000000
+Keywords:
+- 1460FF:Starfield.esm
+MajorFlags:
+- Prefab
+- 0x800

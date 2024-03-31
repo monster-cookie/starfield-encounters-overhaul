@@ -1,0 +1,7 @@
+MutagenObjectType: PlacedObject
+FormKey: 00165C:VenworksEncountersOverhaul.esm
+EditorID: VEOH_ActivePortalCrater_BossNest_Table01_Orders
+Base: 00165B:VenworksEncountersOverhaul.esm
+PersistentLocation: 0012F1:VenworksEncountersOverhaul.esm
+Layer: 188962:Starfield.esm
+Position: 76.6769, 50.876595, 9

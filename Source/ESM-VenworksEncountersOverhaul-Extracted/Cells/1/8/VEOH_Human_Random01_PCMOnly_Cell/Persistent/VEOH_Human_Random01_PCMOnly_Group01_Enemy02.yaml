@@ -1,0 +1,12 @@
+MutagenObjectType: PlacedNpc
+FormKey: 001768:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 1024
+EditorID: VEOH_Human_Random01_PCMOnly_Group01_Enemy02
+StarfieldMajorRecordFlags:
+- 0x400
+Base: 000937:VenworksFactionOverhaul.esm
+LevelModifier: Hard
+Position: -7, -6, 0
+Rotation: 0, 0, 0.7853981
+MajorFlags:
+- Persistent

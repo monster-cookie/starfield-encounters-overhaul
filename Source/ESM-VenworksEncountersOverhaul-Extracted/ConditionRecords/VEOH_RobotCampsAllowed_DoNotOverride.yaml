@@ -1,0 +1,21 @@
+FormKey: 001757:VenworksEncountersOverhaul.esm
+EditorID: VEOH_RobotCampsAllowed_DoNotOverride
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: LocationHasPlayerOwnedWorkshopConditionData
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: GreaterThanOrEqualTo
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetDistanceFromLocationWithKeywordConditionData
+    FirstParameter: 022611:Starfield.esm
+  ComparisonValue: 0016E8:VenworksEncountersOverhaul.esm
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: GreaterThanOrEqualTo
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetDistanceFromLocationWithKeywordConditionData
+    FirstParameter: 0234F1:Starfield.esm
+  ComparisonValue: 0016E8:VenworksEncountersOverhaul.esm

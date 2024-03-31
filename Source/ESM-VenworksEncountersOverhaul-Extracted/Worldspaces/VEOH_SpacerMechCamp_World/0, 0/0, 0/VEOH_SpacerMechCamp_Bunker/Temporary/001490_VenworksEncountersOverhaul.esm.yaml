@@ -1,0 +1,6 @@
+MutagenObjectType: PlacedObject
+FormKey: 001490:VenworksEncountersOverhaul.esm
+Base: 00FF31:Starfield.esm
+ConstrainedDecal: 4.699999, 4.065498, 1.5
+Position: 33.4385, 28.878746, 12.251445
+Rotation: -3.1415927, -7.888427E-11, 3.253982

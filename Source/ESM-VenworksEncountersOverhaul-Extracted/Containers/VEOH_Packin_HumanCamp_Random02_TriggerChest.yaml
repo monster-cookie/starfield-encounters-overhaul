@@ -1,0 +1,105 @@
+FormKey: 0017A7:VenworksEncountersOverhaul.esm
+EditorID: VEOH_Packin_HumanCamp_Random02_TriggerChest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: VEOH_Packin_HumanCamp_Random02
+    Properties:
+    - MutagenObjectType: ScriptBoolProperty
+      Name: DoOnce
+      Data: True
+    - MutagenObjectType: ScriptBoolProperty
+      Name: PlayerActivateOnly
+      Data: True
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Venpi_DebugEnabled
+      Object: 000800:VenpiCore.esm
+    - MutagenObjectType: ScriptStructListProperty
+      Name: SpawnData
+      Structs:
+      - Members:
+        - MutagenObjectType: ScriptIntProperty
+          Name: ActorDifficulty
+          Data: 4
+        - MutagenObjectType: ScriptObjectProperty
+          Name: ActorToSpawn
+          Object: 2CA98F:Starfield.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: SpawnPoint
+          Object: 00178B:VenworksEncountersOverhaul.esm
+      - Members:
+        - MutagenObjectType: ScriptIntProperty
+          Name: ActorDifficulty
+          Data: 4
+        - MutagenObjectType: ScriptObjectProperty
+          Name: ActorToSpawn
+          Object: 000937:VenworksFactionOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: SpawnPoint
+          Object: 00178D:VenworksEncountersOverhaul.esm
+      - Members:
+        - MutagenObjectType: ScriptIntProperty
+          Name: ActorDifficulty
+          Data: 2
+        - MutagenObjectType: ScriptObjectProperty
+          Name: ActorToSpawn
+          Object: 000937:VenworksFactionOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: SpawnPoint
+          Object: 00178E:VenworksEncountersOverhaul.esm
+      - Members:
+        - MutagenObjectType: ScriptIntProperty
+          Name: ActorDifficulty
+          Data: 3
+        - MutagenObjectType: ScriptObjectProperty
+          Name: ActorToSpawn
+          Object: 000937:VenworksFactionOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: SpawnPoint
+          Object: 00178F:VenworksEncountersOverhaul.esm
+ObjectBounds:
+  First: -0.5260549, -0.57958066, -0.0020396411
+  Second: 0.5257029, 0.54549795, 0.9663086
+ODTY: 0
+Transforms:
+  Outpost: 15A9C0:Starfield.esm
+  Preview: 178A46:Starfield.esm
+Components:
+- MutagenObjectType: AnimationGraphComponent
+  ANAM: AnimTextData\Tables\Graphs\SimpleOpenClose01.agx
+  BNAM: setdressing\bosscontainers\bosscontainer_industrial\characterassets\skeleton.rig
+  CNAM: setdressing\bosscontainers\bosscontainer_industrial\animations
+Name:
+  TargetLanguage: English
+  Value: Science Crate
+Model:
+  File: SetDressing\BossContainers\BossContainer_Industrial\BossContainer_Industrial01.nif
+  FLLD: 0x01000000
+Items:
+- Item:
+    Item: 11EC5F:Starfield.esm
+    Count: 1
+- Item:
+    Item: 128C5D:Starfield.esm
+    Count: 1
+- Item:
+    Item: 3D0944:Starfield.esm
+    Count: 1
+- Item:
+    Item: 3D0945:Starfield.esm
+    Count: 1
+Flags:
+- Respawns
+Keywords:
+- 184462:Starfield.esm
+ForcedLocations:
+- 05AF1F:Starfield.esm
+NativeTerminal: 38D14B:Starfield.esm
+Properties:
+- ActorValue: 0313EB:Starfield.esm
+  Value: 1
+- ActorValue: 2192D5:Starfield.esm
+  Value: 1
+OpenSound:
+  Start: 331c4dd1-6439-2ab9-fee4-7cca60a49c8c
+CloseSound:
+  Start: e9144ff7-a4ef-5911-9db9-516421792c95

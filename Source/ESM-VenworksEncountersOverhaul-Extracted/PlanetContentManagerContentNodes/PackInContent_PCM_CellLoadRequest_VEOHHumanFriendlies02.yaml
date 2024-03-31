@@ -1,0 +1,30 @@
+FormKey: 00172A:VenworksEncountersOverhaul.esm
+EditorID: PackInContent_PCM_CellLoadRequest_VEOHHumanFriendlies02
+FormVersion: 556
+Components:
+- MutagenObjectType: PlanetContentManagerContentPropertiesComponent
+  ZNAM: 0
+  YNAM: 0
+  XNAM: 0
+  WNAM: 0
+  VNAM: 0
+  UNAM: 0
+  NAM1: 500
+  Global: 0016F0:VenworksEncountersOverhaul.esm
+  NAM3: 0
+  NAM4: 0x00FF0000
+  NAM5: 0
+  NAM6: 0
+  NAM7: 0
+  NAM8: 1
+  NAM9: 0
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Unknown2: 17625
+    Data:
+      MutagenObjectType: IsTrueForConditionFormConditionData
+      FirstParameter: 00172C:VenworksEncountersOverhaul.esm
+    ComparisonValue: 1
+Content: 001720:VenworksEncountersOverhaul.esm
+IOVR: True

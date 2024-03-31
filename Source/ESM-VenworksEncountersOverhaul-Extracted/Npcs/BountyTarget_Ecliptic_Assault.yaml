@@ -1,0 +1,115 @@
+FormKey: 001807:VenworksEncountersOverhaul.esm
+EditorID: BountyTarget_Ecliptic_Assault
+FormVersion: 558
+VirtualMachineAdapter:
+  Scripts:
+  - Name: MCS_NPCOverrideName
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LIST_NAMES_FEMALE
+      Object: 0008EB:VenworksFactionOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LIST_NAMES_MALE
+      Object: 0008EA:VenworksFactionOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Venpi_DebugEnabled
+      Object: 000800:VenpiCore.esm
+ObjectBounds:
+  First: -0.591797, -0.3623047, 0
+  Second: 0.59179676, 1.0341797, 1.2373047
+ODTY: 0
+Flags:
+- Respawn
+- AutoCalcStats
+XpValueOffset: 50
+Level:
+  MutagenObjectType: PcLevelMult
+  LevelMult: 1
+CalcMinLevel: 1
+CalcMaxLevel: 999
+DispositionBase: 35
+UseTemplateActors: 27773
+DeathItem: 001816:VenworksEncountersOverhaul.esm
+DefaultTemplate: 00093E:VenworksFactionOverhaul.esm
+TemplateActors:
+  TraitTemplate: 270288:Starfield.esm
+  FactionsTemplate: 00093E:VenworksFactionOverhaul.esm
+  SpellListTemplate: 00093E:VenworksFactionOverhaul.esm
+  AiDataTemplate: 000976:VenworksFactionOverhaul.esm
+  AiPackagesTemplate: 00093E:VenworksFactionOverhaul.esm
+  ModelOrAnimationTemplate: 270288:Starfield.esm
+  InventoryTemplate: 00093E:VenworksFactionOverhaul.esm
+  DefPackListTemplate: 00093E:VenworksFactionOverhaul.esm
+  AttackDataTemplate: 00093E:VenworksFactionOverhaul.esm
+  KeywordsTemplate: 00093E:VenworksFactionOverhaul.esm
+  Unknown1: 00097A:VenworksFactionOverhaul.esm
+  Unknown2: 00093E:VenworksFactionOverhaul.esm
+Race: 00347D:Starfield.esm
+Perks:
+- Perk: 000A3C:VenworksFactionOverhaul.esm
+  Rank: 1
+- Perk: 000A43:VenworksFactionOverhaul.esm
+  Rank: 1
+- Perk: 000A44:VenworksFactionOverhaul.esm
+  Rank: 1
+- Perk: 000A45:VenworksFactionOverhaul.esm
+  Rank: 1
+- Perk: 000A46:VenworksFactionOverhaul.esm
+  Rank: 1
+- Perk: 000A48:VenworksFactionOverhaul.esm
+  Rank: 1
+Properties:
+- ActorValue: 0002C2:Starfield.esm
+  Value: 5
+- ActorValue: 0002C3:Starfield.esm
+  Value: 5
+- ActorValue: 0002C4:Starfield.esm
+  Value: 5
+- ActorValue: 0002C5:Starfield.esm
+  Value: 5
+- ActorValue: 0002C6:Starfield.esm
+  Value: 5
+- ActorValue: 0002C7:Starfield.esm
+  Value: 5
+- ActorValue: 0002C8:Starfield.esm
+  Value: 5
+- ActorValue: 0002CC:Starfield.esm
+  Value: 15
+- ActorValue: 0002CD:Starfield.esm
+  Value: 45
+- ActorValue: 0002D4:Starfield.esm
+  Value: 200
+- ActorValue: 0002D5:Starfield.esm
+  Value: 50
+- ActorValue: 0002DA:Starfield.esm
+  Value: 100
+- ActorValue: 0002E3:Starfield.esm
+  Value: 25
+- ActorValue: 0002EB:Starfield.esm
+  Value: 25
+- ActorValue: 000385:Starfield.esm
+  Value: 100
+- ActorValue: 000392:Starfield.esm
+  Value: 25
+Items:
+- Item:
+    Item: 3D60AF:Starfield.esm
+    Count: 1
+Confidence: Brave
+EnergyLevel: 50
+Responsibility: NoCrime
+Assistance: HelpsFriendsAndAllies
+UnknownAIDT: 1
+Keywords:
+- 000800:VenworksFactionOverhaul.esm
+- 06D977:Starfield.esm
+- 12FF1F:Starfield.esm
+- 00180F:VenworksEncountersOverhaul.esm
+CalculatedHealth: 100
+CalculatedActionPoints: 100
+GearedUpWeapons: 1
+Unused: 43
+NAM5: 0xFF00
+HeightMin: 1
+HeightMax: 1
+Pronoun: Unspecified

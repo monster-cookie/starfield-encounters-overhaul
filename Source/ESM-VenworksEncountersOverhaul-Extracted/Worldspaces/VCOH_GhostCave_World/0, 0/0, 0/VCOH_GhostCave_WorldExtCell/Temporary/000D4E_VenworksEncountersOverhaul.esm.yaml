@@ -1,0 +1,11 @@
+MutagenObjectType: PlacedObject
+FormKey: 000D4E:VenworksEncountersOverhaul.esm
+Base: 3A5AE2:Starfield.esm
+SourcePackIn: 0962BE:Starfield.esm
+EnableParent:
+  Reference: 000DD0:VenworksEncountersOverhaul.esm
+  Flags:
+  - SetEnableStateToOppositeOfParent
+  Unknown: 0x000000
+Position: 36.109684, 55.83188, 14.946258
+Rotation: 0, -0, 0.34

@@ -1,0 +1,8 @@
+MutagenObjectType: PlacedObject
+FormKey: 000FFF:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 2048
+EditorID: COOKIE_PLACEMENT_HELPER
+StarfieldMajorRecordFlags:
+- InitiallyDisabled
+Base: 2754D2:Starfield.esm
+Position: -38.174, 63.424, -9.29

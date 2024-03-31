@@ -1,5 +1,15 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 2.0.10
+* Removed all configuration commands they are better handled with RTFP
+* Redid CGF "VEOH_Debug.GetSpawnConditionsForCurrentLocation" to take less room in the message box and be more readable
+* ON-HOLD: Implemented cool downs for all cell reset encounters
+* Removed all patches as CCMBH is too broken by the latest patch to fix and I strongly recommend removing it. 
+* Renamed ESM to VenworksEncountersOverhaul.esm as you have to use a new game or if really lucky a new universe anyway. Stupid magic effect scripts are cached everywhere even though the magic effect is no longer tagged script the engine is still running them so you will end up with NPC with 1-10 million HP. 
+* Requires Venworks Core 1.0.18 or newer and Factions Overhaul 2.0.0 or newer
+* NOTE: This is definitely not safe mid-game due to the level of changes needed by 1.10.31.0. Once installed jump to a new game/universe as quickly as possible.
+
+
 ## Version 2.0.9
 * Compatibility for Starfield 1.10.31.0
 * Updated for the changes in Factions Overhaul 1.0.8

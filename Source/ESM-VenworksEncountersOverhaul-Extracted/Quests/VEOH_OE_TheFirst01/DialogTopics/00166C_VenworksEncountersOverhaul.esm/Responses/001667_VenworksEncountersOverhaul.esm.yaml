@@ -1,0 +1,16 @@
+FormKey: 001667:VenworksEncountersOverhaul.esm
+FormVersion: 556
+Flags:
+  Flags:
+  - Random
+DialogGroup: 001668:VenworksEncountersOverhaul.esm
+Responses:
+- Emotion: 0FA84A:Starfield.esm
+  Text:
+    TargetLanguage: English
+    Value: Die, xeno lovers!
+  ScriptNotes: ''
+  Edits: ''
+  AlternateLipText: ''
+StartScenePhase: ''
+SubtitlePriority: Low

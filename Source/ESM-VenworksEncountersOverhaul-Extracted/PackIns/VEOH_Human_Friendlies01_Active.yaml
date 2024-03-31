@@ -1,0 +1,35 @@
+FormKey: 0016F9:VenworksEncountersOverhaul.esm
+MajorRecordFlagsRaw: 512
+EditorID: VEOH_Human_Friendlies01_Active
+StarfieldMajorRecordFlags:
+- 0x200
+ObjectBounds:
+  First: -6, -6, -0.1
+  Second: 6, 6, 5
+ODTY: 0
+ObjectPlacementDefaults:
+  Unknown1: 6E-45
+  Unknown5: 1E-45
+  Unknown6: 1
+  Unknown13: 3.1415927
+  Unknown14: 1
+  Unknown16: 1
+  Unknown17: 1
+  Unknown18: 0.2617994
+  Unknown20: 3.4028235E+38
+ObjectPlacementDefaults2:
+  Unknown1: 6E-45
+  Unknown5: 1E-45
+  Unknown6: 1
+  Unknown13: 3.1415927
+  Unknown14: 1
+  Unknown16: 1
+  Unknown17: 1
+  Unknown18: 0.2617994
+  Unknown20: 3.4028235E+38
+Cell: 0016F4:VenworksEncountersOverhaul.esm
+Version: 0
+FNAM: 0x0C000000
+MaterialSwaps: []
+MajorFlags:
+- Prefab
