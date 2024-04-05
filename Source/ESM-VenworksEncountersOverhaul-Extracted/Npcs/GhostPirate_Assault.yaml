@@ -26,18 +26,18 @@ Level:
 CalcMinLevel: 1
 CalcMaxLevel: 999
 DispositionBase: 35
-UseTemplateActors: 27769
+UseTemplateActors: 32123
 Factions:
 - Faction: 001006:VenworksEncountersOverhaul.esm
-DeathItem: 27BB74:Starfield.esm
-DefaultTemplate: 000944:VenworksFactionOverhaul.esm
 TemplateActors:
   TraitTemplate: 27BB7C:Starfield.esm
+  StatsTemplate: 000931:VenworksFactionOverhaul.esm
   FactionsTemplate: 27BB7D:Starfield.esm
   SpellListTemplate: 000962:VenworksFactionOverhaul.esm
   AiDataTemplate: 000976:VenworksFactionOverhaul.esm
   AiPackagesTemplate: 000944:VenworksFactionOverhaul.esm
-  ModelOrAnimationTemplate: 27BB7C:Starfield.esm
+  ModelOrAnimationTemplate: 000944:VenworksFactionOverhaul.esm
+  InventoryTemplate: 000944:VenworksFactionOverhaul.esm
   ScriptTemplate: 000944:VenworksFactionOverhaul.esm
   DefPackListTemplate: 000944:VenworksFactionOverhaul.esm
   AttackDataTemplate: 000944:VenworksFactionOverhaul.esm
@@ -45,73 +45,14 @@ TemplateActors:
   Unknown1: 00097A:VenworksFactionOverhaul.esm
   Unknown2: 000944:VenworksFactionOverhaul.esm
 Race: 00347D:Starfield.esm
-Perks:
-- Perk: 000A3C:VenworksFactionOverhaul.esm
-  Rank: 1
-- Perk: 000A43:VenworksFactionOverhaul.esm
-  Rank: 1
-- Perk: 000A44:VenworksFactionOverhaul.esm
-  Rank: 1
-- Perk: 000A45:VenworksFactionOverhaul.esm
-  Rank: 1
-- Perk: 000A46:VenworksFactionOverhaul.esm
-  Rank: 1
-- Perk: 000A48:VenworksFactionOverhaul.esm
-  Rank: 1
-Properties:
-- ActorValue: 0002C2:Starfield.esm
-  Value: 5
-- ActorValue: 0002C3:Starfield.esm
-  Value: 5
-- ActorValue: 0002C4:Starfield.esm
-  Value: 5
-- ActorValue: 0002C5:Starfield.esm
-  Value: 5
-- ActorValue: 0002C6:Starfield.esm
-  Value: 5
-- ActorValue: 0002C7:Starfield.esm
-  Value: 5
-- ActorValue: 0002C8:Starfield.esm
-  Value: 5
-- ActorValue: 0002CC:Starfield.esm
-  Value: 15
-- ActorValue: 0002CD:Starfield.esm
-  Value: 45
-- ActorValue: 0002D4:Starfield.esm
-  Value: 400
-- ActorValue: 0002D5:Starfield.esm
-  Value: 50
-- ActorValue: 0002DA:Starfield.esm
-  Value: 100
-- ActorValue: 0002E3:Starfield.esm
-  Value: 50
-- ActorValue: 0002EB:Starfield.esm
-  Value: 50
-- ActorValue: 000385:Starfield.esm
-  Value: 100
-- ActorValue: 000392:Starfield.esm
-  Value: 50
-Items:
-- Item:
-    Item: 3D0946:Starfield.esm
-    Count: 1
 Confidence: Brave
 EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsFriendsAndAllies
 UnknownAIDT: 1
-Keywords:
-- 03818E:Starfield.esm
-- 06D977:Starfield.esm
-- 12FF1F:Starfield.esm
-- 000A08:VenworksFactionOverhaul.esm
 Name:
   TargetLanguage: English
   Value: Ghost Pirate
-CalculatedHealth: 100
-CalculatedActionPoints: 100
-GearedUpWeapons: 1
-Unused: 43
 NAM5: 0xFF00
 HeightMin: 1
 HeightMax: 1

@@ -28,11 +28,11 @@ Level:
 CalcMinLevel: 1
 CalcMaxLevel: 999
 DispositionBase: 35
-UseTemplateActors: 27773
+UseTemplateActors: 27711
 DeathItem: 001817:VenworksEncountersOverhaul.esm
-DefaultTemplate: 000947:VenworksFactionOverhaul.esm
 TemplateActors:
   TraitTemplate: 27BB7C:Starfield.esm
+  StatsTemplate: 000931:VenworksFactionOverhaul.esm
   FactionsTemplate: 000947:VenworksFactionOverhaul.esm
   SpellListTemplate: 000947:VenworksFactionOverhaul.esm
   AiDataTemplate: 000979:VenworksFactionOverhaul.esm
@@ -45,52 +45,6 @@ TemplateActors:
   Unknown1: 00097D:VenworksFactionOverhaul.esm
   Unknown2: 000947:VenworksFactionOverhaul.esm
 Race: 00347D:Starfield.esm
-Perks:
-- Perk: 000A3C:VenworksFactionOverhaul.esm
-  Rank: 1
-- Perk: 000A43:VenworksFactionOverhaul.esm
-  Rank: 1
-- Perk: 000A44:VenworksFactionOverhaul.esm
-  Rank: 1
-- Perk: 000A45:VenworksFactionOverhaul.esm
-  Rank: 1
-- Perk: 000A46:VenworksFactionOverhaul.esm
-  Rank: 1
-- Perk: 000A48:VenworksFactionOverhaul.esm
-  Rank: 1
-Properties:
-- ActorValue: 0002C2:Starfield.esm
-  Value: 5
-- ActorValue: 0002C3:Starfield.esm
-  Value: 5
-- ActorValue: 0002C4:Starfield.esm
-  Value: 5
-- ActorValue: 0002C5:Starfield.esm
-  Value: 5
-- ActorValue: 0002C6:Starfield.esm
-  Value: 5
-- ActorValue: 0002C7:Starfield.esm
-  Value: 5
-- ActorValue: 0002C8:Starfield.esm
-  Value: 5
-- ActorValue: 0002CC:Starfield.esm
-  Value: 15
-- ActorValue: 0002CD:Starfield.esm
-  Value: 45
-- ActorValue: 0002D4:Starfield.esm
-  Value: 200
-- ActorValue: 0002D5:Starfield.esm
-  Value: 50
-- ActorValue: 0002DA:Starfield.esm
-  Value: 100
-- ActorValue: 0002E3:Starfield.esm
-  Value: 25
-- ActorValue: 0002EB:Starfield.esm
-  Value: 25
-- ActorValue: 000385:Starfield.esm
-  Value: 100
-- ActorValue: 000392:Starfield.esm
-  Value: 25
 Items:
 - Item:
     Item: 3D0948:Starfield.esm
@@ -106,11 +60,9 @@ Keywords:
 - 000892:VenworksFactionOverhaul.esm
 - 000A08:VenworksFactionOverhaul.esm
 - 001810:VenworksEncountersOverhaul.esm
-CalculatedHealth: 100
-CalculatedActionPoints: 100
-GearedUpWeapons: 1
-Unused: 43
 NAM5: 0xFF00
 HeightMin: 1
 HeightMax: 1
+DefaultOutfit: 2EB236:Starfield.esm
+SpaceOutfit: 3D094F:Starfield.esm
 Pronoun: Unspecified
