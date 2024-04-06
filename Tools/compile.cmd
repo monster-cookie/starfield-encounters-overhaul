@@ -72,7 +72,6 @@ copy /y "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Sou
 
 @REM Deploy RTFP to Dist folder
 @echo "Deploy RTFP to Dist folder"
-copy /y "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Source\RTFP\VenworksCoreConfig.txt" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist\SFSE\Plugins\RealTimeFormPatcher"
 copy /y "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Source\RTFP\VenworksEncountersOverhaulConfig.txt" "C:\Repositories\Public\Starfield Mods\starfield-encounters-overhaul\Dist\SFSE\Plugins\RealTimeFormPatcher"
 
 @REM ESM is purely binary so need to pull from starfield dir where xedit has to have it 
