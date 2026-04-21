@@ -1,6 +1,7 @@
 # Open World Encounters - Changes and Notes
 
 ## Spacer Mech Camp
+
 Beta attempt at human "Lairs" to the random open world encounters system. Lairs us a pack-in system instead of world space cells. So they can be placed on any terrain and biome.
 
 - Spawn Conditions:
@@ -20,6 +21,7 @@ Beta attempt at human "Lairs" to the random open world encounters system. Lairs 
   - Spacer Sniper
 
 ## Portal
+
 Portal mini game go through and get sent to a random linked portal unless it crashes then you get sent anywhere in the universe.
 
 - Encounter Type: PCM OVerlay
@@ -37,6 +39,7 @@ Portal mini game go through and get sent to a random linked portal unless it cra
   - Spacer Sniper
 
 ## Spacer vs Vanguard Battle
+
 2 groups of spacers guarding a corpse(s) and a chest
 
 - Encounter Type: Random Encounter Engine
