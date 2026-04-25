@@ -2,6 +2,7 @@
   "KnownMasters": 
   [
     {"ModKey": "Starfield.esm", "Style": "Full"},
-    {"ModKey": "SFBGS007.esm", "Style": "Small"}
+    {"ModKey": "SFBGS007.esm", "Style": "Small"},
+    {"ModKey": "SFBGS00D.esm", "Style": "Full"}
   ]
 }
