@@ -4,6 +4,8 @@ ScriptName Venworks:EncountersOverhaul:MakeGhostScript Extends Actor
 ;;;
 ;;; Imports
 ;;;
+Import Venworks:EncountersOverhaul:GlobalConfig
+
 Import Venworks:Core:Enumerations
 Import Venworks:Core:Logging
 
@@ -12,7 +14,6 @@ Import Venworks:Core:Logging
 ;;; Global Variables
 ;;;
 GlobalVariable Property Venworks_DebugEnabled Auto Const Mandatory
-String Property Venworks_ModName="VenworksEncountersOverhaul" Auto Const Mandatory
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -32,15 +33,15 @@ LogSeverity Property LogSeverityTable Auto
 Event OnLoad()
   LogSeverityTable = new LogSeverity
   If (Self.IsDead() == False)
-    LogUser(creationName=Venworks_ModName, moduleName="Venworks:EncountersOverhaul:MakeGhostScript", functionName="OnLoad", logMessage=self + "I'm loaded and not a corpse so becoming a ghost.", severity=LogSeverityTable.Info)
+    LogUser(creationName=GetCreationName(), moduleName="MakeGhostScript", functionName="OnLoad", logMessage=self + "I'm loaded and not a corpse so becoming a ghost.", severity=LogSeverityTable.Info)
     BecomeGhost(self)
   EndIf
 EndEvent
 
 Event OnDeath(ObjectReference akKiller)
-  LogUser(creationName=Venworks_ModName, moduleName="Venworks:EncountersOverhaul:MakeGhostScript", functionName="OnDeath", logMessage=self + "I died seeing if I can resurrect.", severity=LogSeverityTable.Info)
+  LogUser(creationName=GetCreationName(), moduleName="MakeGhostScript", functionName="OnDeath", logMessage=self + "I died seeing if I can resurrect.", severity=LogSeverityTable.Info)
   If (Game.GetDieRollSuccess(25, 1, 100, -1, -1))
-    LogUser(creationName=Venworks_ModName, moduleName="Venworks:EncountersOverhaul:MakeGhostScript", functionName="OnDeath", logMessage=self + "I won the dice roll so I get to respawn.", severity=LogSeverityTable.Info)
+    LogUser(creationName=GetCreationName(), moduleName="MakeGhostScript", functionName="OnDeath", logMessage=self + "I won the dice roll so I get to respawn.", severity=LogSeverityTable.Info)
     Actor newActor = self.PlaceDuplicateActorAtMe(self, False, False, True, None, None, False)
     BecomeGhost(newActor)
   EndIf
