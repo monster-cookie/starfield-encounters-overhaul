@@ -1,5 +1,5 @@
-FormKey: 000822:Venworks - EncountersOverhaul.esm
-EditorID: VEOH_Spacers_01
+FormKey: 00080F:Venworks-EncountersOverhaul.esm
+EditorID: VEOH_Ecliptic_01
 FormVersion: 582
 VirtualMachineAdapter:
   Scripts:
@@ -12,7 +12,7 @@ VirtualMachineAdapter:
       Name: SpawnGroupA_AllowedGroups
       Objects:
       - Name: ''
-        Object: 1BD317:Starfield.esm
+        Object: 1BD316:Starfield.esm
     - MutagenObjectType: ScriptStructProperty
       Name: SpawnGroupA_Definition
       Members:
@@ -23,7 +23,7 @@ VirtualMachineAdapter:
           Data: 3
         - MutagenObjectType: ScriptStringProperty
           Name: Name
-          Data: Spacer Rushers
+          Data: Ecliptic Grunt
         - MutagenObjectType: ScriptObjectProperty
           Name: Role
           Object: 1B562E:Starfield.esm
@@ -34,25 +34,25 @@ VirtualMachineAdapter:
       Name: SpawnGroupA_SpawnData
       Structs:
       - Members:
-        - MutagenObjectType: ScriptIntProperty
-          Name: MaxToSpawn
-          Data: 8
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAlias
-          Object: 000822:Venworks - EncountersOverhaul.esm
+          Object: 00080F:Venworks-EncountersOverhaul.esm
           Alias: 25
         - MutagenObjectType: ScriptIntProperty
           Name: MinToSpawn
           Data: 2
+        - MutagenObjectType: ScriptIntProperty
+          Name: MaxToSpawn
+          Data: 8
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAt
-          Object: 000822:Venworks - EncountersOverhaul.esm
+          Object: 00080F:Venworks-EncountersOverhaul.esm
           Alias: 8
     - MutagenObjectType: ScriptObjectListProperty
       Name: SpawnGroupB_AllowedGroups
       Objects:
       - Name: ''
-        Object: 1BD317:Starfield.esm
+        Object: 1BD316:Starfield.esm
     - MutagenObjectType: ScriptStructProperty
       Name: SpawnGroupB_Definition
       Members:
@@ -63,7 +63,7 @@ VirtualMachineAdapter:
           Data: 2
         - MutagenObjectType: ScriptStringProperty
           Name: Name
-          Data: Spacers
+          Data: Ecliptec Special Forces
         - MutagenObjectType: ScriptObjectProperty
           Name: Role
           Object: 1B562E:Starfield.esm
@@ -75,27 +75,27 @@ VirtualMachineAdapter:
       Structs:
       - Members:
         - MutagenObjectType: ScriptIntProperty
+          Name: MaxToSpawn
+          Data: 5
+        - MutagenObjectType: ScriptIntProperty
           Name: StageToSpawn
           Data: 50
-        - MutagenObjectType: ScriptObjectProperty
-          Name: SpawnAlias
-          Object: 000822:Venworks - EncountersOverhaul.esm
-          Alias: 32
         - MutagenObjectType: ScriptIntProperty
           Name: MinToSpawn
           Data: 2
-        - MutagenObjectType: ScriptIntProperty
-          Name: MaxToSpawn
-          Data: 5
+        - MutagenObjectType: ScriptObjectProperty
+          Name: SpawnAlias
+          Object: 00080F:Venworks-EncountersOverhaul.esm
+          Alias: 32
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAt
-          Object: 000822:Venworks - EncountersOverhaul.esm
+          Object: 00080F:Venworks-EncountersOverhaul.esm
           Alias: 10
     - MutagenObjectType: ScriptObjectListProperty
       Name: SpawnGroupC_AllowedGroups
       Objects:
       - Name: ''
-        Object: 1BD317:Starfield.esm
+        Object: 1BD316:Starfield.esm
     - MutagenObjectType: ScriptStructProperty
       Name: SpawnGroupC_Definition
       Members:
@@ -106,7 +106,7 @@ VirtualMachineAdapter:
           Data: 1
         - MutagenObjectType: ScriptStringProperty
           Name: Name
-          Data: Spacer Bodyguards
+          Data: Ecliptic Secret Service
         - MutagenObjectType: ScriptObjectProperty
           Name: Role
           Object: 1B562E:Starfield.esm
@@ -117,22 +117,22 @@ VirtualMachineAdapter:
       Name: SpawnGroupC_SpawnData
       Structs:
       - Members:
-        - MutagenObjectType: ScriptObjectProperty
-          Name: SpawnAlias
-          Object: 000822:Venworks - EncountersOverhaul.esm
-          Alias: 33
-        - MutagenObjectType: ScriptIntProperty
-          Name: StageToSpawn
-          Data: 50
-        - MutagenObjectType: ScriptIntProperty
-          Name: MaxToSpawn
-          Data: 5
         - MutagenObjectType: ScriptIntProperty
           Name: MinToSpawn
           Data: 2
         - MutagenObjectType: ScriptObjectProperty
+          Name: SpawnAlias
+          Object: 00080F:Venworks-EncountersOverhaul.esm
+          Alias: 33
+        - MutagenObjectType: ScriptIntProperty
+          Name: MaxToSpawn
+          Data: 5
+        - MutagenObjectType: ScriptIntProperty
+          Name: StageToSpawn
+          Data: 50
+        - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAt
-          Object: 000822:Venworks - EncountersOverhaul.esm
+          Object: 00080F:Venworks-EncountersOverhaul.esm
           Alias: 12
     - MutagenObjectType: ScriptObjectProperty
       Name: SQ_Groups
@@ -141,7 +141,7 @@ VirtualMachineAdapter:
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: Container_Reward
-      Object: 000822:Venworks - EncountersOverhaul.esm
+      Object: 00080F:Venworks-EncountersOverhaul.esm
       Alias: 31
     - MutagenObjectType: ScriptFloatProperty
       Name: cooldownHours
@@ -157,11 +157,11 @@ VirtualMachineAdapter:
       Data: VEOH_RandomEncounters
     - MutagenObjectType: ScriptObjectProperty
       Name: MapMarker
-      Object: 000822:Venworks - EncountersOverhaul.esm
+      Object: 00080F:Venworks-EncountersOverhaul.esm
       Alias: 6
     - MutagenObjectType: ScriptObjectProperty
       Name: Marker_Center
-      Object: 000822:Venworks - EncountersOverhaul.esm
+      Object: 00080F:Venworks-EncountersOverhaul.esm
       Alias: 7
     - MutagenObjectType: ScriptIntProperty
       Name: QuestSetupCompleteStage
@@ -179,33 +179,33 @@ VirtualMachineAdapter:
       Name: setCooldownOnLoad
     - MutagenObjectType: ScriptObjectProperty
       Name: Trigger
-      Object: 000822:Venworks - EncountersOverhaul.esm
+      Object: 00080F:Venworks-EncountersOverhaul.esm
       Alias: 0
-  - Name: Venworks:EncountersOverhaul:Quests:VEOH_Spacers_01
+  - Name: Venworks:EncountersOverhaul:Quests:VEOH_Ecliptic_01
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Companion
-      Object: 000822:Venworks - EncountersOverhaul.esm
+      Object: 00080F:Venworks-EncountersOverhaul.esm
       Alias: 5
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_MapMarker
-      Object: 000822:Venworks - EncountersOverhaul.esm
+      Object: 00080F:Venworks-EncountersOverhaul.esm
       Alias: 6
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Marker_Center
-      Object: 000822:Venworks - EncountersOverhaul.esm
+      Object: 00080F:Venworks-EncountersOverhaul.esm
       Alias: 7
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_OE_Location
-      Object: 000822:Venworks - EncountersOverhaul.esm
+      Object: 00080F:Venworks-EncountersOverhaul.esm
       Alias: 1
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Player
-      Object: 000822:Venworks - EncountersOverhaul.esm
+      Object: 00080F:Venworks-EncountersOverhaul.esm
       Alias: 4
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_TRIGGER
-      Object: 000822:Venworks - EncountersOverhaul.esm
+      Object: 00080F:Venworks-EncountersOverhaul.esm
       Alias: 0
     - MutagenObjectType: ScriptIntProperty
       Name: ObjectiveKillGrunts
@@ -262,7 +262,7 @@ VirtualMachineAdapter:
   Aliases:
   - Property:
       Name: ''
-      Object: 000822:Venworks - EncountersOverhaul.esm
+      Object: 00080F:Venworks-EncountersOverhaul.esm
       Alias: 25
     Scripts:
     - Name: defaultcollectionaliasondeath
@@ -277,7 +277,7 @@ VirtualMachineAdapter:
         Object: 34CAAD:Starfield.esm
   - Property:
       Name: ''
-      Object: 000822:Venworks - EncountersOverhaul.esm
+      Object: 00080F:Venworks-EncountersOverhaul.esm
       Alias: 32
     Scripts:
     - Name: defaultcollectionaliasondeath
@@ -292,7 +292,7 @@ VirtualMachineAdapter:
         Object: 34CAAD:Starfield.esm
   - Property:
       Name: ''
-      Object: 000822:Venworks - EncountersOverhaul.esm
+      Object: 00080F:Venworks-EncountersOverhaul.esm
       Alias: 33
     Scripts:
     - Name: defaultcollectionaliasondeath
@@ -307,7 +307,7 @@ VirtualMachineAdapter:
         Object: 34CAAD:Starfield.esm
   - Property:
       Name: ''
-      Object: 000822:Venworks - EncountersOverhaul.esm
+      Object: 00080F:Venworks-EncountersOverhaul.esm
       Alias: 28
     Scripts:
     - Name: DefaultAliasOnDeath
@@ -322,7 +322,7 @@ VirtualMachineAdapter:
         Object: 34CAAD:Starfield.esm
   - Property:
       Name: ''
-      Object: 000822:Venworks - EncountersOverhaul.esm
+      Object: 00080F:Venworks-EncountersOverhaul.esm
       Alias: 31
     Scripts:
     - Name: DefaultAliasOnActivate
@@ -332,74 +332,14 @@ VirtualMachineAdapter:
         Data: 150
 Name:
   TargetLanguage: English
-  Value: The Spacers have taken over a nearby landmark
+  Value: The Ecliptic have taken over a nearby landmark
 Data:
   Flags:
   - WarnOnAliasFillFailure
   Unused: 0x000000
 Event: SCPT
 Filter: \Random Encounters\OverlayEncounters\RandomEncounters\
-UnusedConditions:
-- MutagenObjectType: ConditionFloat
-  Flags:
-  - OR
-  Unknown2: 16672
-  Data:
-    MutagenObjectType: LocationHasKeywordConditionData
-    RunOnType: EventData
-    Unknown3: 12626
-    FirstParameter: 226AF2:Starfield.esm
-  ComparisonValue: 1
-- MutagenObjectType: ConditionFloat
-  Flags:
-  - OR
-  Unknown2: 16672
-  Data:
-    MutagenObjectType: LocationHasKeywordConditionData
-    RunOnType: EventData
-    Unknown3: 12626
-    FirstParameter: 27B45C:Starfield.esm
-  ComparisonValue: 1
-- MutagenObjectType: ConditionFloat
-  Flags:
-  - OR
-  Unknown2: 16672
-  Data:
-    MutagenObjectType: LocationHasKeywordConditionData
-    RunOnType: EventData
-    Unknown3: 12626
-    FirstParameter: 0011A6:Starfield.esm
-  ComparisonValue: 1
-- MutagenObjectType: ConditionFloat
-  Flags:
-  - OR
-  Unknown2: 16672
-  Data:
-    MutagenObjectType: LocationHasKeywordConditionData
-    RunOnType: EventData
-    Unknown3: 12626
-    FirstParameter: 226AED:Starfield.esm
-  ComparisonValue: 1
-- MutagenObjectType: ConditionFloat
-  Flags:
-  - OR
-  Unknown2: 16672
-  Data:
-    MutagenObjectType: LocationHasKeywordConditionData
-    RunOnType: EventData
-    Unknown3: 12626
-    FirstParameter: 226AEF:Starfield.esm
-  ComparisonValue: 1
-- MutagenObjectType: ConditionFloat
-  Flags:
-  - OR
-  Unknown2: 16672
-  Data:
-    MutagenObjectType: LocationHasKeywordConditionData
-    RunOnType: EventData
-    Unknown3: 12626
-    FirstParameter: 0C6928:Starfield.esm
-  ComparisonValue: 1
+UnusedConditions: []
 Stages:
 - Flags:
   - RunOnStart

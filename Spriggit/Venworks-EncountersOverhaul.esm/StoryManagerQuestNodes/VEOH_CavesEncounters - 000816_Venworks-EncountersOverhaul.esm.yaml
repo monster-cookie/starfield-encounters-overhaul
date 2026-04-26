@@ -1,7 +1,7 @@
-FormKey: 000816:Venworks - EncountersOverhaul.esm
+FormKey: 000816:Venworks-EncountersOverhaul.esm
 EditorID: VEOH_CavesEncounters
 FormVersion: 582
-Parent: 00083D:Venworks - EncountersOverhaul.esm
+Parent: 00083D:Venworks-EncountersOverhaul.esm
 PreviousSibling: Null
 Conditions:
 - MutagenObjectType: ConditionFloat
@@ -19,4 +19,4 @@ QuestFlags:
 - SharesEvent
 MaxConcurrentQuests: 0
 Quests:
-- Quest: 000810:Venworks - EncountersOverhaul.esm
+- Quest: 000810:Venworks-EncountersOverhaul.esm

@@ -1,13 +1,17 @@
 SpriggitSource:
   PackageName: Spriggit.Yaml.Starfield
   Version: 0.40.1
-ModKey: Venworks-EncountersOverhaul.ems
+ModKey: Venworks-EncountersOverhaul.esm
 GameRelease: Starfield
 ModHeader:
+  Flags:
+  - Master
   FormVersion: 582
   Author: DEFAULT
   MasterReferences:
   - Master: Starfield.esm
   - Master: SFBGS00D.esm
   - Master: sfbgs007.esm
+  - Master: Venworks - Core.esm
   Branch: Main
+  InteriorCellCount: 0

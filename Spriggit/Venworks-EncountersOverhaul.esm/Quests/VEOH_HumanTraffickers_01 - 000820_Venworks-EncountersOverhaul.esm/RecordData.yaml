@@ -1,4 +1,4 @@
-FormKey: 000820:Venworks - EncountersOverhaul.esm
+FormKey: 000820:Venworks-EncountersOverhaul.esm
 EditorID: VEOH_HumanTraffickers_01
 FormVersion: 582
 VirtualMachineAdapter:
@@ -43,7 +43,7 @@ VirtualMachineAdapter:
       - Members:
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAlias
-          Object: 000820:Venworks - EncountersOverhaul.esm
+          Object: 000820:Venworks-EncountersOverhaul.esm
           Alias: 25
         - MutagenObjectType: ScriptIntProperty
           Name: MinToSpawn
@@ -56,7 +56,7 @@ VirtualMachineAdapter:
           Object: 10BCE3:Starfield.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAt
-          Object: 000820:Venworks - EncountersOverhaul.esm
+          Object: 000820:Venworks-EncountersOverhaul.esm
           Alias: 8
         - MutagenObjectType: ScriptIntProperty
           Name: MaxToSpawn
@@ -64,7 +64,7 @@ VirtualMachineAdapter:
       - Members:
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAlias
-          Object: 000820:Venworks - EncountersOverhaul.esm
+          Object: 000820:Venworks-EncountersOverhaul.esm
           Alias: 25
         - MutagenObjectType: ScriptIntProperty
           Name: MinToSpawn
@@ -77,7 +77,7 @@ VirtualMachineAdapter:
           Object: 10BCE3:Starfield.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAt
-          Object: 000820:Venworks - EncountersOverhaul.esm
+          Object: 000820:Venworks-EncountersOverhaul.esm
           Alias: 10
         - MutagenObjectType: ScriptIntProperty
           Name: MaxToSpawn
@@ -85,7 +85,7 @@ VirtualMachineAdapter:
       - Members:
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAlias
-          Object: 000820:Venworks - EncountersOverhaul.esm
+          Object: 000820:Venworks-EncountersOverhaul.esm
           Alias: 25
         - MutagenObjectType: ScriptIntProperty
           Name: MinToSpawn
@@ -98,7 +98,7 @@ VirtualMachineAdapter:
           Object: 10BCE3:Starfield.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAt
-          Object: 000820:Venworks - EncountersOverhaul.esm
+          Object: 000820:Venworks-EncountersOverhaul.esm
           Alias: 12
         - MutagenObjectType: ScriptIntProperty
           Name: MaxToSpawn
@@ -138,11 +138,11 @@ VirtualMachineAdapter:
       - Members:
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAt
-          Object: 000820:Venworks - EncountersOverhaul.esm
+          Object: 000820:Venworks-EncountersOverhaul.esm
           Alias: 38
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAlias
-          Object: 000820:Venworks - EncountersOverhaul.esm
+          Object: 000820:Venworks-EncountersOverhaul.esm
           Alias: 34
         - MutagenObjectType: ScriptIntProperty
           Name: MinToSpawn
@@ -190,7 +190,7 @@ VirtualMachineAdapter:
           Data: 2
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAlias
-          Object: 000820:Venworks - EncountersOverhaul.esm
+          Object: 000820:Venworks-EncountersOverhaul.esm
           Alias: 33
         - MutagenObjectType: ScriptIntProperty
           Name: MaxToSpawn
@@ -200,7 +200,7 @@ VirtualMachineAdapter:
           Data: 50
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAt
-          Object: 000820:Venworks - EncountersOverhaul.esm
+          Object: 000820:Venworks-EncountersOverhaul.esm
           Alias: 12
     - MutagenObjectType: ScriptObjectProperty
       Name: SQ_Groups
@@ -209,7 +209,7 @@ VirtualMachineAdapter:
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: Container_Reward
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 31
     - MutagenObjectType: ScriptFloatProperty
       Name: cooldownHours
@@ -225,11 +225,11 @@ VirtualMachineAdapter:
       Data: VEOH_RandomEncounters
     - MutagenObjectType: ScriptObjectProperty
       Name: MapMarker
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 6
     - MutagenObjectType: ScriptObjectProperty
       Name: Marker_Center
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 7
     - MutagenObjectType: ScriptIntProperty
       Name: QuestSetupCompleteStage
@@ -247,7 +247,7 @@ VirtualMachineAdapter:
       Name: setCooldownOnLoad
     - MutagenObjectType: ScriptObjectProperty
       Name: Trigger
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 0
   - Name: Venworks:EncountersOverhaul:Quests:VEOH_HumanTraffickers_01
     Properties:
@@ -256,59 +256,59 @@ VirtualMachineAdapter:
       Object: 0002BC:Starfield.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Cage
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 39
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Cage_Door
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 40
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Captives
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 34
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Companion
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 5
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_MapMarker
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 6
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Marker_Boss
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 29
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Marker_BossChest
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 30
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Marker_Cage
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 38
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Marker_Captive
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 36
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Marker_Center
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 7
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Marker_Corpse
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 35
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_OE_Location
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 1
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Player
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 4
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_TRIGGER
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 0
     - MutagenObjectType: ScriptObjectProperty
       Name: Health
@@ -392,7 +392,7 @@ VirtualMachineAdapter:
   Aliases:
   - Property:
       Name: ''
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 25
     Scripts:
     - Name: defaultcollectionaliasondeath
@@ -407,7 +407,7 @@ VirtualMachineAdapter:
         Object: 34CAAD:Starfield.esm
   - Property:
       Name: ''
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 32
     Scripts:
     - Name: defaultcollectionaliasondeath
@@ -422,7 +422,7 @@ VirtualMachineAdapter:
         Object: 34CAAD:Starfield.esm
   - Property:
       Name: ''
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 33
     Scripts:
     - Name: defaultcollectionaliasondeath
@@ -437,7 +437,7 @@ VirtualMachineAdapter:
         Object: 34CAAD:Starfield.esm
   - Property:
       Name: ''
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 28
     Scripts:
     - Name: DefaultAliasOnDeath
@@ -452,7 +452,7 @@ VirtualMachineAdapter:
         Object: 34CAAD:Starfield.esm
   - Property:
       Name: ''
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 31
     Scripts:
     - Name: DefaultAliasOnActivate
@@ -462,7 +462,7 @@ VirtualMachineAdapter:
         Data: 150
   - Property:
       Name: ''
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 34
     Scripts:
     - Name: defaultcollectionaliasondeath
@@ -472,7 +472,7 @@ VirtualMachineAdapter:
         Data: 165
   - Property:
       Name: ''
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 39
     Scripts:
     - Name: defaultaliasonopen
@@ -482,7 +482,7 @@ VirtualMachineAdapter:
         Data: 200
   - Property:
       Name: ''
-      Object: 000820:Venworks - EncountersOverhaul.esm
+      Object: 000820:Venworks-EncountersOverhaul.esm
       Alias: 40
     Scripts:
     - Name: DefaultAliasOnActivate

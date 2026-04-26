@@ -46,7 +46,7 @@ Write-Host -ForegroundColor Yellow "Module Scripting Folder is $ENV:MODULE_SCRIP
 Write-Host -ForegroundColor Yellow "Module Scripting Source Folder is $ENV:MODULE_SCRIPTS_SOURCE_PATH"
 
 $Global:Databases = @(
-  ("Venworks - EncountersOverhaul.esm")
+  ("Venworks-EncountersOverhaul.esm")
 )
 
 $Global:ScriptingNamespaceModuleCompany = "Venworks"
