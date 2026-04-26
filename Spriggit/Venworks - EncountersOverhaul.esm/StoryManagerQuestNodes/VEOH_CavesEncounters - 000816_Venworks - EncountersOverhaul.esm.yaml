@@ -1,0 +1,22 @@
+FormKey: 000816:Venworks - EncountersOverhaul.esm
+EditorID: VEOH_CavesEncounters
+FormVersion: 582
+Parent: 00083D:Venworks - EncountersOverhaul.esm
+PreviousSibling: Null
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: LocationHasKeywordConditionData
+    RunOnType: EventData
+    Unknown3: 12626
+    FirstParameter: 27B45C:Starfield.esm
+  ComparisonValue: 1
+Flags:
+- Random
+QuestFlags:
+- SharesEvent
+MaxConcurrentQuests: 0
+Quests:
+- Quest: 000810:Venworks - EncountersOverhaul.esm

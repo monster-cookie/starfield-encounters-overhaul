@@ -1,5 +1,5 @@
-ScriptName Venworks:EncountersOverhaul:Quests:VEOH_Spacers_01 extends Venworks:Core:Base:BaseQuest
-{Handler script for the Radiant Engine Quest - VEOH_Spacers_01}
+ScriptName Venworks:EncountersOverhaul:Quests:VEOH_Ecliptic_01 extends Venworks:Core:Base:BaseQuest
+{Handler script for the Radiant Engine Quest - VEOH_Ecliptic_01}
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -70,17 +70,17 @@ EndGroup
 ;;;
 ; Event received when the quest is initialized, aliases are filled, and it is about to run the startup stage.
 Event OnQuestInit()
-  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Spacers_01", functionName="OnQuestInit", logMessage="Quest Init Fired")
+  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Ecliptic_01", functionName="OnQuestInit", logMessage="Quest Init Fired")
 EndEvent
 
 ; Event received when the quest has been started
 Event OnQuestStarted()
-  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Spacers_01", functionName="OnQuestStarted", logMessage="Quest OnQuestStarted Fired")
+  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Ecliptic_01", functionName="OnQuestStarted", logMessage="Quest OnQuestStarted Fired")
 EndEvent
 
 ; Event received when the quest has been shut down. Note that the aliases will be empty by the time this event is received.
 Event OnQuestShutdown()
-  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Spacers_01", functionName="OnQuestShutdown", logMessage="Quest Shutdown Fired")
+  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Ecliptic_01", functionName="OnQuestShutdown", logMessage="Quest Shutdown Fired")
 EndEvent
 
 ; Event received when a quest stage is set (in parallel with the fragment)
@@ -140,26 +140,26 @@ EndFunction
 
 ;; Encounter Started
 Function HandleEncounterStarted()
-  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Spacers_01", functionName="HandleEncounterStarted", logMessage="Encounter Started: Nothing really to do")
+  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Ecliptic_01", functionName="HandleEncounterStarted", logMessage="Encounter Started: Nothing really to do")
   SetStage(25)
 EndFunction
 
 ;; Encounter Scene Setup
 Function HandleEncounterSceneSetup()
-  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Spacers_01", functionName="HandleEncounterSceneSetup", logMessage="Encounter Scene Setup: Starting")
+  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Ecliptic_01", functionName="HandleEncounterSceneSetup", logMessage="Encounter Scene Setup: Starting")
   ;; To do implement random related clutter. Testing the new radiant ending but again I suspect it cant handle the level of detail needed so I'll have to pull in more SceneManager stuff. 
   SetStage(30)
 EndFunction
 
 ;; Encounter Scene Setup -- Complete
 Function HandleEncounterSceneSetupComplete()
-  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Spacers_01", functionName="HandleEncounterSceneSetupComplete", logMessage="Encounter Scene Setup: Completed")
+  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Ecliptic_01", functionName="HandleEncounterSceneSetupComplete", logMessage="Encounter Scene Setup: Completed")
   SetStage(50)
 EndFunction
 
 ;; Encounter NPC Setup
 Function HandleEncounterActorSetup()
-  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Spacers_01", functionName="HandleEncounterActorSetup", logMessage="Encounter Actor Setup: Starting")
+  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Ecliptic_01", functionName="HandleEncounterActorSetup", logMessage="Encounter Actor Setup: Starting")
   
   ;; Testing Viability of SQ_Groups, if that fails will use the SceneManager Spawning Scripts. Which would normally have occurred here. 
   ; ObjectReference[] spawnedActorsGroup01 = SQ_MCS_SpawnSystem.SpawnGroup(FactionType_SpawnGroup01, Alias_Marker_Spawn_NPCGroup01.GetRef(), 0, 0, 2, 2, 3, 3)
@@ -174,13 +174,13 @@ EndFunction
 
 ;; Encounter Scene Setup -- Complete
 Function HandleEncounterActorSetupComplete()
-  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Spacers_01", functionName="HandleEncounterActorSetupComplete", logMessage="Encounter Actor Setup: Completed")
+  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Ecliptic_01", functionName="HandleEncounterActorSetupComplete", logMessage="Encounter Actor Setup: Completed")
   ;; Don't trigger any stages we need to wait for the player in range script to set the stage appropriately
 EndFunction
 
 ;; Encounter In Progress -- Player In Range
 Function HandleEncounterInProgressPlayerInRange()
-  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Spacers_01", functionName="HandleEncounterInProgressPlayerInRange", logMessage="Encounter In Progress: Player Is In Range, Displaying Objectives")
+  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Ecliptic_01", functionName="HandleEncounterInProgressPlayerInRange", logMessage="Encounter In Progress: Player Is In Range, Displaying Objectives")
   SetObjectiveDisplayed(ObjectiveKillGrunts)
   SetObjectiveDisplayed(ObjectiveKillLeader)
   SetObjectiveDisplayed(ObjectiveLootChest)
@@ -188,45 +188,45 @@ EndFunction
 
 ;; Encounter In Progress -- Player Killed Group 01
 Function HandleEncounterInProgressPlayerKilledGroup01()
-  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Spacers_01", functionName="HandleEncounterInProgressPlayerKilledGroup01", logMessage="Encounter In Progress: Player has killed Group 01")
+  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Ecliptic_01", functionName="HandleEncounterInProgressPlayerKilledGroup01", logMessage="Encounter In Progress: Player has killed Group 01")
   CheckGruntsAndCompleteObjective()
   CheckCompleteAndSetCorrectStage()
 EndFunction
 
 ;; Encounter In Progress -- Player Killed Group 02
 Function HandleEncounterInProgressPlayerKilledGroup02()
-  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Spacers_01", functionName="HandleEncounterInProgressPlayerKilledGroup02", logMessage="Encounter In Progress: Player has killed Group 02")
+  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Ecliptic_01", functionName="HandleEncounterInProgressPlayerKilledGroup02", logMessage="Encounter In Progress: Player has killed Group 02")
   CheckGruntsAndCompleteObjective()
   CheckCompleteAndSetCorrectStage()
 EndFunction
 
 ;; Encounter In Progress -- Player Killed Group 03
 Function HandleEncounterInProgressPlayerKilledGroup03()
-  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Spacers_01", functionName="HandleEncounterInProgressPlayerKilledGroup03", logMessage="Encounter In Progress: Player has killed Group 03")
+  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Ecliptic_01", functionName="HandleEncounterInProgressPlayerKilledGroup03", logMessage="Encounter In Progress: Player has killed Group 03")
   CheckGruntsAndCompleteObjective()
   CheckCompleteAndSetCorrectStage()
 EndFunction
 
 ;; Encounter In Progress -- Player Killed Boss
 Function HandleEncounterInProgressPlayerKilledBoss()
-  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Spacers_01", functionName="HandleEncounterInProgressPlayerKilledBoss", logMessage="Encounter In Progress: Player has killed the boss")
+  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Ecliptic_01", functionName="HandleEncounterInProgressPlayerKilledBoss", logMessage="Encounter In Progress: Player has killed the boss")
   SetObjectiveCompleted(ObjectiveKillLeader)
   CheckCompleteAndSetCorrectStage()
 EndFunction
 
 ;; Encounter In Progress -- Player Looted Boss Chest
 Function HandleEncounterInProgressPlayerLootedBossChest()
-  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Spacers_01", functionName="HandleEncounterInProgressPlayerLootedBossChest", logMessage="Encounter In Progress: Player has looted the boss' chest")
+  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Ecliptic_01", functionName="HandleEncounterInProgressPlayerLootedBossChest", logMessage="Encounter In Progress: Player has looted the boss' chest")
   SetObjectiveCompleted(ObjectiveLootChest)
   CheckCompleteAndSetCorrectStage()
 EndFunction
 
 Function HandleEncounterComplete()
-  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Spacers_01", functionName="HandleEncounterComplete", logMessage="Encounter Complete: FYI")
+  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Ecliptic_01", functionName="HandleEncounterComplete", logMessage="Encounter Complete: FYI")
   ;; Shouldn't really need to do this but have had objectives mess up and prevent quest reset
   CompleteAllObjectives()
 EndFunction
 
 Function HandleEncounterShutdown()
-  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Spacers_01", functionName="HandleEncounterShutdown", logMessage="Encounter Shutdown: FYI")
+  LogUserInformational(creationName=GetCreationName(), moduleName="Quests:VEOH_Ecliptic_01", functionName="HandleEncounterShutdown", logMessage="Encounter Shutdown: FYI")
 EndFunction

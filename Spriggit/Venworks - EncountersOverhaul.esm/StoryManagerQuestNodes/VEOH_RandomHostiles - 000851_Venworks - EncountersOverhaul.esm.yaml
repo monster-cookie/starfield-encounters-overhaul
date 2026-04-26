@@ -1,0 +1,12 @@
+FormKey: 000851:Venworks - EncountersOverhaul.esm
+EditorID: VEOH_RandomHostiles
+FormVersion: 582
+Parent: 00083D:Venworks - EncountersOverhaul.esm
+PreviousSibling: 000816:Venworks - EncountersOverhaul.esm
+Flags:
+- Random
+QuestFlags:
+- SharesEvent
+MaxConcurrentQuests: 0
+Quests:
+- Quest: 000822:Venworks - EncountersOverhaul.esm

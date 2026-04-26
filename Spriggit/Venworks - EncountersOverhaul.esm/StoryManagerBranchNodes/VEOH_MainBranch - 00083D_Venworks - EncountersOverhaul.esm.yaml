@@ -1,0 +1,15 @@
+FormKey: 00083D:Venworks - EncountersOverhaul.esm
+EditorID: VEOH_MainBranch
+FormVersion: 582
+Parent: 029152:Starfield.esm
+PreviousSibling: 140519:Starfield.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown2: 16954
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    Member: Keyword1
+    Record: 209095:Starfield.esm
+  ComparisonValue: 1
+Flags: []
+MaxConcurrentQuests: 0
