@@ -3,6 +3,61 @@ EditorID: VEOH_RandomHostiles
 FormVersion: 582
 Parent: 00083D:Venworks-EncountersOverhaul.esm
 PreviousSibling: 000816:Venworks-EncountersOverhaul.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: LocationHasKeywordConditionData
+    RunOnType: EventData
+    Unknown3: 12626
+    FirstParameter: 226AF2:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: LocationHasKeywordConditionData
+    RunOnType: EventData
+    Unknown3: 12626
+    FirstParameter: 27B45C:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: LocationHasKeywordConditionData
+    RunOnType: EventData
+    Unknown3: 12626
+    FirstParameter: 0011A6:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: LocationHasKeywordConditionData
+    RunOnType: EventData
+    Unknown3: 12626
+    FirstParameter: 226AED:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: LocationHasKeywordConditionData
+    RunOnType: EventData
+    Unknown3: 12626
+    FirstParameter: 226AEF:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: LocationHasKeywordConditionData
+    RunOnType: EventData
+    Unknown3: 12626
+    FirstParameter: 0C6928:Starfield.esm
+  ComparisonValue: 1
 Flags:
 - Random
 QuestFlags:
@@ -10,3 +65,5 @@ QuestFlags:
 MaxConcurrentQuests: 0
 Quests:
 - Quest: 000822:Venworks-EncountersOverhaul.esm
+- Quest: 00080F:Venworks-EncountersOverhaul.esm
+- Quest: 000820:Venworks-EncountersOverhaul.esm

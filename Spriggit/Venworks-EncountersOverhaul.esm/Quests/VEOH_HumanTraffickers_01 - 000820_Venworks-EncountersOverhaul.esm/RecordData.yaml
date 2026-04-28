@@ -42,70 +42,70 @@ VirtualMachineAdapter:
       Structs:
       - Members:
         - MutagenObjectType: ScriptObjectProperty
+          Name: Gender
+          Object: 10BCE3:Starfield.esm
+        - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAlias
           Object: 000820:Venworks-EncountersOverhaul.esm
           Alias: 25
-        - MutagenObjectType: ScriptIntProperty
-          Name: MinToSpawn
-          Data: 2
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnType
           Object: 10BCDF:Starfield.esm
-        - MutagenObjectType: ScriptObjectProperty
-          Name: Gender
-          Object: 10BCE3:Starfield.esm
+        - MutagenObjectType: ScriptIntProperty
+          Name: MinToSpawn
+          Data: 2
+        - MutagenObjectType: ScriptIntProperty
+          Name: MaxToSpawn
+          Data: 8
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAt
           Object: 000820:Venworks-EncountersOverhaul.esm
           Alias: 8
-        - MutagenObjectType: ScriptIntProperty
-          Name: MaxToSpawn
-          Data: 8
       - Members:
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Gender
+          Object: 10BCE3:Starfield.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAlias
           Object: 000820:Venworks-EncountersOverhaul.esm
           Alias: 25
-        - MutagenObjectType: ScriptIntProperty
-          Name: MinToSpawn
-          Data: 2
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnType
           Object: 10BCDF:Starfield.esm
-        - MutagenObjectType: ScriptObjectProperty
-          Name: Gender
-          Object: 10BCE3:Starfield.esm
+        - MutagenObjectType: ScriptIntProperty
+          Name: MinToSpawn
+          Data: 2
+        - MutagenObjectType: ScriptIntProperty
+          Name: MaxToSpawn
+          Data: 8
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAt
           Object: 000820:Venworks-EncountersOverhaul.esm
           Alias: 10
-        - MutagenObjectType: ScriptIntProperty
-          Name: MaxToSpawn
-          Data: 8
       - Members:
-        - MutagenObjectType: ScriptObjectProperty
-          Name: SpawnAlias
-          Object: 000820:Venworks-EncountersOverhaul.esm
-          Alias: 25
-        - MutagenObjectType: ScriptIntProperty
-          Name: MinToSpawn
-          Data: 1
-        - MutagenObjectType: ScriptObjectProperty
-          Name: SpawnType
-          Object: 10BCDF:Starfield.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: Gender
           Object: 10BCE3:Starfield.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: SpawnAt
+          Name: SpawnAlias
           Object: 000820:Venworks-EncountersOverhaul.esm
-          Alias: 12
+          Alias: 25
+        - MutagenObjectType: ScriptObjectProperty
+          Name: SpawnType
+          Object: 10BCDF:Starfield.esm
+        - MutagenObjectType: ScriptIntProperty
+          Name: MinToSpawn
+          Data: 1
         - MutagenObjectType: ScriptIntProperty
           Name: MaxToSpawn
           Data: 1
         - MutagenObjectType: ScriptBoolProperty
           Name: SetOverrideNameLeader
           Data: True
+        - MutagenObjectType: ScriptObjectProperty
+          Name: SpawnAt
+          Object: 000820:Venworks-EncountersOverhaul.esm
+          Alias: 12
     - MutagenObjectType: ScriptObjectListProperty
       Name: SpawnGroupB_AllowedGroups
       Objects:
@@ -154,11 +154,11 @@ VirtualMachineAdapter:
           Name: MaxToSpawn
           Data: 5
         - MutagenObjectType: ScriptObjectProperty
-          Name: Gender
-          Object: 10BCE3:Starfield.esm
-        - MutagenObjectType: ScriptObjectProperty
           Name: SpawnType
           Object: 10BCDF:Starfield.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Gender
+          Object: 10BCE3:Starfield.esm
     - MutagenObjectType: ScriptObjectListProperty
       Name: SpawnGroupC_AllowedGroups
       Objects:
@@ -185,23 +185,72 @@ VirtualMachineAdapter:
       Name: SpawnGroupC_SpawnData
       Structs:
       - Members:
-        - MutagenObjectType: ScriptIntProperty
-          Name: MinToSpawn
-          Data: 2
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAlias
           Object: 000820:Venworks-EncountersOverhaul.esm
           Alias: 33
         - MutagenObjectType: ScriptIntProperty
+          Name: StageToSpawn
+          Data: 50
+        - MutagenObjectType: ScriptIntProperty
           Name: MaxToSpawn
           Data: 5
         - MutagenObjectType: ScriptIntProperty
-          Name: StageToSpawn
-          Data: 50
+          Name: MinToSpawn
+          Data: 2
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAt
           Object: 000820:Venworks-EncountersOverhaul.esm
           Alias: 12
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: SpawnGroupD_AllowedGroups
+      Objects:
+      - Name: ''
+        Object: 11F999:Starfield.esm
+    - MutagenObjectType: ScriptObjectListProperty
+      Name: SpawnGroupD_AllowedOccupations
+      Objects:
+      - Name: ''
+        Object: 11F993:Starfield.esm
+      - Name: ''
+        Object: 11F997:Starfield.esm
+    - MutagenObjectType: ScriptStructProperty
+      Name: SpawnGroupD_Definition
+      Members:
+      - Name: ''
+        Properties:
+        - MutagenObjectType: ScriptIntProperty
+          Name: Aggression
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Role
+          Object: 1B562D:Starfield.esm
+        - MutagenObjectType: ScriptIntProperty
+          Name: SpawnStage
+          Data: 50
+    - MutagenObjectType: ScriptStructListProperty
+      Name: SpawnGroupD_SpawnData
+      Structs:
+      - Members:
+        - MutagenObjectType: ScriptIntProperty
+          Name: StageToSpawn
+          Data: 50
+        - MutagenObjectType: ScriptIntProperty
+          Name: MaxToSpawn
+          Data: 3
+        - MutagenObjectType: ScriptObjectProperty
+          Name: SpawnType
+          Object: 10BCDE:Starfield.esm
+        - MutagenObjectType: ScriptIntProperty
+          Name: MinToSpawn
+          Data: 1
+        - MutagenObjectType: ScriptObjectProperty
+          Name: SpawnAlias
+          Object: 000820:Venworks-EncountersOverhaul.esm
+          Alias: 37
+        - MutagenObjectType: ScriptObjectProperty
+          Name: SpawnAt
+          Object: 000820:Venworks-EncountersOverhaul.esm
+          Alias: 35
     - MutagenObjectType: ScriptObjectProperty
       Name: SQ_Groups
       Object: 1A9565:Starfield.esm
@@ -386,7 +435,7 @@ VirtualMachineAdapter:
       Name: StageEncounterStarted
     - MutagenObjectType: ScriptObjectProperty
       Name: Venworks_DebugEnabled
-      Object: 000814:Venworks - Core.esm
+      Object: 000814:Venworks-Core.esm
   Script:
     Name: ''
   Aliases:
@@ -499,7 +548,23 @@ Data:
   Unused: 0x000000
 Event: SCPT
 Filter: \Random Encounters\OverlayEncounters\RandomEncounters\
-UnusedConditions: []
+UnusedConditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown2: 16672
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    FirstParameter: 000814:Venworks-Core.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Flags:
+  - OR
+  Unknown2: 16672
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 30
 Stages:
 - Flags:
   - RunOnStart
@@ -718,24 +783,6 @@ Aliases:
     FromEvent: SCPT
     EventData: OldLocation
 - MutagenObjectType: QuestReferenceAlias
-  ID: 2
-  Name: Trigger__Exterior
-  Flags: []
-  ALFG: 0
-  Location:
-    AliasID: 1
-    RefType: 226AFB:Starfield.esm
-  VoiceTypes: Null
-- MutagenObjectType: QuestReferenceAlias
-  ID: 3
-  Name: Trigger__Interior
-  Flags: []
-  ALFG: 0
-  Location:
-    AliasID: 1
-    RefType: 226AFC:Starfield.esm
-  VoiceTypes: Null
-- MutagenObjectType: QuestReferenceAlias
   ID: 4
   Name: Player
   Flags: []
@@ -871,30 +918,6 @@ Aliases:
     RefType: 226AF6:Starfield.esm
   VoiceTypes: Null
 - MutagenObjectType: QuestReferenceAlias
-  ID: 20
-  Name: Marker_PatrolStart
-  Flags:
-  - Optional
-  - AllowDisabled
-  - AllowReserved
-  ALFG: 0
-  Location:
-    AliasID: 1
-    RefType: 260E06:Starfield.esm
-  VoiceTypes: Null
-- MutagenObjectType: QuestReferenceAlias
-  ID: 21
-  Name: Marker_PatrolEnd
-  Flags:
-  - Optional
-  - AllowDisabled
-  - AllowReserved
-  ALFG: 0
-  Location:
-    AliasID: 1
-    RefType: 260E07:Starfield.esm
-  VoiceTypes: Null
-- MutagenObjectType: QuestReferenceAlias
   ID: 35
   Name: Marker_Corpse
   Flags:
@@ -1026,7 +1049,7 @@ Aliases:
     ALAM: 0
     ReferenceAlias:
       ID: 37
-      Name: Corpse
+      Name: Corpses
       Flags:
       - Optional
       ALFG: 0

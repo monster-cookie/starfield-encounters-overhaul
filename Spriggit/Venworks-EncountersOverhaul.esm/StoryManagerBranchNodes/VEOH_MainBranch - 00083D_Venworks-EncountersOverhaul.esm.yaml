@@ -5,7 +5,7 @@ Parent: 029152:Starfield.esm
 PreviousSibling: 140519:Starfield.esm
 Conditions:
 - MutagenObjectType: ConditionFloat
-  Unknown2: 16954
+  Unknown2: 40187
   Data:
     MutagenObjectType: GetEventDataConditionData
     Member: Keyword1

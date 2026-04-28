@@ -1,5 +1,5 @@
-FormKey: 000810:Venworks-EncountersOverhaul.esm
-EditorID: VEOH_Spacers_Caves_01
+FormKey: 000949:Venworks-EncountersOverhaul.esm
+EditorID: VEOH_ManMadeClutter_Spacers_01
 FormVersion: 582
 VirtualMachineAdapter:
   Scripts:
@@ -23,7 +23,7 @@ VirtualMachineAdapter:
           Data: 1
         - MutagenObjectType: ScriptStringProperty
           Name: Name
-          Data: Spacer
+          Data: ''
         - MutagenObjectType: ScriptObjectProperty
           Name: Role
           Object: 1B562E:Starfield.esm
@@ -36,20 +36,17 @@ VirtualMachineAdapter:
       - Members:
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAlias
-          Object: 000810:Venworks-EncountersOverhaul.esm
+          Object: 000949:Venworks-EncountersOverhaul.esm
           Alias: 25
-        - MutagenObjectType: ScriptIntProperty
-          Name: MaxToSpawn
-          Data: 6
         - MutagenObjectType: ScriptIntProperty
           Name: MinToSpawn
           Data: 2
         - MutagenObjectType: ScriptIntProperty
-          Name: StageToSpawn
-          Data: 50
+          Name: MaxToSpawn
+          Data: 8
         - MutagenObjectType: ScriptObjectProperty
           Name: SpawnAt
-          Object: 000810:Venworks-EncountersOverhaul.esm
+          Object: 000949:Venworks-EncountersOverhaul.esm
           Alias: 8
     - MutagenObjectType: ScriptObjectProperty
       Name: SQ_Groups
@@ -58,7 +55,7 @@ VirtualMachineAdapter:
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: Container_Reward
-      Object: 000810:Venworks-EncountersOverhaul.esm
+      Object: 000949:Venworks-EncountersOverhaul.esm
       Alias: 31
     - MutagenObjectType: ScriptFloatProperty
       Name: cooldownHours
@@ -74,11 +71,11 @@ VirtualMachineAdapter:
       Data: VEOH_RandomEncounters
     - MutagenObjectType: ScriptObjectProperty
       Name: MapMarker
-      Object: 000810:Venworks-EncountersOverhaul.esm
+      Object: 000949:Venworks-EncountersOverhaul.esm
       Alias: 6
     - MutagenObjectType: ScriptObjectProperty
       Name: Marker_Center
-      Object: 000810:Venworks-EncountersOverhaul.esm
+      Object: 000949:Venworks-EncountersOverhaul.esm
       Alias: 7
     - MutagenObjectType: ScriptIntProperty
       Name: QuestSetupCompleteStage
@@ -94,41 +91,38 @@ VirtualMachineAdapter:
       Object: 05F193:Starfield.esm
     - MutagenObjectType: ScriptBoolProperty
       Name: setCooldownOnLoad
-    - MutagenObjectType: ScriptIntProperty
-      Name: StopStage
-      Data: 999
     - MutagenObjectType: ScriptObjectProperty
       Name: Trigger
-      Object: 000810:Venworks-EncountersOverhaul.esm
+      Object: 000949:Venworks-EncountersOverhaul.esm
       Alias: 0
-  - Name: Venworks:EncountersOverhaul:Quests:VEOH_Spacers_Caves_01
+  - Name: Venworks:EncountersOverhaul:Quests:VEOH_Shared_ManMadeClutter_Medium
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Companion
-      Object: 000810:Venworks-EncountersOverhaul.esm
+      Object: 000949:Venworks-EncountersOverhaul.esm
       Alias: 5
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_MapMarker
-      Object: 000810:Venworks-EncountersOverhaul.esm
+      Object: 000949:Venworks-EncountersOverhaul.esm
       Alias: 6
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Marker_Center
-      Object: 000810:Venworks-EncountersOverhaul.esm
+      Object: 000949:Venworks-EncountersOverhaul.esm
       Alias: 7
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_OE_Location
-      Object: 000810:Venworks-EncountersOverhaul.esm
+      Object: 000949:Venworks-EncountersOverhaul.esm
       Alias: 1
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_Player
-      Object: 000810:Venworks-EncountersOverhaul.esm
+      Object: 000949:Venworks-EncountersOverhaul.esm
       Alias: 4
     - MutagenObjectType: ScriptObjectProperty
       Name: Alias_TRIGGER
-      Object: 000810:Venworks-EncountersOverhaul.esm
+      Object: 000949:Venworks-EncountersOverhaul.esm
       Alias: 0
     - MutagenObjectType: ScriptIntProperty
-      Name: ObjectiveKillGroup01
+      Name: ObjectiveKillGrunts
       Data: 10
     - MutagenObjectType: ScriptIntProperty
       Name: ObjectiveKillLeader
@@ -150,13 +144,13 @@ VirtualMachineAdapter:
       Data: 100
     - MutagenObjectType: ScriptIntProperty
       Name: StageEncounterInProgressPlayerKilledBoss
-      Data: 120
+      Data: 140
     - MutagenObjectType: ScriptIntProperty
       Name: StageEncounterInProgressPlayerKilledGroup01
       Data: 110
     - MutagenObjectType: ScriptIntProperty
       Name: StageEncounterInProgressPlayerLootedBossChest
-      Data: 130
+      Data: 150
     - MutagenObjectType: ScriptIntProperty
       Name: StageEncounterSceneSetup
       Data: 25
@@ -176,7 +170,7 @@ VirtualMachineAdapter:
   Aliases:
   - Property:
       Name: ''
-      Object: 000810:Venworks-EncountersOverhaul.esm
+      Object: 000949:Venworks-EncountersOverhaul.esm
       Alias: 25
     Scripts:
     - Name: defaultcollectionaliasondeath
@@ -191,7 +185,7 @@ VirtualMachineAdapter:
         Object: 34CAAD:Starfield.esm
   - Property:
       Name: ''
-      Object: 000810:Venworks-EncountersOverhaul.esm
+      Object: 000949:Venworks-EncountersOverhaul.esm
       Alias: 28
     Scripts:
     - Name: DefaultAliasOnDeath
@@ -206,7 +200,7 @@ VirtualMachineAdapter:
         Object: 34CAAD:Starfield.esm
   - Property:
       Name: ''
-      Object: 000810:Venworks-EncountersOverhaul.esm
+      Object: 000949:Venworks-EncountersOverhaul.esm
       Alias: 31
     Scripts:
     - Name: DefaultAliasOnActivate
@@ -216,14 +210,30 @@ VirtualMachineAdapter:
         Data: 150
 Name:
   TargetLanguage: English
-  Value: The Spacers have taken over a nearby landmark
+  Value: The Spacers have taken over a nearby POI
 Data:
   Flags:
   - WarnOnAliasFillFailure
   Unused: 0x000000
 Event: SCPT
-Filter: \Random Encounters\OverlayEncounters\Caves\
-UnusedConditions: []
+Filter: \Random Encounters\OverlayEncounters\ManMadeClutterEncounters\
+UnusedConditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown2: 16672
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    FirstParameter: 000814:Venworks-Core.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThanOrEqualTo
+  Flags:
+  - OR
+  Unknown2: 16672
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 40
 Stages:
 - Flags:
   - RunOnStart
@@ -285,28 +295,6 @@ Stages:
     Entry:
       TargetLanguage: English
       Value: Clear the landmark of all spacer forces
-    StageCompleteDatas:
-    - QSRD: 0x00000000
-    - QSRD: '[]'
-- Index: 120
-  Unknown: 165
-  LogEntries:
-  - Flags: []
-    Note: Player kills Spawn Group 2
-    Entry:
-      TargetLanguage: English
-      Value: Continue clearing the spacer forces
-    StageCompleteDatas:
-    - QSRD: 0x00000000
-    - QSRD: '[]'
-- Index: 130
-  Unknown: 165
-  LogEntries:
-  - Flags: []
-    Note: Player kills Spawn Group 3
-    Entry:
-      TargetLanguage: English
-      Value: Continue clearing the spacer forces
     StageCompleteDatas:
     - QSRD: 0x00000000
     - QSRD: '[]'

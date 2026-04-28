@@ -1,0 +1,121 @@
+FormKey: 058C67:Starfield.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: PackInGPPIPCMManMadeSolarPanelsA01StorageCell
+FormVersion: 582
+Version2: 1
+StarfieldMajorRecordFlags:
+- Compressed
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  DirectionalFade: 1
+  FogPower: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Unknown1: 1951
+  NearHeightRange: 10000
+  ForColorHighNear: '#00000000'
+  ForColorHighFar: '#00000000'
+  HighDensityScale: 1
+  FogNearScale: 1
+  FogFarScale: 1
+  FogHighNearScale: 1
+  FogHighFarScale: 1
+  FarHeightRange: 10000
+  InteriorType: -1414812925
+LightingTemplate: Null
+WaterHeight: 3.4028235E+38
+XILS: 1
+ImageSpace: 06AD68:Starfield.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 000946:Venworks-EncountersOverhaul.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 582
+  StarfieldMajorRecordFlags:
+  - 0x400
+  Base: 000010:Starfield.esm
+  Position: 2.5, -12, 0
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 2F8B9A:Starfield.esm
+  IsDeleted: True
+  MajorRecordFlagsRaw: 32
+  FormVersion: 582
+  Version2: 3
+  StarfieldMajorRecordFlags:
+  - Deleted
+  Base: 23336D:Starfield.esm
+- MutagenObjectType: PlacedObject
+  FormKey: 0008F9:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 209096:Starfield.esm
+  Primitive:
+    Bounds: 2, 2, 2
+    Color: '#00CC4C33'
+    Unknown: 0.3
+    Type: Box
+  Position: 2.5, -12, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 0008FB:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 0E37F4:Starfield.esm
+  Position: -1.8126469, 2.6484113, 1.6842694
+- MutagenObjectType: PlacedObject
+  FormKey: 000900:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 226AF5:Starfield.esm
+  Position: 0.5, -0.75, 1.703
+  Rotation: 0, -0, 4.712389
+- MutagenObjectType: PlacedObject
+  FormKey: 000902:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 0E37FA:Starfield.esm
+  Position: -6, -4, 2
+  Rotation: 0, 0, 4.712389
+- MutagenObjectType: PlacedObject
+  FormKey: 000904:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 0E37F9:Starfield.esm
+  Position: 5.267536, -5.0367055, 1.6891403
+  Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 000906:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 0E37F8:Starfield.esm
+  Position: -0.8907368, 6.975929, 1.7030053
+- MutagenObjectType: PlacedObject
+  FormKey: 00090B:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 0E3800:Starfield.esm
+  Position: -4.814846, -6.5973363, 1.7030044
+  Rotation: 0, 0, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: 00090D:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 0E37FF:Starfield.esm
+  Position: -0.71407545, -3.5749912, 1.7030072
+  Rotation: 0, 0, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: 00090F:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 0E37FE:Starfield.esm
+  Position: 0.40964758, 2.446941, 1.7101554
+  Rotation: 0, 0, 4.712389
+- MutagenObjectType: PlacedObject
+  FormKey: 00091A:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 04317D:Starfield.esm
+  Primitive:
+    Bounds: 2, 2, 2
+    Color: '#00800080'
+    Unknown: 0.3
+    Type: Box
+  Position: -1.75, -0.5, 3.0056872
+  Rotation: 0, 0, 1.5707964
+MajorFlags:
+- 0x40000
