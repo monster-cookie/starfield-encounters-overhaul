@@ -1,0 +1,20 @@
+FormKey: 000981:Venworks-EncountersOverhaul.esm
+EditorID: VEOH_Randomization_Medium
+FormVersion: 582
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown2: 60704
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    FirstParameter: 000975:Venworks-EncountersOverhaul.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Flags:
+  - OR
+  Unknown2: 60704
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 00097D:Venworks-EncountersOverhaul.esm

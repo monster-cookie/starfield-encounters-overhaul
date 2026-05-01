@@ -1,0 +1,39 @@
+FormKey: 00098F:Venworks-EncountersOverhaul.esm
+EditorID: VEOH_GPO_DebugMode
+FormVersion: 582
+Name:
+  TargetLanguage: English
+  Value: Debug Mode
+Description:
+  TargetLanguage: English
+  Value: >+
+    Enabled debug mode for Venworks Encounters Overhaul. Debug mode turns on some markers to help you find modified encounters and enables more detailed logs.
+
+
+    {0}
+
+
+    {1}
+Data:
+  MutagenObjectType: FloatGameplayOptionData
+  Value1: 0
+  Value2: 0
+  Max: 1
+  Step: 1
+Rewards:
+- Description:
+    TargetLanguage: English
+    Value: '{0}: Disables debug mode'
+  SettingValue: 0
+  Name:
+    TargetLanguage: English
+    Value: Disabled
+  RewardValue: 0
+- Description:
+    TargetLanguage: English
+    Value: '{0}: Enabled debug mode'
+  SettingValue: 1
+  Name:
+    TargetLanguage: English
+    Value: Enabled
+  RewardValue: 0

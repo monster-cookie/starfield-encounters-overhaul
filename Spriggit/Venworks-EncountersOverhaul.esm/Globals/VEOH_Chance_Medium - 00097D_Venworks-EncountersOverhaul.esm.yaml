@@ -1,0 +1,9 @@
+FormKey: 00097D:Venworks-EncountersOverhaul.esm
+MajorRecordFlagsRaw: 64
+EditorID: VEOH_Chance_Medium
+FormVersion: 582
+StarfieldMajorRecordFlags:
+- 0x40
+Data: 45
+MajorFlags:
+- Constant

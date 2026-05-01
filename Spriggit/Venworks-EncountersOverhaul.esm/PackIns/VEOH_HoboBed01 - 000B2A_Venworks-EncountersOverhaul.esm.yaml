@@ -1,0 +1,15 @@
+FormKey: 000B2A:Venworks-EncountersOverhaul.esm
+MajorRecordFlagsRaw: 512
+EditorID: VEOH_HoboBed01
+FormVersion: 582
+StarfieldMajorRecordFlags:
+- 0x200
+ObjectBounds:
+  First: -1.0395373, -0.46680543, 0
+  Second: 0.997572, 0.44969848, 0.20899329
+Cell: 000B24:Venworks-EncountersOverhaul.esm
+Version: 0
+FNAM: 0x0C000000
+MaterialSwaps: []
+MajorFlags:
+- Prefab

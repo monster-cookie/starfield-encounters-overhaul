@@ -1,0 +1,33 @@
+FormKey: 0009BB:Venworks-EncountersOverhaul.esm
+EditorID: VEOH_ManMadeClutter_Encounters_Large
+FormVersion: 582
+Parent: 0009B5:Venworks-EncountersOverhaul.esm
+PreviousSibling: 000956:Venworks-EncountersOverhaul.esm
+Conditions:
+- MutagenObjectType: ConditionGlobal
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    Function: GetValue
+    Member: Value2
+  ComparisonValue: 000917:Venworks-EncountersOverhaul.esm
+- MutagenObjectType: ConditionGlobal
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    Function: GetValue
+    Member: Value2
+  ComparisonValue: 000918:Venworks-EncountersOverhaul.esm
+- MutagenObjectType: ConditionGlobal
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    Function: GetValue
+    Member: Value2
+  ComparisonValue: 000919:Venworks-EncountersOverhaul.esm
+Flags:
+- Random
+MaxConcurrentQuests: 0

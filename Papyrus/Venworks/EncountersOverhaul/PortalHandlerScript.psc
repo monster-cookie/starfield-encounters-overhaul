@@ -1,18 +1,10 @@
-ScriptName Venworks:EncountersOverhaul:PortalHandlerScript Extends Venworks:Core:Base:BaseObjectReference
+ScriptName Venworks:EncountersOverhaul:PortalHandlerScript Extends Venworks:EncountersOverhaul:Core:Base:BaseObjectReference
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Imports
 ;;;
-Import Venworks:EncountersOverhaul:GlobalConfig
-
-Import Venworks:Core:Utilities:Travel
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Global Variables
-;;;
-GlobalVariable Property Venworks_DebugEnabled Auto Const Mandatory
+Import Venworks:EncountersOverhaul:Core:Utilities:Travel
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -31,11 +23,11 @@ RefCollectionAlias Property PortalsFound Auto Const Mandatory
 ;;; Events
 ;;;
 Event OnTriggerEnter(ObjectReference akActionRef)
-  LogUserInformational(creationName=GetCreationName(), moduleName="PortalHandlerScript", functionName="OnTriggerEnter", logMessage="OnTriggerEnter triggered. Known portals = " + PortalsFound.GetCount() + ". Known map makers = " + MapMarkersFound.GetCount() + ".")
+  LogUserInformational(moduleName="PortalHandlerScript", functionName="OnTriggerEnter", logMessage="OnTriggerEnter triggered. Known portals = " + PortalsFound.GetCount() + ". Known map makers = " + MapMarkersFound.GetCount() + ".")
   Actor player = Game.GetPlayer() 
 
   If (akActionRef != player as ObjectReference)
-    LogUserInformational(creationName=GetCreationName(), moduleName="PortalHandlerScript", functionName="OnTriggerEnter", logMessage="OnTriggerEnter triggered by something other then the player so aborting.")
+    LogUserInformational(moduleName="PortalHandlerScript", functionName="OnTriggerEnter", logMessage="OnTriggerEnter triggered by something other then the player so aborting.")
     Return
   EndIf
 
@@ -48,7 +40,7 @@ Event OnTriggerEnter(ObjectReference akActionRef)
   ;; No point in trying portal match unless we have a few found 
   If (PortalsFound.GetCount() >= 5)
     ObjectReference portalRef = GetSomeWhatSafeMarker(PortalsFound)
-    LogUserInformational(creationName=GetCreationName(), moduleName="PortalHandlerScript", functionName="OnTriggerEnter", logMessage="A random portal was found " + portalRef + "(" + portalRef.GetBaseObject() +").")
+    LogUserInformational(moduleName="PortalHandlerScript", functionName="OnTriggerEnter", logMessage="A random portal was found " + portalRef + "(" + portalRef.GetBaseObject() +").")
     SomeWhatSafeFastTravel(portalRef)
     Return
   EndIf
@@ -56,12 +48,12 @@ Event OnTriggerEnter(ObjectReference akActionRef)
   ;; If no portal was found fall back on using a random map marker
   If (MapMarkersFound.GetCount() >= 1)
     ObjectReference markerRef = GetSomeWhatSafeMarker(MapMarkersFound)
-    LogUserInformational(creationName=GetCreationName(), moduleName="PortalHandlerScript", functionName="OnTriggerEnter", logMessage="A random POI was found " + markerRef + "(" + markerRef.GetBaseObject() +").")
+    LogUserInformational(moduleName="PortalHandlerScript", functionName="OnTriggerEnter", logMessage="A random POI was found " + markerRef + "(" + markerRef.GetBaseObject() +").")
     SomeWhatSafeFastTravel(markerRef)
     Return
   EndIf
 
-  LogUserInformational(creationName=GetCreationName(), moduleName="PortalHandlerScript", functionName="OnTriggerEnter", logMessage="No random portal or map marker was found. No idea what to do.")
+  LogUserInformational(moduleName="PortalHandlerScript", functionName="OnTriggerEnter", logMessage="No random portal or map marker was found. No idea what to do.")
   ;; TODO: Cause random explosion or something
 
   ;; Unfreeze the player

@@ -1,0 +1,56 @@
+FormKey: 3004A4:Starfield.esm
+MajorRecordFlagsRaw: 512
+EditorID: GPPIPCMManMade_StorageBayD01
+FormVersion: 582
+Version2: 2
+StarfieldMajorRecordFlags:
+- 0x200
+ObjectBounds:
+  First: -12.4164295, -13.785426, -8.909659
+  Second: 12.681847, 14.600328, 35.2621
+ObjectPaletteDefaults:
+  FootprintSize: Large
+  ScalePercent: 1
+  AngleZVariance: 180.00006
+  SlopePercent: 1
+  SlopePercentVariance: 20
+  Density: 1
+  FrequencyPercent: 0.01
+  SlopeLimit: 15.000006
+  DistanceAboveWater: 3.4028235E+38
+Components:
+- MutagenObjectType: PlanetContentManagerContentPropertiesComponent
+  ZNAM: 0
+  YNAM: 0
+  XNAM: 0
+  WNAM: 0
+  VNAM: 0
+  UNAM: 0
+  NAM1: 0
+  Global: Null
+  NAM3: 0
+  NAM4: 0x00FF0000
+  NAM5: 0
+  NAM6: 0
+  NAM7: 0
+  NAM8: 0
+  NAM9: 0
+  Conditions: []
+ObjectPlacementDefaults2:
+  FootprintSize: Large
+  ScalePercent: 1
+  AngleZVariance: 180.00006
+  SlopePercent: 1
+  SlopePercentVariance: 20
+  Density: 1
+  FrequencyPercent: 0.01
+  SlopeLimit: 15.000006
+  DistanceAboveWater: 3.4028235E+38
+Cell: 2FCE52:Starfield.esm
+Version: 0
+FNAM: 0x0C000000
+Keywords:
+- 000A5E:Venworks-EncountersOverhaul.esm
+MaterialSwaps: []
+MajorFlags:
+- Prefab

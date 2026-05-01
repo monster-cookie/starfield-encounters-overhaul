@@ -1,0 +1,43 @@
+FormKey: 000B24:Venworks-EncountersOverhaul.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: PackInVEOHHoboBed01StorageCell
+FormVersion: 582
+StarfieldMajorRecordFlags:
+- Compressed
+Flags:
+- IsInteriorCell
+- 0x80000
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  DirectionalFade: 1
+  FogPower: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Unknown1: 1951
+  NearHeightRange: 10000
+  ForColorHighNear: '#00000000'
+  ForColorHighFar: '#00000000'
+  HighDensityScale: 1
+  FogNearScale: 1
+  FogFarScale: 1
+  FogHighNearScale: 1
+  FogHighFarScale: 1
+  InteriorType: PackIn
+LightingTemplate: Null
+WaterHeight: 3.4028235E+38
+XILS: 1
+ImageSpace: 06AD68:Starfield.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 000B26:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 28B0E5:Starfield.esm
+- MutagenObjectType: PlacedObject
+  FormKey: 000B5D:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 03F808:Starfield.esm
+MajorFlags:
+- 0x40000

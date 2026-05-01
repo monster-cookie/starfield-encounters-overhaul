@@ -1,0 +1,15 @@
+FormKey: 000B68:Venworks-EncountersOverhaul.esm
+MajorRecordFlagsRaw: 512
+EditorID: VEOH_Bed_Single01
+FormVersion: 582
+StarfieldMajorRecordFlags:
+- 0x200
+ObjectBounds:
+  First: -1.0849609, -0.5332031, 0.005432129
+  Second: 1.0732422, 0.53222656, 0.7421875
+Cell: 000B62:Venworks-EncountersOverhaul.esm
+Version: 0
+FNAM: 0x0C000000
+MaterialSwaps: []
+MajorFlags:
+- Prefab

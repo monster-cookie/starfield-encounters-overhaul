@@ -3,15 +3,15 @@ EditorID: OE_CivilianBranch
 FormVersion: 582
 Version2: 11
 Parent: 029152:Starfield.esm
-PreviousSibling: 00083D:Venworks-EncountersOverhaul.esm
+PreviousSibling: Null
 Conditions:
 - MutagenObjectType: ConditionFloat
-  Unknown2: 16954
+  Unknown2: 36276
   Data:
     MutagenObjectType: SystemHasKeywordConditionData
     FirstParameter: 318F4B:Starfield.esm
 - MutagenObjectType: ConditionFloat
-  Unknown2: 16954
+  Unknown2: 36276
   Data:
     MutagenObjectType: IsTrueForConditionFormConditionData
     RunOnType: EventData
@@ -21,7 +21,7 @@ Conditions:
 - MutagenObjectType: ConditionFloat
   Flags:
   - OR
-  Unknown2: 16954
+  Unknown2: 36276
   Data:
     MutagenObjectType: GetEventDataConditionData
     Member: Keyword1
@@ -30,7 +30,7 @@ Conditions:
 - MutagenObjectType: ConditionFloat
   Flags:
   - OR
-  Unknown2: 16954
+  Unknown2: 36276
   Data:
     MutagenObjectType: GetEventDataConditionData
     Member: Keyword1

@@ -1,0 +1,14 @@
+FormKey: 0009B5:Venworks-EncountersOverhaul.esm
+EditorID: VEOH_ManMadeClutterBranch
+FormVersion: 582
+Parent: 029152:Starfield.esm
+PreviousSibling: 140519:Starfield.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown2: 36276
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    Member: Keyword1
+  ComparisonValue: 1
+Flags: []
+MaxConcurrentQuests: 0

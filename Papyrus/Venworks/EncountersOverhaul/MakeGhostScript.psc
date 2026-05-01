@@ -4,8 +4,8 @@ ScriptName Venworks:EncountersOverhaul:MakeGhostScript Extends Actor
 ;;;
 ;;; Imports
 ;;;
-Import Venworks:Core:Enumerations
-Import Venworks:Core:Logging
+Import Venworks:EncountersOverhaul:Core:Enumerations
+Import Venworks:EncountersOverhaul:Core:Logging
 
 Import Venworks:EncountersOverhaul:GlobalConfig
 

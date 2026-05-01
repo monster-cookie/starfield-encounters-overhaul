@@ -1,0 +1,10 @@
+FormKey: 000AD4:Venworks-EncountersOverhaul.esm
+EditorID: GPO_VEOH
+FormVersion: 582
+Name:
+  TargetLanguage: English
+  Value: Venworks Encounters Overhaul Options
+Options:
+  MutagenObjectType: GameplayOptionsGroupLeaf
+  GameplayOptions:
+  - 00098F:Venworks-EncountersOverhaul.esm

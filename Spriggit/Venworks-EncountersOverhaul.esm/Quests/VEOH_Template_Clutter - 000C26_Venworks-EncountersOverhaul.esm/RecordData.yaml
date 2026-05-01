@@ -1,0 +1,12 @@
+FormKey: 000C26:Venworks-EncountersOverhaul.esm
+EditorID: VEOH_Template_Clutter
+FormVersion: 582
+Name:
+  TargetLanguage: English
+  Value: Template Dynamic Clutter Quest
+Data:
+  Unused: 0x000000
+Event: SCPT
+Filter: \Random Encounters\OverlayEncounters\Templates\
+UnusedConditions: []
+Aliases: []

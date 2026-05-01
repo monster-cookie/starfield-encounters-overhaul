@@ -1,0 +1,38 @@
+FormKey: 2F7FC2:Starfield.esm
+MajorRecordFlagsRaw: 512
+EditorID: GPPIPCMManMade_SolarPanelsC01
+FormVersion: 582
+Version2: 1
+StarfieldMajorRecordFlags:
+- 0x200
+ObjectBounds:
+  First: -13.925701, -16.514383, -7.2316484
+  Second: 14.1888485, 13.830997, 35.278564
+ObjectPaletteDefaults:
+  Flags:
+  - ConformToSlope
+  FootprintSize: Large
+  ScalePercent: 1
+  SlopePercent: 1
+  Density: 1
+  FrequencyPercent: 0.01
+  SlopeLimit: 15.000006
+  DistanceAboveWater: 3.4028235E+38
+ObjectPlacementDefaults2:
+  Flags:
+  - ConformToSlope
+  FootprintSize: Large
+  ScalePercent: 1
+  SlopePercent: 1
+  Density: 1
+  FrequencyPercent: 0.01
+  SlopeLimit: 15.000006
+  DistanceAboveWater: 3.4028235E+38
+Cell: 058C2E:Starfield.esm
+Version: 0
+FNAM: 0x0C000000
+Keywords:
+- 000A5E:Venworks-EncountersOverhaul.esm
+MaterialSwaps: []
+MajorFlags:
+- Prefab

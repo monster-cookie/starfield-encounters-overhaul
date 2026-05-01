@@ -1,0 +1,42 @@
+FormKey: 000B6E:Venworks-EncountersOverhaul.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: PackInStorageCellDUPLICATE005
+FormVersion: 582
+StarfieldMajorRecordFlags:
+- Compressed
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  DirectionalFade: 1
+  FogPower: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Unknown1: 1951
+  NearHeightRange: 10000
+  ForColorHighNear: '#00000000'
+  ForColorHighFar: '#00000000'
+  HighDensityScale: 1
+  FogNearScale: 1
+  FogFarScale: 1
+  FogHighNearScale: 1
+  FogHighFarScale: 1
+  InteriorType: PackIn
+LightingTemplate: Null
+WaterHeight: 3.4028235E+38
+XILS: 1
+ImageSpace: 06AD68:Starfield.esm
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 000B6F:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 13460E:Starfield.esm
+- MutagenObjectType: PlacedObject
+  FormKey: 000B73:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 03F808:Starfield.esm
+MajorFlags:
+- 0x40000

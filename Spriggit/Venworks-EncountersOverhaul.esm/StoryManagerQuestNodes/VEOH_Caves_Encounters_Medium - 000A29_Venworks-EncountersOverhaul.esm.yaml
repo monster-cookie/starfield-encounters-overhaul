@@ -1,0 +1,27 @@
+FormKey: 000A29:Venworks-EncountersOverhaul.esm
+EditorID: VEOH_Caves_Encounters_Medium
+FormVersion: 582
+Parent: Null
+PreviousSibling: 000816:Venworks-EncountersOverhaul.esm
+Conditions:
+- MutagenObjectType: ConditionGlobal
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    Function: GetValue
+    Member: Value2
+  ComparisonValue: 00091A:Venworks-EncountersOverhaul.esm
+- MutagenObjectType: ConditionGlobal
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: GetEventDataConditionData
+    Function: GetValue
+    Member: Value2
+  ComparisonValue: 00091B:Venworks-EncountersOverhaul.esm
+Flags:
+- Random
+QuestFlags:
+- SharesEvent
+MaxConcurrentQuests: 0
