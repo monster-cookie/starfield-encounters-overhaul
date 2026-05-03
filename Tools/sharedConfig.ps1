@@ -52,7 +52,11 @@ $Global:Databases = @(
 $Global:ScriptingNamespaceModuleCompany = "Venworks"
 $Global:ScriptingNamespaceModuleName = "EncountersOverhaul"
 
-Write-Host -ForegroundColor Yellow "Path to Venworks Core Scripts is $ENV:VENWORKS_CORE_SCRIPTS_PATH"
+$Global:ScriptingNamespaceSharedLibraryCompany = "Venworks"
+$Global:ScriptingNamespaceSharedLibraryName = "Shared"
+
+Write-Host -ForegroundColor Yellow "Papyrus Scripting namespace for module is $Global:ScriptingNamespaceModuleCompany`:$Global:ScriptingNamespaceModuleName"
+Write-Host -ForegroundColor Yellow "Papyrus Scripting namespace for shared library is $Global:ScriptingNamespaceSharedLibraryCompany`:$Global:ScriptingNamespaceSharedLibraryName"
 
 Write-Host -ForegroundColor Yellow "`nGame Database Files:"
 foreach ($database in $Global:Databases) {

@@ -1,13 +1,5 @@
-ScriptName Venworks:EncountersOverhaul:Quests:Caves:Small:VEOH_Caves_Spacers_Small_01 extends Venworks:EncountersOverhaul:Core:Base:BaseQuest
+ScriptName Venworks:EncountersOverhaul:Quests:Caves:Small:VEOH_Caves_Spacers_Small_01 extends Venworks:EncountersOverhaul:Base:BaseQuest
 {Handler script for the Radiant Engine Quest - VEOH_Caves_Spacers_Small_01}
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Imports
-;;;
-Import Venworks:EncountersOverhaul:Core:Enumerations
-Import Venworks:EncountersOverhaul:Core:Logging
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -1,4 +1,4 @@
-ScriptName Venworks:EncountersOverhaul:Quests:Clutter:VEOH_Shared_ManMadeClutter extends Venworks:EncountersOverhaul:Core:Base:BaseQuest
+ScriptName Venworks:EncountersOverhaul:Quests:Clutter:VEOH_Shared_ManMadeClutter extends Venworks:EncountersOverhaul:Base:BaseQuest
 {Handler script for the Radiant Engine Quest - VEOH_Shared_ManMadeClutter}
 
 
@@ -6,8 +6,8 @@ ScriptName Venworks:EncountersOverhaul:Quests:Clutter:VEOH_Shared_ManMadeClutter
 ;;;
 ;;; Imports
 ;;;
-Import Venworks:EncountersOverhaul:Core:Enumerations
-Import Venworks:EncountersOverhaul:Core:Logging
+Import Venworks:Shared:Enumerations
+Import Venworks:Shared:Logging
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -53,6 +53,12 @@ Group EventData
   ReferenceAlias Property Alias_Marker_BossChest Auto Const Mandatory
 EndGroup
 
+;; These properties perform a standardized range check (distance between the player and the trigger).
+Group RangeCheck
+  Float Property RangeCheckDistance=700.00 Auto Const
+  { When player's distance to trigger is less than this, stage RangeCheckStage will be set. }
+EndGroup
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -70,26 +76,26 @@ Event OnQuestInit()
 
   ;; Verify Aliases
   If (Alias_OE_Location == None)
-    LogModuleCritical(functionName="OnQuestInit", logMessage="Alias_OE_Location is not filled this should not be possible as it comes from the script event")
+    LogModuleCritical(functionName="OnQuestInit", logMessage="REQUIRED MISSING: Alias_OE_Location is not filled this should not be possible as it comes from the script event")
     allFilled=false
   EndIf
   If (Alias_Trigger == None)
-    LogModuleCritical(functionName="OnQuestInit", logMessage="Alias_Trigger is not filled this should not be possible as it comes from the script event")
+    LogModuleCritical(functionName="OnQuestInit", logMessage="REQUIRED MISSING: Alias_Trigger is not filled this should not be possible as it comes from the script event")
     allFilled=false
   EndIf
   
   If (Alias_Player == None)
-    LogModuleCritical(functionName="OnQuestInit", logMessage="Alias_Player is not filled this should be impossible player is a core engine unique actor")
+    LogModuleCritical(functionName="OnQuestInit", logMessage="REQUIRED MISSING: Alias_Player is not filled this should be impossible player is a core engine unique actor")
     allFilled=false
   EndIf
   ;; Alias_Companion can be unset as the player may not have a follower
 
   If (Alias_MapMarker == None)
-    LogModuleCritical(functionName="OnQuestInit", logMessage="Alias_MapMarker is not filled this should not be possible as it is required in all POI and Clutter locations")
+    LogModuleCritical(functionName="OnQuestInit", logMessage="REQUIRED MISSING: Alias_MapMarker is not filled this should not be possible as it is required in all POI and Clutter locations")
     allFilled=false
   EndIf
   If (Alias_Marker_Center == None)
-    LogModuleWarning(functionName="OnQuestInit", logMessage="Alias_Marker_Center is not filled")
+    LogModuleWarning(functionName="OnQuestInit", logMessage="REQUIRED MISSING: Alias_Marker_Center is not filled this should not be possible as it is required in all POI and Clutter locations")
     allFilled=false
   EndIf
 
@@ -123,6 +129,17 @@ EndEvent
 ; Event received when the quest has been started
 Event OnQuestStarted()
   LogModuleInformational(functionName="OnQuestStarted", logMessage="Quest OnQuestStarted Fired")
+
+  ;; register for range check to center marker
+  If (RangeCheckDistance > 0)
+    If (Alias_Marker_Center == None)
+      LogModuleCritical(functionName="OnQuestStarted", logMessage="")
+      return
+    EndIf
+    LogModuleInformational(functionName="OnQuestStarted", logMessage="Registering range check for " + RangeCheckDistance + " units to Marker_Center=" + Alias_Marker_Center)
+    ObjectReference centerMarkerRef = Alias_Marker_Center.GetRef()
+    RegisterForDistanceLessThanEvent(Game.GetPlayer(), centerMarkerRef, RangeCheckDistance)
+  EndIf 
 EndEvent
 
 ; Event received when the quest has been shut down. Note that the aliases will be empty by the time this event is received.
@@ -155,6 +172,12 @@ Event OnStageSet(int auiStageID, int auiItemID)
   ElseIf (auiStageID == StageEncounterShutdown)
     HandleEncounterShutdown()
   EndIf
+EndEvent
+
+; Distance event - sent when the two objects are less then the registered distance apart.
+Event OnDistanceLessThan(ObjectReference akObj1, ObjectReference akObj2, float afDistance, int aiEventID)
+  LogModuleInformational(functionName="OnDistanceLessThan", logMessage="Player in range. " + afDistance + " setting stage to " + StageEncounterInProgressPlayerInRange)
+  SetStage(StageEncounterInProgressPlayerInRange)
 EndEvent
 
 

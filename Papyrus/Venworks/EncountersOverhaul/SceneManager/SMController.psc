@@ -1,4 +1,4 @@
-ScriptName Venworks:EncountersOverhaul:SceneManager:SMController Extends Venworks:EncountersOverhaul:Core:Base:BaseQuest
+ScriptName Venworks:EncountersOverhaul:SceneManager:SMController Extends Venworks:EncountersOverhaul:Base:BaseQuest
 { My version of the radiant engine quest controller. This needs added to all SceneManager Managed Quests.}
 
 
@@ -6,7 +6,7 @@ ScriptName Venworks:EncountersOverhaul:SceneManager:SMController Extends Venwork
 ;;;
 ;;; Imports
 ;;;
-Import Venworks:EncountersOverhaul:Core:Enumerations
+Import Venworks:Shared:Enumerations
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -41,31 +41,57 @@ EndGroup
 
 ;; Event received when the quest is initialized, aliases are filled, and it is about to run the startup stage
 Event OnQuestInit()
-  LogUserInformational(moduleName="SceneManager:SMController", functionName="OnQuestInit", logMessage="OnQuestInit Fired")
+  LogModuleInformational(functionName="OnQuestInit", logMessage="OnQuestInit Fired")
 EndEvent
 
 ;; Event received when the quest has been started
 Event OnQuestStarted()
-  LogUserInformational(moduleName="SceneManager:SMController", functionName="OnQuestStarted", logMessage="OnQuestStarted Fired")
+  LogModuleInformational(functionName="OnQuestStarted", logMessage="OnQuestStarted Fired")
 
   ;; register for range check to center marker
   If (RangeCheckDistance > 0)
+    If (Alias_Marker_Center == None)
+      LogModuleCritical(functionName="OnQuestStarted", logMessage="")
+      return
+    EndIf
+    LogModuleInformational(functionName="OnQuestStarted", logMessage="Registering range check for " + RangeCheckDistance + " units to Marker_Center=" + Alias_Marker_Center)
     ObjectReference centerMarkerRef = Alias_Marker_Center.GetRef()
-    LogUserInformational(moduleName="SceneManager:SMController", functionName="OnQuestShutdown", logMessage="Start range check for " + RangeCheckDistance + " units to Marker_Center=" + centerMarkerRef)
     RegisterForDistanceLessThanEvent(Game.GetPlayer(), centerMarkerRef, RangeCheckDistance)
   EndIf 
 EndEvent
 
 ;; Event received when the quest has been shut down. Note that the aliases will be empty by the time this event is received.
 Event OnQuestShutdown()
-  LogUserInformational(moduleName="SceneManager:SMController", functionName="OnQuestShutdown", logMessage="OnQuestShutdown Fired")
+  LogModuleInformational(functionName="OnQuestShutdown", logMessage="OnQuestShutdown Fired")
 EndEvent
 
 ; Distance event - sent when the two objects are less then the registered distance apart.
 Event OnDistanceLessThan(ObjectReference akObj1, ObjectReference akObj2, float afDistance, int aiEventID)
-  LogUserInformational(moduleName="SceneManager:SMController", functionName="OnDistanceLessThan", logMessage="Player in range. " + afDistance + " setting stage to " + RangeCheckStage)
+  LogModuleInformational(functionName="OnDistanceLessThan", logMessage="Player in range. " + afDistance + " setting stage to " + RangeCheckStage)
   SetStage(RangeCheckStage)
 EndEvent
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Functions - Logging Helpers
+;;;
+
+Function LogModuleInformational(String functionName, String logMessage)
+  LogUserInformational(moduleName="SceneManager:SMController", functionName=functionName, logMessage=logMessage)
+EndFunction
+
+Function LogModuleWarning(String functionName, String logMessage)
+  LogUserWarning(moduleName="SceneManager:SMController", functionName=functionName, logMessage=logMessage)
+EndFunction
+
+Function LogModuleError(String functionName, String logMessage)
+  LogUserError(moduleName="SceneManager:SMController", functionName=functionName, logMessage=logMessage)
+EndFunction
+
+Function LogModuleCritical(String functionName, String logMessage)
+  LogUserCritical(moduleName="SceneManager:SMController", functionName=functionName, logMessage=logMessage)
+EndFunction
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

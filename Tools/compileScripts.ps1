@@ -10,7 +10,6 @@ if (!$Global:SharedConfigurationLoaded) {
 
 $ourPapyrusSourcePath="./Papyrus"
 $bgsPapyrusSourcePath="$ENV:PAPYRUS_SCRIPTS_SOURCE_PATH"
-$venworksCoreSourcePath="$ENV:VENWORKS_CORE_SCRIPTS_PATH"
 $targetCompiledScriptsPath="$ENV:MODULE_SCRIPTS_PATH" 
 
 # Purge existing Scripts folder as updateMO2 no longer does it. This purges removed scripts. 
@@ -36,7 +35,7 @@ If (![System.IO.Directory]::Exists("$targetCompiledScriptsPath\$Global:Scripting
 # Compile and deploy Scripts to CK Scripts folder
 Write-Host -ForegroundColor Green "Compiling all scripts in $ourPapyrusSourcePath to $targetCompiledScriptsPath folder"
 
-& "$ENV:TOOL_PATH_PAPYRUS_COMPILER\PapyrusCompiler.exe" "$ourPapyrusSourcePath" -all -f -optimize -flags="$ENV:PAPYRUS_COMPILER_FLAGS\Starfield_Papyrus_Flags.flg" -output="$targetCompiledScriptsPath" -import="$ourPapyrusSourcePath;$bgsPapyrusSourcePath;$venworksCoreSourcePath" -ignorecwd
+& "$ENV:TOOL_PATH_PAPYRUS_COMPILER\PapyrusCompiler.exe" "$ourPapyrusSourcePath" -all -f -optimize -flags="$ENV:PAPYRUS_COMPILER_FLAGS\Starfield_Papyrus_Flags.flg" -output="$targetCompiledScriptsPath" -import="$ourPapyrusSourcePath;$bgsPapyrusSourcePath" -ignorecwd
 
 Write-Host -ForegroundColor Cyan "`n`n"
 Write-Host -ForegroundColor Cyan "**************************************************"

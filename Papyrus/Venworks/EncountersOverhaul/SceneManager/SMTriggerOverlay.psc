@@ -1,4 +1,4 @@
-ScriptName Venworks:EncountersOverhaul:SceneManager:SMTriggerOverlay Extends Venworks:EncountersOverhaul:Core:Base:BaseObjectReference
+ScriptName Venworks:EncountersOverhaul:SceneManager:SMTriggerOverlay Extends Venworks:EncountersOverhaul:Base:BaseObjectReference
 { 
   This is attached to the SMTriggerOverlay* activators and is used to trigger a call to Story Manger when the engine or player is ready.
 
@@ -15,7 +15,7 @@ ScriptName Venworks:EncountersOverhaul:SceneManager:SMTriggerOverlay Extends Ven
 ;;;
 ;;; Imports
 ;;;
-Import Venworks:EncountersOverhaul:Core:Enumerations
+Import Venworks:Shared:Enumerations
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

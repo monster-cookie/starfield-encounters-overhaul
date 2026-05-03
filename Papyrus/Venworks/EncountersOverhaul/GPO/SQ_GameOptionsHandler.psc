@@ -6,8 +6,8 @@ ScriptName Venworks:EncountersOverhaul:GPO:SQ_GameOptionsHandler extends PEO:SQ_
 ;;;
 ;;; Imports
 ;;;
-Import Venworks:EncountersOverhaul:Core:Enumerations
-Import Venworks:EncountersOverhaul:Core:Logging
+Import Venworks:Shared:Enumerations
+Import Venworks:Shared:Logging
 
 Import Venworks:EncountersOverhaul:GlobalConfig
 

@@ -1,10 +1,10 @@
-ScriptName Venworks:EncountersOverhaul:PortalHandlerScript Extends Venworks:EncountersOverhaul:Core:Base:BaseObjectReference
+ScriptName Venworks:EncountersOverhaul:PortalHandlerScript Extends Venworks:EncountersOverhaul:Base:BaseObjectReference
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Imports
 ;;;
-Import Venworks:EncountersOverhaul:Core:Utilities:Travel
+Import Venworks:Shared:Utilities:Travel
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -23,11 +23,11 @@ RefCollectionAlias Property PortalsFound Auto Const Mandatory
 ;;; Events
 ;;;
 Event OnTriggerEnter(ObjectReference akActionRef)
-  LogUserInformational(moduleName="PortalHandlerScript", functionName="OnTriggerEnter", logMessage="OnTriggerEnter triggered. Known portals = " + PortalsFound.GetCount() + ". Known map makers = " + MapMarkersFound.GetCount() + ".")
+  LogModuleInformational(functionName="OnTriggerEnter", logMessage="OnTriggerEnter triggered. Known portals = " + PortalsFound.GetCount() + ". Known map makers = " + MapMarkersFound.GetCount() + ".")
   Actor player = Game.GetPlayer() 
 
   If (akActionRef != player as ObjectReference)
-    LogUserInformational(moduleName="PortalHandlerScript", functionName="OnTriggerEnter", logMessage="OnTriggerEnter triggered by something other then the player so aborting.")
+    LogModuleInformational(functionName="OnTriggerEnter", logMessage="OnTriggerEnter triggered by something other then the player so aborting.")
     Return
   EndIf
 
@@ -40,7 +40,7 @@ Event OnTriggerEnter(ObjectReference akActionRef)
   ;; No point in trying portal match unless we have a few found 
   If (PortalsFound.GetCount() >= 5)
     ObjectReference portalRef = GetSomeWhatSafeMarker(PortalsFound)
-    LogUserInformational(moduleName="PortalHandlerScript", functionName="OnTriggerEnter", logMessage="A random portal was found " + portalRef + "(" + portalRef.GetBaseObject() +").")
+    LogModuleInformational(functionName="OnTriggerEnter", logMessage="A random portal was found " + portalRef + "(" + portalRef.GetBaseObject() +").")
     SomeWhatSafeFastTravel(portalRef)
     Return
   EndIf
@@ -48,15 +48,43 @@ Event OnTriggerEnter(ObjectReference akActionRef)
   ;; If no portal was found fall back on using a random map marker
   If (MapMarkersFound.GetCount() >= 1)
     ObjectReference markerRef = GetSomeWhatSafeMarker(MapMarkersFound)
-    LogUserInformational(moduleName="PortalHandlerScript", functionName="OnTriggerEnter", logMessage="A random POI was found " + markerRef + "(" + markerRef.GetBaseObject() +").")
+    LogModuleInformational(functionName="OnTriggerEnter", logMessage="A random POI was found " + markerRef + "(" + markerRef.GetBaseObject() +").")
     SomeWhatSafeFastTravel(markerRef)
     Return
   EndIf
 
-  LogUserInformational(moduleName="PortalHandlerScript", functionName="OnTriggerEnter", logMessage="No random portal or map marker was found. No idea what to do.")
+  LogModuleInformational(functionName="OnTriggerEnter", logMessage="No random portal or map marker was found. No idea what to do.")
   ;; TODO: Cause random explosion or something
 
   ;; Unfreeze the player
   playerInputManager.Reset()
   playerInputManager.Delete()
 EndEvent
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Functions - Logging Helpers
+;;;
+
+Function LogModuleInformational(String functionName, String logMessage)
+  LogUserInformational(moduleName="PortalHandlerScript", functionName=functionName, logMessage=logMessage)
+EndFunction
+
+Function LogModuleWarning(String functionName, String logMessage)
+  LogUserWarning(moduleName="PortalHandlerScript", functionName=functionName, logMessage=logMessage)
+EndFunction
+
+Function LogModuleError(String functionName, String logMessage)
+  LogUserError(moduleName="PortalHandlerScript", functionName=functionName, logMessage=logMessage)
+EndFunction
+
+Function LogModuleCritical(String functionName, String logMessage)
+  LogUserCritical(moduleName="PortalHandlerScript", functionName=functionName, logMessage=logMessage)
+EndFunction
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Functions
+;;;
