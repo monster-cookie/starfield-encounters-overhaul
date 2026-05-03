@@ -3,6 +3,18 @@ EditorID: VEOH_Clutter_Pirates_Small_01
 FormVersion: 582
 VirtualMachineAdapter:
   Scripts:
+  - Name: Venworks:EncountersOverhaul:DynamicScenesEngine:DSEController
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Marker_Center
+      Object: 000C1E:Venworks-EncountersOverhaul.esm
+      Alias: 7
+    - MutagenObjectType: ScriptFloatProperty
+      Name: RangeCheckDistance
+      Data: 700
+    - MutagenObjectType: ScriptIntProperty
+      Name: RangeCheckStage
+      Data: 100
   - Name: Venworks:EncountersOverhaul:Quests:Clutter:VEOH_Shared_ManMadeClutter
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -49,18 +61,6 @@ VirtualMachineAdapter:
       Name: Alias_TRIGGER
       Object: 000C1E:Venworks-EncountersOverhaul.esm
       Alias: 0
-  - Name: Venworks:EncountersOverhaul:SceneManager:SMController
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Marker_Center
-      Object: 000C1E:Venworks-EncountersOverhaul.esm
-      Alias: 7
-    - MutagenObjectType: ScriptFloatProperty
-      Name: RangeCheckDistance
-      Data: 700
-    - MutagenObjectType: ScriptIntProperty
-      Name: RangeCheckStage
-      Data: 100
   Script:
     Name: ''
   Aliases:
@@ -288,7 +288,7 @@ Aliases:
   ALFG: 0
   Location:
     AliasID: 1
-    RefType: 05F198:Starfield.esm
+    RefType: 000E40:Venworks-EncountersOverhaul.esm
   VoiceTypes: Null
 - MutagenObjectType: QuestReferenceAlias
   ID: 8
@@ -299,7 +299,7 @@ Aliases:
   ALFG: 0
   Location:
     AliasID: 1
-    RefType: 05F199:Starfield.esm
+    RefType: 000E08:Venworks-EncountersOverhaul.esm
   VoiceTypes: Null
 - MutagenObjectType: QuestReferenceAlias
   ID: 9
@@ -310,7 +310,7 @@ Aliases:
   ALFG: 0
   Location:
     AliasID: 1
-    RefType: 05F19A:Starfield.esm
+    RefType: 000E0B:Venworks-EncountersOverhaul.esm
   VoiceTypes: Null
 - MutagenObjectType: QuestReferenceAlias
   ID: 10
@@ -321,7 +321,7 @@ Aliases:
   ALFG: 0
   Location:
     AliasID: 1
-    RefType: 05F19B:Starfield.esm
+    RefType: 000E0E:Venworks-EncountersOverhaul.esm
   VoiceTypes: Null
 - MutagenObjectType: QuestReferenceAlias
   ID: 11
@@ -332,7 +332,7 @@ Aliases:
   ALFG: 0
   Location:
     AliasID: 1
-    RefType: 18E543:Starfield.esm
+    RefType: 000E2E:Venworks-EncountersOverhaul.esm
   VoiceTypes: Null
 - MutagenObjectType: QuestReferenceAlias
   ID: 12
@@ -343,7 +343,7 @@ Aliases:
   ALFG: 0
   Location:
     AliasID: 1
-    RefType: 226AF6:Starfield.esm
+    RefType: 000E22:Venworks-EncountersOverhaul.esm
   VoiceTypes: Null
 - MutagenObjectType: QuestReferenceAlias
   ID: 13

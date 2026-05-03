@@ -5,7 +5,7 @@ Parent: 029152:Starfield.esm
 PreviousSibling: 0009B5:Venworks-EncountersOverhaul.esm
 Conditions:
 - MutagenObjectType: ConditionFloat
-  Unknown2: 38134
+  Unknown2: 39722
   Data:
     MutagenObjectType: GetEventDataConditionData
     Member: Keyword1
@@ -14,7 +14,7 @@ Conditions:
 - MutagenObjectType: ConditionFloat
   Flags:
   - OR
-  Unknown2: 38134
+  Unknown2: 39722
   Data:
     MutagenObjectType: LocationHasKeywordConditionData
     RunOnType: EventData

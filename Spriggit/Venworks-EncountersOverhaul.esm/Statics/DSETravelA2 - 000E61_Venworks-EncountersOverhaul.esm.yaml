@@ -1,0 +1,18 @@
+FormKey: 000E61:Venworks-EncountersOverhaul.esm
+MajorRecordFlagsRaw: 8388612
+EditorID: DSETravelA2
+FormVersion: 582
+StarfieldMajorRecordFlags:
+- NotPlayable
+- 0x800000
+Components:
+- MutagenObjectType: KeywordFormComponent
+ForcedLocations:
+- 000E14:Venworks-EncountersOverhaul.esm
+Model:
+  File: Markers\EditorMarkers\FlagMarkerGreen01.nif
+  LightLayer: 1
+MaxAngle: 1
+UnknownDNAMFloat: 1
+DNAMDataTypeState:
+- Break0

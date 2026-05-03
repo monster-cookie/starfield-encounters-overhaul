@@ -1,0 +1,9 @@
+FormKey: 000DF1:Venworks-EncountersOverhaul.esm
+MajorRecordFlagsRaw: 64
+EditorID: DSELocationType_Solar
+FormVersion: 582
+StarfieldMajorRecordFlags:
+- 0x40
+Data: 3
+MajorFlags:
+- Constant

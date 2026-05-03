@@ -56,11 +56,6 @@ Temporary:
   FormVersion: 582
   Base: 0008FC:Venworks-EncountersOverhaul.esm
 - MutagenObjectType: PlacedObject
-  FormKey: 000CB3:Venworks-EncountersOverhaul.esm
-  FormVersion: 582
-  Base: 000902:Venworks-EncountersOverhaul.esm
-  Position: 0, 9, 0
-- MutagenObjectType: PlacedObject
   FormKey: 000CB4:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 0008FE:Venworks-EncountersOverhaul.esm

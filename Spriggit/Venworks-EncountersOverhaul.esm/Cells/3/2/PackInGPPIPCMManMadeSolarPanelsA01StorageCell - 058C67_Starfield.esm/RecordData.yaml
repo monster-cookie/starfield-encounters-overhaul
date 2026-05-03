@@ -86,13 +86,13 @@ Temporary:
   FormVersion: 582
   Base: 18E542:Starfield.esm
   Position: -2, 3, 2
-  Rotation: -0, -0, 3.1415927
+  Rotation: 0, 0, 3.1415927
 - MutagenObjectType: PlacedObject
   FormKey: 000AFE:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   VirtualMachineAdapter:
     Scripts:
-    - Name: Venworks:EncountersOverhaul:SceneManager:SMTriggerOverlay
+    - Name: Venworks:EncountersOverhaul:DynamicScenesEngine:DSETriggerOverlay
       Flags: Inherited
       Properties:
       - MutagenObjectType: ScriptObjectProperty
@@ -113,19 +113,19 @@ Temporary:
   FormVersion: 582
   Base: 0E37F8:Starfield.esm
   Position: -1.5, -2, 2
-  Rotation: -0, -0, 3.1415927
+  Rotation: 0, 0, 3.1415927
 - MutagenObjectType: PlacedObject
   FormKey: 000B06:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 0E37F9:Starfield.esm
   Position: 5, -5.5, 2
-  Rotation: -0, -0, 1.5707964
+  Rotation: 0, 0, 1.5707964
 - MutagenObjectType: PlacedObject
   FormKey: 000B07:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 0E37FA:Starfield.esm
   Position: -6, -6, 2
-  Rotation: -0, -0, 3.1415927
+  Rotation: 0, 0, 3.1415927
 - MutagenObjectType: PlacedObject
   FormKey: 000B08:Venworks-EncountersOverhaul.esm
   FormVersion: 582

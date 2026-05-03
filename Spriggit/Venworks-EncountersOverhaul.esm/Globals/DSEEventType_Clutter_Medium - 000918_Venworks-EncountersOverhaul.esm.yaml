@@ -1,0 +1,9 @@
+FormKey: 000918:Venworks-EncountersOverhaul.esm
+MajorRecordFlagsRaw: 64
+EditorID: DSEEventType_Clutter_Medium
+FormVersion: 582
+StarfieldMajorRecordFlags:
+- 0x40
+Data: 2
+MajorFlags:
+- Constant

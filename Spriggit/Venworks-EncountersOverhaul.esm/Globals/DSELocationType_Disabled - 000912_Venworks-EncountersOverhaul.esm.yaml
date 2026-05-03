@@ -1,0 +1,9 @@
+FormKey: 000912:Venworks-EncountersOverhaul.esm
+MajorRecordFlagsRaw: 64
+EditorID: DSELocationType_Disabled
+FormVersion: 582
+StarfieldMajorRecordFlags:
+- 0x40
+Data: -1
+MajorFlags:
+- Constant

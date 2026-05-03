@@ -3,6 +3,18 @@ EditorID: VEOH_Template_Clutter
 FormVersion: 582
 VirtualMachineAdapter:
   Scripts:
+  - Name: Venworks:EncountersOverhaul:DynamicScenesEngine:DSEController
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Marker_Center
+      Object: 000C26:Venworks-EncountersOverhaul.esm
+      Alias: 7
+    - MutagenObjectType: ScriptFloatProperty
+      Name: RangeCheckDistance
+      Data: 700
+    - MutagenObjectType: ScriptIntProperty
+      Name: RangeCheckStage
+      Data: 100
   - Name: Venworks:EncountersOverhaul:Quests:Clutter:VEOH_Shared_ManMadeClutter
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -49,18 +61,6 @@ VirtualMachineAdapter:
       Name: Alias_TRIGGER
       Object: 000C26:Venworks-EncountersOverhaul.esm
       Alias: 0
-  - Name: Venworks:EncountersOverhaul:SceneManager:SMController
-    Properties:
-    - MutagenObjectType: ScriptObjectProperty
-      Name: Alias_Marker_Center
-      Object: 000C26:Venworks-EncountersOverhaul.esm
-      Alias: 7
-    - MutagenObjectType: ScriptFloatProperty
-      Name: RangeCheckDistance
-      Data: 700
-    - MutagenObjectType: ScriptIntProperty
-      Name: RangeCheckStage
-      Data: 100
   Script:
     Name: ''
   Aliases:
@@ -96,12 +96,18 @@ VirtualMachineAdapter:
         Data: 110
 Name:
   TargetLanguage: English
-  Value: Template Dynamic Clutter Quest
+  Value: Hostile forces have taken over a near by landmark
 Data:
   Unused: 0x000000
 Event: SCPT
 Filter: \Random Encounters\OverlayEncounters\Templates\
-UnusedConditions: []
+UnusedConditions:
+- MutagenObjectType: ConditionFloat
+  Unknown2: 16672
+  Data:
+    MutagenObjectType: IsTrueForConditionFormConditionData
+    FirstParameter: 00097E:Venworks-EncountersOverhaul.esm
+  ComparisonValue: 1
 Stages:
 - Flags:
   - RunOnStart
@@ -154,7 +160,7 @@ Stages:
     Note: Encounter In Progress - Player Killed Grunts
     Entry:
       TargetLanguage: English
-      Value: Please clear enemy forces
+      Value: Please clear hostile forces
     StageCompleteDatas:
     - QSRD: 0x00000000
     - QSRD: '[]'
@@ -164,7 +170,7 @@ Stages:
     Note: Encounter In Progress - Player Killed Boss
     Entry:
       TargetLanguage: English
-      Value: Please defeated the enemy leader
+      Value: Please defeated the leader
     StageCompleteDatas:
     - QSRD: 0x00000000
     - QSRD: '[]'
@@ -174,7 +180,7 @@ Stages:
     Note: Encounter In Progress - Player Looted Boss Chest
     Entry:
       TargetLanguage: English
-      Value: Please check the boss' stash for cool items
+      Value: Please check the stash for cool items
     StageCompleteDatas:
     - QSRD: 0x00000000
     - QSRD: '[]'
@@ -199,7 +205,7 @@ Objectives:
   Flags: []
   DisplayText:
     TargetLanguage: English
-    Value: Defeat enemy forces
+    Value: Defeat hostile forces
   Targets:
   - AliasID: 15
     Flags:
@@ -208,7 +214,7 @@ Objectives:
   Flags: []
   DisplayText:
     TargetLanguage: English
-    Value: Defeat enemy leader
+    Value: Defeat leader
   Targets:
   - AliasID: 13
     Flags:
@@ -276,7 +282,7 @@ Aliases:
   ALFG: 0
   Location:
     AliasID: 1
-    RefType: 05F198:Starfield.esm
+    RefType: 000E40:Venworks-EncountersOverhaul.esm
   VoiceTypes: Null
 - MutagenObjectType: QuestReferenceAlias
   ID: 8
@@ -286,7 +292,7 @@ Aliases:
   ALFG: 0
   Location:
     AliasID: 1
-    RefType: 05F199:Starfield.esm
+    RefType: 000E08:Venworks-EncountersOverhaul.esm
   VoiceTypes: Null
 - MutagenObjectType: QuestReferenceAlias
   ID: 9
@@ -296,7 +302,7 @@ Aliases:
   ALFG: 0
   Location:
     AliasID: 1
-    RefType: 05F19A:Starfield.esm
+    RefType: 000E0B:Venworks-EncountersOverhaul.esm
   VoiceTypes: Null
 - MutagenObjectType: QuestReferenceAlias
   ID: 10
@@ -306,7 +312,7 @@ Aliases:
   ALFG: 0
   Location:
     AliasID: 1
-    RefType: 05F19B:Starfield.esm
+    RefType: 000E0E:Venworks-EncountersOverhaul.esm
   VoiceTypes: Null
 - MutagenObjectType: QuestReferenceAlias
   ID: 11
@@ -316,7 +322,7 @@ Aliases:
   ALFG: 0
   Location:
     AliasID: 1
-    RefType: 18E543:Starfield.esm
+    RefType: 000E2E:Venworks-EncountersOverhaul.esm
   VoiceTypes: Null
 - MutagenObjectType: QuestReferenceAlias
   ID: 12
@@ -326,7 +332,7 @@ Aliases:
   ALFG: 0
   Location:
     AliasID: 1
-    RefType: 226AF6:Starfield.esm
+    RefType: 000E22:Venworks-EncountersOverhaul.esm
   VoiceTypes: Null
 - MutagenObjectType: QuestReferenceAlias
   ID: 13
@@ -395,7 +401,7 @@ Aliases:
   ALFG: 0
   AliasIDToForceIntoWhenFilled: 15
   CreateReferenceToObject:
-    Object: 15E264:Starfield.esm
+    Object: 15E25E:Starfield.esm
     AliasID: 10
     Level: Hard
   VoiceTypes: Null

@@ -1,0 +1,25 @@
+FormKey: 000EA8:Venworks-EncountersOverhaul.esm
+EditorID: DSETriggerStorySpace
+FormVersion: 582
+VirtualMachineAdapter:
+  Scripts:
+  - Name: Venworks:EncountersOverhaul:DynamicScenesEngine:DSETriggerOverlay
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EventSubType
+      Object: 000914:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LocationType
+      Object: 000912:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: StoryEventKeyword
+      Object: 000E03:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: TriggerType
+Model:
+  LightLayer: 1
+ForcedLocations:
+- 000E9B:Venworks-EncountersOverhaul.esm
+MarkerColor: '#00CC4C33'
+Flags: []
+ActivationAngle: 360

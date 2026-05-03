@@ -1,0 +1,17 @@
+FormKey: 0008B3:Venworks-EncountersOverhaul.esm
+MajorRecordFlagsRaw: 8388608
+EditorID: DSEMarker_Clutter_Outdoor_T4
+FormVersion: 582
+StarfieldMajorRecordFlags:
+- 0x800000
+Components:
+- MutagenObjectType: KeywordFormComponent
+ForcedLocations:
+- 0008AC:Venworks-EncountersOverhaul.esm
+Model:
+  File: Markers\PackInMarkers\PIMarkerXLarge01.nif
+  LightLayer: 1
+MaxAngle: 1
+UnknownDNAMFloat: 1
+DNAMDataTypeState:
+- Break0
