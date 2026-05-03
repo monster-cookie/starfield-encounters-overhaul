@@ -1,7 +1,7 @@
 FormKey: 00095F:Venworks-EncountersOverhaul.esm
 IsCompressed: True
 MajorRecordFlagsRaw: 262144
-EditorID: PackInSMSceneMarkersAndTriggersStorageCell
+EditorID: PackInSMSceneMarkersAndTriggersClutterStorageCell
 FormVersion: 582
 StarfieldMajorRecordFlags:
 - Compressed
@@ -101,16 +101,6 @@ Temporary:
     Type: Box
   Position: 17, 0, 0
 - MutagenObjectType: PlacedObject
-  FormKey: 00096F:Venworks-EncountersOverhaul.esm
-  FormVersion: 582
-  Base: 000824:Venworks-EncountersOverhaul.esm
-  Primitive:
-    Bounds: 2, 2, 2
-    Color: '#00CC4C33'
-    Unknown: 0.3
-    Type: Box
-  Position: 17, -4, 0
-- MutagenObjectType: PlacedObject
   FormKey: 000970:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 18E542:Starfield.esm
@@ -137,6 +127,13 @@ Temporary:
 - MutagenObjectType: PlacedObject
   FormKey: 000AE6:Venworks-EncountersOverhaul.esm
   FormVersion: 582
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: Venworks:Shared:AliasHelpers:AliasEnableDisableToggleOnLoad
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: EnablementGlobal
+        Object: 000975:Venworks-EncountersOverhaul.esm
   Base: 0008DC:Venworks-EncountersOverhaul.esm
 MajorFlags:
 - 0x40000

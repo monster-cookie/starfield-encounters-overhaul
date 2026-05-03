@@ -1,7 +1,7 @@
-FormKey: 000B33:Venworks-EncountersOverhaul.esm
+FormKey: 000B62:Venworks-EncountersOverhaul.esm
 IsCompressed: True
 MajorRecordFlagsRaw: 262144
-EditorID: PackInStorageCellDUPLICATE002
+EditorID: PackInVEOHBedSingle01StorageCell
 FormVersion: 582
 StarfieldMajorRecordFlags:
 - Compressed
@@ -24,6 +24,7 @@ Lighting:
   FogFarScale: 1
   FogHighNearScale: 1
   FogHighFarScale: 1
+  FarHeightRange: 10000
   InteriorType: PackIn
 LightingTemplate: Null
 WaterHeight: 3.4028235E+38
@@ -31,11 +32,11 @@ XILS: 1
 ImageSpace: 06AD68:Starfield.esm
 Temporary:
 - MutagenObjectType: PlacedObject
-  FormKey: 000B34:Venworks-EncountersOverhaul.esm
+  FormKey: 000B63:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 2E3CB6:Starfield.esm
+  Base: 1FA770:Starfield.esm
 - MutagenObjectType: PlacedObject
-  FormKey: 000B3B:Venworks-EncountersOverhaul.esm
+  FormKey: 000B67:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 03F808:Starfield.esm
 MajorFlags:

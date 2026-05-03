@@ -29,6 +29,7 @@ Lighting:
   FogFarScale: 1
   FogHighNearScale: 1
   FogHighFarScale: 1
+  FarHeightRange: 10000
 LightingTemplate: Null
 WaterHeight: 3.4028235E+38
 XILS: 1

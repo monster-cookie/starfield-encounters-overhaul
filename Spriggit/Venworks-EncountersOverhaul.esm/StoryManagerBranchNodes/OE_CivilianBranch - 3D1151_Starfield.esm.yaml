@@ -6,12 +6,12 @@ Parent: 029152:Starfield.esm
 PreviousSibling: Null
 Conditions:
 - MutagenObjectType: ConditionFloat
-  Unknown2: 36276
+  Unknown2: 38134
   Data:
     MutagenObjectType: SystemHasKeywordConditionData
     FirstParameter: 318F4B:Starfield.esm
 - MutagenObjectType: ConditionFloat
-  Unknown2: 36276
+  Unknown2: 38134
   Data:
     MutagenObjectType: IsTrueForConditionFormConditionData
     RunOnType: EventData
@@ -21,7 +21,7 @@ Conditions:
 - MutagenObjectType: ConditionFloat
   Flags:
   - OR
-  Unknown2: 36276
+  Unknown2: 38134
   Data:
     MutagenObjectType: GetEventDataConditionData
     Member: Keyword1
@@ -30,7 +30,7 @@ Conditions:
 - MutagenObjectType: ConditionFloat
   Flags:
   - OR
-  Unknown2: 36276
+  Unknown2: 38134
   Data:
     MutagenObjectType: GetEventDataConditionData
     Member: Keyword1

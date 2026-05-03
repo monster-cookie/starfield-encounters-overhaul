@@ -39,7 +39,6 @@ Persistent:
   StarfieldMajorRecordFlags:
   - 0x400
   Base: 000010:Starfield.esm
-  SourcePackIn: 000976:Venworks-EncountersOverhaul.esm
   Position: 0.25, 10, -1.9073486E-06
 Temporary:
 - MutagenObjectType: PlacedObject
@@ -72,19 +71,23 @@ Temporary:
 - MutagenObjectType: PlacedObject
   FormKey: 000BC9:Venworks-EncountersOverhaul.esm
   FormVersion: 582
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: Venworks:Shared:AliasHelpers:AliasEnableDisableToggleOnLoad
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: EnablementGlobal
+        Object: 000975:Venworks-EncountersOverhaul.esm
   Base: 0008DC:Venworks-EncountersOverhaul.esm
-  SourcePackIn: 000976:Venworks-EncountersOverhaul.esm
 - MutagenObjectType: PlacedObject
   FormKey: 000BCD:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 000900:Venworks-EncountersOverhaul.esm
-  SourcePackIn: 000976:Venworks-EncountersOverhaul.esm
   Position: 0, -2, 2
 - MutagenObjectType: PlacedObject
   FormKey: 000BCE:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 18E542:Starfield.esm
-  SourcePackIn: 000976:Venworks-EncountersOverhaul.esm
   Position: 0, 0, 2
 - MutagenObjectType: PlacedObject
   FormKey: 000BD0:Venworks-EncountersOverhaul.esm
@@ -97,44 +100,42 @@ Temporary:
       - MutagenObjectType: ScriptObjectProperty
         Name: EventSubType
         Object: 000917:Venworks-EncountersOverhaul.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: LocationType
+        Object: 000DF1:Venworks-EncountersOverhaul.esm
   Base: 000828:Venworks-EncountersOverhaul.esm
   Primitive:
     Bounds: 700, 700, 700
     Color: '#00CC4C33'
     Unknown: 0.3
     Type: Sphere
-  SourcePackIn: 000976:Venworks-EncountersOverhaul.esm
   Position: 0.25, 10, -1.9073486E-06
 - MutagenObjectType: PlacedObject
   FormKey: 000BD7:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 0E37F8:Starfield.esm
-  SourcePackIn: 000976:Venworks-EncountersOverhaul.esm
   Position: -6.75, 4, 2
 - MutagenObjectType: PlacedObject
   FormKey: 000BD8:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 0E37F9:Starfield.esm
-  SourcePackIn: 000976:Venworks-EncountersOverhaul.esm
   Position: 1, -4, 2
 - MutagenObjectType: PlacedObject
   FormKey: 000BD9:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 0E37FA:Starfield.esm
-  SourcePackIn: 000976:Venworks-EncountersOverhaul.esm
   Position: 1, -8, 2
   Rotation: -0, -0, 3.1415927
 - MutagenObjectType: PlacedObject
   FormKey: 000BDA:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 0E37F4:Starfield.esm
-  SourcePackIn: 000976:Venworks-EncountersOverhaul.esm
   Position: 54.27919, 5.29956, -1.9073486E-06
 - MutagenObjectType: PlacedObject
   FormKey: 000BDE:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 000B80:Venworks-EncountersOverhaul.esm
   Position: 7, 3, 1.9252
-  Rotation: 0, 0, -0.7853982
+  Rotation: 0, 0, 5.4977875
 MajorFlags:
 - 0x40000

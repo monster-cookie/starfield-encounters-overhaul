@@ -1,0 +1,113 @@
+FormKey: 04AC30:Starfield.esm
+IsCompressed: True
+MajorRecordFlagsRaw: 262144
+EditorID: PackInGPPIPCMManMadeAbandondedIndustrialLarge03StorageCell
+FormVersion: 582
+Version2: 1
+StarfieldMajorRecordFlags:
+- Compressed
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00000000'
+  DirectionalColor: '#00000000'
+  FogNearColor: '#00000000'
+  DirectionalFade: 1
+  FogPower: 1
+  FogFarColor: '#00000000'
+  FogMax: 1
+  Unknown1: 1951
+  NearHeightRange: 10000
+  ForColorHighNear: '#00000000'
+  ForColorHighFar: '#00000000'
+  HighDensityScale: 1
+  FogNearScale: 1
+  FogFarScale: 1
+  FogHighNearScale: 1
+  FogHighFarScale: 1
+  FarHeightRange: 10000
+  InteriorType: -1414812925
+LightingTemplate: Null
+WaterHeight: 3.4028235E+38
+XILS: 1
+ImageSpace: 06AD68:Starfield.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 000C9A:Venworks-EncountersOverhaul.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 582
+  StarfieldMajorRecordFlags:
+  - 0x400
+  Base: 000010:Starfield.esm
+  Position: 15, 0, 0
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 000C88:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: Venworks:Shared:AliasHelpers:AliasEnableDisableToggleOnLoad
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: EnablementGlobal
+        Object: 000975:Venworks-EncountersOverhaul.esm
+  Base: 0008DC:Venworks-EncountersOverhaul.esm
+  Position: 45.18464, 0.2878356, -3.8146973E-06
+- MutagenObjectType: PlacedObject
+  FormKey: 000C8C:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 000900:Venworks-EncountersOverhaul.esm
+  Position: -1.5, 4, 2.5
+- MutagenObjectType: PlacedObject
+  FormKey: 000C8D:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 18E542:Starfield.esm
+  Position: -2.5, 0, 2.5
+- MutagenObjectType: PlacedObject
+  FormKey: 000C8F:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: Venworks:EncountersOverhaul:SceneManager:SMTriggerOverlay
+      Flags: Inherited
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: EventSubType
+        Object: 000917:Venworks-EncountersOverhaul.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: LocationType
+        Object: 000DF2:Venworks-EncountersOverhaul.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: StoryEventKeyword
+        Object: 0008E7:Venworks-EncountersOverhaul.esm
+  Base: 000828:Venworks-EncountersOverhaul.esm
+  Primitive:
+    Bounds: 2, 2, 2
+    Color: '#00CC4C33'
+    Unknown: 0.3
+    Type: Sphere
+  Position: 15, 0, -3.8146973E-06
+- MutagenObjectType: PlacedObject
+  FormKey: 000C96:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 0E37F8:Starfield.esm
+  Position: 4.5, -2, 2.5
+  Rotation: -0, -0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 000C97:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 0E37F9:Starfield.esm
+  Position: -2.2, -5, 2.5
+  Rotation: -0, -0, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: 000C98:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 0E37FA:Starfield.esm
+  Position: -2, 6.5, 2.5
+- MutagenObjectType: PlacedObject
+  FormKey: 000C99:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 0E37F4:Starfield.esm
+  Position: 0, 1, 2.5
+MajorFlags:
+- 0x40000

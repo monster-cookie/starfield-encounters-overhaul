@@ -1,0 +1,40 @@
+FormKey: 2F6B1E:Starfield.esm
+MajorRecordFlagsRaw: 512
+EditorID: GPPIPCMManMade_FluidStorageLargeA02
+FormVersion: 582
+Version2: 1
+StarfieldMajorRecordFlags:
+- 0x200
+ObjectBounds:
+  First: -6.4769506, -8.157824, -1.7569404
+  Second: 6.41, 8.401621, 35.278564
+ObjectPaletteDefaults:
+  Flags:
+  - RotateZToSlope
+  FootprintSize: Large
+  ScalePercent: 1
+  AngleZVariance: 180.00006
+  SlopePercent: 1
+  Density: 1
+  FrequencyPercent: 0.01
+  SlopeLimit: 15.000006
+  DistanceAboveWater: 3.4028235E+38
+ObjectPlacementDefaults2:
+  Flags:
+  - RotateZToSlope
+  FootprintSize: Large
+  ScalePercent: 1
+  AngleZVariance: 180.00006
+  SlopePercent: 1
+  Density: 1
+  FrequencyPercent: 0.01
+  SlopeLimit: 15.000006
+  DistanceAboveWater: 3.4028235E+38
+Cell: 22B79B:Starfield.esm
+Version: 0
+FNAM: 0x0C000000
+Keywords:
+- 000A5E:Venworks-EncountersOverhaul.esm
+MaterialSwaps: []
+MajorFlags:
+- Prefab

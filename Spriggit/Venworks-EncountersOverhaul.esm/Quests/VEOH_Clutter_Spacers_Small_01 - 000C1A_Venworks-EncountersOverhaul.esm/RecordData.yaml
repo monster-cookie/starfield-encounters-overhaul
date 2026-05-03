@@ -1,0 +1,442 @@
+FormKey: 000C1A:Venworks-EncountersOverhaul.esm
+EditorID: VEOH_Clutter_Spacers_Small_01
+FormVersion: 582
+VirtualMachineAdapter:
+  Scripts:
+  - Name: Venworks:EncountersOverhaul:Quests:Clutter:VEOH_Shared_ManMadeClutter
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Companion
+      Object: 000C1A:Venworks-EncountersOverhaul.esm
+      Alias: 20
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_MapMarker
+      Object: 000C1A:Venworks-EncountersOverhaul.esm
+      Alias: 6
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Marker_Boss
+      Object: 000C1A:Venworks-EncountersOverhaul.esm
+      Alias: 11
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Marker_BossChest
+      Object: 000C1A:Venworks-EncountersOverhaul.esm
+      Alias: 12
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Marker_Center
+      Object: 000C1A:Venworks-EncountersOverhaul.esm
+      Alias: 7
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Marker_SceneA1
+      Object: 000C1A:Venworks-EncountersOverhaul.esm
+      Alias: 8
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Marker_SceneA2
+      Object: 000C1A:Venworks-EncountersOverhaul.esm
+      Alias: 9
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Marker_SceneA3
+      Object: 000C1A:Venworks-EncountersOverhaul.esm
+      Alias: 10
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_OE_Location
+      Object: 000C1A:Venworks-EncountersOverhaul.esm
+      Alias: 1
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Player
+      Object: 000C1A:Venworks-EncountersOverhaul.esm
+      Alias: 2
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_TRIGGER
+      Object: 000C1A:Venworks-EncountersOverhaul.esm
+      Alias: 0
+  - Name: Venworks:EncountersOverhaul:SceneManager:SMController
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Alias_Marker_Center
+      Object: 000C1A:Venworks-EncountersOverhaul.esm
+      Alias: 7
+    - MutagenObjectType: ScriptFloatProperty
+      Name: RangeCheckDistance
+      Data: 700
+    - MutagenObjectType: ScriptIntProperty
+      Name: RangeCheckStage
+      Data: 100
+  Script:
+    Name: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 000C1A:Venworks-EncountersOverhaul.esm
+      Alias: 13
+    Scripts:
+    - Name: DefaultAliasOnDeath
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 120
+  - Property:
+      Name: ''
+      Object: 000C1A:Venworks-EncountersOverhaul.esm
+      Alias: 14
+    Scripts:
+    - Name: DefaultAliasOnActivate
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 130
+  - Property:
+      Name: ''
+      Object: 000C1A:Venworks-EncountersOverhaul.esm
+      Alias: 15
+    Scripts:
+    - Name: defaultcollectionaliasondeath
+      Properties:
+      - MutagenObjectType: ScriptIntProperty
+        Name: StageToSet
+        Data: 110
+Name:
+  TargetLanguage: English
+  Value: Spacers have taken control of a local landmark
+Data:
+  Unused: 0x000000
+Event: SCPT
+Filter: \Random Encounters\OverlayEncounters\Templates\
+UnusedConditions:
+- MutagenObjectType: ConditionFloat
+  Unknown2: 16672
+  Data:
+    MutagenObjectType: IsTrueForConditionFormConditionData
+    FirstParameter: 000981:Venworks-EncountersOverhaul.esm
+  ComparisonValue: 1
+Stages:
+- Flags:
+  - RunOnStart
+  LogEntries:
+  - Flags: []
+    Note: Encounter Started
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 25
+  LogEntries:
+  - Flags: []
+    Note: Encounter Scene Setup
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 30
+  LogEntries:
+  - Flags: []
+    Note: Encounter Scene Setup - Complete
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 50
+  LogEntries:
+  - Flags: []
+    Note: Encounter Actor Setup
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 55
+  LogEntries:
+  - Flags: []
+    Note: Encounter Actor Setup - Complete
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 100
+  Flags:
+  - KeepInstanceDataFromHereOn
+  LogEntries:
+  - Flags: []
+    Note: Encounter In Progress - Player In Range
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 110
+  LogEntries:
+  - Flags: []
+    Note: Encounter In Progress - Player Killed Grunts
+    Entry:
+      TargetLanguage: English
+      Value: Please clear the Spacer forces
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 120
+  LogEntries:
+  - Flags: []
+    Note: Encounter In Progress - Player Killed Boss
+    Entry:
+      TargetLanguage: English
+      Value: Please defeated the Spacer Leader
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 130
+  LogEntries:
+  - Flags: []
+    Note: Encounter In Progress - Player Looted Boss Chest
+    Entry:
+      TargetLanguage: English
+      Value: Please check the Leader's stash for goodies
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 900
+  LogEntries:
+  - Flags: []
+    Note: Stage Encounter Complete
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+- Index: 999
+  Flags:
+  - RunOnStop
+  LogEntries:
+  - Flags: []
+    Note: Stage Encounter Shutdown
+    StageCompleteDatas:
+    - QSRD: 0x00000000
+    - QSRD: '[]'
+Objectives:
+- Index: 10
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Defeat Spacer forces
+  Targets:
+  - AliasID: 15
+    Flags:
+    - Hostile
+- Index: 20
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Defeat Spacer leader
+  Targets:
+  - AliasID: 13
+    Flags:
+    - Hostile
+- Index: 30
+  Flags: []
+  DisplayText:
+    TargetLanguage: English
+    Value: Loot the leader's stash
+  Targets:
+  - AliasID: 14
+Aliases:
+- MutagenObjectType: QuestReferenceAlias
+  Name: Trigger
+  Flags:
+  - ReservesLocationOrReference
+  ALFG: 0
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: Reference1
+  VoiceTypes: Null
+- MutagenObjectType: QuestLocationAlias
+  ID: 1
+  Name: OE_Location
+  Flags:
+  - ReservesLocationOrReference
+  - AllowCleared
+  ALFG: 0
+  FindMatchingRefFromEvent:
+    FromEvent: SCPT
+    EventData: OldLocation
+- MutagenObjectType: QuestReferenceAlias
+  ID: 2
+  Name: Player
+  Flags:
+  - AllowDisabled
+  - AllowReserved
+  ALFG: 0
+  UniqueActor: 000007:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 20
+  Name: Companion
+  Flags:
+  - Optional
+  - AllowDisabled
+  - AllowReserved
+  - ExternalAliasLinked
+  ALFG: 0
+  External:
+    Quest: 2A567C:Starfield.esm
+    AliasID: 0
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 6
+  Name: MapMarker
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  ALFG: 0
+  Location:
+    AliasID: 1
+    RefType: 02271F:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 7
+  Name: Marker_Center
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  ALFG: 0
+  Location:
+    AliasID: 1
+    RefType: 05F198:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 8
+  Name: Marker_SceneA1
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  ALFG: 0
+  Location:
+    AliasID: 1
+    RefType: 05F199:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 9
+  Name: Marker_SceneA2
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  ALFG: 0
+  Location:
+    AliasID: 1
+    RefType: 05F19A:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 10
+  Name: Marker_SceneA3
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  ALFG: 0
+  Location:
+    AliasID: 1
+    RefType: 05F19B:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 11
+  Name: Marker_Boss
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  ALFG: 0
+  Location:
+    AliasID: 1
+    RefType: 18E543:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 12
+  Name: Marker_BossChest
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  ALFG: 0
+  Location:
+    AliasID: 1
+    RefType: 226AF6:Starfield.esm
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 13
+  Name: NPC_Boss
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  - CreateRefTemp
+  ALFG: 0
+  CreateReferenceToObject:
+    Object: 1691E4:Starfield.esm
+    AliasID: 11
+    Level: VeryHard
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 14
+  Name: Chest_Boss
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  - CreateRefTemp
+  ALFG: 0
+  CreateReferenceToObject:
+    Object: 16886E:Starfield.esm
+    AliasID: 12
+    Level: Hard
+  VoiceTypes: Null
+- MutagenObjectType: QuestCollectionAlias
+  Collection:
+  - ID: 15
+    MaxInitialFillCount: 5
+    ALAM: 0
+    ReferenceAlias:
+      ID: 15
+      Name: NPC_Hostiles
+      Flags:
+      - ReservesLocationOrReference
+      - Optional
+      - ForcedByAliases
+      ALFG: 0
+      VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 16
+  Name: NPC_Grunts_Assualt01
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  - CreateRefTemp
+  ALFG: 0
+  AliasIDToForceIntoWhenFilled: 15
+  CreateReferenceToObject:
+    Object: 1691E5:Starfield.esm
+    AliasID: 9
+    Level: Medium
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 17
+  Name: NPC_Grunts_Charger01
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  - CreateRefTemp
+  ALFG: 0
+  AliasIDToForceIntoWhenFilled: 15
+  CreateReferenceToObject:
+    Object: 1691E3:Starfield.esm
+    AliasID: 8
+    Level: VeryHard
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 18
+  Name: NPC_Grunts_Recruit01
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  - CreateRefTemp
+  ALFG: 0
+  AliasIDToForceIntoWhenFilled: 15
+  CreateReferenceToObject:
+    Object: 1691E2:Starfield.esm
+    AliasID: 10
+  VoiceTypes: Null
+- MutagenObjectType: QuestReferenceAlias
+  ID: 19
+  Name: NPC_Grunts_Heavy01
+  Flags:
+  - ReservesLocationOrReference
+  - Optional
+  - CreateRefTemp
+  ALFG: 0
+  AliasIDToForceIntoWhenFilled: 15
+  CreateReferenceToObject:
+    Object: 0D2145:Starfield.esm
+    AliasID: 10
+    Level: Hard
+  VoiceTypes: Null

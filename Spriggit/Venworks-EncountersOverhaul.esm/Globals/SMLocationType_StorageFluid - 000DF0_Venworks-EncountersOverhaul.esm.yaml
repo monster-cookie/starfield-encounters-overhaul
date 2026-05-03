@@ -1,0 +1,9 @@
+FormKey: 000DF0:Venworks-EncountersOverhaul.esm
+MajorRecordFlagsRaw: 64
+EditorID: SMLocationType_StorageFluid
+FormVersion: 582
+StarfieldMajorRecordFlags:
+- 0x40
+Data: 2
+MajorFlags:
+- Constant

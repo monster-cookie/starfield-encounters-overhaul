@@ -1,0 +1,54 @@
+FormKey: 04AC39:Starfield.esm
+MajorRecordFlagsRaw: 512
+EditorID: GPPIPCMManMade_AbandondedIndustrialLarge01
+FormVersion: 582
+Version2: 1
+StarfieldMajorRecordFlags:
+- 0x200
+ObjectBounds:
+  First: -6.1579623, -14.380859, -14.993168
+  Second: 8.271919, 10.884254, 35.278564
+ObjectPaletteDefaults:
+  FootprintSize: Large
+  ScalePercent: 1
+  AngleZVariance: 180.00006
+  SlopePercent: 1
+  Density: 1
+  FrequencyPercent: 0.01
+  SlopeLimit: 20.000006
+  DistanceAboveWater: 3.4028235E+38
+Components:
+- MutagenObjectType: PlanetContentManagerContentPropertiesComponent
+  ZNAM: 0
+  YNAM: 0
+  XNAM: 0
+  WNAM: 0
+  VNAM: 0
+  UNAM: 0
+  NAM1: 0
+  Global: Null
+  NAM3: 0
+  NAM4: 0x00FF0000
+  NAM5: 0
+  NAM6: 0
+  NAM7: 0
+  NAM8: 0
+  NAM9: 0
+  Conditions: []
+ObjectPlacementDefaults2:
+  FootprintSize: Large
+  ScalePercent: 1
+  AngleZVariance: 180.00006
+  SlopePercent: 1
+  Density: 1
+  FrequencyPercent: 0.01
+  SlopeLimit: 20.000006
+  DistanceAboveWater: 3.4028235E+38
+Cell: 04AC38:Starfield.esm
+Version: 0
+FNAM: 0x0C000000
+Keywords:
+- 000A5E:Venworks-EncountersOverhaul.esm
+MaterialSwaps: []
+MajorFlags:
+- Prefab

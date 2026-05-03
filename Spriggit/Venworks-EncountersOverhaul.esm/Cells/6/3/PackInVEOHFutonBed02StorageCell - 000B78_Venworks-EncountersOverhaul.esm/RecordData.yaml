@@ -1,7 +1,7 @@
 FormKey: 000B78:Venworks-EncountersOverhaul.esm
 IsCompressed: True
 MajorRecordFlagsRaw: 262144
-EditorID: PackInStorageCellDUPLICATE006
+EditorID: PackInVEOHFutonBed02StorageCell
 FormVersion: 582
 StarfieldMajorRecordFlags:
 - Compressed
@@ -24,6 +24,7 @@ Lighting:
   FogFarScale: 1
   FogHighNearScale: 1
   FogHighFarScale: 1
+  FarHeightRange: 10000
   InteriorType: PackIn
 LightingTemplate: Null
 WaterHeight: 3.4028235E+38

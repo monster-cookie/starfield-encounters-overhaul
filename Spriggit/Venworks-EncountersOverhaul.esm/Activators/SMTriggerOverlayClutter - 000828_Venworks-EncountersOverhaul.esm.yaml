@@ -13,7 +13,7 @@ VirtualMachineAdapter:
       Object: 000912:Venworks-EncountersOverhaul.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: StoryEventKeyword
-      Object: 209095:Starfield.esm
+      Object: 0008E7:Venworks-EncountersOverhaul.esm
     - MutagenObjectType: ScriptIntProperty
       Name: TriggerType
 ObjectBounds:
