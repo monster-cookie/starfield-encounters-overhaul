@@ -9,15 +9,6 @@ ScriptName Venworks:EncountersOverhaul:Core:EnableDisableToggleOnLoad extends Ve
 Import Venworks:EncountersOverhaul:Core:Enumerations
 Import Venworks:EncountersOverhaul:Core:Logging
 
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Global Variables
-;;;
-GlobalVariable Property Venworks_DebugEnabled Auto Const Mandatory
-String Property Venworks_ModName="VenworksCore" Auto Const Mandatory
-
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Properties

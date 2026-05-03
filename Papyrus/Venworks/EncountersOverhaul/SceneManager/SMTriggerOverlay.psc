@@ -45,8 +45,13 @@ Group StoryMangerConfiguration
     
     See Global Variables Below for correct values
 
-    SMLocationType_Disabled (-1) = Don't Send a Subtype
-    SMLocationType_Any      (0)  = Any Subtype
+    SMLocationType_Disabled   (-1) = Don't Send a Subtype
+    SMLocationType_Any        (0)  = Any Subtype
+
+    SMLocationType_StorageGeneral (1)  = Storage Themed Man Made Clutter
+    SMLocationType_StorageFluid   (2)  = Storage Themed Man Made Clutter
+    SMLocationType_Solar          (3)  = Solar Power Themed Man Made Clutter
+    SMLocationType_Industrial     (4)  = Industrial Themed Man Made Clutter
 
     Currently Not Really Used
   }
