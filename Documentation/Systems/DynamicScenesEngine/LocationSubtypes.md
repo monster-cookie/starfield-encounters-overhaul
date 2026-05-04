@@ -16,26 +16,26 @@ Story Manager Data will be:
 
 These are defined as Global Variables and need to be passed in on the DSETriggerOverlay,
 
-### DSELocationType_Disabled
+### DSELocationType_Disabled (-1)
 
 Don't Send a Subtype, this is integer value -1
 
-### DSELocationType_Any
+### DSELocationType_Any (0)
 
 Not really usable how story manager works, if you want any subtype to be valid then don't put a condition looking for it. This is integer value 0.
 
-### DSELocationType_StorageGeneral
+### DSELocationType_StorageGeneral (1)
 
 Storage Themed Man Made Clutter, this is integer value 1.
 
-### DSELocationType_StorageFluid
+### DSELocationType_StorageFluid (2)
 
 Storage Themed Man Made Clutter, this is integer value 2.
 
-### DSELocationType_Solar
+### DSELocationType_Solar (3)
 
 Solar Power Themed Man Made Clutter, this is integer value 3.
 
-### DSELocationType_Industrial
+### DSELocationType_Industrial (4)
 
 Industrial Themed Man Made Clutter, this is integer value 4.

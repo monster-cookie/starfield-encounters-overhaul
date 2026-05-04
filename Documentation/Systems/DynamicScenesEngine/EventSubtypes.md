@@ -26,28 +26,28 @@ Not really usable how story manager works, if you want any subtype to be valid t
 
 ### Man Made Clutter Packings
 
-#### DSEEventType_Clutter_Small
+#### DSEEventType_Clutter_Small (1)
 
 This is a small man made clutter packin, really can only spawn 1 group of NPCs. This is integer value 1.
 
-#### DSEEventType_Clutter_Medium
+#### DSEEventType_Clutter_Medium (2)
 
 This is a medium man made clutter packin, really can spawn 2 groups of NPCs. This is integer value 2.
 
-#### DSEEventType_Clutter_Large  (3) = Large Clutter
+#### DSEEventType_Clutter_Large (3)
 
 This is a large man made clutter packin, really can spawn 3 groups of NPCs safely. This is integer value 3.
 
 ### Caves
 
-#### DSEEventType_Cave_Small
+#### DSEEventType_Cave_Small (4)
 
 This is a small cave cell, that really can only spawn 1 group of NPCs. This is integer value 4.
 
-#### DSEEventType_Cave_Medium
+#### DSEEventType_Cave_Medium (5)
 
 This is a medium sized cave cell, that can safely spawn 2 group of NPCs. This is integer value 5.
 
-#### DSEEventType_Cave_Large
+#### DSEEventType_Cave_Large (6)
 
 This is a large sized cave cell, that can safely spawn 3 group of NPCs. This is integer value 6.
