@@ -60,7 +60,7 @@ Temporary:
 - MutagenObjectType: PlacedObject
   FormKey: 000C5D:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 18E542:Starfield.esm
+  Base: 000E34:Venworks-EncountersOverhaul.esm
   Position: -2, 3, 2.5
   Rotation: 0, 0, 4.712389
 - MutagenObjectType: PlacedObject
@@ -90,25 +90,25 @@ Temporary:
 - MutagenObjectType: PlacedObject
   FormKey: 000C66:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 0E37F8:Starfield.esm
+  Base: 000E4C:Venworks-EncountersOverhaul.esm
   Position: 9.5, -2, 2.5
   Rotation: 0, 0, 1.5707964
 - MutagenObjectType: PlacedObject
   FormKey: 000C67:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 0E37F9:Starfield.esm
+  Base: 000E4B:Venworks-EncountersOverhaul.esm
   Position: 9.5, 4.5, 2.5
   Rotation: 0, 0, 1.5707964
 - MutagenObjectType: PlacedObject
   FormKey: 000C68:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 0E37FA:Starfield.esm
+  Base: 000E43:Venworks-EncountersOverhaul.esm
   Position: -2, -3, 2.4
   Rotation: 0, 0, 4.712389
 - MutagenObjectType: PlacedObject
   FormKey: 000C69:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 0E37F4:Starfield.esm
+  Base: 000E3D:Venworks-EncountersOverhaul.esm
   Position: 3, 2.5, 2.5
 MajorFlags:
 - 0x40000
