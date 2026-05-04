@@ -94,7 +94,6 @@ Event OnLoad()
     LogModuleInformational(functionName="OnLoad", logMessage="OnLoad triggered, calling StoryManager.")
     StartEncounter()
   EndIf
-
 EndEvent
 
 ; Event received when this trigger volume is entered
@@ -103,12 +102,12 @@ Event OnTriggerEnter(ObjectReference akActionRef)
     Return
   EndIf
 
-  If (akActionRef != Game.GetPlayer() as ObjectReference)
-    LogModuleInformational(functionName="OnTriggerEnter", logMessage="OnTriggerEnter triggered, but not by the player so aborting.")
+  If (akActionRef == Game.GetPlayer() as ObjectReference)
+    LogModuleInformational(functionName="OnTriggerEnter", logMessage="OnTriggerEnter triggered, and it was the player that triggered so calling StoryManager.")
+    StartEncounter()
+  Else
+    LogModuleInformational(functionName="OnTriggerEnter", logMessage="OnTriggerEnter triggered, but not by the player so aborting. Was triggered by " + akActionRef)
   EndIf
-
-  LogModuleInformational(functionName="OnTriggerEnter", logMessage="OnTriggerEnter triggered, calling StoryManager.")
-  StartEncounter()
 EndEvent
 
 
