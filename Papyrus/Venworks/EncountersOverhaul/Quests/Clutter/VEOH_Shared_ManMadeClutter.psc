@@ -53,12 +53,6 @@ Group EventData
   ReferenceAlias Property Alias_Marker_BossChest Auto Const Mandatory
 EndGroup
 
-;; These properties perform a standardized range check (distance between the player and the trigger).
-Group RangeCheck
-  Float Property RangeCheckDistance=700.00 Auto Const
-  { When player's distance to trigger is less than this, stage RangeCheckStage will be set. }
-EndGroup
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -129,17 +123,6 @@ EndEvent
 ; Event received when the quest has been started
 Event OnQuestStarted()
   LogModuleInformational(functionName="OnQuestStarted", logMessage="Quest OnQuestStarted Fired")
-
-  ;; register for range check to center marker
-  If (RangeCheckDistance > 0)
-    If (Alias_Marker_Center == None)
-      LogModuleCritical(functionName="OnQuestStarted", logMessage="")
-      return
-    EndIf
-    LogModuleInformational(functionName="OnQuestStarted", logMessage="Registering range check for " + RangeCheckDistance + " units to Marker_Center=" + Alias_Marker_Center)
-    ObjectReference centerMarkerRef = Alias_Marker_Center.GetRef()
-    RegisterForDistanceLessThanEvent(Game.GetPlayer(), centerMarkerRef, RangeCheckDistance)
-  EndIf 
 EndEvent
 
 ; Event received when the quest has been shut down. Note that the aliases will be empty by the time this event is received.
@@ -172,12 +155,6 @@ Event OnStageSet(int auiStageID, int auiItemID)
   ElseIf (auiStageID == StageEncounterShutdown)
     HandleEncounterShutdown()
   EndIf
-EndEvent
-
-; Distance event - sent when the two objects are less then the registered distance apart.
-Event OnDistanceLessThan(ObjectReference akObj1, ObjectReference akObj2, float afDistance, int aiEventID)
-  LogModuleInformational(functionName="OnDistanceLessThan", logMessage="Player in range. " + afDistance + " setting stage to " + StageEncounterInProgressPlayerInRange)
-  SetStage(StageEncounterInProgressPlayerInRange)
 EndEvent
 
 
