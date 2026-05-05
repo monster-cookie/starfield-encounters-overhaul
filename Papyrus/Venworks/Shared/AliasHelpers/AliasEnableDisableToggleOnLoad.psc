@@ -1,4 +1,4 @@
-ScriptName Venworks:Shared:AliasHelpers:AliasEnableDisableToggleOnLoad extends ObjectReference
+ScriptName Venworks:Shared:AliasHelpers:AliasEnableDisableToggleOnLoad Extends ObjectReference
 {Toggles between enabling and disabling this object based on a global variable}
 
 
@@ -13,7 +13,7 @@ Import Venworks:Shared:Logging
 ;;;
 ;;; Properties
 ;;;
-Group Configuration Collapsed
+Group Configuration
   GlobalVariable Property EnablementGlobal Auto Const Mandatory
   {This global when set >0 enables the referenced object otherwise it disables it}
 EndGroup

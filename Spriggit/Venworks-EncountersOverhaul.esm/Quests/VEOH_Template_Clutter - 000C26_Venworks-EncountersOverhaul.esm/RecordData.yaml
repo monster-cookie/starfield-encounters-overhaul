@@ -61,6 +61,9 @@ VirtualMachineAdapter:
       Name: Alias_TRIGGER
       Object: 000C26:Venworks-EncountersOverhaul.esm
       Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VEOH_DebugMode
+      Object: 000975:Venworks-EncountersOverhaul.esm
   Script:
     Name: ''
   Aliases:
@@ -98,6 +101,9 @@ Name:
   TargetLanguage: English
   Value: Hostile forces have taken over a near by landmark
 Data:
+  Flags:
+  - WarnOnAliasFillFailure
+  Priority: 30
   Unused: 0x000000
 Event: SCPT
 Filter: \Random Encounters\OverlayEncounters\Templates\
@@ -185,6 +191,8 @@ Stages:
     - QSRD: 0x00000000
     - QSRD: '[]'
 - Index: 900
+  Flags:
+  - RunOnStop
   LogEntries:
   - Flags: []
     Note: Stage Encounter Complete
@@ -192,8 +200,6 @@ Stages:
     - QSRD: 0x00000000
     - QSRD: '[]'
 - Index: 999
-  Flags:
-  - RunOnStop
   LogEntries:
   - Flags: []
     Note: Stage Encounter Shutdown
@@ -229,8 +235,7 @@ Objectives:
 Aliases:
 - MutagenObjectType: QuestReferenceAlias
   Name: Trigger
-  Flags:
-  - ReservesLocationOrReference
+  Flags: []
   ALFG: 0
   FindMatchingRefFromEvent:
     FromEvent: SCPT
@@ -241,7 +246,6 @@ Aliases:
   Name: OE_Location
   Flags:
   - ReservesLocationOrReference
-  - AllowCleared
   ALFG: 0
   FindMatchingRefFromEvent:
     FromEvent: SCPT

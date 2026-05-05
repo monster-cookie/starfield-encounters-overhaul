@@ -5,6 +5,36 @@ VirtualMachineAdapter:
   Scripts:
   - Name: Venworks:EncountersOverhaul:DynamicScenesEngine:DSETriggerOverlay
     Properties:
+    - MutagenObjectType: ScriptIntProperty
+      Name: ChanceToSpawnQuest
+      Data: 40
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_Boss
+      Object: 000F91:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_Center
+      Object: 000F8D:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_Chest_Boss
+      Object: 000F92:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_Chest_Large
+      Object: 000F93:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_Chest_Small
+      Object: 000F94:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_Map
+      Object: 000F8C:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_SceneA
+      Object: 000F8E:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_SceneB
+      Object: 000F8F:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_SceneC
+      Object: 000F90:Venworks-EncountersOverhaul.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: EventSubType
       Object: 000914:Venworks-EncountersOverhaul.esm
@@ -15,8 +45,10 @@ VirtualMachineAdapter:
       Name: StoryEventKeyword
       Object: 0008E7:Venworks-EncountersOverhaul.esm
     - MutagenObjectType: ScriptIntProperty
-      Name: TriggerType
+      Name: TriggerMode
       Data: 1
+    - MutagenObjectType: ScriptIntProperty
+      Name: TriggerType
 ObjectBounds:
   First: -1, -1, -1
   Second: 1, 1, 1

@@ -61,6 +61,9 @@ VirtualMachineAdapter:
       Name: Alias_TRIGGER
       Object: 000C1E:Venworks-EncountersOverhaul.esm
       Alias: 0
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VEOH_DebugMode
+      Object: 000975:Venworks-EncountersOverhaul.esm
   Script:
     Name: ''
   Aliases:
@@ -98,9 +101,12 @@ Name:
   TargetLanguage: English
   Value: Pirates have taken control of a local landmark
 Data:
+  Flags:
+  - WarnOnAliasFillFailure
+  Priority: 30
   Unused: 0x000000
 Event: SCPT
-Filter: \Random Encounters\OverlayEncounters\Templates\
+Filter: \Random Encounters\OverlayEncounters\Clutter\
 UnusedConditions:
 - MutagenObjectType: ConditionFloat
   Unknown2: 16672
@@ -185,6 +191,8 @@ Stages:
     - QSRD: 0x00000000
     - QSRD: '[]'
 - Index: 900
+  Flags:
+  - RunOnStop
   LogEntries:
   - Flags: []
     Note: Stage Encounter Complete
@@ -192,8 +200,6 @@ Stages:
     - QSRD: 0x00000000
     - QSRD: '[]'
 - Index: 999
-  Flags:
-  - RunOnStop
   LogEntries:
   - Flags: []
     Note: Stage Encounter Shutdown
@@ -229,8 +235,7 @@ Objectives:
 Aliases:
 - MutagenObjectType: QuestReferenceAlias
   Name: Trigger
-  Flags:
-  - ReservesLocationOrReference
+  Flags: []
   ALFG: 0
   FindMatchingRefFromEvent:
     FromEvent: SCPT
@@ -241,7 +246,6 @@ Aliases:
   Name: OE_Location
   Flags:
   - ReservesLocationOrReference
-  - AllowCleared
   ALFG: 0
   FindMatchingRefFromEvent:
     FromEvent: SCPT
@@ -249,9 +253,7 @@ Aliases:
 - MutagenObjectType: QuestReferenceAlias
   ID: 2
   Name: Player
-  Flags:
-  - AllowDisabled
-  - AllowReserved
+  Flags: []
   ALFG: 0
   UniqueActor: 000007:Starfield.esm
   VoiceTypes: Null
@@ -274,6 +276,7 @@ Aliases:
   Flags:
   - ReservesLocationOrReference
   - Optional
+  - AllowDisabled
   ALFG: 0
   Location:
     AliasID: 1

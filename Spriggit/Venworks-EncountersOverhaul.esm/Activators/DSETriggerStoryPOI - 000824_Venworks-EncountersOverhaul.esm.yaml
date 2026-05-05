@@ -16,7 +16,6 @@ VirtualMachineAdapter:
       Object: 000DFA:Venworks-EncountersOverhaul.esm
     - MutagenObjectType: ScriptIntProperty
       Name: TriggerType
-      Data: 1
 ObjectBounds:
   First: -1, -1, -1
   Second: 1, 1, 1

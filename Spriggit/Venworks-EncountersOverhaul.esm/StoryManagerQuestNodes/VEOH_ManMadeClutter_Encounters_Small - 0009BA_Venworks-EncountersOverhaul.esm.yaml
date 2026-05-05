@@ -14,6 +14,7 @@ Conditions:
   ComparisonValue: 000917:Venworks-EncountersOverhaul.esm
 Flags:
 - Random
+- WarnIfNoChildQuestStarted
 MaxConcurrentQuests: 0
 Quests:
 - Quest: 000C16:Venworks-EncountersOverhaul.esm

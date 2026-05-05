@@ -52,7 +52,6 @@ Temporary:
         Name: EnablementGlobal
         Object: 000975:Venworks-EncountersOverhaul.esm
   Base: 0008DC:Venworks-EncountersOverhaul.esm
-  Position: 45.18464, 0.2878356, -3.8146973E-06
 - MutagenObjectType: PlacedObject
   FormKey: 000C8C:Venworks-EncountersOverhaul.esm
   FormVersion: 582

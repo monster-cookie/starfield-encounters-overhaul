@@ -10,7 +10,7 @@ ModHeader:
   Author: DEFAULT
   MasterReferences:
   - Master: Starfield.esm
-  - Master: SFBGS00D.esm
+  - Master: sfbgs00d.esm
   - Master: sfbgs007.esm
   Branch: Main
   InteriorCellCount: 21

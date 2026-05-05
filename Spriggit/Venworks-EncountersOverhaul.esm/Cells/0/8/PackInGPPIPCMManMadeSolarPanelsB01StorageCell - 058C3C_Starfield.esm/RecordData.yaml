@@ -101,7 +101,7 @@ Temporary:
     Color: '#00CC4C33'
     Unknown: 0.3
     Type: Sphere
-  Position: 124.14854, -94.83665, 0
+  Position: 0, -11, 0
 - MutagenObjectType: PlacedObject
   FormKey: 000BA1:Venworks-EncountersOverhaul.esm
   FormVersion: 582

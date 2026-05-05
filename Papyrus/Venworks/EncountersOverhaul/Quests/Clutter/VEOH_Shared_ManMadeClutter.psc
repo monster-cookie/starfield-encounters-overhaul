@@ -1,4 +1,4 @@
-ScriptName Venworks:EncountersOverhaul:Quests:Clutter:VEOH_Shared_ManMadeClutter extends Venworks:EncountersOverhaul:Base:BaseQuest
+ScriptName Venworks:EncountersOverhaul:Quests:Clutter:VEOH_Shared_ManMadeClutter extends Venworks:EncountersOverhaul:Quests:Clutter:VEOH_Base_ManMadeClutter
 {Handler script for the Radiant Engine Quest - VEOH_Shared_ManMadeClutter}
 
 
@@ -14,15 +14,8 @@ Import Venworks:Shared:Logging
 ;;;
 ;;; Properties
 ;;;
-Group QuestSetup
-  Int Property StageEncounterStarted=0 Auto Const
-  
-  Int Property StageEncounterSceneSetup=25 Auto Const
-  Int Property StageEncounterSceneSetupComplete=30 Auto Const
-  Int Property StageEncounterActorSetup=50 Auto Const
-  Int Property StageEncounterActorSetupComplete=55 Auto Const
 
-  Int Property StageEncounterInProgressPlayerInRange=100 Auto Const
+Group QuestSetup
   Int Property StageEncounterInProgressPlayerKilledGrunts=110 Auto Const
   Int Property StageEncounterInProgressPlayerKilledBoss=120 Auto Const
   Int Property StageEncounterInProgressPlayerLootedBossChest=130 Auto Const
@@ -35,29 +28,6 @@ Group QuestSetup
   Int Property ObjectiveLootChest=30 Auto Const
 EndGroup
 
-Group EventData
-  LocationAlias Property Alias_OE_Location Auto Const Mandatory
-  ReferenceAlias Property Alias_Trigger Auto Const Mandatory
-
-  ReferenceAlias Property Alias_Player Auto Const Mandatory
-  ReferenceAlias Property Alias_Companion Auto Const Mandatory
-
-  ReferenceAlias Property Alias_MapMarker Auto Const Mandatory
-  ReferenceAlias Property Alias_Marker_Center Auto Const Mandatory
-
-  ReferenceAlias Property Alias_Marker_SceneA1 Auto Const Mandatory
-  ReferenceAlias Property Alias_Marker_SceneA2 Auto Const Mandatory
-  ReferenceAlias Property Alias_Marker_SceneA3 Auto Const Mandatory
-
-  ReferenceAlias Property Alias_Marker_Boss Auto Const Mandatory
-  ReferenceAlias Property Alias_Marker_BossChest Auto Const Mandatory
-EndGroup
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Variables
-;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -66,63 +36,33 @@ EndGroup
 ; Event received when the quest is initialized, aliases are filled, and it is about to run the startup stage.
 Event OnQuestInit()
   LogModuleInformational(functionName="OnQuestInit", logMessage="Quest Init Fired")
-  Bool allFilled = true
 
-  ;; Verify Aliases
-  If (Alias_OE_Location == None)
-    LogModuleCritical(functionName="OnQuestInit", logMessage="REQUIRED MISSING: Alias_OE_Location is not filled this should not be possible as it comes from the script event")
-    allFilled=false
-  EndIf
-  If (Alias_Trigger == None)
-    LogModuleCritical(functionName="OnQuestInit", logMessage="REQUIRED MISSING: Alias_Trigger is not filled this should not be possible as it comes from the script event")
-    allFilled=false
-  EndIf
-  
-  If (Alias_Player == None)
-    LogModuleCritical(functionName="OnQuestInit", logMessage="REQUIRED MISSING: Alias_Player is not filled this should be impossible player is a core engine unique actor")
-    allFilled=false
-  EndIf
-  ;; Alias_Companion can be unset as the player may not have a follower
-
-  If (Alias_MapMarker == None)
-    LogModuleCritical(functionName="OnQuestInit", logMessage="REQUIRED MISSING: Alias_MapMarker is not filled this should not be possible as it is required in all POI and Clutter locations")
-    allFilled=false
-  EndIf
-  If (Alias_Marker_Center == None)
-    LogModuleWarning(functionName="OnQuestInit", logMessage="REQUIRED MISSING: Alias_Marker_Center is not filled this should not be possible as it is required in all POI and Clutter locations")
-    allFilled=false
-  EndIf
-
-  If (Alias_Marker_SceneA1 == None)
-    LogModuleWarning(functionName="OnQuestInit", logMessage="Alias_Marker_SceneA1 is not filled")
-    allFilled=false
-  EndIf
-  If (Alias_Marker_SceneA2 == None)
-    LogModuleWarning(functionName="OnQuestInit", logMessage="Alias_Marker_SceneA2 is not filled")
-    allFilled=false
-  EndIf
-  If (Alias_Marker_SceneA3 == None)
-    LogModuleWarning(functionName="OnQuestInit", logMessage="Alias_Marker_SceneA3 is not filled")
-    allFilled=false
-  EndIf
-
-  If (Alias_Marker_Boss == None)
-    LogModuleWarning(functionName="OnQuestInit", logMessage="Alias_Marker_Boss is not filled")
-    allFilled=false
-  EndIf
-  If (Alias_Marker_BossChest == None)
-    LogModuleWarning(functionName="OnQuestInit", logMessage="Alias_Marker_BossChest is not filled")
-    allFilled=false
-  EndIf
-
-  If (allFilled == false)
+  If (VerifyAliases())
+    LogModuleCritical(functionName="OnQuestInit", logMessage="Some aliases are missing please look for warnings above this message.")
     self.Stop()
+  Else
+    LogModuleInformational(functionName="OnQuestInit", logMessage="All Aliases should be filled.")
   EndIf
 EndEvent
 
 ; Event received when the quest has been started
 Event OnQuestStarted()
   LogModuleInformational(functionName="OnQuestStarted", logMessage="Quest OnQuestStarted Fired")
+
+  If (VerifyAliases())
+    LogModuleCritical(functionName="OnQuestStarted", logMessage="Some aliases are missing please look for warnings above this message.")
+    self.Stop()
+  Else
+    LogModuleInformational(functionName="OnQuestStarted", logMessage="All Aliases should be filled.")
+  EndIf
+
+  If (VEOH_DebugMode.GetValueInt() == 1)
+    ;; In debug mode so enable the kill grunts objective
+    SetObjectiveDisplayed(ObjectiveKillGrunts)
+
+    ;; Not entirely sure we can do that with objectives so going to try and log the in game id of the map marker
+    LogModuleInformational(functionName="OnQuestStarted", logMessage="This should be the in game ref for the map marker assigned to this quest: " + Alias_MapMarker.GetReference())
+  EndIf
 EndEvent
 
 ; Event received when the quest has been shut down. Note that the aliases will be empty by the time this event is received.
@@ -163,6 +103,70 @@ EndEvent
 ;;; Functions
 ;;;
 
+Bool Function VerifyAliases()
+  ;; Verify Aliases
+  If (Alias_OE_Location == None)
+    LogModuleCritical(functionName="VerifyAliases", logMessage="REQUIRED MISSING: Alias_OE_Location is not filled this should not be possible as it comes from the script event")
+    Return False
+  EndIf
+  If (Alias_Trigger == None)
+    LogModuleCritical(functionName="VerifyAliases", logMessage="REQUIRED MISSING: Alias_Trigger is not filled this should not be possible as it comes from the script event")
+    Return False
+  EndIf
+  
+  If (Alias_Player == None)
+    LogModuleCritical(functionName="VerifyAliases", logMessage="REQUIRED MISSING: Alias_Player is not filled this should be impossible player is a core engine unique actor")
+    Return False
+  EndIf
+
+  ;; Alias_Companion can be unset as the player may not have a follower
+
+  If (Alias_MapMarker == None || Alias_MapMarker.GetReference() == None)
+    LogModuleCritical(functionName="VerifyAliases", logMessage="REQUIRED MISSING: Alias_MapMarker is not filled this should not be possible as it is required in all POI and Clutter locations")
+    Return False
+  EndIf
+
+  If (Alias_Marker_Center == None || Alias_Marker_Center.GetReference() == None)
+    LogModuleWarning(functionName="VerifyAliases", logMessage="REQUIRED MISSING: Alias_Marker_Center is not filled this should not be possible as it is required in all POI and Clutter locations")
+    Return False
+  EndIf
+
+  If (Alias_Marker_SceneA1 == None || Alias_Marker_SceneA1.GetReference() == None)
+    LogModuleWarning(functionName="VerifyAliases", logMessage="Alias_Marker_SceneA1 is not filled")
+    Return False
+  EndIf
+
+  If (Alias_Marker_SceneA2 == None || Alias_Marker_SceneA2.GetReference() == None)
+    LogModuleWarning(functionName="VerifyAliases", logMessage="Alias_Marker_SceneA2 is not filled")
+    Return False
+  EndIf
+
+  If (Alias_Marker_SceneA3 == None || Alias_Marker_SceneA3.GetReference() == None)
+    LogModuleWarning(functionName="VerifyAliases", logMessage="Alias_Marker_SceneA3 is not filled")
+    Return False
+  EndIf
+
+  If (Alias_Marker_Boss == None || Alias_Marker_Boss.GetReference() == None)
+    LogModuleWarning(functionName="VerifyAliases", logMessage="Alias_Marker_Boss is not filled")
+    Return False
+  EndIf
+
+  If (Alias_Marker_Chest_Boss == None || Alias_Marker_Chest_Boss.GetReference() == None)
+    LogModuleWarning(functionName="VerifyAliases", logMessage="Alias_Marker_BossChest is not filled")
+    Return False
+  EndIf
+
+  If (Alias_Marker_Chest_Large == None || Alias_Marker_Chest_Large.GetReference() == None)
+    LogModuleWarning(functionName="VerifyAliases", logMessage="Alias_Marker_Chest_Large is not filled")
+    Return False
+  EndIf
+
+  If (Alias_Marker_Chest_Small == None || Alias_Marker_Chest_Small.GetReference() == None)
+    LogModuleWarning(functionName="VerifyAliases", logMessage="Alias_Marker_Chest_Small is not filled")
+    Return False
+  EndIf
+EndFunction
+
 Function CheckCompleteAndSetCorrectStage()
   If (IsStageDone(StageEncounterInProgressPlayerKilledGrunts) && IsStageDone(StageEncounterInProgressPlayerKilledBoss) && IsStageDone(StageEncounterInProgressPlayerLootedBossChest))
     SetStage(StageEncounterComplete)
@@ -190,6 +194,7 @@ EndFunction
 Function LogModuleCritical(String functionName, String logMessage)
   LogUserCritical(moduleName="Quests:Clutter:VEOH_Shared_ManMadeClutter", functionName=functionName, logMessage=logMessage)
 EndFunction
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
