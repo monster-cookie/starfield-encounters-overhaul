@@ -6,8 +6,8 @@ Version2: 1
 StarfieldMajorRecordFlags:
 - 0x200
 ObjectBounds:
-  First: -6.1579623, -14.380859, -14.993168
-  Second: 8.271919, 10.884254, 35.278564
+  First: -9.675262, -14.459698, -14.993168
+  Second: 12.308341, 14.59408, 35.278564
 ObjectPaletteDefaults:
   FootprintSize: Large
   ScalePercent: 1

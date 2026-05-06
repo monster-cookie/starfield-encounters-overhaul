@@ -39,6 +39,10 @@ Persistent:
   StarfieldMajorRecordFlags:
   - 0x400
   Base: 000010:Starfield.esm
+  LinkedReferences:
+  - KeywordOrReference: 000F8C:Venworks-EncountersOverhaul.esm
+    Reference: 000D9E:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
   Position: -5, 10, 0
 Temporary:
 - MutagenObjectType: PlacedObject
@@ -80,17 +84,29 @@ Temporary:
   FormKey: 000D9B:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 0008FE:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 000F93:Venworks-EncountersOverhaul.esm
+    Reference: 000D9E:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
   Position: 1.5, -4, 5
   Rotation: 0, 0, 1.5707964
 - MutagenObjectType: PlacedObject
   FormKey: 000D9C:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 000900:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 000F92:Venworks-EncountersOverhaul.esm
+    Reference: 000D9E:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
   Position: -2, -5, 2
 - MutagenObjectType: PlacedObject
   FormKey: 000D9D:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 000E34:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 000F91:Venworks-EncountersOverhaul.esm
+    Reference: 000D9E:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
   Position: -5, -2, 2
 - MutagenObjectType: PlacedObject
   FormKey: 000D9E:Venworks-EncountersOverhaul.esm
@@ -101,6 +117,9 @@ Temporary:
       Flags: Inherited
       Properties:
       - MutagenObjectType: ScriptObjectProperty
+        Name: AvailableQuests
+        Object: 000F99:Venworks-EncountersOverhaul.esm
+      - MutagenObjectType: ScriptObjectProperty
         Name: EventSubType
         Object: 000918:Venworks-EncountersOverhaul.esm
       - MutagenObjectType: ScriptObjectProperty
@@ -108,7 +127,7 @@ Temporary:
         Object: 000DF1:Venworks-EncountersOverhaul.esm
   Base: 000828:Venworks-EncountersOverhaul.esm
   Primitive:
-    Bounds: 2, 2, 2
+    Bounds: 700, 700, 700
     Color: '#00CC4C33'
     Unknown: 0.3
     Type: Sphere
@@ -117,40 +136,68 @@ Temporary:
   FormKey: 000DA2:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 000E51:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 000F8F:Venworks-EncountersOverhaul.esm
+    Reference: 000D9E:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
   Position: 4, -9, 2
   Rotation: 0, 0, 3.1415927
 - MutagenObjectType: PlacedObject
   FormKey: 000DA3:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 000E50:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 000F8F:Venworks-EncountersOverhaul.esm
+    Reference: 000D9E:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
   Position: -2, -9, 2
   Rotation: 0, 0, 3.1415927
 - MutagenObjectType: PlacedObject
   FormKey: 000DA4:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 000E48:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 000F8F:Venworks-EncountersOverhaul.esm
+    Reference: 000D9E:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
   Position: -4, 3, 1
 - MutagenObjectType: PlacedObject
   FormKey: 000DA5:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 000E4C:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 000F8E:Venworks-EncountersOverhaul.esm
+    Reference: 000D9E:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
   Position: 5, -2, 2
   Rotation: 0, 0, 1.5707964
 - MutagenObjectType: PlacedObject
   FormKey: 000DA6:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 000E4B:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 000F8E:Venworks-EncountersOverhaul.esm
+    Reference: 000D9E:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
   Position: -1, 4, 2
   Rotation: 0, 0, 4.712389
 - MutagenObjectType: PlacedObject
   FormKey: 000DA7:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 000E43:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 000F8E:Venworks-EncountersOverhaul.esm
+    Reference: 000D9E:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
   Position: -1, 8, 2
 - MutagenObjectType: PlacedObject
   FormKey: 000DA8:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 000E3D:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 000F8D:Venworks-EncountersOverhaul.esm
+    Reference: 000D9E:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
   Position: -1, -1, 2
 MajorFlags:
 - 0x40000
