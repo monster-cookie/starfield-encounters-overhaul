@@ -28,6 +28,15 @@ Group QuestSetup
   Int Property ObjectiveLootChest=30 Auto Const
 EndGroup
 
+Group QuestSpecificAliases
+  ReferenceAlias Property Chest_Boss Auto Const Mandatory
+  ReferenceAlias Property NPC_Boss Auto Const Mandatory
+  RefCollectionAlias Property NPC_Grunts Auto Const Mandatory
+  ReferenceAlias Property NPC_Grunts_NPC01 Auto Const Mandatory
+  ReferenceAlias Property NPC_Grunts_NPC02 Auto Const Mandatory
+  ReferenceAlias Property NPC_Grunts_NPC03 Auto Const Mandatory
+  ReferenceAlias Property NPC_Grunts_NPC04 Auto Const Mandatory
+EndGroup
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -57,9 +66,6 @@ Event OnQuestStarted()
   EndIf
 
   If (VEOH_DebugMode.GetValueInt() == 1)
-    ;; In debug mode so enable the kill grunts objective
-    SetObjectiveDisplayed(ObjectiveKillGrunts)
-
     ;; Not entirely sure we can do that with objectives so going to try and log the in game id of the map marker
     LogModuleInformational(functionName="OnQuestStarted", logMessage="This should be the in game ref for the map marker assigned to this quest: " + Alias_MapMarker.GetReference())
   EndIf
@@ -72,8 +78,8 @@ EndEvent
 
 ; Event received when a quest stage is set (in parallel with the fragment)
 Event OnStageSet(int auiStageID, int auiItemID)
-  If (auiStageID == StageEncounterStarted)
-    HandleEncounterStarted()
+  If (auiStageID == StageQuestStarted)
+    HandleQuestStarted()
   ElseIf (auiStageID == StageEncounterSceneSetup)
     HandleEncounterSceneSetup()
   ElseIf (auiStageID == StageEncounterSceneSetupComplete)
@@ -104,17 +110,19 @@ EndEvent
 ;;;
 
 Bool Function VerifyAliases()
+  LogModuleInformational(functionName="VerifyAliases", logMessage="Verifying necessary aliases are set.")
+  
   ;; Verify Aliases
-  If (Alias_OE_Location == None)
+  If (Alias_OE_Location == None || Alias_OE_Location.GetLocation() == None)
     LogModuleCritical(functionName="VerifyAliases", logMessage="REQUIRED MISSING: Alias_OE_Location is not filled this should not be possible as it comes from the script event")
     Return False
   EndIf
-  If (Alias_Trigger == None)
+  If (Alias_Trigger == None || Alias_Trigger.GetReference() == None)
     LogModuleCritical(functionName="VerifyAliases", logMessage="REQUIRED MISSING: Alias_Trigger is not filled this should not be possible as it comes from the script event")
     Return False
   EndIf
   
-  If (Alias_Player == None)
+  If (Alias_Player == None || Alias_Player.GetReference() == None)
     LogModuleCritical(functionName="VerifyAliases", logMessage="REQUIRED MISSING: Alias_Player is not filled this should be impossible player is a core engine unique actor")
     Return False
   EndIf
@@ -198,31 +206,60 @@ EndFunction
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
-;;; Handlers
+;;; Functions - Handlers
 ;;;
 
 ;; Encounter Started
-Function HandleEncounterStarted()
-  LogModuleInformational(functionName="HandleEncounterStarted", logMessage="Encounter Started: Nothing really to do")
-  SetStage(25)
+Function HandleQuestStarted()
+  LogModuleInformational(functionName="HandleQuestStarted", logMessage="Encounter Started: Nothing really to do")
+  SetStage(StageEncounterSceneSetup)
 EndFunction
 
 ;; Encounter Scene Setup
 Function HandleEncounterSceneSetup()
   LogModuleInformational(functionName="HandleEncounterSceneSetup", logMessage="Encounter Scene Setup: Starting")
-  SetStage(30)
+
+  ;; TODO: Spawn Chest
+  ObjectReference markerChestBoss = Alias_Marker_Chest_Boss.GetReference()
+  ObjectReference chestBoss = Chest_Boss.GetReference()
+  If (markerChestBoss != None && chestBoss != None)
+    ;; We should have a chest and a marker to spawn at.
+    markerChestBoss.PlaceAtMe(akFormToPlace=chestBoss)
+  EndIf
+
+  SetStage(StageEncounterSceneSetupComplete)
 EndFunction
 
 ;; Encounter Scene Setup -- Complete
 Function HandleEncounterSceneSetupComplete()
   LogModuleInformational(functionName="HandleEncounterSceneSetupComplete", logMessage="Encounter Scene Setup: Completed")
-  SetStage(50)
+  SetStage(StageEncounterActorSetup)
 EndFunction
 
 ;; Encounter NPC Setup
 Function HandleEncounterActorSetup()
+  LevelModifier levelModTable = new LevelModifier
   LogModuleInformational(functionName="HandleEncounterActorSetup", logMessage="Encounter Actor Setup: Starting")
-  SetStage(55)
+
+  ;; TODO: Spawn Boss and NPCs
+  ObjectReference markerBoss = Alias_Marker_Boss.GetReference()
+
+  ObjectReference markersSceneA1 = Alias_Marker_SceneA1.GetReference()
+  ObjectReference markersSceneA2 = Alias_Marker_SceneA2.GetReference()
+  ObjectReference markersSceneA3 = Alias_Marker_SceneA3.GetReference()
+
+  ObjectReference npcBoss = NPC_Boss.GetActorReference()
+
+  If (markerBoss != None && npcBoss != None)
+    ;; We should have a boss NPC and a marker so spawn them
+    markerBoss.PlaceActorAtMe(akActorToPlace=(npcBoss as Actor).GetLeveledActorBase(), aiLevelMod= levelModTable.Boss)
+  EndIf
+
+  markersSceneA1.PlaceActorAtMe(akActorToPlace=(NPC_Grunts.GetRandom() as Actor).GetLeveledActorBase(), aiLevelMod=levelModTable.Boss)
+  markersSceneA2.PlaceActorAtMe(akActorToPlace=(NPC_Grunts.GetRandom() as Actor).GetLeveledActorBase(), aiLevelMod=levelModTable.Boss)
+  markersSceneA3.PlaceActorAtMe(akActorToPlace=(NPC_Grunts.GetRandom() as Actor).GetLeveledActorBase(), aiLevelMod=levelModTable.Boss)
+
+  SetStage(StageEncounterActorSetupComplete)
 EndFunction
 
 ;; Encounter Scene Setup -- Complete
@@ -263,9 +300,11 @@ EndFunction
 Function HandleEncounterComplete()
   LogModuleInformational(functionName="HandleEncounterComplete", logMessage="Encounter Complete: FYI")
   CompleteAllObjectives()
+  SetStage(StageEncounterShutdown)
 EndFunction
 
 Function HandleEncounterShutdown()
   LogModuleInformational(functionName="HandleEncounterShutdown", logMessage="Encounter Shutdown: FYI")
+  Reset()
 EndFunction
 

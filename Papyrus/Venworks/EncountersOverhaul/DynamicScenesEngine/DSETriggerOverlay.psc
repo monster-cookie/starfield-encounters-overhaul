@@ -122,7 +122,7 @@ EndGroup
 ; Event received when every object in this object's parent cell is loaded (TODO: Find restrictions)
 Event OnLoad()
   If (TriggerType == CONST_DSETriggerType_OnCellLoad)
-    LogModuleInformational(functionName="OnLoad", logMessage="OnLoad triggered, calling StoryManager.")
+    LogModuleInformational(functionName="OnLoad", logMessage="OnLoad triggered, calling StartEncounter()")
     StartEncounter()
   EndIf
 EndEvent
@@ -153,15 +153,25 @@ Function StartEncounter()
   Int iEventNum = EventSubType.GetValueInt()
   Int iLocationType = LocationType.GetValueInt()
 
-  Quest[] startedQuests
-  if (TriggerType == CONST_DSETriggerMode_StoryManager)
+  Quest[] startedQuests = new Quest[0]
+  if (TriggerMode == CONST_DSETriggerMode_StoryManager)
     ;; Use Story Manager
     LogModuleInformational(functionName="StartEncounter", logMessage="Calling SendStoryEvent() keyword: " + StoryEventKeyword + ", akLoc: " + akLoc + ", akRef1: " + akRef1 + ", akRef2: " + akRef2 + ", aiValue1: " + iLocationType + ", aiValue2: " + iEventNum)
 	  startedQuests = StoryEventKeyword.SendStoryEventAndWait(akLoc=akLoc, akRef1=akRef1, akRef2=akRef2, aiValue1=iLocationType, aiValue2=iEventNum)
-  ElseIf (TriggerType == CONST_DSETriggerMode_DirectLaunch)
+  ElseIf (TriggerMode == CONST_DSETriggerMode_DirectLaunch)
     ;; Direct launch the quest
-    int randomIndex = Utility.RandomInt(1, AvailableQuests.GetSize())
-    Venworks:EncountersOverhaul:Quests:Clutter:VEOH_Base_ManMadeClutter questToStart = AvailableQuests.GetAt(randomIndex) as Venworks:EncountersOverhaul:Quests:Clutter:VEOH_Base_ManMadeClutter
+    If (AvailableQuests == None || AvailableQuests.GetSize() == 0)
+      LogModuleCritical(functionName="StartEncounter", logMessage="AvailableQuests array is empty.")
+      return
+    EndIf
+
+    int randomIndex = Utility.RandomInt(0, AvailableQuests.GetSize()-1)
+    LogModuleInformational(functionName="StartEncounter", logMessage="There are " + AvailableQuests.GetSize() + " to choose from grabbing quest at index " + randomIndex + ".")
+    Venworks:EncountersOverhaul:Quests:Clutter:VEOH_Shared_ManMadeClutter questToStart = AvailableQuests.GetAt(randomIndex) as Venworks:EncountersOverhaul:Quests:Clutter:VEOH_Shared_ManMadeClutter
+    If (questToStart == None)
+      LogModuleCritical(functionName="StartEncounter", logMessage="Failed to find a quest to start")
+      return
+    EndIf
 
     ;; Need to use linked refs to get the linked map marker and center marker linked to this trigger.
     ObjectReference akMapMarker = self.GetRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_Map)[0] ;; Can only be one
@@ -175,10 +185,17 @@ Function StartEncounter()
     LogModuleCritical(functionName="StartEncounter", logMessage="Unknown trigger mode received (" + TriggerType +")")
     return
   EndIf
-	if (startedQuests.Length == 0 )
+	
+  If (startedQuests.Length == 0 && TriggerMode == CONST_DSETriggerMode_StoryManager)
 	  LogModuleWarning(functionName="StartEncounter", logMessage="Called SendStoryEvent() and did not start any quests.")
-  Else
+  ElseIf (startedQuests.Length >= 1 && TriggerMode == CONST_DSETriggerMode_StoryManager)
 	  LogModuleInformational(functionName="StartEncounter", logMessage="Called SendStoryEvent() and started " + startedQuests.Length +" quests.")
+  ElseIf (startedQuests.Length == 0 && TriggerMode == CONST_DSETriggerMode_DirectLaunch)
+	  LogModuleWarning(functionName="StartEncounter", logMessage="Tried directly calling a quest and it did not start.")
+  ElseIf (startedQuests.Length >= 1 && TriggerMode == CONST_DSETriggerMode_DirectLaunch)
+	  LogModuleInformational(functionName="StartEncounter", logMessage="Tried directly calling a quest and it started.")
+  Else
+	  LogModuleCritical(functionName="StartEncounter", logMessage="Something weird happened. This message shouldn't be reachable.")
   EndIf    
 EndFunction
 

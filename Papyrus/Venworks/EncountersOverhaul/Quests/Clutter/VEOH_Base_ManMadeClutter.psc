@@ -66,7 +66,7 @@ Group BaseAliases
 EndGroup
 
 Group QuestSetup
-  Int Property StageEncounterStarted=0 Auto Const
+  Int Property StageQuestStarted=0 Auto Const
   
   Int Property StageEncounterSceneSetup=25 Auto Const
   Int Property StageEncounterSceneSetupComplete=30 Auto Const
@@ -97,6 +97,15 @@ Bool Property Initialized=False Auto Hidden
 ;;; Functions
 ;;;
 Function BeginWithData(ObjectReference akTrigger, Location akLocation, Int aiLocationSubtype, Int aiEventSubType, ObjectReference akMapMarker, ObjectReference akMarkerCenter)
+  LogModuleInformational(functionName="BeginWithData", logMessage=self + " quest directly started received akTrigger=" + akTrigger + ", akLocation=" + akLocation + ", aiLocationSubtype=" + aiLocationSubtype + ", aiEventSubType=" + aiEventSubType + ", akMapMarker=" + akMapMarker + ", akMarkerCenter=" + akMarkerCenter)
+
+  ;; The quest must be enabled and running to be able to set up aliases
+  if !IsRunning()
+    LogModuleInformational(functionName="BeginWithData", logMessage=self + " was not running so starting.")
+    Start()
+  endif
+
+  ;; Store/Update Required Event Triggers
   Alias_OE_Location.ForceLocationTo(akLocation)
   Alias_Trigger.ForceRefTo(akTrigger)
   LocationSubtype = aiLocationSubtype
@@ -105,27 +114,50 @@ Function BeginWithData(ObjectReference akTrigger, Location akLocation, Int aiLoc
   Alias_MapMarker.ForceRefTo(akMapMarker)
   Alias_Marker_Center.ForceRefTo(akMarkerCenter)
 
-  ;; Using the linked refs populate all the other markers
+  ;; Required Marker_Boss
+  If (akTrigger.CountRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_Boss) <= 0)
+    LogModuleCritical(functionName="BeginWithData", logMessage="Required link ref for DSELinkedRef_Marker_Boss was not found.")
+    Reset()
+    Return
+  EndIf
   ObjectReference akBossMarker = akTrigger.GetRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_Boss)[0] ;; Can only be one
   If (akBossMarker != None)
     Alias_Marker_Boss.ForceRefTo(akBossMarker)
   EndIf
 
+  ;; Required Marker_Chest_Boss
+  If (akTrigger.CountRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_Chest_Boss) <= 0)
+    LogModuleCritical(functionName="BeginWithData", logMessage="Required link ref for DSELinkedRef_Marker_Chest_Boss was not found.")
+    Reset()
+    Return
+  EndIf
   ObjectReference akChestBossMarker = akTrigger.GetRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_Chest_Boss)[0] ;; Can be many but only need one
   If (akChestBossMarker != None)
     Alias_Marker_Chest_Boss.ForceRefTo(akChestBossMarker)
   EndIf
   
-  ObjectReference akChestLargeMarker = akTrigger.GetRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_Chest_Large)[0] ;; Can be many but only need one
-  If (akChestLargeMarker != None)
-    Alias_Marker_Chest_Large.ForceRefTo(akChestLargeMarker)
+  ;; Optional Marker_Chest_Large
+  If (akTrigger.CountRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_Chest_Large) >= 0)
+    ObjectReference akChestLargeMarker = akTrigger.GetRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_Chest_Large)[0] ;; Can be many but only need one
+    If (akChestLargeMarker != None)
+      Alias_Marker_Chest_Large.ForceRefTo(akChestLargeMarker)
+    EndIf
   EndIf
   
-  ObjectReference akChestSmallMarker = akTrigger.GetRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_Chest_Small)[0] ;; Can be many but only need one
-  If (akChestSmallMarker != None)
-    Alias_Marker_Chest_Small.ForceRefTo(akChestSmallMarker)
+  ;; Optional Marker_Chest_Small
+  If (akTrigger.CountRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_Chest_Small) >= 0)
+    ObjectReference akChestSmallMarker = akTrigger.GetRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_Chest_Small)[0] ;; Can be many but only need one
+    If (akChestSmallMarker != None)
+      Alias_Marker_Chest_Small.ForceRefTo(akChestSmallMarker)
+    EndIf
   EndIf
 
+  ;; Required Marker_SceneA
+  If (akTrigger.CountRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_SceneA) <= 0)
+    LogModuleCritical(functionName="BeginWithData", logMessage="Required link ref for DSELinkedRef_Marker_SceneA was not found.")
+    Reset()
+    Return
+  EndIf
   ObjectReference[] akSceneAMarkers = akTrigger.GetRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_SceneA)
   If (akSceneAMarkers.Length >= 3)
     Alias_Marker_SceneA1.ForceRefTo(akSceneAMarkers[0])
@@ -141,51 +173,55 @@ Function BeginWithData(ObjectReference akTrigger, Location akLocation, Int aiLoc
     Alias_Marker_SceneA3.ForceRefTo(akMapMarker) 
   EndIf
 
-  ObjectReference[] akSceneBMarkers = akTrigger.GetRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_SceneB)
-  If (akSceneBMarkers.Length >= 3)
-    Alias_Marker_SceneB1.ForceRefTo(akSceneBMarkers[0])
-    Alias_Marker_SceneB2.ForceRefTo(akSceneBMarkers[1])
-    Alias_Marker_SceneB3.ForceRefTo(akSceneBMarkers[2])
-  ElseIf (akSceneBMarkers.Length == 2)
-    Alias_Marker_SceneB1.ForceRefTo(akSceneBMarkers[0])
-    Alias_Marker_SceneB2.ForceRefTo(akSceneBMarkers[1])
-    Alias_Marker_SceneB3.ForceRefTo(akMarkerCenter)
-  ElseIf (akSceneBMarkers.Length == 1)
-    Alias_Marker_SceneB1.ForceRefTo(akSceneBMarkers[0])
-    Alias_Marker_SceneB2.ForceRefTo(akMarkerCenter)
-    Alias_Marker_SceneB3.ForceRefTo(akMapMarker) 
+  ;; Required Marker_SceneB
+  If (akTrigger.CountRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_SceneB) >= 0)
+    ObjectReference[] akSceneBMarkers = akTrigger.GetRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_SceneB)
+    If (akSceneBMarkers.Length >= 3)
+      Alias_Marker_SceneB1.ForceRefTo(akSceneBMarkers[0])
+      Alias_Marker_SceneB2.ForceRefTo(akSceneBMarkers[1])
+      Alias_Marker_SceneB3.ForceRefTo(akSceneBMarkers[2])
+    ElseIf (akSceneBMarkers.Length == 2)
+      Alias_Marker_SceneB1.ForceRefTo(akSceneBMarkers[0])
+      Alias_Marker_SceneB2.ForceRefTo(akSceneBMarkers[1])
+      Alias_Marker_SceneB3.ForceRefTo(akMarkerCenter)
+    ElseIf (akSceneBMarkers.Length == 1)
+      Alias_Marker_SceneB1.ForceRefTo(akSceneBMarkers[0])
+      Alias_Marker_SceneB2.ForceRefTo(akMarkerCenter)
+      Alias_Marker_SceneB3.ForceRefTo(akMapMarker) 
+    EndIf
   EndIf
 
-  ObjectReference[] akSceneCMarkers = akTrigger.GetRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_SceneC)
-  If (akSceneCMarkers.Length >= 3)
-    Alias_Marker_SceneC1.ForceRefTo(akSceneCMarkers[0])
-    Alias_Marker_SceneC2.ForceRefTo(akSceneCMarkers[1])
-    Alias_Marker_SceneC3.ForceRefTo(akSceneCMarkers[2])
-  ElseIf (akSceneCMarkers.Length == 2)
-    Alias_Marker_SceneC1.ForceRefTo(akSceneCMarkers[0])
-    Alias_Marker_SceneC2.ForceRefTo(akSceneCMarkers[1])
-    Alias_Marker_SceneC3.ForceRefTo(akMarkerCenter)
-  ElseIf (akSceneCMarkers.Length == 1)
-    Alias_Marker_SceneC1.ForceRefTo(akSceneCMarkers[0])
-    Alias_Marker_SceneC2.ForceRefTo(akMarkerCenter)
-    Alias_Marker_SceneC3.ForceRefTo(akMapMarker) 
+  ;; Required Marker_SceneB
+  If (akTrigger.CountRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_SceneC) >= 0)
+    ObjectReference[] akSceneCMarkers = akTrigger.GetRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_SceneC)
+    If (akSceneCMarkers.Length >= 3)
+      Alias_Marker_SceneC1.ForceRefTo(akSceneCMarkers[0])
+      Alias_Marker_SceneC2.ForceRefTo(akSceneCMarkers[1])
+      Alias_Marker_SceneC3.ForceRefTo(akSceneCMarkers[2])
+    ElseIf (akSceneCMarkers.Length == 2)
+      Alias_Marker_SceneC1.ForceRefTo(akSceneCMarkers[0])
+      Alias_Marker_SceneC2.ForceRefTo(akSceneCMarkers[1])
+      Alias_Marker_SceneC3.ForceRefTo(akMarkerCenter)
+    ElseIf (akSceneCMarkers.Length == 1)
+      Alias_Marker_SceneC1.ForceRefTo(akSceneCMarkers[0])
+      Alias_Marker_SceneC2.ForceRefTo(akMarkerCenter)
+      Alias_Marker_SceneC3.ForceRefTo(akMapMarker) 
+    EndIf
   EndIf
 
-  if !IsRunning()
-    Start()
-  endif
-
+  LogModuleInformational(functionName="BeginWithData", logMessage=self + " calling InitializeFromCaller().")
   InitializeFromCaller()
 EndFunction
 
 Function InitializeFromCaller()
-  if Initialized
+  if (Initialized == True)
+    LogModuleInformational(functionName="InitializeFromCaller", logMessage=self + " already initialized so aborting.")
     return
   endif
 
+  LogModuleInformational(functionName="InitializeFromCaller", logMessage=self + " setting initialized and jumping to stage StageQuestStarted(" + StageQuestStarted + ").")
   Initialized = true
-
-  SetStage(StageEncounterSceneSetup)
+  SetStage(StageQuestStarted)
 EndFunction
 
 
