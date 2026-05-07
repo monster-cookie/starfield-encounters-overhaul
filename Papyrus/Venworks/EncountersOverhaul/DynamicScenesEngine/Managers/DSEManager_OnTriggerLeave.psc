@@ -1,0 +1,27 @@
+ScriptName Venworks:EncountersOverhaul:DynamicScenesEngine:Managers:DSEManager_OnTriggerLeave Extends Venworks:EncountersOverhaul:DynamicScenesEngine:Managers:DSEManager_Base
+{This spawns NPCs on close of the attached container or door}
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Private Variables
+;;;
+bool HasProcessed = false
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Events
+;;;
+
+; Event received when this object is closed
+Event OnTriggerLeave(ObjectReference akActionRef)
+  SpawnerType spawnerTypeTable = new SpawnerType
+  String spawnerType=GetSpawnerType(spawnerTypeTable.OnTriggerLeave)
+
+  If (!HasProcessed)
+    HasProcessed = true
+    LogModuleInformational(functionName="HandleTrigger[" + spawnerType + "]", logMessage="OnTriggerLeave triggered, spawning NPCs")
+    HandleTrigger(spawnerTypeTable.OnTriggerLeave, self)
+  EndIf
+EndEvent

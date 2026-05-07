@@ -22,9 +22,6 @@ Import Venworks:Shared:Enumerations
 ;;;
 ;;; Constants
 ;;;
-Int Property CONST_DSETriggerMode_StoryManager = 0 AutoReadOnly
-Int Property CONST_DSETriggerMode_DirectLaunch = 1 AutoReadOnly
-
 Int Property CONST_DSETriggerType_OnCellLoad = 0 AutoReadOnly
 Int Property CONST_DSETriggerType_OnTriggerEnter = 1 AutoReadOnly
 
@@ -34,28 +31,11 @@ Int Property CONST_DSETriggerType_OnTriggerEnter = 1 AutoReadOnly
 ;;; Properties
 ;;;
 Group StoryMangerConfiguration
-  Int Property TriggerMode=1 Auto Const Mandatory
-  {
-    How to trigger quests:
-      - 0 for StoryManager SendStoryEventAndWait
-      - 1 for Direct launch of quests
-  }
-
   Int Property TriggerType=1 Auto Const Mandatory
   {
     Which event to trigger the call to the manager on:
       - 0 for on cell load
       - 1 for when player enters the trigger zone. (This is the default)
-  }
-
-  FormList Property AvailableQuests Auto Const Mandatory
-  {
-    These are the quests the trigger will randomly choose one of try and launch
-  }
-
-  Int Property ChanceToSpawnQuest=40 Auto Const
-  {
-    The chance to spawn a quest in percentage form, the default is 40%
   }
 
   Keyword Property StoryEventKeyword Auto Const Mandatory
@@ -115,6 +95,7 @@ Group AutoFillLinkedRefKeywords
   Keyword Property DSELinkedRef_Marker_Chest_Small Auto Const Mandatory
 EndGroup
 
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Events
@@ -154,46 +135,13 @@ Function StartEncounter()
   Int iLocationType = LocationType.GetValueInt()
 
   Quest[] startedQuests = new Quest[0]
-  if (TriggerMode == CONST_DSETriggerMode_StoryManager)
-    ;; Use Story Manager
-    LogModuleInformational(functionName="StartEncounter", logMessage="Calling SendStoryEvent() keyword: " + StoryEventKeyword + ", akLoc: " + akLoc + ", akRef1: " + akRef1 + ", akRef2: " + akRef2 + ", aiValue1: " + iLocationType + ", aiValue2: " + iEventNum)
-	  startedQuests = StoryEventKeyword.SendStoryEventAndWait(akLoc=akLoc, akRef1=akRef1, akRef2=akRef2, aiValue1=iLocationType, aiValue2=iEventNum)
-  ElseIf (TriggerMode == CONST_DSETriggerMode_DirectLaunch)
-    ;; Direct launch the quest
-    If (AvailableQuests == None || AvailableQuests.GetSize() == 0)
-      LogModuleCritical(functionName="StartEncounter", logMessage="AvailableQuests array is empty.")
-      return
-    EndIf
-
-    int randomIndex = Utility.RandomInt(0, AvailableQuests.GetSize()-1)
-    LogModuleInformational(functionName="StartEncounter", logMessage="There are " + AvailableQuests.GetSize() + " to choose from grabbing quest at index " + randomIndex + ".")
-    Venworks:EncountersOverhaul:Quests:Clutter:VEOH_Shared_ManMadeClutter questToStart = AvailableQuests.GetAt(randomIndex) as Venworks:EncountersOverhaul:Quests:Clutter:VEOH_Shared_ManMadeClutter
-    If (questToStart == None)
-      LogModuleCritical(functionName="StartEncounter", logMessage="Failed to find a quest to start")
-      return
-    EndIf
-
-    ;; Need to use linked refs to get the linked map marker and center marker linked to this trigger.
-    ObjectReference akMapMarker = self.GetRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_Map)[0] ;; Can only be one
-    ObjectReference akMarkerCenter = self.GetRefsLinkedToMe(apLinkKeyword=DSELinkedRef_Marker_Center)[0] ;; Can only be one
-
-    LogModuleInformational(functionName="StartEncounter", logMessage="Directly Calling the quest: " + questToStart + ", akTrigger: " + akRef1 + ", akLocation: " + akLoc + ", aiLocationSubtype: " + iLocationType + ", aiEventSubType: " + iEventNum + ", akMapMarker: " + akMapMarker + ", akMarkerCenter: " + akMarkerCenter)
-
-    questToStart.BeginWithData(akTrigger=akRef1, akLocation=akLoc, aiLocationSubtype=iLocationType, aiEventSubType=iEventNum, akMapMarker=akMapMarker, akMarkerCenter=akMarkerCenter)
-    startedQuests.Add(questToStart)
-  Else
-    LogModuleCritical(functionName="StartEncounter", logMessage="Unknown trigger mode received (" + TriggerType +")")
-    return
-  EndIf
+  LogModuleInformational(functionName="StartEncounter", logMessage="Calling SendStoryEvent() keyword: " + StoryEventKeyword + ", akLoc: " + akLoc + ", akRef1: " + akRef1 + ", akRef2: " + akRef2 + ", aiValue1: " + iLocationType + ", aiValue2: " + iEventNum)
+  startedQuests = StoryEventKeyword.SendStoryEventAndWait(akLoc=akLoc, akRef1=akRef1, akRef2=akRef2, aiValue1=iLocationType, aiValue2=iEventNum)
 	
-  If (startedQuests.Length == 0 && TriggerMode == CONST_DSETriggerMode_StoryManager)
+  If (startedQuests.Length == 0)
 	  LogModuleWarning(functionName="StartEncounter", logMessage="Called SendStoryEvent() and did not start any quests.")
-  ElseIf (startedQuests.Length >= 1 && TriggerMode == CONST_DSETriggerMode_StoryManager)
+  ElseIf (startedQuests.Length >= 1)
 	  LogModuleInformational(functionName="StartEncounter", logMessage="Called SendStoryEvent() and started " + startedQuests.Length +" quests.")
-  ElseIf (startedQuests.Length == 0 && TriggerMode == CONST_DSETriggerMode_DirectLaunch)
-	  LogModuleWarning(functionName="StartEncounter", logMessage="Tried directly calling a quest and it did not start.")
-  ElseIf (startedQuests.Length >= 1 && TriggerMode == CONST_DSETriggerMode_DirectLaunch)
-	  LogModuleInformational(functionName="StartEncounter", logMessage="Tried directly calling a quest and it started.")
   Else
 	  LogModuleCritical(functionName="StartEncounter", logMessage="Something weird happened. This message shouldn't be reachable.")
   EndIf    
