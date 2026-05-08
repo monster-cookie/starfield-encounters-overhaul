@@ -14,9 +14,40 @@ Import Venworks:Shared:Utilities:Array
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
+;;; Structs
+;;;
+Struct FactionDefinition
+  Keyword FactionType=None
+  {The FactionType for this faction definition}
+
+  ConditionForm DSE_ActorIsTest=None
+  {The condition form to use to test if an actor is part of this faction}
+
+  FormList Any=None
+  {Form list of actors that spawn actors of any type, this is normally populated by form list injection from the other form lists below}
+
+  FormList Bosses=None
+  {Form list of faction actors that are bosses (or officers usually)}
+
+  FormList Minions=None
+  {Form list of faction actors that are minions (Assault, Charger, Heavy, Sniper, Support, etc)}
+
+  FormList Robots=None
+  {Form list of faction actors that are robots}
+EndStruct
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
 ;;; Properties
 ;;;
+Group Configuration
+  FactionDefinition[] Property FactionDefinitions Auto Const Mandatory
+  {Array for faction definitions, there must be at least 1}
+EndGroup
+
 Group FactionTypes
+  FormList Property DSE_KnownFactionTypes Auto Const Mandatory
+
   Keyword Property FactionTypeRandom Auto Const Mandatory
   Keyword Property FactionTypeCrimsonFleet Auto Const Mandatory
   Keyword Property FactionTypeEcliptic Auto Const Mandatory
@@ -29,61 +60,6 @@ Group FactionTypes
   Keyword Property FactionTypeTheFirst Auto Const Mandatory
 EndGroup
 
-Group ActorTypeConditionForms
-  ConditionForm Property DSE_ActorIsCreature Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsCritter Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsHeatleech Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsHuman Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsHumanAndCrimsonFleet Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsHumanAndEcliptic Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsHumanAndHouseVaruun Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsHumanAndSpacer Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsHumanAndStarborn Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsHumanAndSyndicate Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsHumanAndTheFirst Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsRobot Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsRobotAndCrimsonFleet Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsRobotAndEcliptic Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsRobotAndHouseVaruun Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsRobotAndSpacer Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsRobotAndStarborn Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsRobotAndSyndicate Auto Const Mandatory
-  ConditionForm Property DSE_ActorIsRobotAndTheFirst Auto Const Mandatory
-EndGroup
-
-Group AvailableActors
-  FormList Property DSE_CrimsonFleet_AvailableBosses Auto Const Mandatory
-  FormList Property DSE_CrimsonFleet_AvailableNPCs Auto Const Mandatory
-
-  FormList Property DSE_Ecliptic_AvailableBosses Auto Const Mandatory
-  FormList Property DSE_Ecliptic_AvailableNPCs Auto Const Mandatory
-
-  FormList Property DSE_HouseVaruun_AvailableBosses Auto Const Mandatory
-  FormList Property DSE_HouseVaruun_AvailableNPCs Auto Const Mandatory
-
-  FormList Property DSE_Siren_AvailableBosses Auto Const Mandatory
-  FormList Property DSE_Siren_AvailableNPCs Auto Const Mandatory
-
-  FormList Property DSE_Spacer_AvailableBosses Auto Const Mandatory
-  FormList Property DSE_Spacer_AvailableNPCs Auto Const Mandatory
-
-  FormList Property DSE_Starborn_AvailableBosses Auto Const Mandatory
-  FormList Property DSE_Starborn_AvailableNPCs Auto Const Mandatory
-
-  FormList Property DSE_Syndicate_AvailableBosses Auto Const Mandatory
-  FormList Property DSE_Syndicate_AvailableNPCs Auto Const Mandatory
-
-  FormList Property DSE_Terrormorph_AvailableBosses Auto Const Mandatory
-  FormList Property DSE_Terrormorph_AvailableNPCs Auto Const Mandatory
-
-  FormList Property DSE_TheFirst_AvailableBosses Auto Const Mandatory
-  FormList Property DSE_TheFirst_AvailableNPCs Auto Const Mandatory
-EndGroup
-
-Group OtherAutofill Collapsed
-  ObjectReference Property PlayerRef Auto Const Mandatory
-EndGroup
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -91,23 +67,16 @@ EndGroup
 ;;;
 Int RemainingWaves=0
 Keyword[] KnownFactionTypes
+Actor Player=None
+ObjectReference PlayerRef=None
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Events
 ;;;
 Event OnInit()
-  KnownFactionTypes = new Keyword[0]
-  KnownFactionTypes.Add(FactionTypeCrimsonFleet)
-  KnownFactionTypes.Add(FactionTypeEcliptic)
-  KnownFactionTypes.Add(FactionTypeHouseVaruun)
-  KnownFactionTypes.Add(FactionTypeSpacer)
-  KnownFactionTypes.Add(FactionTypeStarborn)
-  KnownFactionTypes.Add(FactionTypeSyndicate)
-  KnownFactionTypes.Add(FactionTypeTheFirst)
-
-  ; KnownFactionTypes.Add(FactionTypeSiren)
-  ; KnownFactionTypes.Add(FactionTypeTerrormorph)
+  Player = Game.GetPlayer()
+  PlayerRef = Game.GetPlayer() as ObjectReference
 EndEvent
 
 
@@ -132,6 +101,11 @@ ObjectReference[] Function SpawnGroup(Keyword spawnFaction, ObjectReference[] sp
 
   ;; Spawn Bosses
   FormList availableBosses = GetCorrectBossList(spawnFaction)
+  if (availableBosses == None)
+    LogModuleCritical(functionName="SpawnGroup", logMessage="Failed to find bosses for " + spawnFaction + " or the fall back of spacers, so aborting and not spawning anything.")
+    Return None
+  EndIf
+
   ObjectReference[] bosses = SpawnActorHandler(spawnAtMarkers, availableBosses, minNumberOfBossesToSpawn, maxNumberOfBossesToSpawn, levelModifierTable.Boss, maxOffsetX, maxOffsetY)
   int b = 0
   While (b < bosses.Length)
@@ -141,7 +115,12 @@ ObjectReference[] Function SpawnGroup(Keyword spawnFaction, ObjectReference[] sp
   EndWhile
 
   ;; Spawn Minions
-  FormList availableMinions = GetCorrectNPCList(spawnFaction)
+  FormList availableMinions = GetCorrectMinionList(spawnFaction)
+  if (availableMinions == None)
+    LogModuleCritical(functionName="SpawnGroup", logMessage="Failed to find minions for " + spawnFaction + " or the fall back of spacers, so aborting and not spawning anything.")
+    Return None
+  EndIf
+
   ObjectReference[] minions = SpawnActorHandler(spawnAtMarkers, availableMinions, minNumberOfMinionsToSpawn, maxNumberOfMinionsToSpawn, levelModifierTable.Random, maxOffsetX, maxOffsetY)
   int m = 0
   While (m < minions.Length)
@@ -212,68 +191,46 @@ Actor Function SpawnLeveledActor(ObjectReference spawnAtMarker, ActorBase actorT
   return spawnedActor
 EndFunction
 
-FormList Function GetCorrectNPCList(Keyword requestedFactionType)
-  FormList listToUse = None
-  If (requestedFactionType == FactionTypeCrimsonFleet)
-    listToUse = DSE_CrimsonFleet_AvailableNPCs
-  ElseIf (requestedFactionType == FactionTypeEcliptic)
-    listToUse = DSE_Ecliptic_AvailableNPCs
-  ElseIf (requestedFactionType == FactionTypeHouseVaruun)
-    listToUse = DSE_HouseVaruun_AvailableNPCs
-  ElseIf (requestedFactionType == FactionTypeSiren)
-    listToUse = DSE_Siren_AvailableNPCs
-  ElseIf (requestedFactionType == FactionTypeSpacer)
-    listToUse = DSE_Spacer_AvailableNPCs
-  ElseIf (requestedFactionType == FactionTypeStarborn)
-    listToUse = DSE_Starborn_AvailableNPCs
-  ElseIf (requestedFactionType == FactionTypeSyndicate)
-    listToUse = DSE_Syndicate_AvailableNPCs
-  ElseIf (requestedFactionType == FactionTypeTerrormorph)
-    listToUse = DSE_Terrormorph_AvailableNPCs
-  ElseIf (requestedFactionType == FactionTypeTheFirst)
-    listToUse = DSE_TheFirst_AvailableNPCs
-  Else
-    LogModuleCritical(functionName="GetCorrectNPCList", logMessage="Currently do not handle FactionType " + requestedFactionType + ".")
+FactionDefinition Function GetFactionDefinition(Keyword requestedFactionType)
+  FactionDefinition foundDefinition=None
+
+  int index = 0
+  While (index < FactionDefinitions.Length)
+    FactionDefinition definition = FactionDefinitions[index]
+    if (definition.FactionType == requestedFactionType)
+      return definition
+    EndIf
+    index += 1
+  EndWhile
+  Return None
+EndFunction
+
+FormList Function GetCorrectMinionList(Keyword requestedFactionType)
+  FactionDefinition definition=GetFactionDefinition(requestedFactionType)
+  If (definition == None)
+    LogModuleCritical(functionName="GetCorrectMinionList", logMessage="Failed to find matching list for FactionType " + requestedFactionType + ", falling back to Spacers.")
+    definition=GetFactionDefinition(FactionTypeSpacer)
+  EndIf
+  If (definition == None)
+    LogModuleCritical(functionName="GetCorrectMinionList", logMessage="Failed to find matching list for spacers, Aborting.")
+    Return None
   EndIf
 
-  If (listToUse == None)
-    LogModuleCritical(functionName="GetCorrectNPCList", logMessage="Failed to find matching list for FactionType " + requestedFactionType + ", falling back to Spacers.")
-    listToUse = DSE_Spacer_AvailableNPCs
-  EndIf
-
-  Return listToUse
+  Return definition.Minions
 EndFunction
 
 FormList Function GetCorrectBossList(Keyword requestedFactionType)
-  FormList listToUse = None
-  If (requestedFactionType == FactionTypeCrimsonFleet)
-    listToUse = DSE_CrimsonFleet_AvailableBosses
-  ElseIf (requestedFactionType == FactionTypeEcliptic)
-    listToUse = DSE_Ecliptic_AvailableBosses
-  ElseIf (requestedFactionType == FactionTypeHouseVaruun)
-    listToUse = DSE_HouseVaruun_AvailableBosses
-  ElseIf (requestedFactionType == FactionTypeSiren)
-    listToUse = DSE_Siren_AvailableBosses
-  ElseIf (requestedFactionType == FactionTypeSpacer)
-    listToUse = DSE_Spacer_AvailableBosses
-  ElseIf (requestedFactionType == FactionTypeStarborn)
-    listToUse = DSE_Starborn_AvailableBosses
-  ElseIf (requestedFactionType == FactionTypeSyndicate)
-    listToUse = DSE_Syndicate_AvailableBosses
-  ElseIf (requestedFactionType == FactionTypeTerrormorph)
-    listToUse = DSE_Terrormorph_AvailableBosses
-  ElseIf (requestedFactionType == FactionTypeTheFirst)
-    listToUse = DSE_TheFirst_AvailableBosses
-  Else
-    LogModuleCritical(functionName="GetCorrectBossList", logMessage="Currently do not handle FactionType " + requestedFactionType + ".")
+  FactionDefinition definition=GetFactionDefinition(requestedFactionType)
+  If (definition == None)
+    LogModuleCritical(functionName="GetCorrectMinionList", logMessage="Failed to find matching list for FactionType " + requestedFactionType + ", falling back to Spacers.")
+    definition=GetFactionDefinition(FactionTypeSpacer)
+  EndIf
+  If (definition == None)
+    LogModuleCritical(functionName="GetCorrectMinionList", logMessage="Failed to find matching list for spacers, Aborting.")
+    Return None
   EndIf
 
-  If (listToUse == None)
-    LogModuleCritical(functionName="GetCorrectBossList", logMessage="Failed to find matching list for FactionType " + requestedFactionType + ", falling back to Spacers.")
-    listToUse = DSE_Spacer_AvailableBosses
-  EndIf
-
-  Return listToUse
+  Return definition.Bosses
 EndFunction
 
 
