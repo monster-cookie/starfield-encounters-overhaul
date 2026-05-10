@@ -51,3 +51,7 @@ Currently setup with DSE Random Encounters to spawn 1 boss, 2-4 minions, possibl
 ## ManMade_StorageBayD01
 
 Currently setup with DSE Random Encounters to spawn 1 boss, 2-4 minions, possibly a large or boss chest.
+
+## ManMade_SFFLPOI093
+
+NOT EDITED opening it crashes SFCK which sucks it would make for a great multi group setup.
