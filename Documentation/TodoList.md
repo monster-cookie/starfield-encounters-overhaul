@@ -26,22 +26,26 @@
 
 ## Current Work
 
-- [ ] DSEManager_Base needs to handle themed chests
+- [X] DSEManager_Base needs to handle themed chests
 - [ ] DSEManager_Base needs to handle themed clutter
-- [ ] Need to use a leveled pack in for dynamic small and large chests like I do with the beds
-- [ ] Known FactionType needs to only be the currently supported factions in the table (Crimson Fleet, Ecliptic, and Spacers)
+- [X] Need to use a leveled pack in for dynamic small and large chests like I do with the beds
+- [X] Known FactionType needs to only be the currently supported factions in the table (Crimson Fleet, Ecliptic, and Spacers)
+- [ ] Known factions need to be neutral to flyers, predators, and prey.
+- [ ] Separate globals and options for spawn chance for bosses and minions
 
 ### Packing needing converted to current DSE
 
-- [ ] GPPIPCMManMade_AbandondedIndustrialLarge03
-- [ ] GPPIPCMManMade_FluidStorageLargeA02
-- [ ] GPPIPCMManMade_FluidStorageLargeA03
+- [X] GPPIPCMManMade_AbandondedIndustrialLarge01
+- [X] GPPIPCMManMade_AbandondedIndustrialLarge02
+- [X] GPPIPCMManMade_AbandondedIndustrialLarge03
+- [X] GPPIPCMManMade_FluidStorageLargeA02
+- [X] GPPIPCMManMade_FluidStorageLargeA03
 - [ ] GPPIPCMManMade_FluidStorageMediumB02
 - [ ] GPPIPCMManMade_SolarPanelsA01
 - [ ] GPPIPCMManMade_SolarPanelsA02
-- [ ] GPPIPCMManMade_SolarPanelsB01
-- [ ] GPPIPCMManMade_SolarPanelsC01
-- [ ] GPPIPCMManMade_StorageBayD01
+- [X] GPPIPCMManMade_SolarPanelsB01
+- [X] GPPIPCMManMade_SolarPanelsC01
+- [X] GPPIPCMManMade_StorageBayD01
 
 ### New viable clutter
 
