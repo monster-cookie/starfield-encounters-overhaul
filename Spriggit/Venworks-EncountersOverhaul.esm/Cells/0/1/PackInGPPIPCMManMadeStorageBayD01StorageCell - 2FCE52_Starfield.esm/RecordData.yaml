@@ -79,11 +79,11 @@ Temporary:
             Name: BossesChanceToSpawn
             Object: 001118:Venworks-EncountersOverhaul.esm
           - MutagenObjectType: ScriptObjectProperty
-            Name: LinkRefKeywordForBossSpawnPoints
-            Object: 0011D0:Venworks-EncountersOverhaul.esm
-          - MutagenObjectType: ScriptObjectProperty
             Name: GroupFaction
             Object: 0010BA:Venworks-EncountersOverhaul.esm
+          - MutagenObjectType: ScriptObjectProperty
+            Name: LinkRefKeywordForBossSpawnPoints
+            Object: 0011D0:Venworks-EncountersOverhaul.esm
           - MutagenObjectType: ScriptObjectProperty
             Name: LinkRefKeywordForMinionSpawnPoints
             Object: 0011CF:Venworks-EncountersOverhaul.esm
@@ -165,7 +165,7 @@ Temporary:
     Reference: 001221:Venworks-EncountersOverhaul.esm
   IsLinkedRefTransient: True
   Position: 2.4896464, -3.8758168, 1.7299306
-  Rotation: 0, 0, -1.5707964
+  Rotation: 0, 0, 4.712389
 - MutagenObjectType: PlacedObject
   FormKey: 001231:Venworks-EncountersOverhaul.esm
   FormVersion: 582

@@ -56,5 +56,106 @@ Temporary:
   Base: 000B80:Venworks-EncountersOverhaul.esm
   Position: -0.25, 4.5, 1.6891
   Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 001381:Venworks-EncountersOverhaul.esm
+  EditorID: DSEManager_ManMade_SolarPanelsA01_RandomEncounters
+  FormVersion: 582
+  Base: 00108D:Venworks-EncountersOverhaul.esm
+  Primitive:
+    Bounds: 2, 2, 2
+    Color: '#00CC4C33'
+    Unknown: 0.3
+    Type: Box
+  Position: 15, 10, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 001383:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 001194:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 0011D0:Venworks-EncountersOverhaul.esm
+    Reference: 001381:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
+  Position: -1.4468387, 4.577497, 1.6891389
+- MutagenObjectType: PlacedObject
+  FormKey: 001384:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 001194:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 0011D0:Venworks-EncountersOverhaul.esm
+    Reference: 001381:Venworks-EncountersOverhaul.esm
+  - KeywordOrReference: 0011CF:Venworks-EncountersOverhaul.esm
+    Reference: 001381:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
+  Position: -0.39881968, -3.003604, 1.7030063
+  Rotation: 0, 0, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: 001386:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 001196:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 0011D2:Venworks-EncountersOverhaul.esm
+    Reference: 001381:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
+  Position: -0.29910254, 3.128118, 1.7036787
+  Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 001387:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 001196:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 0011D2:Venworks-EncountersOverhaul.esm
+    Reference: 001381:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
+  Position: -4.9603105, 2.8540485, 1.7030044
+- MutagenObjectType: PlacedObject
+  FormKey: 001389:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 001199:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 0011CF:Venworks-EncountersOverhaul.esm
+    Reference: 001381:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
+  Position: -1.0712777, 7.4864817, 1.7121596
+- MutagenObjectType: PlacedObject
+  FormKey: 00138A:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 001199:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 0011CF:Venworks-EncountersOverhaul.esm
+    Reference: 001381:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
+  Position: 5.0888796, 2.9310946, 1.6891403
+  Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 00138B:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 001199:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 0011CF:Venworks-EncountersOverhaul.esm
+    Reference: 001381:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
+  Position: 5.2136054, -5.6002607, 1.6891422
+  Rotation: 0, 0, 2.1816616
+- MutagenObjectType: PlacedObject
+  FormKey: 00138C:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  Base: 001199:Venworks-EncountersOverhaul.esm
+  LinkedReferences:
+  - KeywordOrReference: 0011CF:Venworks-EncountersOverhaul.esm
+    Reference: 001381:Venworks-EncountersOverhaul.esm
+  IsLinkedRefTransient: True
+  Position: -6.00721, -5.895041, 1.7030044
+  Rotation: 0, 0, -2.1816616
+- MutagenObjectType: PlacedObject
+  FormKey: 00138E:Venworks-EncountersOverhaul.esm
+  FormVersion: 582
+  VirtualMachineAdapter:
+    Scripts:
+    - Name: Venworks:Shared:AliasHelpers:AliasEnableDisableToggleOnLoad
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: EnablementGlobal
+        Object: 000975:Venworks-EncountersOverhaul.esm
+  Base: 0008DC:Venworks-EncountersOverhaul.esm
 MajorFlags:
 - 0x40000

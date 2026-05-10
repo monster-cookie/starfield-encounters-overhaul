@@ -3,7 +3,7 @@ EditorID: DSE_ActorIsSyndicate
 FormVersion: 582
 Conditions:
 - MutagenObjectType: ConditionFloat
-  Unknown2: 41344
+  Unknown2: 31679
   Data:
     MutagenObjectType: GetInFactionConditionData
     FirstParameter: 270274:Starfield.esm

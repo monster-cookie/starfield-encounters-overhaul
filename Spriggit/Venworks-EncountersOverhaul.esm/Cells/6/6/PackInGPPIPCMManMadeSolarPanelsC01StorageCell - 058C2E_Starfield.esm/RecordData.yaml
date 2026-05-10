@@ -140,7 +140,7 @@ Temporary:
     Reference: 001237:Venworks-EncountersOverhaul.esm
   IsLinkedRefTransient: True
   Position: -7.0236816, 4.3921275, 1.918848
-  Rotation: 0, 0, -0.7853982
+  Rotation: 0, 0, 5.4977875
 - MutagenObjectType: PlacedObject
   FormKey: 001244:Venworks-EncountersOverhaul.esm
   FormVersion: 582

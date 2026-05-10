@@ -40,15 +40,15 @@
 - [X] GPPIPCMManMade_AbandondedIndustrialLarge03
 - [X] GPPIPCMManMade_FluidStorageLargeA02
 - [X] GPPIPCMManMade_FluidStorageLargeA03
-- [ ] GPPIPCMManMade_FluidStorageMediumB02
-- [ ] GPPIPCMManMade_SolarPanelsA01
-- [ ] GPPIPCMManMade_SolarPanelsA02
+- [X] GPPIPCMManMade_FluidStorageMediumB02
+- [X] GPPIPCMManMade_SolarPanelsA01
+- [X] GPPIPCMManMade_SolarPanelsA02
 - [X] GPPIPCMManMade_SolarPanelsB01
 - [X] GPPIPCMManMade_SolarPanelsC01
 - [X] GPPIPCMManMade_StorageBayD01
 
 ### New viable clutter
 
-- [ ] ManMade_Reactor01
-- [ ] ManMade_FluidStorageXLargeC01
-- [ ] ManMade_SFFLPOI093
+- [X] ManMade_Reactor01
+- [X] ManMade_FluidStorageXLargeC01
+- [ ] ManMade_SFFLPOI093 --- DO NOT TOUCH LOADING CRASHES SFCK

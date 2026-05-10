@@ -54,11 +54,11 @@ VirtualMachineAdapter:
           Name: BossesChanceToSpawn
           Object: 001118:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: LinkRefKeywordForBossSpawnPoints
-          Object: 0011D0:Venworks-EncountersOverhaul.esm
-        - MutagenObjectType: ScriptObjectProperty
           Name: GroupFaction
           Object: 0010BA:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: LinkRefKeywordForBossSpawnPoints
+          Object: 0011D0:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: LinkRefKeywordForMinionSpawnPoints
           Object: 0011CF:Venworks-EncountersOverhaul.esm
