@@ -1,0 +1,10 @@
+FormKey: 0010E6:Venworks-EncountersOverhaul.esm
+EditorID: DSE_ActorIsEcliptic
+FormVersion: 582
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown2: 41344
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    FirstParameter: 27028D:Starfield.esm
+  ComparisonValue: 1

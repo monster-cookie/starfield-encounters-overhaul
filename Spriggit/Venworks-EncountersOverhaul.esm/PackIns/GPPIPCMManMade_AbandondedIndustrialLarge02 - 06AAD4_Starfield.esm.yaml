@@ -7,7 +7,7 @@ StarfieldMajorRecordFlags:
 - 0x200
 ObjectBounds:
   First: -7.1834984, -12.234288, -7.861948
-  Second: 14.800105, 13.187301, 35.278564
+  Second: 14.800105, 13.187301, 16.26258
 ObjectPaletteDefaults:
   FootprintSize: Large
   ScalePercent: 1
@@ -45,8 +45,6 @@ ObjectPlacementDefaults2:
 Cell: 04AC37:Starfield.esm
 Version: 0
 FNAM: 0x0C000000
-Keywords:
-- 000A5E:Venworks-EncountersOverhaul.esm
 MaterialSwaps: []
 MajorFlags:
 - Prefab

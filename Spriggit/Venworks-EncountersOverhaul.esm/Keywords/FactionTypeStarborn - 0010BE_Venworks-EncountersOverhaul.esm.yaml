@@ -1,0 +1,9 @@
+FormKey: 0010BE:Venworks-EncountersOverhaul.esm
+EditorID: FactionTypeStarborn
+FormVersion: 582
+Color: '#00FFFFFF'
+Type: Faction
+FNAM: 0x00000000
+Name:
+  TargetLanguage: English
+  Value: Starborn

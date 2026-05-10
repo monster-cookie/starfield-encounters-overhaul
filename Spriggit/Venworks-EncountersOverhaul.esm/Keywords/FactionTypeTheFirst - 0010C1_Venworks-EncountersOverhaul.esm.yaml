@@ -1,0 +1,9 @@
+FormKey: 0010C1:Venworks-EncountersOverhaul.esm
+EditorID: FactionTypeTheFirst
+FormVersion: 582
+Color: '#00FFFFFF'
+Type: Faction
+FNAM: 0x00000000
+Name:
+  TargetLanguage: English
+  Value: The First

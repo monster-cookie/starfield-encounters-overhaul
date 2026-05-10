@@ -1,0 +1,18 @@
+FormKey: 0011A6:Venworks-EncountersOverhaul.esm
+MajorRecordFlagsRaw: 8388612
+EditorID: DSEMarker_SceneC_Bosses
+FormVersion: 582
+StarfieldMajorRecordFlags:
+- NotPlayable
+- 0x800000
+Components:
+- MutagenObjectType: KeywordFormComponent
+ForcedLocations:
+- 001153:Venworks-EncountersOverhaul.esm
+Model:
+  File: Markers\EditorMarkers\FlagMarkerBlue01.nif
+  LightLayer: 1
+MaxAngle: 1
+UnknownDNAMFloat: 1
+DNAMDataTypeState:
+- Break0

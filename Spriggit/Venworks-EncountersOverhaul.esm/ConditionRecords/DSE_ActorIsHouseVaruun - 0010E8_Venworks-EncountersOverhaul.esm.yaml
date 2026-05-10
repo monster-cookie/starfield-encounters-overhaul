@@ -1,0 +1,20 @@
+FormKey: 0010E8:Venworks-EncountersOverhaul.esm
+EditorID: DSE_ActorIsHouseVaruun
+FormVersion: 582
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown2: 41344
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    FirstParameter: 2758C5:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown2: 41344
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    FirstParameter: 27872A:Starfield.esm
+  ComparisonValue: 1

@@ -7,7 +7,7 @@ StarfieldMajorRecordFlags:
 - 0x200
 ObjectBounds:
   First: -13.925701, -16.514383, -7.2316484
-  Second: 14.1888485, 13.830997, 35.278564
+  Second: 14.1888485, 13.830997, 45.278564
 ObjectPaletteDefaults:
   Flags:
   - ConformToSlope
@@ -31,8 +31,6 @@ ObjectPlacementDefaults2:
 Cell: 058C2E:Starfield.esm
 Version: 0
 FNAM: 0x0C000000
-Keywords:
-- 000A5E:Venworks-EncountersOverhaul.esm
 MaterialSwaps: []
 MajorFlags:
 - Prefab

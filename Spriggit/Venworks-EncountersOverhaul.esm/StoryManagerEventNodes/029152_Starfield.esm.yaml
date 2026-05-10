@@ -1,0 +1,8 @@
+FormKey: 029152:Starfield.esm
+FormVersion: 582
+Version2: 9
+Parent: 00005B:Starfield.esm
+PreviousSibling: 0238DB:Starfield.esm
+Flags: []
+MaxConcurrentQuests: 0
+Type: ScriptEvent

@@ -1,0 +1,9 @@
+FormKey: 0010C0:Venworks-EncountersOverhaul.esm
+EditorID: FactionTypeTerrormorph
+FormVersion: 582
+Color: '#00FFFFFF'
+Type: Faction
+FNAM: 0x00000000
+Name:
+  TargetLanguage: English
+  Value: Terrormorph

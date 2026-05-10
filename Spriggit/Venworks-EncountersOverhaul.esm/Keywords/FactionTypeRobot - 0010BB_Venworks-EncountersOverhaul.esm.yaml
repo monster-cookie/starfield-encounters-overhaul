@@ -1,0 +1,9 @@
+FormKey: 0010BB:Venworks-EncountersOverhaul.esm
+EditorID: FactionTypeRobot
+FormVersion: 582
+Color: '#00FFFFFF'
+Type: Faction
+FNAM: 0x00000000
+Name:
+  TargetLanguage: English
+  Value: Robot

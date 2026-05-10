@@ -1,0 +1,113 @@
+FormKey: 00112A:Venworks-EncountersOverhaul.esm
+EditorID: SQ_DSE_FactionConfiguration
+FormVersion: 582
+VirtualMachineAdapter:
+  Scripts:
+  - Name: venworks:encountersoverhaul:dynamicscenesengine:helpers:sq_dse_factionconfiguration
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSE_KnownFactionTypes
+      Object: 0010E0:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptStructListProperty
+      Name: FactionDefinitions
+      Structs:
+      - Members:
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Robots
+          Object: 001086:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: DSE_ActorIsTest
+          Object: 0010E2:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: FactionType
+          Object: 0546E0:Starfield.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Minions
+          Object: 001084:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Any
+          Object: 001082:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Bosses
+          Object: 001083:Venworks-EncountersOverhaul.esm
+      - Members:
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Robots
+          Object: 00108C:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Minions
+          Object: 00108A:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: DSE_ActorIsTest
+          Object: 0010E6:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: FactionType
+          Object: 0010B4:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Bosses
+          Object: 001089:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Any
+          Object: 001088:Venworks-EncountersOverhaul.esm
+      - Members:
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Robots
+          Object: 0010C8:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Minions
+          Object: 0010C7:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: DSE_ActorIsTest
+          Object: 0010EB:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: FactionType
+          Object: 0010BD:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Bosses
+          Object: 0010C6:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Any
+          Object: 0010C5:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeCrimsonFleet
+      Object: 0546E0:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeEcliptic
+      Object: 0010B4:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeHouseVaruun
+      Object: 0546DE:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeRandom
+      Object: 0010BA:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeSiren
+      Object: 0010BC:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeSpacer
+      Object: 0010BD:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeStarborn
+      Object: 0010BE:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeSyndicate
+      Object: 0010BF:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeTerrormorph
+      Object: 0010C0:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeTheFirst
+      Object: 0010C1:Venworks-EncountersOverhaul.esm
+  Versioning:
+  - Break0
+  ExtraBindDataVersion: 0
+  Script:
+    Name: ''
+Data:
+  Flags:
+  - StartGameEnabled
+  - StartsEnabled
+  - RunOnce
+  Unused: 0x000000
+UnusedConditions: []
+Aliases: []
