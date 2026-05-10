@@ -86,13 +86,18 @@ EndGroup
 Group AutoFillLinkedRefKeywords
   Keyword Property DSELinkedRef_Marker_Map Auto Const Mandatory
   Keyword Property DSELinkedRef_Marker_Center Auto Const Mandatory
-  Keyword Property DSELinkedRef_Marker_SceneA Auto Const Mandatory
-  Keyword Property DSELinkedRef_Marker_SceneB Auto Const Mandatory
-  Keyword Property DSELinkedRef_Marker_SceneC Auto Const Mandatory
-  Keyword Property DSELinkedRef_Marker_Boss Auto Const Mandatory
-  Keyword Property DSELinkedRef_Marker_Chest_Boss Auto Const Mandatory
-  Keyword Property DSELinkedRef_Marker_Chest_Large Auto Const Mandatory
-  Keyword Property DSELinkedRef_Marker_Chest_Small Auto Const Mandatory
+
+  Keyword Property DSELinkedRef_Marker_SceneA_Minions Auto Const Mandatory
+  Keyword Property DSELinkedRef_Marker_SceneA_Bosses Auto Const Mandatory
+  Keyword Property DSELinkedRef_Marker_SceneA_Chests Auto Const Mandatory
+
+  Keyword Property DSELinkedRef_Marker_SceneB_Minions Auto Const Mandatory
+  Keyword Property DSELinkedRef_Marker_SceneB_Bosses Auto Const Mandatory
+  Keyword Property DSELinkedRef_Marker_SceneB_Chests Auto Const Mandatory
+
+  Keyword Property DSELinkedRef_Marker_SceneC_Minions Auto Const Mandatory
+  Keyword Property DSELinkedRef_Marker_SceneC_Bosses Auto Const Mandatory
+  Keyword Property DSELinkedRef_Marker_SceneC_Chests Auto Const Mandatory
 EndGroup
 
 

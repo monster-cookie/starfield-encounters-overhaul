@@ -1,4 +1,10 @@
-ScriptName Venworks:Shared:Enumerations Extends ScriptObject hidden
+ScriptName Venworks:Shared:Enumerations Extends ScriptObject Hidden
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Structs
+;;;
 
 Struct Aggression
   Int Unaggressive=0

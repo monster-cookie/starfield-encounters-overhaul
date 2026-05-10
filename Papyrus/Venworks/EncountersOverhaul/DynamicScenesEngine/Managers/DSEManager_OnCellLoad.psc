@@ -4,6 +4,13 @@ ScriptName Venworks:EncountersOverhaul:DynamicScenesEngine:Managers:DSEManager_O
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
+;;; Imports
+;;;
+Import Venworks:EncountersOverhaul:DynamicScenesEngine:Data:Enumerations
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
 ;;; Events
 ;;;
 

@@ -11,40 +11,12 @@ ScriptName Venworks:EncountersOverhaul:DynamicScenesEngine:Helpers:SQ_DSE_SpawnS
 Import Venworks:Shared:Enumerations
 Import Venworks:Shared:Utilities:Array
 
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Structs
-;;;
-Struct FactionDefinition
-  Keyword FactionType=None
-  {The FactionType for this faction definition}
-
-  ConditionForm DSE_ActorIsTest=None
-  {The condition form to use to test if an actor is part of this faction}
-
-  FormList Any=None
-  {Form list of actors that spawn actors of any type, this is normally populated by form list injection from the other form lists below}
-
-  FormList Bosses=None
-  {Form list of faction actors that are bosses (or officers usually)}
-
-  FormList Minions=None
-  {Form list of faction actors that are minions (Assault, Charger, Heavy, Sniper, Support, etc)}
-
-  FormList Robots=None
-  {Form list of faction actors that are robots}
-EndStruct
+Import Venworks:EncountersOverhaul:DynamicScenesEngine:Data:Enumerations
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Properties
 ;;;
-Group Configuration
-  FactionDefinition[] Property FactionDefinitions Auto Const Mandatory
-  {Array for faction definitions, there must be at least 1}
-EndGroup
-
 Group FactionTypes
   FormList Property DSE_KnownFactionTypes Auto Const Mandatory
 
@@ -60,13 +32,17 @@ Group FactionTypes
   Keyword Property FactionTypeTheFirst Auto Const Mandatory
 EndGroup
 
+Group Autofill
+  Venworks:EncountersOverhaul:DynamicScenesEngine:Helpers:SQ_DSE_FactionConfiguration Property SQ_DSE_FactionConfiguration Auto Const Mandatory
+  {Handler Script for the DSE Faction System}
+EndGroup
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Private Variables
 ;;;
 Int RemainingWaves=0
-Keyword[] KnownFactionTypes
 Actor Player=None
 ObjectReference PlayerRef=None
 
@@ -84,48 +60,67 @@ EndEvent
 ;;;
 ;;; Functions
 ;;;
-ObjectReference[] Function SpawnGroup(Keyword spawnFaction, ObjectReference[] spawnAtMarkers, Int minNumberOfBossesToSpawn, Int maxNumberOfBossesToSpawn, Int minNumberOfMinionsToSpawn, Int maxNumberOfMinionsToSpawn, Float maxOffsetX=0.00, Float maxOffsetY=0.00)
+ObjectReference[] Function SpawnGroup(SpawnGroupDefinition groupDefinition, ObjectReference[] spawnBossMarkers, Int minNumberOfBossesToSpawn, Int maxNumberOfBossesToSpawn, ObjectReference[] spawnMinionMarkers, Int minNumberOfMinionsToSpawn, Int maxNumberOfMinionsToSpawn, Float maxOffsetX=0.00, Float maxOffsetY=0.00)
   LevelModifier levelModifierTable = new LevelModifier
+
+  If (groupDefinition.GroupFaction == FactionTypeRandom)
+    Int factionIndex = Utility.RandomInt(0, DSE_KnownFactionTypes.GetSize()-1)
+    groupDefinition.GroupFaction = DSE_KnownFactionTypes.GetAt(factionIndex) as Keyword
+  EndIf
 
   If (maxNumberOfBossesToSpawn == 0 && maxNumberOfMinionsToSpawn == 0)
     LogModuleCritical(functionName="SpawnGroup", logMessage="Spawner configuration is set to not spawn any NPCs or Bosses.")
     Return None
   EndIf
 
-  ObjectReference[] spawnedActors = new ObjectReference[0]
-
-  If (spawnFaction == FactionTypeRandom)
-    Int factionIndex = Utility.RandomInt(0, KnownFactionTypes.Length)
-    spawnFaction = KnownFactionTypes[factionIndex]
+  If (SQ_DSE_FactionConfiguration.GetCorrectBossList(requestedFactionType=groupDefinition.GroupFaction).GetSize() <= 0 || SQ_DSE_FactionConfiguration.GetCorrectMinionList(requestedFactionType=groupDefinition.GroupFaction).GetSize() <= 0)
+    LogModuleCritical(functionName="SpawnGroup", logMessage="Either Bosses or Minions is not properly setup in the Faction Definition so falling back to Spacers.")
+    groupDefinition.GroupFaction = FactionTypeSpacer
   EndIf
 
+  FactionDefinition factionDefinition=SQ_DSE_FactionConfiguration.GetFactionDefinition(requestedFactionType=groupDefinition.GroupFaction)
+
+  ;; Handle Group's random chance to spawn
+
+  ObjectReference[] spawnedActors = new ObjectReference[0]
+
   ;; Spawn Bosses
-  FormList availableBosses = GetCorrectBossList(spawnFaction)
+  FormList availableBosses = SQ_DSE_FactionConfiguration.GetCorrectBossList(requestedFactionType=groupDefinition.GroupFaction)
   if (availableBosses == None)
-    LogModuleCritical(functionName="SpawnGroup", logMessage="Failed to find bosses for " + spawnFaction + " or the fall back of spacers, so aborting and not spawning anything.")
+    LogModuleCritical(functionName="SpawnGroup", logMessage="Failed to find bosses for " + groupDefinition.GroupFaction + " so aborting and not spawning anything.")
     Return None
   EndIf
 
-  ObjectReference[] bosses = SpawnActorHandler(spawnAtMarkers, availableBosses, minNumberOfBossesToSpawn, maxNumberOfBossesToSpawn, levelModifierTable.Boss, maxOffsetX, maxOffsetY)
+  ObjectReference[] bosses = SpawnActorHandler(spawnBossMarkers, availableBosses, minNumberOfBossesToSpawn, maxNumberOfBossesToSpawn, levelModifierTable.Boss, maxOffsetX, maxOffsetY)
   int b = 0
   While (b < bosses.Length)
-    ObjectReference boss = bosses[b]
-    spawnedActors.Add(boss)
+    If (groupDefinition.BossesChanceToSpawn.IsTrue())
+      ObjectReference boss = bosses[b]
+      spawnedActors.Add(boss)
+      LogModuleInformational(functionName="", logMessage="Spawned boss " + b+1 + " as " + boss + ".")
+    Else 
+      LogModuleInformational(functionName="", logMessage="Prevented from spawning boss " + b+1 + " due to random chance.")
+    EndIf
     b += 1
   EndWhile
 
   ;; Spawn Minions
-  FormList availableMinions = GetCorrectMinionList(spawnFaction)
-  if (availableMinions == None)
-    LogModuleCritical(functionName="SpawnGroup", logMessage="Failed to find minions for " + spawnFaction + " or the fall back of spacers, so aborting and not spawning anything.")
+  FormList availableMinions = SQ_DSE_FactionConfiguration.GetCorrectMinionList(requestedFactionType=groupDefinition.GroupFaction)
+  If (availableMinions == None)
+    LogModuleCritical(functionName="SpawnGroup", logMessage="Failed to find minions for " + groupDefinition.GroupFaction + " so aborting and not spawning anything.")
     Return None
   EndIf
 
-  ObjectReference[] minions = SpawnActorHandler(spawnAtMarkers, availableMinions, minNumberOfMinionsToSpawn, maxNumberOfMinionsToSpawn, levelModifierTable.Random, maxOffsetX, maxOffsetY)
+  ObjectReference[] minions = SpawnActorHandler(spawnMinionMarkers, availableMinions, minNumberOfMinionsToSpawn, maxNumberOfMinionsToSpawn, levelModifierTable.Random, maxOffsetX, maxOffsetY)
   int m = 0
   While (m < minions.Length)
-    ObjectReference minion = bosses[m]
-    spawnedActors.Add(minion)
+    If (groupDefinition.MinionsChanceToSpawn.IsTrue())
+      ObjectReference minion = bosses[m]
+      spawnedActors.Add(minion)
+      LogModuleInformational(functionName="", logMessage="Spawned minion " + m+1 + " as " + minion + ".")
+    Else 
+      LogModuleInformational(functionName="", logMessage="Prevented from spawning minion " + m+1 + " due to random chance.")
+    EndIf
     m += 1
   EndWhile
 
@@ -189,48 +184,6 @@ Actor Function SpawnLeveledActor(ObjectReference spawnAtMarker, ActorBase actorT
   
   spawnedActor.enable() ;; Enable it again now that everything is reconfigured
   return spawnedActor
-EndFunction
-
-FactionDefinition Function GetFactionDefinition(Keyword requestedFactionType)
-  FactionDefinition foundDefinition=None
-
-  int index = 0
-  While (index < FactionDefinitions.Length)
-    FactionDefinition definition = FactionDefinitions[index]
-    if (definition.FactionType == requestedFactionType)
-      return definition
-    EndIf
-    index += 1
-  EndWhile
-  Return None
-EndFunction
-
-FormList Function GetCorrectMinionList(Keyword requestedFactionType)
-  FactionDefinition definition=GetFactionDefinition(requestedFactionType)
-  If (definition == None)
-    LogModuleCritical(functionName="GetCorrectMinionList", logMessage="Failed to find matching list for FactionType " + requestedFactionType + ", falling back to Spacers.")
-    definition=GetFactionDefinition(FactionTypeSpacer)
-  EndIf
-  If (definition == None)
-    LogModuleCritical(functionName="GetCorrectMinionList", logMessage="Failed to find matching list for spacers, Aborting.")
-    Return None
-  EndIf
-
-  Return definition.Minions
-EndFunction
-
-FormList Function GetCorrectBossList(Keyword requestedFactionType)
-  FactionDefinition definition=GetFactionDefinition(requestedFactionType)
-  If (definition == None)
-    LogModuleCritical(functionName="GetCorrectMinionList", logMessage="Failed to find matching list for FactionType " + requestedFactionType + ", falling back to Spacers.")
-    definition=GetFactionDefinition(FactionTypeSpacer)
-  EndIf
-  If (definition == None)
-    LogModuleCritical(functionName="GetCorrectMinionList", logMessage="Failed to find matching list for spacers, Aborting.")
-    Return None
-  EndIf
-
-  Return definition.Bosses
 EndFunction
 
 

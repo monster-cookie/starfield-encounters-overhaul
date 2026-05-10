@@ -1,6 +1,6 @@
 # Open World Caves - Changes and Notes
 
-The caves listed by game editor ID. The reason the fixes are in a different order is I had to find the cave in game to test the changes for safety. Also the spawn tag is what I added this has nothing to do with what the random encounter system might inject or the post keyword now working biome markers in the cave. 
+The caves listed by game editor ID. The reason the fixes are in a different order is I had to find the cave in game to test the changes for safety. Also the spawn tag is what I added this has nothing to do with what the random encounter system might inject or the post keyword now working biome markers in the cave.
 
 ## Cave (OEAF001)
 
@@ -233,7 +233,7 @@ The First Outpost Cave, will generate a small The First force and themed chest.
   - Outpost
   - Frozen Hills
 - Description:
-  - Long cavern 
+  - Long cavern
   - Has rock pile but that is mostly it
 - Spawns
   - The First Boss
@@ -431,7 +431,7 @@ Not modified at all
   - Forest
   - Outpost
 - Description:
-  - Long cavern with a bunch of stalactites and stalagmites all over. 
+  - Long cavern with a bunch of stalactites and stalagmites all over.
   - Can safely handle 4-6 groups spread out
 - Spawns: None
 
@@ -493,7 +493,7 @@ Not modified at all
   - Savanna
 - Description:
   - Single tiered room with giant green crystals
-  - Really can only handle 1 maybe 2 groups if one group is in the hallway and the other on the floor 
+  - Really can only handle 1 maybe 2 groups if one group is in the hallway and the other on the floor
 - Spawns: None
 
 ## Cave (OESD007)
@@ -584,7 +584,7 @@ Not modified at all
   - Frozen Hills
   - Desert
 - Description:
-  - Standard long round cavern was probably a template for the others. 
+  - Standard long round cavern was probably a template for the others.
 - Spawns: None
 
 ## Spacious Cave (OEZW003)
@@ -673,7 +673,7 @@ Large predator battle test cave
 
 ## Tiered Cave (OEZW008)
 
-Large multi-faction battle with multiple possible outcomes before you get to the battlefield. 
+Large multi-faction battle with multiple possible outcomes before you get to the battlefield.
 
 - Spawn Conditions:
   - Block Types: OverlayHillsRoundedSmall05 [SFBK:00276A8F]

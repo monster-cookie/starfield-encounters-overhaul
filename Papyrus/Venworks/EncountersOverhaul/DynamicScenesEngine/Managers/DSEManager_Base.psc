@@ -10,53 +10,7 @@ Import Venworks:Shared:Enumerations
 Import Venworks:Shared:Utilities:Random
 Import Venworks:Shared:Utilities:Array
 
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Structs
-;;;
-Struct SpawnGroupDefinition
-  Keyword GroupFaction=None
-  {The faction to spawn for this group definition}
-
-  Keyword LinkRefKeywordForSpawnPoints=None
-  {The target, usually a marker or activator, that all spawn groups are linked to via reference keyword (See DSELinkedRef_Marker_* keywords in the autofill group)}
-
-  ConditionForm BossesChanceToSpawn=None
-  {The condition form to test to see if the encounter should spawn bosses}
-
-  Int BossesMinToSpawn=1
-  {Minimum number of bosses to spawn, do not use 0 it forces 0 NPCs as the random number generator stinks.}
-
-  Int BossesMaxToSpawn=1
-  {Maximum number of bosses to spawn}
-
-  ConditionForm MinionsChanceToSpawn=None
-  {The condition form to test to see if the encounter should spawn minions}
-  
-  Int MinionsMinToSpawn=2
-  {Minimum number of NPCs to spawn, do not use 0 it forces 0 NPCs as the random number generator stinks.}
-
-  Int MinionsMaxToSpawn=4
-  {Maximum number of NPCs to spawn}
-EndStruct
-
-;; There should be DSE_SpawnerType global variables for these too
-Struct SpawnerMode
-  Int Normal=0
-  Int Waves=1
-  Int Timer=2
-EndStruct
-
-;; There should be DSE_SpawnerType global variables for these too
-Struct SpawnerType
-  Int CellLoad=0
-  Int OnClose=1
-  Int OnOpen=2
-  Int OnRead=3
-  Int OnTriggerEnter=4
-  Int OnTriggerLeave=5
-EndStruct
+Import Venworks:EncountersOverhaul:DynamicScenesEngine:Data:Enumerations
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -64,7 +18,7 @@ EndStruct
 ;;; Properties
 ;;;
 Group SceneMangerConfiguration
-  Int Property Mode Auto Const Mandatory
+  Int Property Mode=0 Auto Const Mandatory
   {The mode the spawner should run in, set to 0 normal single spawn, set to 1 for spawn in waves, set to 2 for time delayed waves.}
 
   Int Property Waves=1 Auto Const Mandatory
@@ -86,18 +40,26 @@ EndGroup
 Group AutoFillLinkedRefKeywords
   Keyword Property DSELinkedRef_Marker_Map Auto Const Mandatory
   Keyword Property DSELinkedRef_Marker_Center Auto Const Mandatory
-  Keyword Property DSELinkedRef_Marker_SceneA Auto Const Mandatory
-  Keyword Property DSELinkedRef_Marker_SceneB Auto Const Mandatory
-  Keyword Property DSELinkedRef_Marker_SceneC Auto Const Mandatory
-  Keyword Property DSELinkedRef_Marker_Boss Auto Const Mandatory
-  Keyword Property DSELinkedRef_Marker_Chest_Boss Auto Const Mandatory
-  Keyword Property DSELinkedRef_Marker_Chest_Large Auto Const Mandatory
-  Keyword Property DSELinkedRef_Marker_Chest_Small Auto Const Mandatory
+
+  Keyword Property DSELinkedRef_Marker_SceneA_Minions Auto Const Mandatory
+  Keyword Property DSELinkedRef_Marker_SceneA_Bosses Auto Const Mandatory
+  Keyword Property DSELinkedRef_Marker_SceneA_Chests Auto Const Mandatory
+
+  Keyword Property DSELinkedRef_Marker_SceneB_Minions Auto Const Mandatory
+  Keyword Property DSELinkedRef_Marker_SceneB_Bosses Auto Const Mandatory
+  Keyword Property DSELinkedRef_Marker_SceneB_Chests Auto Const Mandatory
+
+  Keyword Property DSELinkedRef_Marker_SceneC_Minions Auto Const Mandatory
+  Keyword Property DSELinkedRef_Marker_SceneC_Bosses Auto Const Mandatory
+  Keyword Property DSELinkedRef_Marker_SceneC_Chests Auto Const Mandatory
 EndGroup
 
 Group Autofill
   Venworks:EncountersOverhaul:DynamicScenesEngine:Helpers:SQ_DSE_SpawnSystem Property SQ_DSE_SpawnSystem Auto Const Mandatory
-  {Handler Script for the DSE Spawner System and system}
+  {Handler Script for the DSE Spawner System}
+
+  Venworks:EncountersOverhaul:DynamicScenesEngine:Helpers:SQ_DSE_FactionConfiguration Property SQ_DSE_FactionConfiguration Auto Const Mandatory
+  {Handler Script for the DSE Faction System}
 EndGroup
 
 
@@ -128,16 +90,17 @@ Function HandleTrigger(Int triggerType, ObjectReference triggerTarget)
   String spawnerType=GetSpawnerType(triggerType)
 
   If (GlobalChanceToSpawn.IsTrue())
+    LogModuleInformational(functionName="HandleTrigger[" + spawnerType + "]", logMessage="Encounter will spawn due to random chance or in debug mode.")
+  Else
     LogModuleInformational(functionName="HandleTrigger[" + spawnerType + "]", logMessage="Encounter was blocked from spawning due to random chance.")
     Return
-  Else
-    LogModuleInformational(functionName="HandleTrigger[" + spawnerType + "]", logMessage="Encounter will spawn due to random chance or in debug mode.")
   EndIf
 
   If (PlayerCompleted != None)
     PlayerCompleted.SetValueInt(1)
   EndIf
 
+  ;; Handle NPC spawning
   If (Waves > 1 && TimerDelay == 0)
     ;; Handle spawning waves every 30 seconds
     LogModuleInformational(functionName="HandleTrigger[" + spawnerType + "]", logMessage="Wave spawner processing " + Waves + " waves of NPCs every 30 seconds.")
@@ -175,12 +138,24 @@ Function HandleGroups(int triggerType)
   String spawnerType=GetSpawnerType(triggerType)
   int groupNumber = 0
   While (groupNumber < SpawnGroupDefinitions.Length)
-    SpawnGroupDefinition def = SpawnGroupDefinitions[groupNumber]
+    SpawnGroupDefinition groupDefinition = SpawnGroupDefinitions[groupNumber]
+    FactionDefinition factionDefinition=SQ_DSE_FactionConfiguration.GetFactionDefinition(requestedFactionType=groupDefinition.GroupFaction)
+
     LogModuleInformational(functionName="HandleGroups[" + spawnerType + "]", logMessage="Spawning group " + groupNumber + " using SpawnGroupDefinitions in configuration.")
-    ObjectReference[] spawners = self.GetRefsLinkedToMe(def.LinkRefKeywordForSpawnPoints)
-    SQ_DSE_SpawnSystem.SpawnGroup(spawnFaction=def.GroupFaction, spawnAtMarkers=spawners, minNumberOfBossesToSpawn=def.BossesMinToSpawn, maxNumberOfBossesToSpawn=def.BossesMaxToSpawn, minNumberOfMinionsToSpawn=def.MinionsMinToSpawn, maxNumberOfMinionsToSpawn=def.MinionsMaxToSpawn)
+
+    ;; Handle NPCs
+    ObjectReference[] bossSpawners = self.GetRefsLinkedToMe(groupDefinition.LinkRefKeywordForBossSpawnPoints)
+    ObjectReference[] minionSpawners = self.GetRefsLinkedToMe(groupDefinition.LinkRefKeywordForMinionSpawnPoints)
+    SQ_DSE_SpawnSystem.SpawnGroup(groupDefinition=groupDefinition, spawnBossMarkers=bossSpawners, minNumberOfBossesToSpawn=groupDefinition.BossesMinToSpawn, maxNumberOfBossesToSpawn=groupDefinition.BossesMaxToSpawn, spawnMinionMarkers=minionSpawners, minNumberOfMinionsToSpawn=groupDefinition.MinionsMinToSpawn, maxNumberOfMinionsToSpawn=groupDefinition.MinionsMaxToSpawn)
     groupNumber += 1
+
+    ;; Handle chest spawning
+    ObjectReference[] chestSpawners = self.GetRefsLinkedToMe(groupDefinition.LinkRefKeywordForChestSpawnPoints)
+
+    ;; TODO handle boss chest spawning
+
   EndWhile
+
 EndFunction
 
 String Function GetSpawnerType(int triggerType)
