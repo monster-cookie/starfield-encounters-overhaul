@@ -1,0 +1,10 @@
+FormKey: 000108:Venworks-EncountersOverhaul.esm
+EditorID: DSE_ActorIsTerrormorph
+FormVersion: 582
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown2: 31679
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    FirstParameter: 2B2291:Starfield.esm
+  ComparisonValue: 1

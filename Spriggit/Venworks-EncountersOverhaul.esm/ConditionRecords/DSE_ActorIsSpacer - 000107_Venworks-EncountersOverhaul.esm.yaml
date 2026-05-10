@@ -1,0 +1,10 @@
+FormKey: 000107:Venworks-EncountersOverhaul.esm
+EditorID: DSE_ActorIsSpacer
+FormVersion: 582
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown2: 31679
+  Data:
+    MutagenObjectType: GetInFactionConditionData
+    FirstParameter: 27BB8C:Starfield.esm
+  ComparisonValue: 1

@@ -2,7 +2,7 @@
 
 The caves listed by game editor ID. The reason the fixes are in a different order is I had to find the cave in game to test the changes for safety. Also the spawn tag is what I added this has nothing to do with what the random encounter system might inject or the post keyword now working biome markers in the cave.
 
-## Cave (OEAF001)
+## Cave (OEAF001) [NOT REIMPLEMENTED YET]
 
 Ecliptic Outpost Cave, will generate a small ecliptic force and themed chest.
 
@@ -24,7 +24,7 @@ Ecliptic Outpost Cave, will generate a small ecliptic force and themed chest.
   - Ecliptic Charger
   - Ecliptic Assault
 
-## Cave (OEAF002)
+## Cave (OEAF002) [NOT REIMPLEMENTED YET]
 
 Creature spawn test cave which ultimately failed now just spawns some creatures from Gamma Vulpes.
 
@@ -44,7 +44,7 @@ Creature spawn test cave which ultimately failed now just spawns some creatures 
   - PCM_Gamma-Vulpes_Gamma-Vulpes-I_PredatorB
   - PCM_Gamma-Vulpes_Gamma-Vulpes-I_PredatorA
 
-## Cave (OEAF003)
+## Cave (OEAF003) [NOT REIMPLEMENTED YET]
 
 Crimson Fleet Outpost Cave, will generate a small crimson fleet force and themed chest.
 
@@ -69,7 +69,7 @@ Crimson Fleet Outpost Cave, will generate a small crimson fleet force and themed
   - Crimson Fleet Charger
   - Crimson Fleet Sniper
 
-## Cave (OEAF004)
+## Cave (OEAF004) [NOT REIMPLEMENTED YET]
 
 Royal terrormorphs abuse cave, spawns a group of terrormorphs and heatleeches to get abused by JaeDL's rules.
 
@@ -93,7 +93,7 @@ Royal terrormorphs abuse cave, spawns a group of terrormorphs and heatleeches to
   - Terrormorph Random
   - 3 x Heatleeches
 
-## Cave (OEAF005)
+## Cave (OEAF005) [NOT REIMPLEMENTED YET]
 
 Random Human Outpost Cave, will generate a medium sized human force and themed boss chest.
 
@@ -113,7 +113,7 @@ Random Human Outpost Cave, will generate a medium sized human force and themed b
   - Random Hostile Human
   - Random Hostile Human Sniper
 
-## Cave (OEAF006)
+## Cave (OEAF006) [NOT REIMPLEMENTED YET]
 
 Random creature cave from before I fixed the missing keyword that fixed all the caves mostly.
 
@@ -134,7 +134,7 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
   - Charybdis_CharybdisII_PredatorB
   - OborumPrime_OborumI_Predator01
 
-## Cave (OEAF007)
+## Cave (OEAF007) [NOT REIMPLEMENTED YET]
 
 Not modified at all except the name to match size
 
@@ -152,7 +152,7 @@ Not modified at all except the name to match size
   - Can handle 2 groups
 - Spawns: None
 
-## Cave (OEAF008)
+## Cave (OEAF008) [NOT REIMPLEMENTED YET]
 
 Random creature cave from before I fixed the missing keyword that fixed all the caves mostly.
 
@@ -175,7 +175,7 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
   - Schrodinger_SchrodingerIV_Predator01
   - Schrodinger_SchrodingerIII_Predator01
 
-## Cave (OEAF009)
+## Cave (OEAF009) [NOT REIMPLEMENTED YET]
 
 Another caves to abuse JaeDL's Heatleech terrormorph spawners in all his mods
 
@@ -197,7 +197,7 @@ Another caves to abuse JaeDL's Heatleech terrormorph spawners in all his mods
   - Random Terrormorph
   - 10 x heatleaches
 
-## Cave (OEAF010)
+## Cave (OEAF010) [NOT REIMPLEMENTED YET]
 
 Large Group Outpost Cave, will generate a large spacer force and themed boss chest.
 
@@ -217,7 +217,7 @@ Large Group Outpost Cave, will generate a large spacer force and themed boss che
   - Spacer Sniper
   - Spacer Heavy
 
-## Cave (OEAF011)
+## Cave (OEAF011) [NOT REIMPLEMENTED YET]
 
 The First Outpost Cave, will generate a small The First force and themed chest.
 
@@ -240,7 +240,7 @@ The First Outpost Cave, will generate a small The First force and themed chest.
   - The First Heavy
   - The First Charger
 
-## Cave (OEAF014)
+## Cave (OEAF014) [NOT REIMPLEMENTED YET]
 
 Starborn Outpost Cave, will generate a small Starborn force and themed chest.
 
@@ -259,7 +259,7 @@ Starborn Outpost Cave, will generate a small Starborn force and themed chest.
   - Starborn Heavy
   - Starborn Sniper
 
-## Cave (OEBB034)
+## Cave (OEBB034) [NOT REIMPLEMENTED YET]
 
 ==TEST CASE - Random Human Spawner==
 Random Human Outpost Cave, will generate a small human force and themed chest.
@@ -277,7 +277,7 @@ Random Human Outpost Cave, will generate a small human force and themed chest.
   - Random Hostile Human Boss
   - 3x Random Hostile Human
 
-## Cave (OEJP001)
+## Cave (OEJP001) [NOT REIMPLEMENTED YET]
 
 Random creature cave from before I fixed the missing keyword that fixed all the caves mostly.
 
@@ -297,7 +297,7 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
   - Rivera_RiveraI_Predator01
   - Rivera_RiveraI_Predator02
 
-## Cave (OEJP004)
+## Cave (OEJP004) [NOT REIMPLEMENTED YET]
 
 Not modified at all
 
@@ -316,7 +316,7 @@ Not modified at all
   - 2 groups max
 - Spawns: None
 
-## Cave (OEJP005)
+## Cave (OEJP005) [NOT REIMPLEMENTED YET]
 
 Not modified at all
 
@@ -339,7 +339,7 @@ Not modified at all
   - Probably 1 group maybe 2 groups
 - Spawns: None
 
-## Cave (OEJP006)
+## Cave (OEJP006) [NOT REIMPLEMENTED YET]
 
 Syndicate Outpost Cave, will generate a small syndicate force and themed chest.
 
@@ -361,7 +361,7 @@ Syndicate Outpost Cave, will generate a small syndicate force and themed chest.
   - Syndicate Assault
   - Syndicate Charger
 
-## Cave (OEJP008)
+## Cave (OEJP008) [NOT REIMPLEMENTED YET]
 
 Not modified at all
 
@@ -381,7 +381,7 @@ Not modified at all
   - Can handle 6-8 groups
 - Spawns: None
 
-## Cave (OEOB002)
+## Cave (OEOB002) [NOT REIMPLEMENTED YET]
 
 Initial terrormorph test cave
 
@@ -397,7 +397,7 @@ Initial terrormorph test cave
   - Terrormorph Alpha
   - 2x Random Terrormorph
 
-## Cave (OEOB003)
+## Cave (OEOB003) [NOT REIMPLEMENTED YET]
 
 Not modified at all
 
@@ -416,7 +416,7 @@ Not modified at all
   - Can handle 2-3 groups
 - Spawns: None
 
-## Cave (OEOB004)
+## Cave (OEOB004) [NOT REIMPLEMENTED YET]
 
 Not modified at all
 
@@ -435,7 +435,7 @@ Not modified at all
   - Can safely handle 4-6 groups spread out
 - Spawns: None
 
-## Cave (OEOB005)
+## Cave (OEOB005) [NOT REIMPLEMENTED YET]
 
 Not modified at all
 
@@ -456,7 +456,7 @@ Not modified at all
   - Can support 3-4 groups of mobs
 - Spawns: None
 
-## Cave (OESD001)
+## Cave (OESD001) [NOT REIMPLEMENTED YET]
 
 Not modified at all
 
@@ -472,10 +472,10 @@ Not modified at all
   - Swamp
 - Description:
   - Very small cave
-  - Has a side cubby and a lootable rock pile
+  - Has a side cubby and a rock pile that can be looted
 - Spawns: None
 
-## Cave (OESD003)
+## Cave (OESD003) [NOT REIMPLEMENTED YET]
 
 Not modified at all
 
@@ -496,7 +496,7 @@ Not modified at all
   - Really can only handle 1 maybe 2 groups if one group is in the hallway and the other on the floor
 - Spawns: None
 
-## Cave (OESD007)
+## Cave (OESD007) [NOT REIMPLEMENTED YET]
 
 Not modified at all
 
@@ -516,7 +516,7 @@ Not modified at all
   - Final semi hidden room has a rock pile
 - Spawns: None
 
-## Cave (OESD010)
+## Cave (OESD010) [NOT REIMPLEMENTED YET]
 
 Random creature cave from before I fixed the missing keyword that fixed all the caves mostly.
 
@@ -536,7 +536,7 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
   - Archimedes_ArchimedesIII_Prey01
   - Archimedes_ArchimedesIII_Prey03
 
-## Cave (OESD011)
+## Cave (OESD011) [NOT REIMPLEMENTED YET]
 
 Random creature cave from before I fixed the missing keyword that fixed all the caves mostly.
 
@@ -553,7 +553,7 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
   - UrsaeMajoris_UrsaMajorII_Predator02
   - UrsaeMinoris_UrsaMinorII_Predator01
 
-## Mysterious Cave (OEZW001)
+## Mysterious Cave (OEZW001) [NOT REIMPLEMENTED YET]
 
 Not modified at all
 
@@ -570,7 +570,7 @@ Not modified at all
   - Capable of 3-4 groups
 - Spawns: None
 
-## Strange Cave (OEZW002)
+## Strange Cave (OEZW002) [NOT REIMPLEMENTED YET]
 
 Not modified at all
 
@@ -587,7 +587,7 @@ Not modified at all
   - Standard long round cavern was probably a template for the others.
 - Spawns: None
 
-## Spacious Cave (OEZW003)
+## Spacious Cave (OEZW003) [NOT REIMPLEMENTED YET]
 
 Not modified at all
 
@@ -607,7 +607,7 @@ Not modified at all
   - Can handle 4-6 groups
 - Spawns: None
 
-## Quiet Cave (OEZW004)
+## Quiet Cave (OEZW004) [NOT REIMPLEMENTED YET]
 
 Not modified at all
 
@@ -627,7 +627,7 @@ Not modified at all
   - Has multiple harvest nodes and a rock pile
 - Spawns: None
 
-## Slanted Cave (OEZW006)
+## Slanted Cave (OEZW006) [NOT REIMPLEMENTED YET]
 
 Not modified at all
 
@@ -647,7 +647,7 @@ Not modified at all
   - Can handle 5-7 groups
 - Spawns: None
 
-## Windswept Cave (OEZW007)
+## Windswept Cave (OEZW007) [NOT REIMPLEMENTED YET]
 
 Large predator battle test cave
 
@@ -671,7 +671,7 @@ Large predator battle test cave
   - PCM_Feynman_Feynman-III_PredatorB
   - PCM_Feynman_Feynman-I_PreyA
 
-## Tiered Cave (OEZW008)
+## Tiered Cave (OEZW008) [NOT REIMPLEMENTED YET]
 
 Large multi-faction battle with multiple possible outcomes before you get to the battlefield.
 
@@ -697,7 +697,7 @@ Large multi-faction battle with multiple possible outcomes before you get to the
   - Narion_Sumati_Predator01
   - Marduk_MardukIV_Predator03
 
-## Spooky Cave
+## Spooky Cave [NOT REIMPLEMENTED YET]
 
 Added in cave with ghost pirates with custom idle dialog. Ghosts also have a 25% chance to respawn.
 

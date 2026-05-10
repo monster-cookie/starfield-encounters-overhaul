@@ -1,0 +1,103 @@
+FormKey: 000027:Venworks-EncountersOverhaul.esm
+MajorRecordFlagsRaw: 512
+EditorID: DSEManager_CellOnLoad
+FormVersion: 582
+StarfieldMajorRecordFlags:
+- 0x200
+VirtualMachineAdapter:
+  Scripts:
+  - Name: Venworks:EncountersOverhaul:DynamicScenesEngine:Managers:DSEManager_OnCellLoad
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_Center
+      Object: 000F8D:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_Map
+      Object: 000F8C:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_SceneA_Bosses
+      Object: 00000E:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_SceneA_Chests
+      Object: 000006:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_SceneA_Minions
+      Object: 00000F:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_SceneB_Bosses
+      Object: 00000C:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_SceneB_Chests
+      Object: 00000B:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_SceneB_Minions
+      Object: 00000D:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_SceneC_Bosses
+      Object: 000012:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_SceneC_Chests
+      Object: 000010:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSELinkedRef_Marker_SceneC_Minions
+      Object: 000011:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: GlobalChanceToSpawn
+      Object: 00097E:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: Mode
+    - MutagenObjectType: ScriptStructListProperty
+      Name: SpawnGroupDefinitions
+      Structs:
+      - Members:
+        - MutagenObjectType: ScriptObjectProperty
+          Name: LinkRefKeywordForChestSpawnPoints
+          Object: 000006:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: GroupFaction
+          Object: 000003:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: BossesChanceToSpawn
+          Object: 00010E:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: LinkRefKeywordForMinionSpawnPoints
+          Object: 00000F:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: LinkRefKeywordForBossSpawnPoints
+          Object: 00000E:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptIntProperty
+          Name: BossesMaxToSpawn
+          Data: 1
+        - MutagenObjectType: ScriptIntProperty
+          Name: BossesMinToSpawn
+          Data: 1
+        - MutagenObjectType: ScriptIntProperty
+          Name: MinionsMinToSpawn
+          Data: 2
+        - MutagenObjectType: ScriptIntProperty
+          Name: MinionsMaxToSpawn
+          Data: 4
+        - MutagenObjectType: ScriptObjectProperty
+          Name: MinionsChanceToSpawn
+          Object: 00097E:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SQ_DSE_FactionConfiguration
+      Object: 0000CD:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SQ_DSE_SpawnSystem
+      Object: 0000CC:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptIntProperty
+      Name: TimerDelay
+    - MutagenObjectType: ScriptIntProperty
+      Name: Waves
+      Data: 1
+ObjectBounds:
+  First: -1, -1, -1
+  Second: 1, 1, 1
+Model:
+  LightLayer: 1
+MarkerColor: '#00CC4C33'
+Flags: []
+ActivationAngle: 360
+MajorFlags:
+- HiddenFromLocalMap

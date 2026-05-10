@@ -1,9 +1,0 @@
-FormKey: 0010B4:Venworks-EncountersOverhaul.esm
-EditorID: FactionTypeEcliptic
-FormVersion: 582
-Color: '#00FFFFFF'
-Type: Faction
-FNAM: 0x00000000
-Name:
-  TargetLanguage: English
-  Value: Ecliptic

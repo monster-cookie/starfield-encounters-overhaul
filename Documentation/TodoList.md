@@ -2,25 +2,18 @@
 
 ## Bug fixes
 
-- [ ] Human/Robot Lairs are spawning in the middle of player outposts.
-- [ ] Friendly01 robot will not give RQ collect meat quest
-- [ ] Friendly01 needs to be populated planets only
 - [ ] Starborn known condition form isn't working correctly anymore. Broke with 1.10.31.0.
 
 ## Enhancements and New Features
 
-- [ ] AFTER CK: Add blood spatter decals
 - [ ] Faction caves need a chest with themed loot
 - [ ] Fix occupied cave which is just occupied with corpses
 - [ ] OEAF011 needs another 2 groups it is too large for just 1 group
-- [ ] Need a House Va'ruun themed cave
 - [ ] OEJP008 has human stuff all over it, it should be a captive rescue or something like with 3 groups of human enemies
 - [ ] OESD001 should be a powerful single boss cave
 - [ ] Add lone mountain portal site
 - [ ] Add Ryujin defended oasis portal site
-- [ ] Alarms being set off need to summon reinforcements/ships
 - [ ] Stone spire drops you miles up in the air when you fast travel to it
-- [ ] JaeDL's 1st cav vs UC mech encounters
 - [ ] Replicate the defunct book hunts as open world encounters
 - [ ] Create cursed objects then as long as they are in your inventory cause a Ghost Pirate/Terrormorph/Apex Predator to spawn and hunt you.
 
@@ -33,20 +26,22 @@
 - [ ] Known factions need to be neutral to flyers, predators, and prey.
 - [ ] Separate globals and options for spawn chance for bosses and minions
 - [ ] DSEManager_Base needs to actually spawn the chests :)
+- [ ] REstore the caves as DSE random encounters.
+- [ ] DSE Story Manager needs tested probably using one of the story caves.
 
 ### Packing needing converted to current DSE
 
-- [X] GPPIPCMManMade_AbandondedIndustrialLarge01
-- [X] GPPIPCMManMade_AbandondedIndustrialLarge02
-- [X] GPPIPCMManMade_AbandondedIndustrialLarge03
-- [X] GPPIPCMManMade_FluidStorageLargeA02
-- [X] GPPIPCMManMade_FluidStorageLargeA03
-- [X] GPPIPCMManMade_FluidStorageMediumB02
-- [X] GPPIPCMManMade_SolarPanelsA01
-- [X] GPPIPCMManMade_SolarPanelsA02
-- [X] GPPIPCMManMade_SolarPanelsB01
-- [X] GPPIPCMManMade_SolarPanelsC01
-- [X] GPPIPCMManMade_StorageBayD01
+- [X] ManMade_AbandondedIndustrialLarge01
+- [X] ManMade_AbandondedIndustrialLarge02
+- [X] ManMade_AbandondedIndustrialLarge03
+- [X] ManMade_FluidStorageLargeA02
+- [X] ManMade_FluidStorageLargeA03
+- [X] ManMade_FluidStorageMediumB02
+- [X] ManMade_SolarPanelsA01
+- [X] ManMade_SolarPanelsA02
+- [X] ManMade_SolarPanelsB01
+- [X] ManMade_SolarPanelsC01
+- [X] ManMade_StorageBayD01
 
 ### New viable clutter
 

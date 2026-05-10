@@ -1,0 +1,56 @@
+FormKey: 0000CC:Venworks-EncountersOverhaul.esm
+EditorID: SQ_DSE_SpawnSystem
+FormVersion: 582
+VirtualMachineAdapter:
+  Scripts:
+  - Name: Venworks:EncountersOverhaul:DynamicScenesEngine:Helpers:SQ_DSE_SpawnSystem
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DSE_KnownFactionTypes
+      Object: 0000D1:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeCrimsonFleet
+      Object: 0546E0:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeEcliptic
+      Object: 000007:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeHouseVaruun
+      Object: 0546DE:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeRandom
+      Object: 000003:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeSiren
+      Object: 000001:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeSpacer
+      Object: 000002:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeStarborn
+      Object: 000009:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeSyndicate
+      Object: 000004:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeTerrormorph
+      Object: 000005:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: FactionTypeTheFirst
+      Object: 00000A:Venworks-EncountersOverhaul.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SQ_DSE_FactionConfiguration
+      Object: 0000CD:Venworks-EncountersOverhaul.esm
+  Versioning:
+  - Break0
+  ExtraBindDataVersion: 0
+  Script:
+    Name: ''
+Data:
+  Flags:
+  - StartGameEnabled
+  - StartsEnabled
+  - RunOnce
+  Unused: 0x000000
+UnusedConditions: []
+Aliases: []

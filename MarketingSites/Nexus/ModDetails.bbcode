@@ -1,22 +1,27 @@
 [size=4][b][u]Overview[/u][/b][/size]
-This updates the open world caves so that they generate enemies for you to fight and now adds new open world lair like human camps. These new cave enemies get disabled if the cave is reserved by a random encounter quest so that it can proceed normally.
+This updates the open world caves and man made clutter so that they generate enemies for you to fight and now adds new open world lair like human camps. These new cave enemies get disabled if the cave is reserved by a random encounter quest so that it can proceed normally.
 
 [quote]
-NOTE: This is an ever-evolving mod additional encounters will be added over time.
+NOTE: This is an ever-evolving creation additional encounters will be added over time. Some of theses changes may require a new save or a unity trip I will try and call them out in the change logs. 
+
+WARNING: This new SFCK version is completely rewritten and requires free lanes. Also consider this a beta for now at least until I get DSE story mode and the caves reimplemented. 
 
 FAIR WARNING: The Spooky Cave and the hollows are meant to be very challenging at any level and shouldn't be tried less then level 50.
-WARNING: This is not compatible with any other mods that modifies the PCM rules and RTFP is only an option for cell reset rules. [/quote]
+[/quote]
 
 [size=4][b][u]Features[/u][/b][/size]
 [list]
 [*]All random combat factions are used
+[*]Dynamic Scenes Engine is the glue that lets all this work see the documentation on the GitHub site
 [/list]
 
 [size=4][b][u]Planned Features[/u][/b][/size]
 [list]
 [*]Additional open world encounters
-[*]New caves
-[*]Starborn Temple overhaul as a separate mod or a optional patch
+[*]Additional man made clutter
+[*]Reimplement the old caves using DSE
+[*]Develop faction themed clutter and chest for better immersion when say Crimson Fleet takes over a POI.
+[*]Implement DSE story mode using the old portal encounters.
 [/list]
 
 Linked below are the notes and description of the changes for the Open World Caves and Encounters updates. 
@@ -26,92 +31,10 @@ Linked below are the notes and description of the changes for the Open World Cav
 [/list]
 
 [size=4][b][u]Usage[/u][/b][/size]
-Enter a random world cave or find the new surprises. 
-
-[size=3][b][u]In Game Help and Configuration Commands[/u][/b][/size]
-To access the in game help, open that console and run: [code]CGF "VEOH_Help.Show"[/code]
-
-Global Configuration Commands
-[list]
-[*]Feature Flags status screen: [code]CGF "VEOH_Debug.FeatureFlags"[/code]
-[*]To toggle debug mode and logging: [code]CGF "VEOH_Debug.ToggleDebugMode"[/code]
-[/list]
-
-Starfield Spawn Chance Settings
-[list]
-[*]Get spawn conditions for the current planet: [code]CGF "VEOH_Debug.GetSpawnConditionsForCurrentLocation"[/code]
-[*]System spawn chance status screen: [code]CGF "VEOH_Debug.SystemSpawnSettings"[/code]
-[*]Reset system spawn chances to my settings: [code]CGF "VEOH_Debug.ResetSystemSpawnSettings"[/code]
-[/list]
-
-Distance Limits Settings
-[list]
-[*]Camps distance restrictions status screen: [code]CGF "VEOH_Debug.CampsDistanceRestrictions"[/code]
-[*]Reset Camps distance restrictions to my settings: [code]CGF "VEOH_Debug.ResetCampsDistanceRestrictions"[/code]
-[*]Set Camps near distance restriction: [code]CGF "VEOH_Debug.SetCampsDistanceNear" <distance:float>[/code]
-[*]Set Camps far distance restriction: [code]CGF "VEOH_Debug.SetCampsDistanceFar" <distance:float>[/code]
-[/list]
-
-Human Camp (Spacer) Commands and Settings
-[list]
-[*]Spacer Camps spawn chance status screen: [code]CGF "VEOH_Debug.HumanCampSpacerSpawnSettings"[/code]
-[*]Reset Spacer Camp spawn chances to my settings: [code]CGF "VEOH_Debug.ResetHumanCampSpacerSpawnSettings"[/code]
-[*]Set new spawn setting for Spacer Camp 01 - Solar Farm: [code]CGF "VEOH_Debug.SetSpawnChanceHumanCampSpacer01" <chance:integer>[/code]
-[*]Set new spawn setting for Spacer Camp 02 - Support Chest: [code]CGF "VEOH_Debug.SetSpawnChanceHumanCampSpacer02" <chance:integer>[/code]
-[/list]
-
-Human Camp (The First) Commands and Settings
-[list]
-[*]The First Camps spawn chance status screen: [code]CGF "VEOH_Debug.HumanCampTheFirstSpawnSettings"[/code]
-[*]Reset The First Camp spawn chances to my settings: [code]CGF "VEOH_Debug.ResetHumanCampTheFirstSpawnSettings"[/code]
-[*]Set new spawn setting for The First Camp 01 - Salvage Operation: [code]CGF "VEOH_Debug.SetSpawnChanceHumanCampTheFirst01" <chance:integer>[/code]
-[*]Set new spawn setting for The First Camp 02 - Heavy Patrol: [code]CGF "VEOH_Debug.SetSpawnChanceHumanCampTheFirst02" <chance:integer>[/code]
-[/list]
-
-Human Camp (Random Hostiles) Commands and Settings
-[list]
-[*]Random Hostile Human Camps spawn chance status screen: [code]CGF "VEOH_Debug.HumanCampRandomHostileSpawnSettings"[/code]
-[*]Reset Random Hostile Human Camp spawn chances to my settings: [code]CGF "VEOH_Debug.ResetHumanCampRandomHostileSpawnSettings"[/code]
-[*]Set new spawn setting for Random Camp 01 - Terrormorph Skirmish: [code]CGF "VEOH_Debug.SetSpawnChanceHumanCampRandom01Hostile" <chance:integer>[/code]
-[*]Set new spawn setting for Random Camp 02 - Research Camp: [code]CGF "VEOH_Debug.SetSpawnChanceHumanCampRandom02Hostile" <chance:integer>[/code]
-[/list]
-
-Human Camp (Random Friendlies) Commands and Settings
-[list]
-[*]Friendly Camps spawn chance status screen: [code]CGF "VEOH_Debug.HumanCampRandomFriendlySpawnSettings"[/code]
-[*]Reset Friendly Camps spawn chances to my settings: [code]CGF "VEOH_Debug.ResetHumanCampRandomFriendlySpawnSettings"[/code]
-[*]Set new spawn setting for Friendly Camp 01 - Babysitting Robot: [code]CGF "VEOH_Debug.SetSpawnChanceHumanCampRandomFriendly01" <chance:integer>[/code]
-[*]Set new spawn setting for Friendly Camp 02 - Treasure Map: [code]CGF "VEOH_Debug.SetSpawnChanceHumanCampRandomFriendly02" <chance:integer>[/code]
-[/list]
-
-Robot Camp (Random Hostiles) Commands and Settings
-[list]
-[*]Random Hostile Robot Camps spawn chance status screen: [code]CGF "VEOH_Debug.RobotCampRandomHostileSpawnSettings"[/code]
-[*]Reset Random Hostile Robot Camp spawn chances to my settings: [code]CGF "VEOH_Debug.ResetRobotCampRandomHostileSpawnSettings"[/code]
-[*]Set new spawn setting for Random Camp 01 - Patrol: [code]CGF "VEOH_Debug.SetSpawnChanceRobotCampRandom01Hostile" <chance:integer>[/code]
-[/list]
-
-Special Encounters Commands and Settings
-[list]
-[*]Special Encounters spawn chance status screen: [code]CGF "VEOH_Debug.SpecialEncountersSpawnSettings"[/code]
-[*]Reset Special Encounters spawn chances to my settings: [code]CGF "VEOH_Debug.ResetSpecialEncountersSpawnSettings"[/code]
-[*]Set new spawn setting for Corpse 01: [code]CGF "VEOH_Debug.SetSpawnChanceSpecialEncountersCorpse01" <chance:integer>[/code]
-[*]Set new spawn setting for Corpse 02: [code]CGF "VEOH_Debug.SetSpawnChanceSpecialEncountersCorpse02" <chance:integer>[/code]
-[/list]
+Enter a random world cave, find modified man made clutter, or find the new surprises. 
 
 [size=4][b][u]Compatibility[/u][/b][/size]
-This mod will be incompatible with any mod that modifies PCM rules, Factions, and Leveled Human Hostile leveled lists. The mods will need patch files in order to make them compatible with each other and using them together will break both sets of mods to varying degrees and is strongly recommended against. Please see the option files section for any available patches. 
-
-PCM rules are single modification setups, so this mod is going to be fully incompatible with any other that modify them too and RTFP is only an option for cell reset rules and not for block creation rules. I have to use both, the human/robot/corpse lairs are cell reset rules and the new POI are block creation rules.
-
-[size=4][b][u]Known Incompatibilities[/u][/b][/size]
-As I can't get them to load without a CTD, I can't make patches for them. Also using them without patches will break various parts of my mods and theirs and is highly discouraged.  
-
-[list]
-[*]POI Faction Diversity
-[*]POI Faction Diversity - New Factions
-[*]Skyshards
-[/list]
+This mod will be incompatible with any mod that modifies PCM rules (probably this this is resolved) or Factions (definitely). The mods will need patch files in order to make them compatible with each other and using them together will break both sets of mods to varying degrees and is strongly recommended against. Please see the option files section for any available patches. 
 
 [size=4][b][u]Installation [/u][/b][/size]
 
@@ -119,31 +42,26 @@ As I can't get them to load without a CTD, I can't make patches for them. Also u
 Install as normally would any mod mod. 
 
 [size=3][b]Installation Manually[/b][/size]
-Really please use a mod manage :) 
+Really please use a mod manager :) 
 
 Download the current zip file. Please everything in the Data folder in the zip to the same place under <Game Install Dir aka where starfield.exe is>\Data.
 
 [size=3][b]Handling the plugins.txt file[/b][/size]
-You need to add VenworksEncountersOverhaul.esm, VenworksFactionsOverhaul.esm, and VenpiCore.esm to your plugins.txt file see below for help. Should be ordered like this in the file. 
+You need to add Venworks-EncountersOverhaul.esm, VenworksFactionsOverhaul.esm, and VenpiCore.esm to your plugins.txt file see below for help. Should be ordered like this in the file. 
 
 Please see this guide, [url=https://github.com/monster-cookie/starfield-modding-notes/blob/master/LoadOrder.md]Load Order Findings and Help[/url], for help with proper load order setup.
 
 [code]
-*VenpiCore.esm
-*VenworksFactionOverhaul.esm
 *VenworksEncountersOverhaul.esm
 ...
-<any patches for Factions and Encounters Overhauls>
+<any patches for Encounters Overhauls>
 [/code]
-
-These are instructions from the author of the plugins.txt enabler mod:
-[img]https://i.imgur.com/MD5uU3j.png[/img]
 
 [size=4][b][u]Social Presence[/u][/b][/size]
 [list]
-[*]I can be found as Venpi hanging out in the xEdit and Starfield Nexus Mod's discord servers.
-[*]I have created the [url=https://discord.gg/zssJMGHmWD]Venworks Discord Community[/url] for discussing, tracking, bug reporting, and helping out with my mods and Starfield modding research.
-[*]You can follow me on threads as [url=https://www.threads.net/@monstercookiebd]@monstercookiebd[/url]
+[*]I can be found as Venpi hanging out in the Quarter Onion Games discord server.[/*]
+[*]You can follow me on X as [url=https://x.com/monstercookiebd]@monstercookiebd[/url][/*]
+[*]You can follow me on threads as [url=https://www.threads.net/@monstercookiebd]@monstercookiebd[/url][/*]
 [/list]
 
 [size=4][b][u]Source Code[/u][/b][/size]

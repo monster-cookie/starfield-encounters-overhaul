@@ -1,9 +1,0 @@
-FormKey: 0010BD:Venworks-EncountersOverhaul.esm
-EditorID: FactionTypeSpacer
-FormVersion: 582
-Color: '#00FFFFFF'
-Type: Faction
-FNAM: 0x00000000
-Name:
-  TargetLanguage: English
-  Value: Spacer

@@ -1,9 +1,0 @@
-FormKey: 0010BA:Venworks-EncountersOverhaul.esm
-EditorID: FactionTypeRandom
-FormVersion: 582
-Color: '#00FFFFFF'
-Type: Faction
-FNAM: 0x00000000
-Name:
-  TargetLanguage: English
-  Value: Random Faction
