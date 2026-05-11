@@ -1,5 +1,9 @@
 # Venworks Encounters Overhaul: To Do List
 
+## Bugs
+
+None Currently
+
 ## Enhancements and New Features
 
 - [ ] Faction caves need a chest with themed loot
@@ -16,7 +20,6 @@
 ## Current Work
 
 - [ ] DSEManager_Base needs to handle themed clutter
-- [ ] Known factions need to be neutral to flyers, predators, and prey.
 - [ ] Separate globals and options for spawn chance for bosses and minions
 - [ ] DSEManager_Base needs to actually spawn the chests :)
 - [ ] REstore the caves as DSE random encounters.

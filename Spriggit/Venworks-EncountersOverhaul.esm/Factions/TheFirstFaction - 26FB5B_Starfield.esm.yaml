@@ -1,0 +1,24 @@
+FormKey: 26FB5B:Starfield.esm
+EditorID: TheFirstFaction
+FormVersion: 582
+Version2: 5
+Relations:
+- Target: 01C21C:Starfield.esm
+  Reaction: Enemy
+- Target: 26FB5B:Starfield.esm
+  Reaction: Ally
+- Target: 03E0C8:Starfield.esm
+  Reaction: Friend
+- Target: 106C30:Starfield.esm
+  Reaction: Enemy
+- Target: 06D14C:Starfield.esm
+- Target: 022B31:Starfield.esm
+Flags:
+- CanBeOwner
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues:
+  EndHour: 24
+  BuysStolenItems: True
+  BuysNonStolenItems: True

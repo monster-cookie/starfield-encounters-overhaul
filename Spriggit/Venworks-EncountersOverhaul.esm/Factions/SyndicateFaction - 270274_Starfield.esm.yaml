@@ -1,0 +1,20 @@
+FormKey: 270274:Starfield.esm
+EditorID: SyndicateFaction
+FormVersion: 582
+Version2: 2
+Relations:
+- Target: 270274:Starfield.esm
+  Reaction: Ally
+- Target: 03E0C8:Starfield.esm
+  Reaction: Friend
+- Target: 06D14C:Starfield.esm
+- Target: 022B31:Starfield.esm
+Flags:
+- CanBeOwner
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues:
+  EndHour: 24
+  BuysStolenItems: True
+  BuysNonStolenItems: True

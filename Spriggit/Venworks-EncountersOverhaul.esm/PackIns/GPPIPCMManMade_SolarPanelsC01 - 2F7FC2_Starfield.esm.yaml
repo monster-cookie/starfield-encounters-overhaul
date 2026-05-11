@@ -7,7 +7,7 @@ StarfieldMajorRecordFlags:
 - 0x200
 ObjectBounds:
   First: -8.105918, -10.388104, -6.101746
-  Second: 8.339449, 13.8309965, 45.278564
+  Second: 8.339449, 13.8309965, 4.8638363
 ObjectPaletteDefaults:
   Flags:
   - ConformToSlope

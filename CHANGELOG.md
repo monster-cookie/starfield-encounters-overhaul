@@ -1,5 +1,10 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 3.0.1 [BETA]
+
+- The engine only occasionally processes the enable/disable via papyrus so removing the debug markers. Sorry about that.
+- Also all hostile factions are neutral to fliers/predators/prey. This will stop them leaving their encounter to be hunters instead of pirates.
+
 ## Version 3.0.0 [BETA]
 
 - Completely redone in SFCK

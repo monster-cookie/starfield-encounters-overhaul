@@ -141,17 +141,6 @@ Temporary:
   Position: -6.00721, -5.895041, 1.7030044
   Rotation: 0, 0, 4.101524
 - MutagenObjectType: PlacedObject
-  FormKey: 00008F:Venworks-EncountersOverhaul.esm
-  FormVersion: 582
-  VirtualMachineAdapter:
-    Scripts:
-    - Name: Venworks:Shared:AliasHelpers:AliasEnableDisableToggleOnLoad
-      Properties:
-      - MutagenObjectType: ScriptObjectProperty
-        Name: EnablementGlobal
-        Object: 000975:Venworks-EncountersOverhaul.esm
-  Base: 0008DC:Venworks-EncountersOverhaul.esm
-- MutagenObjectType: PlacedObject
   FormKey: 000B87:Venworks-EncountersOverhaul.esm
   FormVersion: 582
   Base: 000B80:Venworks-EncountersOverhaul.esm

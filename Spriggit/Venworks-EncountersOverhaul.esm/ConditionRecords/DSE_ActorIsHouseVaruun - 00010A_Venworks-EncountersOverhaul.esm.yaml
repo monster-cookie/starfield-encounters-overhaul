@@ -5,7 +5,7 @@ Conditions:
 - MutagenObjectType: ConditionFloat
   Flags:
   - OR
-  Unknown2: 31679
+  Unknown2: 33320
   Data:
     MutagenObjectType: GetInFactionConditionData
     FirstParameter: 2758C5:Starfield.esm
@@ -13,7 +13,7 @@ Conditions:
 - MutagenObjectType: ConditionFloat
   Flags:
   - OR
-  Unknown2: 31679
+  Unknown2: 33320
   Data:
     MutagenObjectType: GetInFactionConditionData
     FirstParameter: 27872A:Starfield.esm

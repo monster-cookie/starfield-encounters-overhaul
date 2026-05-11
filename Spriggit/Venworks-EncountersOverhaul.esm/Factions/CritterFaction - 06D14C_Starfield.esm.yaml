@@ -1,0 +1,31 @@
+FormKey: 06D14C:Starfield.esm
+EditorID: CritterFaction
+FormVersion: 582
+Version2: 6
+Name:
+  TargetLanguage: English
+  Value: CritterFaction
+Relations:
+- Target: 256F54:Starfield.esm
+  Reaction: Friend
+- Target: 200B02:Starfield.esm
+  Reaction: Friend
+- Target: 256F55:Starfield.esm
+  Reaction: Friend
+- Target: 2C0B3C:Starfield.esm
+  Reaction: Friend
+- Target: 200B03:Starfield.esm
+  Reaction: Friend
+- Target: 2C0B3D:Starfield.esm
+  Reaction: Friend
+- Target: 06D14C:Starfield.esm
+  Reaction: Friend
+- Target: 022B31:Starfield.esm
+- Target: 03E0C8:Starfield.esm
+  Reaction: Friend
+- Target: 14A9D9:Starfield.esm
+  Reaction: Friend
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues: {}

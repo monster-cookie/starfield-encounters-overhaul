@@ -1,0 +1,36 @@
+FormKey: 27BB8C:Starfield.esm
+EditorID: SpacerFaction
+FormVersion: 582
+Version2: 6
+Relations:
+- Target: 26FB6D:Starfield.esm
+  Reaction: Enemy
+- Target: 052ADC:Starfield.esm
+  Reaction: Enemy
+- Target: 056F08:Starfield.esm
+  Reaction: Enemy
+- Target: 2733AF:Starfield.esm
+  Reaction: Enemy
+- Target: 27028D:Starfield.esm
+  Reaction: Enemy
+- Target: 010B30:Starfield.esm
+  Reaction: Enemy
+- Target: 01C21C:Starfield.esm
+  Reaction: Enemy
+- Target: 03E0C8:Starfield.esm
+  Reaction: Friend
+- Target: 27BB8C:Starfield.esm
+  Reaction: Ally
+- Target: 13788F:Starfield.esm
+  Reaction: Enemy
+- Target: 06D14C:Starfield.esm
+- Target: 022B31:Starfield.esm
+Flags:
+- CanBeOwner
+CrimeValues:
+  Arrest: True
+  AttackOnSight: True
+VendorValues:
+  EndHour: 24
+  BuysStolenItems: True
+  BuysNonStolenItems: True
