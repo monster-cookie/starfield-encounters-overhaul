@@ -10,7 +10,7 @@ Obsoletely necessary, a container, door, activator, book with the matching DSEMa
 
 ### Scene Group Markers
 
-You must have 1 or more scene groups present in the scene and linked to the manager
+You must have 1 at least one scene group but you can currently define as many as you want. The must be linked ref'ed to the manager using the correct keyword.
 
 #### Boss Marker(s)
 
@@ -23,9 +23,3 @@ You should have at least 2 minion spawn markers
 #### Chest Marker(s)
 
 You should have at lease 1 chest marker for spawning the boss chest
-
-#### Map Marker -- NOT SURE ON THIS YET
-
-#### Center Marker -- NOT SURE ON THIS YET
-
-Pretty sure this isn't needed basically BGS spawns NPCs here then has the move to their real spawn point. It is more immersive so I can see a case for it.

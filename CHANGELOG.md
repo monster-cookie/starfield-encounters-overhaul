@@ -1,5 +1,11 @@
 # Venworks Cave and Encounters Overhaul
 
+
+## Version 3.0.2 [BETA]
+
+- Reimplemented the following caves: OEAF001 (Random), OEAF002 (Biome Predators), 
+- DSE: Added a faction type and definition for the current planet's biome predator
+
 ## Version 3.0.1 [BETA]
 
 - The engine only occasionally processes the enable/disable via papyrus so removing the debug markers. Sorry about that.

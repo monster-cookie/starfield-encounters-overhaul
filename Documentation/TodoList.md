@@ -24,3 +24,5 @@ None Currently
 - [ ] DSEManager_Base needs to actually spawn the chests :)
 - [ ] REstore the caves as DSE random encounters.
 - [ ] DSE Story Manager needs tested probably using one of the story caves.
+- [X] Add biome predator (minions) and apex predator(bosses) as a faction and random faction option
+- [ ] Lock terrormorph and siren spawn to a global configurable max, apex predators may need this too. 3-10 terrormorphs is kind of mean lol but totally possible with bad luck.

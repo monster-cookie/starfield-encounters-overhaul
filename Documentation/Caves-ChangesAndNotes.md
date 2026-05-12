@@ -2,7 +2,7 @@
 
 The caves listed by game editor ID. The reason the fixes are in a different order is I had to find the cave in game to test the changes for safety. Also the spawn tag is what I added this has nothing to do with what the random encounter system might inject or the post keyword now working biome markers in the cave.
 
-## Cave (OEAF001) [NOT REIMPLEMENTED YET]
+## Cave (OEAF001) [Released again in 3.0.2]
 
 Ecliptic Outpost Cave, will generate a small ecliptic force and themed chest.
 
@@ -20,11 +20,9 @@ Ecliptic Outpost Cave, will generate a small ecliptic force and themed chest.
   - Long tunnel the medium round room
   - Can take 2-3 groups
 - Spawns:
-  - Ecliptic Officer
-  - Ecliptic Charger
-  - Ecliptic Assault
+  - Random Encounter (1-3 Bosses, 4-10 Minions, 2 chests)
 
-## Cave (OEAF002) [NOT REIMPLEMENTED YET]
+## Cave (OEAF002) [Released again in 3.0.2]
 
 Creature spawn test cave which ultimately failed now just spawns some creatures from Gamma Vulpes.
 
@@ -40,9 +38,7 @@ Creature spawn test cave which ultimately failed now just spawns some creatures 
 - Description:
   - long tunnel with little cavern at the end
 - Spawns
-  - PCM_Gamma-Vulpes_Gamma-Vulpes-II-a_PredatorA
-  - PCM_Gamma-Vulpes_Gamma-Vulpes-I_PredatorB
-  - PCM_Gamma-Vulpes_Gamma-Vulpes-I_PredatorA
+  - Scripted Encounter using Biome Predators (1 boss, 2-4 minions, 1 chest)
 
 ## Cave (OEAF003) [NOT REIMPLEMENTED YET]
 
