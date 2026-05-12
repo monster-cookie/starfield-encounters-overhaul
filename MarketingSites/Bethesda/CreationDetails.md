@@ -38,8 +38,8 @@ This mod will be incompatible with any mod that modifies PCM rules or factions. 
 # Social Presence
 
 - I can be found as Venpi hanging out in the Quarter Onion Games Discord server.
-- You can follow me on X as [@monstercookiebd](https://x.com/monstercookiebd)
-- You can follow me on Threads as [@monstercookiebd](https://www.threads.net/@monstercookiebd)
+- You can follow me on X as @monstercookiebd @ https://x.com/monstercookiebd
+- You can follow me on Threads as @monstercookiebd @ https://www.threads.net/@monstercookiebd
 
 # Source Code
 
