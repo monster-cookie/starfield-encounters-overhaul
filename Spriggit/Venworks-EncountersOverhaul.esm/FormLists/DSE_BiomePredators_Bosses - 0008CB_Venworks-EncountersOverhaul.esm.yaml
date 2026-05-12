@@ -1,0 +1,10 @@
+FormKey: 0008CB:Venworks-EncountersOverhaul.esm
+EditorID: DSE_BiomePredators_Bosses
+FormVersion: 582
+Items:
+- 06E06A:Starfield.esm
+- 05AD10:Starfield.esm
+- 074D71:Starfield.esm
+- 074D6F:Starfield.esm
+- 074D6C:Starfield.esm
+AddToList: 0008CA:Venworks-EncountersOverhaul.esm

@@ -1,0 +1,9 @@
+FormKey: 0008C6:Venworks-EncountersOverhaul.esm
+EditorID: FactionTypeBiomePredators
+FormVersion: 582
+Color: '#00FFFFFF'
+Type: Faction
+FNAM: 0x00000000
+Name:
+  TargetLanguage: English
+  Value: Planatary Predators
