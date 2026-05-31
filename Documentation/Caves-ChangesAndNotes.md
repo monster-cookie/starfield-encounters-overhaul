@@ -40,7 +40,7 @@ Creature spawn test cave which ultimately failed now just spawns some creatures 
 - Spawns
   - Scripted Encounter using Biome Predators (1 boss, 2-4 minions, 1 chest)
 
-## Cave (OEAF003) [NOT REIMPLEMENTED YET]
+## Cave (OEAF003) [Released again in 3.0.2]
 
 Crimson Fleet Outpost Cave, will generate a small crimson fleet force and themed chest.
 
@@ -69,6 +69,8 @@ Crimson Fleet Outpost Cave, will generate a small crimson fleet force and themed
 
 Royal terrormorphs abuse cave, spawns a group of terrormorphs and heatleeches to get abused by JaeDL's rules.
 
+DESIGN NOTE: Going to reimplement with my own system.
+
 - Spawn Conditions:
   - Block Type: OverlayMountainsTerracedSmall05 [SFBK:002C545C]
 - Keywords
@@ -89,9 +91,9 @@ Royal terrormorphs abuse cave, spawns a group of terrormorphs and heatleeches to
   - Terrormorph Random
   - 3 x Heatleeches
 
-## Cave (OEAF005) [NOT REIMPLEMENTED YET]
+## Cave (OEAF005) [Released again in 3.0.2]
 
-Random Human Outpost Cave, will generate a medium sized human force and themed boss chest.
+Random Outpost Cave, will generate a medium sized random force and themed boss chest.
 
 - Spawn Conditions:
   - Block Type: OverlayHillsMesasRockySmall04 [SFBK:0024968F]
@@ -109,9 +111,9 @@ Random Human Outpost Cave, will generate a medium sized human force and themed b
   - Random Hostile Human
   - Random Hostile Human Sniper
 
-## Cave (OEAF006) [NOT REIMPLEMENTED YET]
+## Cave (OEAF006)
 
-Random creature cave from before I fixed the missing keyword that fixed all the caves mostly.
+Not modified at all
 
 - Spawn Conditions:
   - Block Type: OverlayHillsSharpSmall04 [SFBK:002493C1]
@@ -130,9 +132,9 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
   - Charybdis_CharybdisII_PredatorB
   - OborumPrime_OborumI_Predator01
 
-## Cave (OEAF007) [NOT REIMPLEMENTED YET]
+## Cave (OEAF007)
 
-Not modified at all except the name to match size
+Not modified at all
 
 - Spawn Conditions:
   - Block Type: OverlayHillsRoundedSmall05 [SFBK:00276A8F]
@@ -148,9 +150,9 @@ Not modified at all except the name to match size
   - Can handle 2 groups
 - Spawns: None
 
-## Cave (OEAF008) [NOT REIMPLEMENTED YET]
+## Cave (OEAF008)
 
-Random creature cave from before I fixed the missing keyword that fixed all the caves mostly.
+Not modified at all
 
 - Spawn Conditions:
   - Block Type: OverlayHillsSharpSmall04 [SFBK:002493C1]
@@ -175,6 +177,8 @@ Random creature cave from before I fixed the missing keyword that fixed all the 
 
 Another caves to abuse JaeDL's Heatleech terrormorph spawners in all his mods
 
+DESIGN NOTE: Going to reimplement with my own system.
+
 - Spawn Conditions:
   - Block Type: OverlayMountainsAngledSmall04 [SFBK:00276AA6]
 - Keywords: None
@@ -193,9 +197,9 @@ Another caves to abuse JaeDL's Heatleech terrormorph spawners in all his mods
   - Random Terrormorph
   - 10 x heatleaches
 
-## Cave (OEAF010) [NOT REIMPLEMENTED YET]
+## Cave (OEAF010) [Released again in 3.0.2]
 
-Large Group Outpost Cave, will generate a large spacer force and themed boss chest.
+Large Group Outpost Cave, will generate a large random force and themed boss chest.
 
 - Spawn Conditions:
   - Block Type: OverlayFieldsFracturedSmall01 [SFBK:002A3759]
@@ -213,9 +217,9 @@ Large Group Outpost Cave, will generate a large spacer force and themed boss che
   - Spacer Sniper
   - Spacer Heavy
 
-## Cave (OEAF011) [NOT REIMPLEMENTED YET]
+## Cave (OEAF011) [Released again in 3.0.2]
 
-The First Outpost Cave, will generate a small The First force and themed chest.
+The First Outpost Cave, will generate a large The First force and themed chest.
 
 - Spawn Conditions:
   - Block Type: OverlayCratersSharpSmall04 [SFBK:002D00F1]
@@ -236,7 +240,7 @@ The First Outpost Cave, will generate a small The First force and themed chest.
   - The First Heavy
   - The First Charger
 
-## Cave (OEAF014) [NOT REIMPLEMENTED YET]
+## Cave (OEAF014) [Released again in 3.0.2]
 
 Starborn Outpost Cave, will generate a small Starborn force and themed chest.
 

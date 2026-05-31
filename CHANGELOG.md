@@ -1,10 +1,17 @@
 # Venworks Cave and Encounters Overhaul
 
-
 ## Version 3.0.2 [BETA]
 
-- Reimplemented the following caves: OEAF001 (Random), OEAF002 (Biome Predators), 
+- Reimplemented the following caves:
+  - OEAF001 (Random)
+  - OEAF002 (Biome Predators)
+  - OEAF003 (Crimson Fleet)
+  - OEAF005 (Random)
+  - OEAF010 (Large Random)
+  - OEAF011 (Large The First)
+  - OEAF014 (Large Starborn)
 - DSE: Added a faction type and definition for the current planet's biome predator
+- Backed out PCM patrol points they are causing an engine crash and the linkref weren't holding. Back to the drawing board.
 
 ## Version 3.0.1 [BETA]
 
