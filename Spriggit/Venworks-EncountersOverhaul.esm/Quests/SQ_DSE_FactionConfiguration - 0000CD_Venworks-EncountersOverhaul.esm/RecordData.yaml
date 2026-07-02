@@ -13,220 +13,220 @@ VirtualMachineAdapter:
       Structs:
       - Members:
         - MutagenObjectType: ScriptObjectProperty
-          Name: DSE_ActorIsTest
-          Object: 000109:Venworks-EncountersOverhaul.esm
-        - MutagenObjectType: ScriptObjectProperty
-          Name: FactionType
-          Object: 0546E0:Starfield.esm
+          Name: Bosses
+          Object: 0000DB:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: Robots
           Object: 0000F4:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: Bosses
-          Object: 0000DB:Venworks-EncountersOverhaul.esm
-        - MutagenObjectType: ScriptObjectProperty
           Name: ChestsBoss
           Object: 0000FF:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: Any
-          Object: 0000DF:Venworks-EncountersOverhaul.esm
+          Name: FactionType
+          Object: 0546E0:Starfield.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: Minions
           Object: 0000D2:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: ChestsLarge
           Object: 0000F9:Venworks-EncountersOverhaul.esm
-      - Members:
-        - MutagenObjectType: ScriptObjectProperty
-          Name: Minions
-          Object: 0000D0:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: DSE_ActorIsTest
-          Object: 00010B:Venworks-EncountersOverhaul.esm
+          Object: 000109:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: Robots
-          Object: 0000E7:Venworks-EncountersOverhaul.esm
+          Name: Any
+          Object: 0000DF:Venworks-EncountersOverhaul.esm
+      - Members:
         - MutagenObjectType: ScriptObjectProperty
           Name: Any
           Object: 0000D7:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
+          Name: Robots
+          Object: 0000E7:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
           Name: ChestsBoss
           Object: 0000FA:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: Bosses
-          Object: 0000D9:Venworks-EncountersOverhaul.esm
+          Name: DSE_ActorIsTest
+          Object: 00010B:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: FactionType
           Object: 000007:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: ChestsLarge
           Object: 0000E1:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Minions
+          Object: 0000D0:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Bosses
+          Object: 0000D9:Venworks-EncountersOverhaul.esm
       - Members:
-        - MutagenObjectType: ScriptObjectProperty
-          Name: Robots
-          Object: 0000D3:Venworks-EncountersOverhaul.esm
-        - MutagenObjectType: ScriptObjectProperty
-          Name: Any
-          Object: 0000DA:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: Minions
           Object: 0000D5:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
+          Name: FactionType
+          Object: 000002:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Any
+          Object: 0000DA:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
           Name: Bosses
           Object: 0000D6:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
+          Name: Robots
+          Object: 0000D3:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
           Name: DSE_ActorIsTest
           Object: 000107:Venworks-EncountersOverhaul.esm
-        - MutagenObjectType: ScriptObjectProperty
-          Name: FactionType
-          Object: 000002:Venworks-EncountersOverhaul.esm
       - Members:
-        - MutagenObjectType: ScriptObjectProperty
-          Name: FactionType
-          Object: 0546DE:Starfield.esm
-        - MutagenObjectType: ScriptObjectProperty
-          Name: Any
-          Object: 0000D4:Venworks-EncountersOverhaul.esm
-        - MutagenObjectType: ScriptObjectProperty
-          Name: Robots
-          Object: 0000F8:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: ChestsLarge
           Object: 0000EC:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
+          Name: Robots
+          Object: 0000F8:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
           Name: ChestsBoss
           Object: 0000EF:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: DSE_ActorIsTest
-          Object: 00010A:Venworks-EncountersOverhaul.esm
+          Name: Any
+          Object: 0000D4:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: Bosses
           Object: 0000DE:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: Minions
           Object: 0000DD:Venworks-EncountersOverhaul.esm
-      - Members:
         - MutagenObjectType: ScriptObjectProperty
           Name: FactionType
-          Object: 000001:Venworks-EncountersOverhaul.esm
+          Object: 0546DE:Starfield.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: Any
-          Object: 0000EE:Venworks-EncountersOverhaul.esm
-        - MutagenObjectType: ScriptObjectProperty
-          Name: Robots
-          Object: 0000F5:Venworks-EncountersOverhaul.esm
+          Name: DSE_ActorIsTest
+          Object: 00010A:Venworks-EncountersOverhaul.esm
+      - Members:
         - MutagenObjectType: ScriptObjectProperty
           Name: ChestsLarge
           Object: 000100:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
+          Name: Robots
+          Object: 0000F5:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
           Name: ChestsBoss
           Object: 0000F2:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: DSE_ActorIsTest
-          Object: 00010D:Venworks-EncountersOverhaul.esm
+          Name: Any
+          Object: 0000EE:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: Bosses
           Object: 0000E3:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: Minions
           Object: 0000E9:Venworks-EncountersOverhaul.esm
-      - Members:
         - MutagenObjectType: ScriptObjectProperty
           Name: FactionType
-          Object: 000009:Venworks-EncountersOverhaul.esm
+          Object: 000001:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: Any
-          Object: 0000F6:Venworks-EncountersOverhaul.esm
-        - MutagenObjectType: ScriptObjectProperty
-          Name: Robots
-          Object: 000101:Venworks-EncountersOverhaul.esm
+          Name: DSE_ActorIsTest
+          Object: 00010D:Venworks-EncountersOverhaul.esm
+      - Members:
         - MutagenObjectType: ScriptObjectProperty
           Name: ChestsLarge
           Object: 0000FD:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
+          Name: Robots
+          Object: 000101:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
           Name: ChestsBoss
           Object: 0000FB:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: DSE_ActorIsTest
-          Object: 00010C:Venworks-EncountersOverhaul.esm
+          Name: Any
+          Object: 0000F6:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: Bosses
           Object: 0000E8:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: Minions
           Object: 0000F3:Venworks-EncountersOverhaul.esm
-      - Members:
         - MutagenObjectType: ScriptObjectProperty
           Name: FactionType
-          Object: 000004:Venworks-EncountersOverhaul.esm
+          Object: 000009:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: Any
-          Object: 0000D8:Venworks-EncountersOverhaul.esm
-        - MutagenObjectType: ScriptObjectProperty
-          Name: Robots
-          Object: 0000EB:Venworks-EncountersOverhaul.esm
+          Name: DSE_ActorIsTest
+          Object: 00010C:Venworks-EncountersOverhaul.esm
+      - Members:
         - MutagenObjectType: ScriptObjectProperty
           Name: ChestsLarge
           Object: 000102:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
+          Name: Robots
+          Object: 0000EB:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
           Name: ChestsBoss
           Object: 0000FC:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: DSE_ActorIsTest
-          Object: 000105:Venworks-EncountersOverhaul.esm
+          Name: Any
+          Object: 0000D8:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: Bosses
           Object: 0000E2:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: Minions
           Object: 0000E0:Venworks-EncountersOverhaul.esm
-      - Members:
         - MutagenObjectType: ScriptObjectProperty
           Name: FactionType
-          Object: 000005:Venworks-EncountersOverhaul.esm
+          Object: 000004:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: Any
-          Object: 0000CE:Venworks-EncountersOverhaul.esm
-        - MutagenObjectType: ScriptObjectProperty
-          Name: Robots
-          Object: 0000E6:Venworks-EncountersOverhaul.esm
+          Name: DSE_ActorIsTest
+          Object: 000105:Venworks-EncountersOverhaul.esm
+      - Members:
         - MutagenObjectType: ScriptObjectProperty
           Name: ChestsLarge
           Object: 0000ED:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
+          Name: Robots
+          Object: 0000E6:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
           Name: ChestsBoss
           Object: 0000E4:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: DSE_ActorIsTest
-          Object: 000108:Venworks-EncountersOverhaul.esm
+          Name: Any
+          Object: 0000CE:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: Bosses
           Object: 0000E5:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: Minions
           Object: 0000F7:Venworks-EncountersOverhaul.esm
-      - Members:
         - MutagenObjectType: ScriptObjectProperty
-          Name: ChestsLarge
-          Object: 0008CF:Venworks-EncountersOverhaul.esm
+          Name: FactionType
+          Object: 000005:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: DSE_ActorIsTest
+          Object: 000108:Venworks-EncountersOverhaul.esm
+      - Members:
         - MutagenObjectType: ScriptObjectProperty
           Name: Robots
           Object: 0008D1:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: ChestsBoss
-          Object: 0008CE:Venworks-EncountersOverhaul.esm
-        - MutagenObjectType: ScriptObjectProperty
           Name: Minions
           Object: 0008D0:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: Bosses
-          Object: 0008CB:Venworks-EncountersOverhaul.esm
+          Name: FactionType
+          Object: 0008C6:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
           Name: Any
           Object: 0008CA:Venworks-EncountersOverhaul.esm
         - MutagenObjectType: ScriptObjectProperty
-          Name: FactionType
-          Object: 0008C6:Venworks-EncountersOverhaul.esm
+          Name: ChestsBoss
+          Object: 0008CE:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: Bosses
+          Object: 0008CB:Venworks-EncountersOverhaul.esm
+        - MutagenObjectType: ScriptObjectProperty
+          Name: ChestsLarge
+          Object: 0008CF:Venworks-EncountersOverhaul.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: FactionTypeCrimsonFleet
       Object: 0546E0:Starfield.esm

@@ -3,7 +3,7 @@ EditorID: DSE_ActorIsSpacer
 FormVersion: 582
 Conditions:
 - MutagenObjectType: ConditionFloat
-  Unknown2: 10698
+  Unknown2: 35520
   Data:
     MutagenObjectType: GetInFactionConditionData
     FirstParameter: 27BB8C:Starfield.esm
