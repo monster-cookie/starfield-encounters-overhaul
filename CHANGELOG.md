@@ -1,5 +1,9 @@
 # Venworks Cave and Encounters Overhaul
 
+## Version 3.0.3 [BETA]
+
+- Create Archives will no longer pull in any existing archives. 
+
 ## Version 3.0.2 [BETA]
 
 - Reimplemented the following caves:
