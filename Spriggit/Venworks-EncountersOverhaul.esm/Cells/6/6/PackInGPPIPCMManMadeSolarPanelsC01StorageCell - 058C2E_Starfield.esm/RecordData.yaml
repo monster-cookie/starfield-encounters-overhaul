@@ -60,7 +60,7 @@ Temporary:
   - Deleted
   Base: 233366:Starfield.esm
 - MutagenObjectType: PlacedObject
-  FormKey: 0000B7:Venworks-EncountersOverhaul.esm
+  FormKey: 000195:Venworks-DynamicScenesEngine.esm
   EditorID: DSEManager_ManMade_SolarPanelsC01_RandomEncounters
   FormVersion: 582
   VirtualMachineAdapter:
@@ -81,74 +81,74 @@ Temporary:
     Type: Box
   Position: 15, 10, 0
 - MutagenObjectType: PlacedObject
-  FormKey: 0000B8:Venworks-EncountersOverhaul.esm
+  FormKey: 000196:Venworks-DynamicScenesEngine.esm
   FormVersion: 582
   Base: 00002E:Venworks-DynamicScenesEngine.esm
   LinkedReferences:
   - KeywordOrReference: 00000E:Venworks-DynamicScenesEngine.esm
-    Reference: 0000B7:Venworks-EncountersOverhaul.esm
+    Reference: 000195:Venworks-DynamicScenesEngine.esm
   IsLinkedRefTransient: True
   Position: 0.28985423, 0.2043469, 1.9188473
 - MutagenObjectType: PlacedObject
-  FormKey: 0000B9:Venworks-EncountersOverhaul.esm
+  FormKey: 000197:Venworks-DynamicScenesEngine.esm
   FormVersion: 582
   Base: 00002E:Venworks-DynamicScenesEngine.esm
   LinkedReferences:
   - KeywordOrReference: 00000E:Venworks-DynamicScenesEngine.esm
-    Reference: 0000B7:Venworks-EncountersOverhaul.esm
+    Reference: 000195:Venworks-DynamicScenesEngine.esm
   IsLinkedRefTransient: True
   Position: 2.1987176, -5.6730537, 2
 - MutagenObjectType: PlacedObject
-  FormKey: 0000BA:Venworks-EncountersOverhaul.esm
+  FormKey: 000198:Venworks-DynamicScenesEngine.esm
   FormVersion: 582
   Base: 000028:Venworks-DynamicScenesEngine.esm
   LinkedReferences:
   - KeywordOrReference: 000006:Venworks-DynamicScenesEngine.esm
-    Reference: 0000B7:Venworks-EncountersOverhaul.esm
+    Reference: 000195:Venworks-DynamicScenesEngine.esm
   IsLinkedRefTransient: True
   Position: 0.56430745, -3.4137053, 1.9529898
 - MutagenObjectType: PlacedObject
-  FormKey: 0000BB:Venworks-EncountersOverhaul.esm
+  FormKey: 000199:Venworks-DynamicScenesEngine.esm
   FormVersion: 582
   Base: 000028:Venworks-DynamicScenesEngine.esm
   LinkedReferences:
   - KeywordOrReference: 000006:Venworks-DynamicScenesEngine.esm
-    Reference: 0000B7:Venworks-EncountersOverhaul.esm
+    Reference: 000195:Venworks-DynamicScenesEngine.esm
   IsLinkedRefTransient: True
   Position: -2.5522308, 3.5292158, 1.9188471
 - MutagenObjectType: PlacedObject
-  FormKey: 0000BC:Venworks-EncountersOverhaul.esm
+  FormKey: 00019A:Venworks-DynamicScenesEngine.esm
   FormVersion: 582
   Base: 000030:Venworks-DynamicScenesEngine.esm
   LinkedReferences:
   - KeywordOrReference: 00000F:Venworks-DynamicScenesEngine.esm
-    Reference: 0000B7:Venworks-EncountersOverhaul.esm
+    Reference: 000195:Venworks-DynamicScenesEngine.esm
   IsLinkedRefTransient: True
   Position: 2.741036, 5.2100973, 1.9280024
 - MutagenObjectType: PlacedObject
-  FormKey: 0000BD:Venworks-EncountersOverhaul.esm
+  FormKey: 00019B:Venworks-DynamicScenesEngine.esm
   FormVersion: 582
   Base: 000030:Venworks-DynamicScenesEngine.esm
   LinkedReferences:
   - KeywordOrReference: 00000F:Venworks-DynamicScenesEngine.esm
-    Reference: 0000B7:Venworks-EncountersOverhaul.esm
+    Reference: 000195:Venworks-DynamicScenesEngine.esm
   IsLinkedRefTransient: True
   Position: -7.0236816, 4.3921275, 1.918848
   Rotation: 0, 0, 5.4977875
 - MutagenObjectType: PlacedObject
-  FormKey: 0000BE:Venworks-EncountersOverhaul.esm
+  FormKey: 00019C:Venworks-DynamicScenesEngine.esm
   FormVersion: 582
   Base: 000030:Venworks-DynamicScenesEngine.esm
   LinkedReferences:
   - KeywordOrReference: 00000F:Venworks-DynamicScenesEngine.esm
-    Reference: 0000B7:Venworks-EncountersOverhaul.esm
+    Reference: 000195:Venworks-DynamicScenesEngine.esm
   IsLinkedRefTransient: True
   Position: 0.8013579, -9.120283, 1.918848
   Rotation: 0, 0, 3.1415927
 - MutagenObjectType: PlacedObject
-  FormKey: 000BDE:Venworks-EncountersOverhaul.esm
+  FormKey: 00019D:Venworks-DynamicScenesEngine.esm
   FormVersion: 582
-  Base: 000B80:Venworks-EncountersOverhaul.esm
+  Base: 00003C:Venworks-DynamicScenesEngine.esm
   Position: 7, 3, 1.9252
   Rotation: 0, 0, 5.4977875
 MajorFlags:

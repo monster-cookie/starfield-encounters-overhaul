@@ -1,0 +1,10 @@
+FormKey: 0001C2:Venworks-DynamicScenesEngine.esm
+EditorID: GPO_VEOH
+FormVersion: 582
+Name:
+  TargetLanguage: English
+  Value: Venworks Encounters Overhaul Options
+Options:
+  MutagenObjectType: GameplayOptionsGroupLeaf
+  GameplayOptions:
+  - 0001C1:Venworks-DynamicScenesEngine.esm

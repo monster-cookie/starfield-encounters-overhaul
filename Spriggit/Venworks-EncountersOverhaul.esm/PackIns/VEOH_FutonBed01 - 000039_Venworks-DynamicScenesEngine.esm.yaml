@@ -1,0 +1,15 @@
+FormKey: 000039:Venworks-DynamicScenesEngine.esm
+MajorRecordFlagsRaw: 512
+EditorID: VEOH_FutonBed01
+FormVersion: 582
+StarfieldMajorRecordFlags:
+- 0x200
+ObjectBounds:
+  First: -1.0751953, -0.55029297, -0.0012207031
+  Second: 1.0751953, 0.55029297, 0.099121094
+Cell: 00018F:Venworks-DynamicScenesEngine.esm
+Version: 0
+FNAM: 0x0C000000
+MaterialSwaps: []
+MajorFlags:
+- Prefab

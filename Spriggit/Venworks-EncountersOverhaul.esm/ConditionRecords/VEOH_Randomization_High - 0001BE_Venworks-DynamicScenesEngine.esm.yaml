@@ -1,0 +1,20 @@
+FormKey: 0001BE:Venworks-DynamicScenesEngine.esm
+EditorID: VEOH_Randomization_High
+FormVersion: 582
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Unknown2: 81
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    FirstParameter: 000035:Venworks-DynamicScenesEngine.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionGlobal
+  CompareOperator: LessThanOrEqualTo
+  Flags:
+  - OR
+  Unknown2: 81
+  Data:
+    MutagenObjectType: GetRandomPercentConditionData
+  ComparisonValue: 000032:Venworks-DynamicScenesEngine.esm

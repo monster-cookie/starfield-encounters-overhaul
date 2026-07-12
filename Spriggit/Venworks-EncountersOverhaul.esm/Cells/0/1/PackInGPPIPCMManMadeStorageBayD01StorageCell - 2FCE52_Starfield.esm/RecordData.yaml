@@ -42,84 +42,84 @@ Temporary:
   - Deleted
   Base: 1DBEE9:Starfield.esm
 - MutagenObjectType: PlacedObject
-  FormKey: 000031:Venworks-EncountersOverhaul.esm
+  FormKey: 00003D:Venworks-DynamicScenesEngine.esm
   FormVersion: 582
   Base: 00002E:Venworks-DynamicScenesEngine.esm
   LinkedReferences:
   - KeywordOrReference: 00000E:Venworks-DynamicScenesEngine.esm
-    Reference: 000039:Venworks-EncountersOverhaul.esm
+    Reference: 000045:Venworks-DynamicScenesEngine.esm
   IsLinkedRefTransient: True
   Position: -6.325197, 4.689765, 1.7299306
   Rotation: 0, 0, 1.5707964
 - MutagenObjectType: PlacedObject
-  FormKey: 000032:Venworks-EncountersOverhaul.esm
+  FormKey: 00003E:Venworks-DynamicScenesEngine.esm
   FormVersion: 582
   Base: 00002E:Venworks-DynamicScenesEngine.esm
   LinkedReferences:
   - KeywordOrReference: 00000E:Venworks-DynamicScenesEngine.esm
-    Reference: 000039:Venworks-EncountersOverhaul.esm
+    Reference: 000045:Venworks-DynamicScenesEngine.esm
   IsLinkedRefTransient: True
   Position: -2.3369904, -7.5467796, 1.7299306
   Rotation: 0, 0, 3.1415927
 - MutagenObjectType: PlacedObject
-  FormKey: 000033:Venworks-EncountersOverhaul.esm
+  FormKey: 00003F:Venworks-DynamicScenesEngine.esm
   FormVersion: 582
   Base: 000028:Venworks-DynamicScenesEngine.esm
   LinkedReferences:
   - KeywordOrReference: 000006:Venworks-DynamicScenesEngine.esm
-    Reference: 000039:Venworks-EncountersOverhaul.esm
+    Reference: 000045:Venworks-DynamicScenesEngine.esm
   IsLinkedRefTransient: True
   Position: -6.3238792, 7.2144394, 2.0952134
 - MutagenObjectType: PlacedObject
-  FormKey: 000034:Venworks-EncountersOverhaul.esm
+  FormKey: 000040:Venworks-DynamicScenesEngine.esm
   FormVersion: 582
   Base: 000028:Venworks-DynamicScenesEngine.esm
   LinkedReferences:
   - KeywordOrReference: 000006:Venworks-DynamicScenesEngine.esm
-    Reference: 000039:Venworks-EncountersOverhaul.esm
+    Reference: 000045:Venworks-DynamicScenesEngine.esm
   IsLinkedRefTransient: True
   Position: 5.2764482, -1.0282636, 1.9507916
   Rotation: 0, 0, 1.5707964
 - MutagenObjectType: PlacedObject
-  FormKey: 000035:Venworks-EncountersOverhaul.esm
+  FormKey: 000041:Venworks-DynamicScenesEngine.esm
   FormVersion: 582
   Base: 000030:Venworks-DynamicScenesEngine.esm
   LinkedReferences:
   - KeywordOrReference: 00000F:Venworks-DynamicScenesEngine.esm
-    Reference: 000039:Venworks-EncountersOverhaul.esm
+    Reference: 000045:Venworks-DynamicScenesEngine.esm
   IsLinkedRefTransient: True
   Position: 0.06112814, -9.162146, 1.7121198
   Rotation: 0, 0, 3.1415927
 - MutagenObjectType: PlacedObject
-  FormKey: 000036:Venworks-EncountersOverhaul.esm
+  FormKey: 000042:Venworks-DynamicScenesEngine.esm
   FormVersion: 582
   Base: 000030:Venworks-DynamicScenesEngine.esm
   LinkedReferences:
   - KeywordOrReference: 00000F:Venworks-DynamicScenesEngine.esm
-    Reference: 000039:Venworks-EncountersOverhaul.esm
+    Reference: 000045:Venworks-DynamicScenesEngine.esm
   IsLinkedRefTransient: True
   Position: 2.4896464, -3.8758168, 1.7299306
   Rotation: 0, 0, 4.712389
 - MutagenObjectType: PlacedObject
-  FormKey: 000037:Venworks-EncountersOverhaul.esm
+  FormKey: 000043:Venworks-DynamicScenesEngine.esm
   FormVersion: 582
   Base: 000030:Venworks-DynamicScenesEngine.esm
   LinkedReferences:
   - KeywordOrReference: 00000F:Venworks-DynamicScenesEngine.esm
-    Reference: 000039:Venworks-EncountersOverhaul.esm
+    Reference: 000045:Venworks-DynamicScenesEngine.esm
   IsLinkedRefTransient: True
   Position: -2.4502904, 8.97255, 1.7299306
 - MutagenObjectType: PlacedObject
-  FormKey: 000038:Venworks-EncountersOverhaul.esm
+  FormKey: 000044:Venworks-DynamicScenesEngine.esm
   FormVersion: 582
   Base: 000030:Venworks-DynamicScenesEngine.esm
   LinkedReferences:
   - KeywordOrReference: 00000F:Venworks-DynamicScenesEngine.esm
-    Reference: 000039:Venworks-EncountersOverhaul.esm
+    Reference: 000045:Venworks-DynamicScenesEngine.esm
   IsLinkedRefTransient: True
   Position: 1.8778195, 9.0631895, 1.7299306
 - MutagenObjectType: PlacedObject
-  FormKey: 000039:Venworks-EncountersOverhaul.esm
+  FormKey: 000045:Venworks-DynamicScenesEngine.esm
   EditorID: DSE_ManMadeClutter_StorageBayD01_Manger_RandomEncounters
   FormVersion: 582
   VirtualMachineAdapter:
@@ -131,36 +131,36 @@ Temporary:
         Name: SpawnGroupDefinitions
         Structs:
         - Members:
+          - MutagenObjectType: ScriptIntProperty
+            Name: MinionsMaxToSpawn
+            Data: 4
           - MutagenObjectType: ScriptObjectProperty
-            Name: LinkRefKeywordForChestSpawnPoints
-            Object: 000006:Venworks-DynamicScenesEngine.esm
+            Name: LinkRefKeywordForBossSpawnPoints
+            Object: 00000E:Venworks-DynamicScenesEngine.esm
           - MutagenObjectType: ScriptObjectProperty
             Name: GroupFaction
             Object: 000003:Venworks-DynamicScenesEngine.esm
           - MutagenObjectType: ScriptObjectProperty
-            Name: BossesChanceToSpawn
-            Object: 00010E:Venworks-EncountersOverhaul.esm
-          - MutagenObjectType: ScriptObjectProperty
             Name: LinkRefKeywordForMinionSpawnPoints
             Object: 00000F:Venworks-DynamicScenesEngine.esm
           - MutagenObjectType: ScriptObjectProperty
-            Name: LinkRefKeywordForBossSpawnPoints
-            Object: 00000E:Venworks-DynamicScenesEngine.esm
-          - MutagenObjectType: ScriptIntProperty
-            Name: BossesMaxToSpawn
-            Data: 1
-          - MutagenObjectType: ScriptIntProperty
-            Name: MinionsMaxToSpawn
-            Data: 4
-          - MutagenObjectType: ScriptIntProperty
-            Name: MinionsMinToSpawn
-            Data: 2
+            Name: BossesChanceToSpawn
+            Object: 0001BD:Venworks-DynamicScenesEngine.esm
           - MutagenObjectType: ScriptIntProperty
             Name: BossesMinToSpawn
             Data: 1
           - MutagenObjectType: ScriptObjectProperty
             Name: MinionsChanceToSpawn
-            Object: 00097E:Venworks-EncountersOverhaul.esm
+            Object: 0001BE:Venworks-DynamicScenesEngine.esm
+          - MutagenObjectType: ScriptIntProperty
+            Name: BossesMaxToSpawn
+            Data: 1
+          - MutagenObjectType: ScriptIntProperty
+            Name: MinionsMinToSpawn
+            Data: 2
+          - MutagenObjectType: ScriptObjectProperty
+            Name: LinkRefKeywordForChestSpawnPoints
+            Object: 000006:Venworks-DynamicScenesEngine.esm
       - MutagenObjectType: ScriptIntProperty
         Name: TimerDelay
       - MutagenObjectType: ScriptIntProperty

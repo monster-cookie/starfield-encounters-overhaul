@@ -1,0 +1,57 @@
+FormKey: 00003C:Venworks-DynamicScenesEngine.esm
+EditorID: VEOH_LPI_PCM_ManMade_CampingBeds
+FormVersion: 582
+ObjectBounds:
+  First: -1.0976562, -0.3647461, -0.0048828125
+  Second: 1.0976562, 0.36328125, 0.48242188
+ObjectPaletteDefaults:
+  FootprintSize: Large
+  ScalePercent: 1
+  SlopePercent: 1
+  Density: 1
+  FrequencyPercent: 0.01
+  SlopeLimit: 15.000006
+  DistanceAboveWater: 3.4028235E+38
+Components:
+- MutagenObjectType: KeywordFormComponent
+MaxCount: 0
+Entries:
+- Level: 1
+  Unused: 19936
+  Reference: 16B254:Starfield.esm
+  Count: 1
+- Level: 1
+  Unused: 19936
+  Reference: 092262:sfbgs00d.esm
+  Count: 1
+- Level: 1
+  Unused: 19936
+  Reference: 06A4BA:sfbgs00d.esm
+  Count: 1
+- Level: 1
+  Unused: 19936
+  Reference: 16B257:Starfield.esm
+  Count: 1
+- Level: 1
+  Unused: 19936
+  Reference: 000036:Venworks-DynamicScenesEngine.esm
+  Count: 1
+- Level: 1
+  Unused: 19936
+  Reference: 000037:Venworks-DynamicScenesEngine.esm
+  Count: 1
+- Level: 1
+  Unused: 19936
+  Reference: 000039:Venworks-DynamicScenesEngine.esm
+  Count: 1
+- Level: 1
+  Unused: 19936
+  Reference: 00003A:Venworks-DynamicScenesEngine.esm
+  Count: 1
+- Level: 1
+  Unused: 19936
+  Reference: 00003B:Venworks-DynamicScenesEngine.esm
+  Count: 1
+Model:
+  File: Furniture\Beds\AK_Bed_Portable01_Empty.nif
+  LightLayer: 1

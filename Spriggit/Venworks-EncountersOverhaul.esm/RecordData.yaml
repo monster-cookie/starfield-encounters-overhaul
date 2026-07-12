@@ -16,4 +16,4 @@ ModHeader:
   - Master: Venworks-Core.esm
   - Master: Venworks-DynamicScenesEngine.esm
   Branch: Main
-  InteriorCellCount: 24
+  InteriorCellCount: 28
