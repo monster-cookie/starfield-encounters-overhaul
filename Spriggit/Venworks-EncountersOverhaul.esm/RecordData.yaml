@@ -13,5 +13,7 @@ ModHeader:
   - Master: Starfield.esm
   - Master: sfbgs00d.esm
   - Master: sfbgs007.esm
+  - Master: Venworks-Core.esm
+  - Master: Venworks-DynamicScenesEngine.esm
   Branch: Main
   InteriorCellCount: 24

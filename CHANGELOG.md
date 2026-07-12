@@ -1,8 +1,14 @@
 # Venworks Cave and Encounters Overhaul
 
+## Unreleased
+
+- Codex 5.6 Sol completely converted VEOH to DSE in about 10 minutes that would have taken me days.
+- VEOH now requires Venworks Dynamic Scenes Engine 1.0.2+ and Venworks Core 2.1.5
+- Reimplemented the following caves:
+
 ## Version 3.0.3 [BETA]
 
-- Create Archives will no longer pull in any existing archives. 
+- Create Archives will no longer pull in any existing archives.
 
 ## Version 3.0.2 [BETA]
 

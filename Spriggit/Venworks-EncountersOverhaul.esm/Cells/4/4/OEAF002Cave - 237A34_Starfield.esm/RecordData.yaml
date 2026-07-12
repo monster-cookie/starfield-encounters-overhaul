@@ -7639,7 +7639,7 @@ Temporary:
   FormVersion: 582
   VirtualMachineAdapter:
     Scripts:
-    - Name: Venworks:EncountersOverhaul:DynamicScenesEngine:Managers:DSEManager_OnCellLoad
+    - Name: Venworks:DynamicScenesEngine:Managers:DSEManager_OnCellLoad
       Flags: Inherited
       Properties:
       - MutagenObjectType: ScriptStructListProperty
@@ -7651,13 +7651,13 @@ Temporary:
             Object: 00097E:Venworks-EncountersOverhaul.esm
           - MutagenObjectType: ScriptObjectProperty
             Name: GroupFaction
-            Object: 0008C6:Venworks-EncountersOverhaul.esm
+            Object: 0008C6:Venworks-DynamicScenesEngine.esm
           - MutagenObjectType: ScriptIntProperty
             Name: BossesMaxToSpawn
             Data: 1
           - MutagenObjectType: ScriptObjectProperty
             Name: LinkRefKeywordForMinionSpawnPoints
-            Object: 00000F:Venworks-EncountersOverhaul.esm
+            Object: 00000F:Venworks-DynamicScenesEngine.esm
           - MutagenObjectType: ScriptIntProperty
             Name: MinionsMaxToSpawn
             Data: 4
@@ -7666,17 +7666,17 @@ Temporary:
             Object: 00010E:Venworks-EncountersOverhaul.esm
           - MutagenObjectType: ScriptObjectProperty
             Name: LinkRefKeywordForBossSpawnPoints
-            Object: 00000E:Venworks-EncountersOverhaul.esm
+            Object: 00000E:Venworks-DynamicScenesEngine.esm
           - MutagenObjectType: ScriptObjectProperty
             Name: LinkRefKeywordForChestSpawnPoints
-            Object: 000006:Venworks-EncountersOverhaul.esm
+            Object: 000006:Venworks-DynamicScenesEngine.esm
           - MutagenObjectType: ScriptIntProperty
             Name: MinionsMinToSpawn
             Data: 2
           - MutagenObjectType: ScriptIntProperty
             Name: BossesMinToSpawn
             Data: 1
-  Base: 000027:Venworks-EncountersOverhaul.esm
+  Base: 000027:Venworks-DynamicScenesEngine.esm
   Primitive:
     Bounds: 2, 2, 2
     Color: '#00CC4C33'
@@ -7686,40 +7686,40 @@ Temporary:
 - MutagenObjectType: PlacedObject
   FormKey: 0008EE:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 00002E:Venworks-EncountersOverhaul.esm
+  Base: 00002E:Venworks-DynamicScenesEngine.esm
   Location: 237789:Starfield.esm
   LinkedReferences:
-  - KeywordOrReference: 00000E:Venworks-EncountersOverhaul.esm
+  - KeywordOrReference: 00000E:Venworks-DynamicScenesEngine.esm
     Reference: 0008EE:Venworks-EncountersOverhaul.esm
   IsLinkedRefTransient: True
   Position: -31.103432, 44.388798, -2.3897405
 - MutagenObjectType: PlacedObject
   FormKey: 0008F0:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 000028:Venworks-EncountersOverhaul.esm
+  Base: 000028:Venworks-DynamicScenesEngine.esm
   Location: 237789:Starfield.esm
   LinkedReferences:
-  - KeywordOrReference: 000006:Venworks-EncountersOverhaul.esm
+  - KeywordOrReference: 000006:Venworks-DynamicScenesEngine.esm
     Reference: 0008F0:Venworks-EncountersOverhaul.esm
   IsLinkedRefTransient: True
   Position: -29.786842, 45.85039, -2.1840742
 - MutagenObjectType: PlacedObject
   FormKey: 0008F2:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 000030:Venworks-EncountersOverhaul.esm
+  Base: 000030:Venworks-DynamicScenesEngine.esm
   Location: 237789:Starfield.esm
   LinkedReferences:
-  - KeywordOrReference: 00000F:Venworks-EncountersOverhaul.esm
+  - KeywordOrReference: 00000F:Venworks-DynamicScenesEngine.esm
     Reference: 0008F2:Venworks-EncountersOverhaul.esm
   IsLinkedRefTransient: True
   Position: -30.52399, 50.991447, -1.9818895
 - MutagenObjectType: PlacedObject
   FormKey: 0008F3:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 000030:Venworks-EncountersOverhaul.esm
+  Base: 000030:Venworks-DynamicScenesEngine.esm
   Location: 237789:Starfield.esm
   LinkedReferences:
-  - KeywordOrReference: 00000F:Venworks-EncountersOverhaul.esm
+  - KeywordOrReference: 00000F:Venworks-DynamicScenesEngine.esm
     Reference: 0008F3:Venworks-EncountersOverhaul.esm
   IsLinkedRefTransient: True
   Position: -42.4, 50.4, -5.2
@@ -7727,80 +7727,80 @@ Temporary:
 - MutagenObjectType: PlacedObject
   FormKey: 0008F4:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 000030:Venworks-EncountersOverhaul.esm
+  Base: 000030:Venworks-DynamicScenesEngine.esm
   Location: 237789:Starfield.esm
   LinkedReferences:
-  - KeywordOrReference: 00000F:Venworks-EncountersOverhaul.esm
+  - KeywordOrReference: 00000F:Venworks-DynamicScenesEngine.esm
     Reference: 0008F4:Venworks-EncountersOverhaul.esm
   IsLinkedRefTransient: True
   Position: -47.02761, 46.133213, -5.1080346
 - MutagenObjectType: PlacedObject
   FormKey: 0008F7:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 00002E:Venworks-EncountersOverhaul.esm
+  Base: 00002E:Venworks-DynamicScenesEngine.esm
   Location: 237789:Starfield.esm
   LinkedReferences:
-  - KeywordOrReference: 00000E:Venworks-EncountersOverhaul.esm
+  - KeywordOrReference: 00000E:Venworks-DynamicScenesEngine.esm
     Reference: 0008F7:Venworks-EncountersOverhaul.esm
   IsLinkedRefTransient: True
   Position: -40.455486, 39.35805, -3.4163609
 - MutagenObjectType: PlacedObject
   FormKey: 0008F9:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 000030:Venworks-EncountersOverhaul.esm
+  Base: 000030:Venworks-DynamicScenesEngine.esm
   Location: 237789:Starfield.esm
   LinkedReferences:
-  - KeywordOrReference: 00000F:Venworks-EncountersOverhaul.esm
+  - KeywordOrReference: 00000F:Venworks-DynamicScenesEngine.esm
     Reference: 0008F9:Venworks-EncountersOverhaul.esm
   IsLinkedRefTransient: True
   Position: -44.240685, 42.947205, -4.4351425
 - MutagenObjectType: PlacedObject
   FormKey: 0008FB:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 000028:Venworks-EncountersOverhaul.esm
+  Base: 000028:Venworks-DynamicScenesEngine.esm
   Location: 237789:Starfield.esm
   LinkedReferences:
-  - KeywordOrReference: 000006:Venworks-EncountersOverhaul.esm
+  - KeywordOrReference: 000006:Venworks-DynamicScenesEngine.esm
     Reference: 0008FB:Venworks-EncountersOverhaul.esm
   IsLinkedRefTransient: True
   Position: -42.316456, 46.071236, -4.237125
 - MutagenObjectType: PlacedObject
   FormKey: 0008FD:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 000030:Venworks-EncountersOverhaul.esm
+  Base: 000030:Venworks-DynamicScenesEngine.esm
   Location: 237789:Starfield.esm
   LinkedReferences:
-  - KeywordOrReference: 00000F:Venworks-EncountersOverhaul.esm
+  - KeywordOrReference: 00000F:Venworks-DynamicScenesEngine.esm
     Reference: 0008FD:Venworks-EncountersOverhaul.esm
   IsLinkedRefTransient: True
   Position: -45.005096, 60.937042, -9.532871
 - MutagenObjectType: PlacedObject
   FormKey: 0008FE:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 000030:Venworks-EncountersOverhaul.esm
+  Base: 000030:Venworks-DynamicScenesEngine.esm
   Location: 237789:Starfield.esm
   LinkedReferences:
-  - KeywordOrReference: 00000F:Venworks-EncountersOverhaul.esm
+  - KeywordOrReference: 00000F:Venworks-DynamicScenesEngine.esm
     Reference: 0008FE:Venworks-EncountersOverhaul.esm
   IsLinkedRefTransient: True
   Position: -40.15449, 65.31902, -10.280394
 - MutagenObjectType: PlacedObject
   FormKey: 0008FF:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 000030:Venworks-EncountersOverhaul.esm
+  Base: 000030:Venworks-DynamicScenesEngine.esm
   Location: 237789:Starfield.esm
   LinkedReferences:
-  - KeywordOrReference: 00000F:Venworks-EncountersOverhaul.esm
+  - KeywordOrReference: 00000F:Venworks-DynamicScenesEngine.esm
     Reference: 0008FF:Venworks-EncountersOverhaul.esm
   IsLinkedRefTransient: True
   Position: -38.71737, 72.27674, -10.442444
 - MutagenObjectType: PlacedObject
   FormKey: 000901:Venworks-EncountersOverhaul.esm
   FormVersion: 582
-  Base: 000030:Venworks-EncountersOverhaul.esm
+  Base: 000030:Venworks-DynamicScenesEngine.esm
   Location: 237789:Starfield.esm
   LinkedReferences:
-  - KeywordOrReference: 00000F:Venworks-EncountersOverhaul.esm
+  - KeywordOrReference: 00000F:Venworks-DynamicScenesEngine.esm
     Reference: 000901:Venworks-EncountersOverhaul.esm
   IsLinkedRefTransient: True
   Position: -34.18083, 71.423706, -4.468785
