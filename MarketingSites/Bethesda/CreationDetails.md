@@ -37,7 +37,8 @@ This mod will be incompatible with any mod that modifies PCM rules or factions. 
 
 # Social Presence
 
-- I can be found as Venpi hanging out in the Quarter Onion Games Discord server.
+- Join the Venworks Discord Community for discussion, support, and beta feedback at https://discord.gg/DTbmrJDMxZ.
+- I can also usually be found as Venpi hanging out in the Quarter Onion Games Discord Server at https://discord.gg/quarteronion.
 - You can follow me on X as @monstercookiebd @ https://x.com/monstercookiebd
 - You can follow me on Threads as @monstercookiebd @ https://www.threads.net/@monstercookiebd
 
